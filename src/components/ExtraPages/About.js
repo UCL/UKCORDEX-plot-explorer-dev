@@ -1,9 +1,11 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import './ExtraPages.css';
 // import Container from "react-bootstrap/Container";
 
 function About() {
   return (
-      <div className="about">
+      <Container className="about">
           <div>
             <h1>About</h1>
             <p>
@@ -13,7 +15,7 @@ function About() {
               type and scrambled it to make a type specimen book.
             </p>
           </div>
-        </div>
+        </Container>
   );
 }
 

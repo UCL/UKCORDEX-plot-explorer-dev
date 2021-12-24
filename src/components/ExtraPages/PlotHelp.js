@@ -1,5 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import './ExtraPages.css';
+
 // import Container from "react-bootstrap/Container";
 
 function PlotHelp() {

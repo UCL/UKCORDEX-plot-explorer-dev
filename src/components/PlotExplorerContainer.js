@@ -18,8 +18,11 @@ function PlotExplorerRow() {
 
   return (
     <Container>
+      <Container>
+  <p>To start, select one of each of the following parameters. Your graph(s) will be shown when at least one of each parameter has been selected. For information on the data, plots or indices, see our help pages.</p>
+</Container>
 
-      <MenuHeader />
+      {/* <MenuHeader /> */}
 
       <OptionsRow
         setPlotvars={setPlotvars}
