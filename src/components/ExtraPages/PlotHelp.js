@@ -20,4 +20,4 @@ function PlotHelp() {
   );
 }
 
-export default PlotHelp();
+export default PlotHelp;

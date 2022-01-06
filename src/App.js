@@ -3,6 +3,7 @@ import MenuHeader from './components/MenuHeader';
 
 function App() {
   return (
+    // rendering just the menu header means it'll display on every page, each route is different
     <MenuHeader />
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import FigureRow from "./FigureRow";
-import MenuHeader from "./MenuHeader";
+// import MenuHeader from "./MenuHeader";
 import OptionsRow from "./OptionsRow";
 
 function PlotExplorerRow() {
