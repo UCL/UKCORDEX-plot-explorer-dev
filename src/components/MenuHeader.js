@@ -18,7 +18,6 @@ function MenuHeader(){
             <img
               alt=""
               src={`${process.env.PUBLIC_URL}/uk_icon.png`}
-              // src='/uk_icon.png'
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -30,6 +29,7 @@ function MenuHeader(){
 
            
           {/* This method allows HashRouter to modify the URL (for GH pages); the links are relative */}
+          
         <LinkContainer to='/'><Nav.Link>Home</Nav.Link></LinkContainer>
         <LinkContainer to='/about'><Nav.Link>About</Nav.Link></LinkContainer>
             <NavDropdown title="Help" id="basic-nav-dropdown">
