@@ -3,17 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PlotExplorerRow from './components/PlotExplorerContainer';
 import { HashRouter } from 'react-router-dom';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-
+    {/* Need to wrap the app with the router */}
     <HashRouter>
       <App />
-      <PlotExplorerRow />
   </HashRouter>
   </React.StrictMode>,
 
