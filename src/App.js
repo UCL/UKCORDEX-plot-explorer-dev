@@ -1,10 +1,13 @@
 import MenuHeader from './components/MenuHeader';
-// import PlotExplorerContainer from './components/PlotExplorerContainer';
+import Routing from './Routing';
+
 
 function App() {
   return (
     // rendering just the menu header means it'll display on every page, each route is different
-    <MenuHeader />
+    <MenuHeader >
+      <Routing />
+       </MenuHeader>
   );
 }
 

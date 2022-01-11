@@ -3,6 +3,9 @@ import Container from "react-bootstrap/Container";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import { LinkContainer } from 'react-router-bootstrap';
+// LinkContainer is used to allow react router to identify the nav links
+
 
 function MenuHeader(){
   /*
@@ -11,7 +14,7 @@ function MenuHeader(){
   return(
       <Navbar bg="light" variant="light" sticky="top">
         <Container>
-          <Navbar.Brand  href="/">
+          <LinkContainer to='/'><Navbar.Brand>
             <img
               alt=""
               src={`${process.env.PUBLIC_URL}/uk_icon.png`}
@@ -20,16 +23,29 @@ function MenuHeader(){
               className="d-inline-block align-top"
             />{'    '}
           UK CORDEX Plot Explorer
-          </Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+          </Navbar.Brand></LinkContainer>
+          {/* This allows the links to show when they're active */}
+          <Nav className="me-auto" activeKey={window.location.pathname}>
+
+            {/* <Nav.Link href="/UKCORDEX-plot-explorer-dev/">Home</Nav.Link>
+            <Nav.Link href="/UKCORDEX-plot-explorer-dev/about">About</Nav.Link>
             <NavDropdown title="Help" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/help/#indices">Indices</NavDropdown.Item>
-          <NavDropdown.Item href="/help/#data">Data</NavDropdown.Item>
-          <NavDropdown.Item href="/plot-help">Plots</NavDropdown.Item>
+          <NavDropdown.Item href="/UKCORDEX-plot-explorer-dev/indices-help">Indices</NavDropdown.Item>
+          <NavDropdown.Item href="/UKCORDEX-plot-explorer-dev/data-help">Data</NavDropdown.Item>
+          <NavDropdown.Item href="/UKCORDEX-plot-explorer-dev/plot-help">Plots</NavDropdown.Item>
+        </NavDropdown>
+          </Nav> */}
+
+          {/* This method allows HashRouter to modify the URL (for GH pages) */}
+        <LinkContainer to='/'><Nav.Link>Home</Nav.Link></LinkContainer>
+        <LinkContainer to='about'><Nav.Link>About</Nav.Link></LinkContainer>
+            <NavDropdown title="Help" id="basic-nav-dropdown">
+            <LinkContainer to='indices-help'><NavDropdown.Item>Indices</NavDropdown.Item></LinkContainer>
+            <LinkContainer to='data-help'><NavDropdown.Item>Data</NavDropdown.Item></LinkContainer>
+            <LinkContainer to='plot-help'><NavDropdown.Item>Plots</NavDropdown.Item></LinkContainer>
         </NavDropdown>
           </Nav>
+      
         </Container>
       </Navbar>
   );
