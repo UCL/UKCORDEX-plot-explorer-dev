@@ -3,26 +3,16 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { HashRouter } from 'react-router-dom';
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import PlotExplorerRow from './components/PlotExplorerContainer';
-import About from './components/ExtraPages/About';
-import PlotHelp from './components/ExtraPages/PlotHelp';
-import Help from './components/ExtraPages/Help';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <Router>
-    <Routes>
-    <Route path="/" element={<PlotExplorerRow />} />
-    <Route path="/about" element={<About />} />
-    <Route path="/plot-help" element={<PlotHelp />} />
-    <Route path="/help" element={<Help />} />
-  </Routes>
-  </Router>
+    {/* Need to wrap the app with the router */}
+    <HashRouter>
+      <App />
+  </HashRouter>
   </React.StrictMode>,
 
   document.getElementById('root')

@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import FigureRow from "./FigureRow";
 // import MenuHeader from "./MenuHeader";
 import OptionsRow from "./OptionsRow";
+import './PlotExplorerContainer.css';
 
 function PlotExplorerRow() {
   /* This is the entry point to the main page. It handles state passing from
@@ -18,7 +19,7 @@ function PlotExplorerRow() {
 
   return (
     <Container>
-      <Container>
+      <Container className="intro">
   <p>To start, select one of each of the following parameters. Your graph(s) will be shown when at least one of each parameter has been selected. For information on the data, plots or indices, see our help pages.</p>
 </Container>
 
