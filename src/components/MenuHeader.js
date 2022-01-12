@@ -14,7 +14,8 @@ function MenuHeader(){
   return(
       <Navbar bg="light" variant="light" sticky="top">
         <Container>
-          <LinkContainer to='/'><Navbar.Brand>
+          <LinkContainer to='/'>
+            <Navbar.Brand>
             <img
               alt=""
               src={`${process.env.PUBLIC_URL}/uk_icon.png`}
