@@ -24,7 +24,8 @@ function MenuHeader(){
               className="d-inline-block align-top"
             />{'    '}
           UK CORDEX Plot Explorer
-          </Navbar.Brand></LinkContainer>
+          </Navbar.Brand>
+        </LinkContainer>
           {/* This allows the links to show when they're active */}
           <Nav className="me-auto" activeKey={window.location.pathname}>
 
