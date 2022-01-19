@@ -2,6 +2,7 @@ import React from 'react';
 import Select from 'react-select';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './OptionsRow.css';
 
 
 // TODO: Some of these might not be relevant anymore
@@ -10,40 +11,40 @@ const plotvarOptions = [
   {
     label: "Temperature",
     options: [
-      { value: 'tas', label: 'tas - Daily Near-Surface Air Temperature' },
-      { value: 'tasmax', label: 'tasmax - Daily Maximum Near-Surface Air Temperature' },
-      { value: 'tasmin', label: 'tasmin - Daily Minimum Near-Surface Air Temperature' },
-      { value: 'tas99', label: 'tas99 - 99th Percentile of Daily Mean Near-Surface Air Temperatures' },
-      { value: 'tas01', label: 'tas01 - 1st Percentile of Daily Mean Near-Surface Air Temperatures' },
+      { value: 'tas', label: <> <span className="tag temp">tas</span><span> Daily Near-Surface Air Temperature</span> </> },
+      { value: 'tasmax', label: <><span className="tag temp">tasmax</span> <span className="description"> Daily Maximum Near-Surface Air Temperature</span></> },
+      { value: 'tasmin', label: <><span className="tag temp">tasmin</span> <span className="description"> Daily Minimum Near-Surface Air Temperature</span> </>},
+      { value: 'tas99', label: <> <span className="tag temp">tas99</span> <span className="description"> 99th Percentile of Daily Mean Near-Surface Air Temperatures</span> </>},
+      { value: 'tas01', label: <> <span className="tag temp">tas01</span> <span className="description"> 1st Percentile of Daily Mean Near-Surface Air Temperatures</span> </>},
     ],
   },
   {
     label: "Precipitation",
     options: [
-      { value: 'pr', label: 'pr - Daily precipitation rate' },
-      { value: 'prc', label: 'prc - Daily rate of Convective Precipitation' },
-      { value: 'prsn', label: 'prsn - Daily rate of precipitation falling as snow' },
-      { value: 'fwd', label: 'fwd - Proportion of wet days' },
-      { value: 'r99ptot', label: 'r99ptot - r99ptot' }
+      { value: 'pr', label: <> <span className="tag precip">pr</span> <span className="description"> Daily precipitation rate</span> </>},
+      { value: 'prc', label: <> <span className="tag precip">prc</span> <span className="description"> Daily rate of Convective Precipitation</span> </>},
+      { value: 'prsn', label: <> <span className="tag precip">prsn</span> <span className="description"> Daily rate of precipitation falling as snow</span> </>},
+      { value: 'fwd', label: <> <span className="tag precip">fwd</span> <span className="description"> Proportion of wet days</span></> },
+      { value: 'r99ptot', label: <> <span className="tag precip">r99ptot</span> <span className="description">r99ptot</span> </> }
     ],
   },
   {
     label: "Wind",
     options: [
-      { value: 'sfcWind', label: 'sfcWind - Near-Surface Wind Speed' },
-      { value: 'wsgsmax', label: 'wsgsmax - Daily Maximum Near-Surface Wind Speed of Gust' },
-      { value: 'uas', label: 'uas - Eastward Near-Surface Wind' },
-      { value: 'vas', label: 'vas - Northward Near-Surface Wind' }
+      { value: 'sfcWind', label: <> <span className="tag wind">sfcWind</span> <span className="description"> Near-Surface Wind Speed</span> </>},
+      { value: 'wsgsmax', label: <> <span className="tag wind">wsgsmax</span> <span className="description"> Daily Maximum Near-Surface Wind Speed of Gust</span> </>},
+      { value: 'uas', label: <> <span className="tag wind">uas</span> <span className="description"> Eastward Near-Surface Wind</span> </>},
+      { value: 'vas', label: <> <span className="tag wind">vas</span> <span className="description"> Northward Near-Surface Wind</span> </>}
     ],
   },
   {
     label: "Other",
     options: [
-      { value: 'clt', label: 'clt - Total Cloud Fraction' },
-      { value: 'hurs', label: 'hurs - Near-Surface Relative humidity' },
-      { value: 'psl', label: 'psl - Sea Level Pressure' },
-      { value: 'rss', label: 'rss - Net surface long wave flux' },
-      { value: 'rls', label: 'rls - Net surface long wave flux' }
+      { value: 'clt', label: <> <span className="tag other">clt</span> <span className="description"> Total Cloud Fraction</span> </>},
+      { value: 'hurs', label: <> <span className="tag other">hurs</span> <span className="description"> Near-Surface Relative humidity</span> </>},
+      { value: 'psl', label: <> <span className="tag other">psl</span> <span className="description"> Sea Level Pressure</span> </>},
+      { value: 'rss', label: <> <span className="tag other">rss</span> <span className="description"> Net surface long wave flux</span> </>},
+      { value: 'rls', label: <> <span className="tag other">rls</span> <span className="description"> Net surface long wave flux</span> </>}
     ]
   }
 ];
@@ -80,7 +81,7 @@ function OptionsRow({setPlotvars, setSeasons, setPeriods, setPlottypes}){
 */
   return(
     <Row className="pt-4">
-       <Col xs={5}>
+       <Col xs={6}>
          <Select
            options={plotvarOptions}
            onChange={setPlotvars}
@@ -107,7 +108,7 @@ function OptionsRow({setPlotvars, setSeasons, setPeriods, setPlottypes}){
            isMulti
            />
        </Col>
-       <Col xs={3}>
+       <Col xs={2}>
          <Select
            options={plottypeOptions}
            onChange={setPlottypes}
