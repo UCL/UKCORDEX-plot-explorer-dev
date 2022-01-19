@@ -1,7 +1,7 @@
 {
   "name": "ukcordex-plot-explorer",
   "version": "0.1.0",
-  "homepage": "https://github-pages.raquel-ucl.ac.uk/UKCORDEX-plot-explorer-dev/",
+  "homepage": "https://github-pages.ucl.ac.uk/UKCORDEX-plot-explorer-dev/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
