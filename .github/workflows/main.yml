@@ -4,9 +4,9 @@ name: Deploy React Application
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ development ]
   pull_request:
-    branches: [ main ]
+    branches: [ development ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x] # We will deploy with only one version of node  
+        node-version: [14.x] # We will deploy with only one version of node  
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -25,14 +25,11 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm ci, build and test
-        run: |
-          npm ci
-          npm run build --if-present
-          npm test      
+          node-version: ${{ matrix.node-version }}    
       - name: deploy to gh-pages
-        uses: raquel-ucl/UKCORDEX-plot-explorer-dev@v3
+        uses: crazy-max/ghaction-github-pages@v2
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./build       
+          target_branch: gh-pages
+          build_dir: ./build  
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
