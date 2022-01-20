@@ -11,16 +11,6 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build_test:        
-    permissions: 
-          actions: write
-          checks: write
-          contents: write
-          deployments: write
-          id-token: write
-          pages: write
-          pull-requests: write
-          security-events: write
-          statuses: write
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -45,4 +35,4 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
-          # token: ${{ secrets.RAQUEL_UK_CORDEX_PAT }}
+          token: ${{ secrets.RAQUEL_UK_CORDEX_PAT }}
