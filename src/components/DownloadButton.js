@@ -1,49 +1,48 @@
 // Download button for individual plots
-import React, {useState} from 'react';
+import React from "react";
 import { Button } from "react-bootstrap";
-import './DownloadButton.css';
+import "./DownloadButton.css";
+// import { saveAs } from "file-saver";
 
-function DownloadButton(){
+// import JSZip from "jszip";
 
-    // const [visible, setVisible] = useState(false)
-    
-    // const toggleVisible = () => {
-    //     const scrolled = document.documentElement.scrollTop;
-    //     if (scrolled > 500){
-    //     setVisible(true)
-    //     } 
-    //     else if (scrolled <= 500){
-    //     setVisible(false)
-    //     }
-    // };
-    // window.addEventListener('scroll', toggleVisible);
+import Nesting from "./ImageSaving";
 
+function DownloadButton() {
+  // For multiple downloads
+  //   var zip = new JSZip();
+  //   var count = 0;
+  //   var zipFilename = "UKCORDEX-plots.zip";
+  //   var urls = ["http://image-url-1", "http://image-url-2", "http://image-url-3"];
 
-    return(
-<Button variant="primary" size="lg" className="downloadbtn" /*href={`/public/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png`}*/
+  //   urls.forEach(function (url) {
+  //     var filename = "filename";
+  //     // loading a file and add it in a zip file
+  //     JSZipUtils.getBinaryContent(url, function (err, data) {
+  //       if (err) {
+  //         throw err; // or handle the error
+  //       }
+  //       zip.file(filename, data, { binary: true });
+  //       count++;
+  //       if (count == urls.length) {
+  //         zip.generateAsync({ type: "blob" }).then(function (content) {
+  //           saveAs(content, zipFilename);
+  //         });
+  //       }
+  //     });
+  //   });
 
-
-
-// <>
-// {plotvars.map(plotvar => (
-//   seasons.map(season => (
-//     periods.map(period => (
-//       plottypes.map(plottype => (
-//         <Row className="py-4">
-//           <Figure>
-//             <FigureImage
-//              alt={plottype.label + " not found for '" + plotvar.label + "' on season '" + season.label + "' and period '" + period.label + "'."}
-//              src={`${process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png`}
-//             />
->
-
-
-
-
-      Download Plots
-
-</Button>
-    )
-};
+  return (
+    //   button with direct styling for bootstrap compatibility
+    <Button
+      variant="primary"
+      style={{ background: "#6610f2", border: "none" }}
+      size="med"
+      className="downloadbtn"
+      onClick={Nesting}>
+      Save Plots
+    </Button>
+  );
+}
 
 export default DownloadButton;

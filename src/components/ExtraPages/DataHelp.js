@@ -1,26 +1,21 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import './ExtraPages.css';
-// import div from "react-bootstrap/div";
+import "./ExtraPages.css";
+import { DataInfo } from "./Contents/DataInfo";
 
 function DataHelp() {
   return (
-      <Container className="help">
-          <div >
-            <h1>Help on Data</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-            
-            <div id="data">
-            <h2>Data</h2>
-            <p>Information on data sources</p>
-            </div>
-          </div>
-        </Container>
+    <Container className="help">
+      <div>
+        <h1>Help on Data</h1>
+        <p>{DataInfo.intro}</p>
+
+        <div id="data">
+          <h2>Data</h2>
+          <p>{DataInfo.contents}</p>
+        </div>
+      </div>
+    </Container>
   );
 }
 
