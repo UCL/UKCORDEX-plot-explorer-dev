@@ -1,9 +1,7 @@
 // Download button for individual plots
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
-// import { saveAs } from "file-saver";
-
 // import JSZip from "jszip";
 
 import Nesting from "./ImageSaving";
@@ -38,9 +36,12 @@ function DownloadButton() {
       variant="primary"
       style={{ background: "#6610f2", border: "none" }}
       size="med"
-      className="downloadbtn"
-      onClick={Nesting}>
-      Save Plots
+      className="downloadbtn">
+      <a /*This is hardcoded for now but will be changed to work dynamically */
+        href={`${process.env.PUBLIC_URL}/images/fwd/eval-boxplots_fwd_DJF_19890101-20081231.png`}
+        download="UKCORDEXimage">
+        Save Plots
+      </a>
     </Button>
   );
 }
