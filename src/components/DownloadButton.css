@@ -1,0 +1,10 @@
+/* Not all styling is done here due to now react-bootstrap works (background colour) */
+
+.downloadbtn,
+.downloadbtn a {
+  position: -webkit-sticky;
+  position: sticky;
+  float: left;
+  top: 65%;
+  color: white;
+}
