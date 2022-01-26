@@ -1,10 +1,10 @@
 // Download button for individual plots
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
 // import JSZip from "jszip";
 
-import Nesting from "./ImageSaving";
+// import Nesting from "./ImageSaving";
 
 function DownloadButton() {
   // For multiple downloads
