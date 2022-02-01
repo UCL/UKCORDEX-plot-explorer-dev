@@ -1,5 +1,4 @@
 /* Styling for the tags in the labels of the dropdowns */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto'); */
 
 /*********************** Section for PlotVar Dropdown **********************/
 .description {
@@ -7,15 +6,11 @@
   margin-top: 0.5em;
 }
 .tag {
-  /* box-shadow: rgba(17, 17, 26, 0.144) 0px 1px 0px, rgba(17, 17, 26, 0.185) 0px 0px 8px; */
-  /* border: 0.7px rgba(17, 17, 26, 0.651); */
   border-radius: 10%;
   margin-right: 0.3em;
   padding: 0.3em;
   border: 2px solid;
-  /* color: rgb(255, 255, 255); */
   font-size: 90%;
-  /* font-family: 'Roboto'; */
 }
 
 .temp {
