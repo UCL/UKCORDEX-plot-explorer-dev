@@ -8,7 +8,7 @@ export const PlotInfoHead = {
 
 export const PlotInfoContents = [
   {
-    plot: "Maps of Observations and Biases",
+    plot: "Maps of observations and biases",
     description:
       "Systematic differences between the ensembles — both in spatial patterns common to all ensemble members and in the magnitude of biases — are identified using maps of the mean biases within each ensemble, after regridding to the 12km OSGB grid. During the evaluation period, the mean bias in each ensemble is presented as a map alongside the HadUK-Grid climatology, while for future periods, maps of the mean change in each ensemble are provided ",
   },
