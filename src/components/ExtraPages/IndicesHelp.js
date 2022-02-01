@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { IndicesInfoContents, IndicesInfoHead } from "./Contents/IndicesInfo";
 import "./ExtraPages.css";
-// import div from "react-bootstrap/div";
 
 function IndicesHelp() {
   return (
