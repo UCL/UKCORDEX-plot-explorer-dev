@@ -1,41 +1,63 @@
 /* Styling for the tags in the labels of the dropdowns */
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
-.description{
-    font-size: 75%;
+/*********************** Section for PlotVar Dropdown **********************/
+.description {
+  font-size: 75%;
+  margin-top: 0.5em;
 }
-.tag{
-    /* box-shadow: rgba(17, 17, 26, 0.144) 0px 1px 0px, rgba(17, 17, 26, 0.185) 0px 0px 8px; */
-    /* border: 0.7px rgba(17, 17, 26, 0.651); */
-    border-radius: 10%;
-    margin-right: 0.3em;    
-    padding: 0.3em;
-    border: 2px solid;
-    /* color: rgb(255, 255, 255); */
-    font-size: 90%;
-    /* font-family: 'Roboto'; */
+.tag {
+  border-radius: 10%;
+  margin-right: 0.3em;
+  padding: 0.3em;
+  border: 2px solid;
+  font-size: 90%;
 }
 
-.temp{
-    background-color: rgb(247, 218, 166);
-    border-color: rgb(236, 141, 52);
-    color: rgb(218, 108, 6);
+.temp {
+  background-color: rgb(247, 218, 166);
+  border-color: rgb(236, 141, 52);
+  color: rgb(218, 108, 6);
 }
 
-.precip{
-    background-color: rgb(94, 169, 240);
-    border-color: rgba(22, 129, 201, 0.979);
-    color: rgb(7, 41, 119);
+.precip {
+  background-color: rgb(94, 169, 240);
+  border-color: rgba(22, 129, 201, 0.979);
+  color: rgb(7, 41, 119);
 }
 
-.wind{
-    background-color: rgba(147, 222, 245, 0.979);
-    border-color: rgba(49, 177, 228, 0.979);
-    color: rgba(15, 102, 136, 0.979);
+.wind {
+  background-color: rgba(147, 222, 245, 0.979);
+  border-color: rgba(49, 177, 228, 0.979);
+  color: rgba(15, 102, 136, 0.979);
 }
 
-.other{
-    background-color: rgba(183, 176, 247, 0.952);
-    border-color: rgba(91, 64, 211, 0.938);
-    color: rgba(48, 13, 202, 0.904);
+.other {
+  background-color: rgba(183, 176, 247, 0.952);
+  border-color: rgba(91, 64, 211, 0.938);
+  color: rgba(48, 13, 202, 0.904);
+}
+
+/*********************** Section for Season Dropdown **********************/
+.Winter {
+  background-color: rgba(157, 202, 216, 0.979);
+  border-color: rgba(92, 138, 156, 0.979);
+  color: rgba(15, 102, 136, 0.979);
+}
+
+.Spring {
+  background-color: rgba(247, 195, 242, 0.979);
+  border-color: rgba(243, 109, 243, 0.979);
+  color: rgba(211, 43, 189, 0.979);
+}
+
+.Summer {
+  background-color: rgba(245, 227, 147, 0.979);
+  border-color: rgba(228, 180, 49, 0.979);
+  color: rgba(136, 114, 15, 0.979);
+}
+
+.Autumn {
+  background-color: rgba(245, 147, 180, 0.979);
+  border-color: rgba(230, 85, 97, 0.979);
+  color: rgba(136, 39, 15, 0.979);
 }
