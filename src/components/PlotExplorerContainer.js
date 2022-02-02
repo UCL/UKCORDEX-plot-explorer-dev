@@ -28,7 +28,8 @@ function PlotExplorerRow() {
           To start, select one of each of the following parameters. Your
           graph(s) will be shown when at least one of each parameter has been
           selected. For information on the data, plots or indices, see our help
-          pages. To clear all of your selections, refresh the page.
+          pages. To clear all of your selections, refresh the page. <br></br>
+          Each dropdown can also be searched for options
         </p>
       </Alert>
 
