@@ -49,8 +49,13 @@ function PlotExplorerRow() {
           setRegion={setRegion}
         />
 
-        {/* Conditionally render Download button if at least one plot type has been selected */}
-        {plottypes.length > 0 && (
+        {/* Conditionally render Download button if at least one of each variable is selected */}
+        {plottypes.length +
+          plotvars.length +
+          seasons.length +
+          periods.length +
+          regions.length >=
+          5 && (
           <DownloadButton
           // plotvars={plotvars}
           // seasons={seasons}
