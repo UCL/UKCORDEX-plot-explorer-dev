@@ -1,4 +1,8 @@
 /* Styling for the tags in the labels of the dropdowns */
+/*********************** For dropdown text  *******************************/
+.plotdropdown {
+  font-size: 85%;
+}
 
 /*********************** Section for PlotVar Dropdown **********************/
 .description {
