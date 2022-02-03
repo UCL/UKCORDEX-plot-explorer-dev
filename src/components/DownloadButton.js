@@ -38,11 +38,6 @@ function DownloadButton({ plotvars, seasons, periods, plottypes }) {
   // //   "_" + d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
   // const smallDate = "_";
 
-  // console.log(props);
-  // let periodprops = props.periods;
-  // let varprops = props.plotvars;
-  // let typeprops = props.plottypes;
-  // let seasonprops = props.seasons;
   console.log(
     "look here" +
       plotvars.map((pvar) =>
@@ -77,7 +72,12 @@ function DownloadButton({ plotvars, seasons, periods, plottypes }) {
       )
   );
 
+  const downloadzip = (imglist) => {
+    console.log(imglist);
+  };
+
   const handleClick = () => {
+    let imglist = [];
     plotvars.map((pvar) =>
       seasons.map((season) =>
         periods.map((period) =>
@@ -94,22 +94,13 @@ function DownloadButton({ plotvars, seasons, periods, plottypes }) {
               "_" +
               period.value +
               ".png";
-            let pathend =
-              ptype.value +
-              "_" +
-              pvar.value +
-              "_" +
-              season.value +
-              "_" +
-              period.value;
-            return saveAs(
-              `${process.env.PUBLIC_URL}` + path,
-              pathend + "test1"
-            );
+            return imglist.push(path);
           })
         )
       )
     );
+    // call zip function here
+    return downloadzip(imglist);
   };
   // process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png
 
