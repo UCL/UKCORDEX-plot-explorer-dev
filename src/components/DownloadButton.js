@@ -77,6 +77,40 @@ function DownloadButton({ plotvars, seasons, periods, plottypes }) {
       )
   );
 
+  const handleClick = () => {
+    plotvars.map((pvar) =>
+      seasons.map((season) =>
+        periods.map((period) =>
+          plottypes.map((ptype) => {
+            let path =
+              "/images/" +
+              pvar.value +
+              "/" +
+              ptype.value +
+              "_" +
+              pvar.value +
+              "_" +
+              season.value +
+              "_" +
+              period.value +
+              ".png";
+            let pathend =
+              ptype.value +
+              "_" +
+              pvar.value +
+              "_" +
+              season.value +
+              "_" +
+              period.value;
+            return saveAs(
+              `${process.env.PUBLIC_URL}` + path,
+              pathend + "test1"
+            );
+          })
+        )
+      )
+    );
+  };
   // process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png
 
   // each category creates an array under props, so props.periods, props.plorvars, etc.
@@ -88,8 +122,8 @@ function DownloadButton({ plotvars, seasons, periods, plottypes }) {
       style={{ background: "#6610f2", border: "none" }}
       size="med"
       className="downloadbtn"
-      download="UKCORDEXimage">
-      {/* onClick{saveAs(props.periods)} */}
+      download="UKCORDEXimage"
+      onClick={handleClick}>
       Save Plots
     </Button>
   );
