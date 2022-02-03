@@ -1,8 +1,14 @@
 // Information to populate the Indices Help page
 
-export const IndicesInfo = {
-  name: "Indices Help Page Information",
+export const IndicesInfoHead = {
+  title: "Information about Indices",
   intro:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  contents: "information goes here",
 };
+
+export const IndicesInfoContents = [
+  {
+    index: "index name",
+    description: "description here",
+  },
+];
