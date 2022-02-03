@@ -7,7 +7,7 @@ import "./DownloadButton.css";
 import JSZip from "jszip";
 import JSZipUtils from "jszip-utils";
 
-function DownloadButton({ plotvars, seasons, periods, plottypes }) {
+function DownloadButton({ plotvars, seasons, periods, plottypes, regions }) {
   // zip multiple images
   const downloadzip = (imglist) => {
     var zip = new JSZip();
@@ -39,23 +39,26 @@ function DownloadButton({ plotvars, seasons, periods, plottypes }) {
     plotvars.map((pvar) =>
       seasons.map((season) =>
         periods.map((period) =>
-          plottypes.map((ptype) => {
-            // TODO: when adding data download functionality, this is the section to
-            // change the beginning of the path
-            let path =
-              "/images/" +
-              pvar.value +
-              "/" +
-              ptype.value +
-              "_" +
-              pvar.value +
-              "_" +
-              season.value +
-              "_" +
-              period.value +
-              ".png";
-            return imglist.push(`${process.env.PUBLIC_URL}` + path);
-          })
+          plottypes.map((ptype) =>
+            // TODO: add region
+            regions.map((region) => {
+              // TODO: when adding data download functionality, this is the section to
+              // change the beginning of the path
+              let path =
+                "/images/" +
+                pvar.value +
+                "/" +
+                ptype.value +
+                "_" +
+                pvar.value +
+                "_" +
+                season.value +
+                "_" +
+                period.value +
+                ".png";
+              return imglist.push(`${process.env.PUBLIC_URL}` + path);
+            })
+          )
         )
       )
     );
