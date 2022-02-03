@@ -31,6 +31,7 @@ function DownloadButton({ plotvars, seasons, periods, plottypes, regions }) {
           });
         }
       });
+      return console.log("this needed a return");
     });
   };
   // Handles what happens when save plot button is clicked
@@ -39,26 +40,25 @@ function DownloadButton({ plotvars, seasons, periods, plottypes, regions }) {
     plotvars.map((pvar) =>
       seasons.map((season) =>
         periods.map((period) =>
-          plottypes.map((ptype) =>
+          plottypes.map((ptype) => {
             // TODO: add region
-            regions.map((region) => {
-              // TODO: when adding data download functionality, this is the section to
-              // change the beginning of the path
-              let path =
-                "/images/" +
-                pvar.value +
-                "/" +
-                ptype.value +
-                "_" +
-                pvar.value +
-                "_" +
-                season.value +
-                "_" +
-                period.value +
-                ".png";
-              return imglist.push(`${process.env.PUBLIC_URL}` + path);
-            })
-          )
+            // regions.map((region) => {
+            // TODO: when adding data download functionality, this is the section to
+            // change the beginning of the path
+            let path =
+              "/images/" +
+              pvar.value +
+              "/" +
+              ptype.value +
+              "_" +
+              pvar.value +
+              "_" +
+              season.value +
+              "_" +
+              period.value +
+              ".png";
+            return imglist.push(`${process.env.PUBLIC_URL}` + path);
+          })
         )
       )
     );
