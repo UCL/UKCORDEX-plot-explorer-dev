@@ -32,12 +32,13 @@ function PlotExplorerRow() {
       </Alert>
 
       <PlotContext.Provider
-        value={
-          ({ plotvars, setPlotvars },
+        // key={plotvars}
+        value={[
+          { plotvars, setPlotvars },
           { seasons, setSeasons },
           { periods, setPeriods },
-          { plottypes, setPlottypes })
-        }>
+          { plottypes, setPlottypes },
+        ]}>
         <OptionsRow
           setPlotvars={setPlotvars}
           setSeasons={setSeasons}
@@ -48,10 +49,10 @@ function PlotExplorerRow() {
         {/* Conditionally render Download button if at least one plot type has been selected */}
         {plottypes.length > 0 && (
           <DownloadButton
-          // plotvars={plotvars}
-          // seasons={seasons}
-          // periods={periods}
-          // plottypes={plottypes}
+            plotvars={plotvars}
+            seasons={seasons}
+            periods={periods}
+            plottypes={plottypes}
           />
         )}
 

@@ -1,13 +1,14 @@
 // Download button for individual plots
+import { saveAs } from "file-saver";
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
 
 // import JSZip from "jszip";
 
-import Nesting from "./ImageSaving";
+// import Nesting from "./ImageSaving";
 
-function DownloadButton() {
+function DownloadButton(props) {
   // For multiple downloads
   //   var zip = new JSZip();
   //   var count = 0;
@@ -31,6 +32,55 @@ function DownloadButton() {
   //     });
   //   });
 
+  // date to be added to file saved
+  // let d = new Date();
+  // // const NoTimeDate =
+  // //   "_" + d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+  // const smallDate = "_";
+
+  console.log(props);
+  let periodprops = props.periods;
+  let varprops = props.plotvars;
+  let typeprops = props.plottypes;
+  let seasonprops = props.seasons;
+  console.log(
+    "look here" +
+      varprops.map((pvar) =>
+        seasonprops.map((season) =>
+          periodprops.map((period) =>
+            typeprops.map((ptype) => {
+              let path =
+                "/images/" +
+                pvar.value +
+                "/" +
+                ptype.value +
+                "_" +
+                pvar.value +
+                "_" +
+                season.value +
+                "_" +
+                period.value +
+                ".png";
+              let pathend =
+                ptype.value +
+                "_" +
+                pvar.value +
+                "_" +
+                season.value +
+                "_" +
+                period.value;
+              // return pvar.value + season.value + period.value + ptype.value;
+              return `${process.env.PUBLIC_URL}` + path + pathend + "test1";
+            })
+          )
+        )
+      )
+  );
+
+  // process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png
+
+  // each category creates an array under props, so props.periods, props.plorvars, etc.
+
   return (
     // button with direct styling for bootstrap compatibility
     <Button
@@ -38,8 +88,8 @@ function DownloadButton() {
       style={{ background: "#6610f2", border: "none" }}
       size="med"
       className="downloadbtn"
-      onClick={Nesting}
       download="UKCORDEXimage">
+      {/* onClick{saveAs(props.periods)} */}
       Save Plots
     </Button>
   );
