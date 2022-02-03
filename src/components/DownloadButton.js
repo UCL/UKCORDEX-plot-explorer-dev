@@ -8,7 +8,7 @@ import "./DownloadButton.css";
 
 // import Nesting from "./ImageSaving";
 
-function DownloadButton(props) {
+function DownloadButton({ plotvars, seasons, periods, plottypes }) {
   // For multiple downloads
   //   var zip = new JSZip();
   //   var count = 0;
@@ -38,17 +38,17 @@ function DownloadButton(props) {
   // //   "_" + d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
   // const smallDate = "_";
 
-  console.log(props);
-  let periodprops = props.periods;
-  let varprops = props.plotvars;
-  let typeprops = props.plottypes;
-  let seasonprops = props.seasons;
+  // console.log(props);
+  // let periodprops = props.periods;
+  // let varprops = props.plotvars;
+  // let typeprops = props.plottypes;
+  // let seasonprops = props.seasons;
   console.log(
     "look here" +
-      varprops.map((pvar) =>
-        seasonprops.map((season) =>
-          periodprops.map((period) =>
-            typeprops.map((ptype) => {
+      plotvars.map((pvar) =>
+        seasons.map((season) =>
+          periods.map((period) =>
+            plottypes.map((ptype) => {
               let path =
                 "/images/" +
                 pvar.value +
