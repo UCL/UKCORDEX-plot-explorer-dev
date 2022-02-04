@@ -34,7 +34,6 @@ function PlotExplorerRow() {
       </Alert>
 
       <PlotContext.Provider
-        // key={plotvars}
         value={[
           { plotvars, setPlotvars },
           { seasons, setSeasons },
