@@ -34,12 +34,12 @@ function PlotExplorerRow() {
       </Alert>
 
       <PlotContext.Provider
-        value={
-          ({ plotvars, setPlotvars },
+        value={[
+          { plotvars, setPlotvars },
           { seasons, setSeasons },
           { periods, setPeriods },
           { plottypes, setPlottypes },
-          { regions, setRegion })
+          { regions, setRegion }]
         }>
         <OptionsRow
           setPlotvars={setPlotvars}
@@ -57,10 +57,10 @@ function PlotExplorerRow() {
           regions.length >=
           5 && (
           <DownloadButton
-          // plotvars={plotvars}
-          // seasons={seasons}
-          // periods={periods}
-          // plottypes={plottypes}
+            plotvars={plotvars}
+            seasons={seasons}
+            periods={periods}
+            plottypes={plottypes}
           />
         )}
 
