@@ -14,7 +14,7 @@ function PlotExplorerRow() {
   FigureRow.
   */
 
-  // Handles state for the 4 different choice types the user has to make
+  // Handles state for the different choice types the user has to make
   const [plotvars, setPlotvars] = useState([]);
   const [seasons, setSeasons] = useState([]);
   const [periods, setPeriods] = useState([]);
@@ -33,45 +33,36 @@ function PlotExplorerRow() {
         </p>
       </Alert>
 
-      <PlotContext.Provider
-        value={[
-          { plotvars, setPlotvars },
-          { seasons, setSeasons },
-          { periods, setPeriods },
-          { plottypes, setPlottypes },
-          { regions, setRegion }]
-        }>
-        <OptionsRow
-          setPlotvars={setPlotvars}
-          setSeasons={setSeasons}
-          setPeriods={setPeriods}
-          setPlottypes={setPlottypes}
-          setRegion={setRegion}
-        />
+      <OptionsRow
+        setPlotvars={setPlotvars}
+        setSeasons={setSeasons}
+        setPeriods={setPeriods}
+        setPlottypes={setPlottypes}
+        setRegion={setRegion}
+      />
 
-        {/* Conditionally render Download button if at least one of each variable is selected */}
-        {plottypes.length +
-          plotvars.length +
-          seasons.length +
-          periods.length +
-          regions.length >=
-          5 && (
-          <DownloadButton
-            plotvars={plotvars}
-            seasons={seasons}
-            periods={periods}
-            plottypes={plottypes}
-          />
-        )}
-
-        <FigureRow
+      {/* Conditionally render Download button if at least one of each variable is selected */}
+      {plottypes.length +
+        plotvars.length +
+        seasons.length +
+        periods.length +
+        regions.length >=
+        5 && (
+        <DownloadButton
           plotvars={plotvars}
           seasons={seasons}
           periods={periods}
           plottypes={plottypes}
-          setRegion={setRegion}
         />
-      </PlotContext.Provider>
+      )}
+
+      <FigureRow
+        plotvars={plotvars}
+        seasons={seasons}
+        periods={periods}
+        plottypes={plottypes}
+        setRegion={setRegion}
+      />
     </Container>
   );
 }
