@@ -7,7 +7,7 @@ import "./DownloadButton.css";
 import JSZip from "jszip";
 import JSZipUtils from "jszip-utils";
 
-function DownloadPlotsButton({
+export default function DownloadDataButton({
   plotvars,
   seasons,
   periods,
@@ -15,11 +15,11 @@ function DownloadPlotsButton({
   regions,
 }) {
   // zip multiple images
-  const downloadzip = (imglist) => {
+  const downloadzip = (datalist) => {
     var zip = new JSZip();
     var count = 0;
-    var zipFilename = "UKCORDEX-plots.zip";
-    var urls = imglist;
+    var zipFilename = "UKCORDEX-data.zip";
+    var urls = datalist;
 
     urls.map((url) => {
       // get the right basename for each image
@@ -42,7 +42,7 @@ function DownloadPlotsButton({
   };
   // Handles what happens when save plot button is clicked
   const handleClick = () => {
-    let imglist = [];
+    let datalist = [];
     plotvars.map((pvar) =>
       seasons.map((season) =>
         periods.map((period) =>
@@ -52,7 +52,7 @@ function DownloadPlotsButton({
             // TODO: when adding data download functionality, this is the section to
             // change the beginning of the path
             let path =
-              "/images/" +
+              "/data/" +
               pvar.value +
               "/" +
               ptype.value +
@@ -61,29 +61,26 @@ function DownloadPlotsButton({
               "_" +
               season.value +
               "_" +
-              period.value +
-              ".png";
-            return imglist.push(`${process.env.PUBLIC_URL}` + path);
+              period.value;
+            return datalist.push(`${process.env.PUBLIC_URL}` + path);
           })
         )
       )
     );
     // call zip function here
-    return downloadzip(imglist);
+    return downloadzip(datalist);
   };
 
   return (
     // button with direct styling for bootstrap compatibility
     <Button
       variant="primary"
-      style={{ background: "#6610f2", border: "none" }}
+      style={{ background: "#9560eb", border: "none" }}
       size="med"
       className="downloadbtn"
-      download="UKCORDEXimage"
+      download="UKCORDEXdata"
       onClick={handleClick}>
-      Save Plots
+      Save Data
     </Button>
   );
 }
-
-export default DownloadPlotsButton;

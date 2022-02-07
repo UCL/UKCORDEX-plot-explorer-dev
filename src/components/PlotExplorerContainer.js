@@ -1,10 +1,11 @@
 import React, { useState, createContext } from "react";
 import Container from "react-bootstrap/Container";
 import { Alert } from "react-bootstrap";
-import DownloadButton from "./DownloadButton";
+import DownloadPlotsButton from "./DownloadButton";
 import FigureRow from "./FigureRow";
 import OptionsRow from "./OptionsRow";
 import "./PlotExplorerContainer.css";
+import DownloadDataButton from "./DownloadDataButton";
 
 export const PlotContext = createContext();
 
@@ -40,7 +41,6 @@ function PlotExplorerRow() {
         setPlottypes={setPlottypes}
         setRegion={setRegion}
       />
-
       {/* Conditionally render Download button if at least one of each variable is selected */}
       {plottypes.length +
         plotvars.length +
@@ -48,7 +48,21 @@ function PlotExplorerRow() {
         periods.length +
         regions.length >=
         5 && (
-        <DownloadButton
+        <DownloadPlotsButton
+          plotvars={plotvars}
+          seasons={seasons}
+          periods={periods}
+          plottypes={plottypes}
+        />
+      )}
+      {/* Conditionally render Download button if at least one of each variable is selected */}
+      {plottypes.length +
+        plotvars.length +
+        seasons.length +
+        periods.length +
+        regions.length >=
+        5 && (
+        <DownloadDataButton
           plotvars={plotvars}
           seasons={seasons}
           periods={periods}
