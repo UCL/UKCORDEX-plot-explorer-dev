@@ -47,35 +47,33 @@ function PlotExplorerRow() {
           <Stack gap={1}>
             <Container>
               {/* Conditionally render Download button if at least one of each variable is selected */}
-              {plottypes.length +
-                plotvars.length +
-                seasons.length +
-                periods.length +
-                regions.length >=
-                5 && (
-                <DownloadPlotsButton
-                  plotvars={plotvars}
-                  seasons={seasons}
-                  periods={periods}
-                  plottypes={plottypes}
-                />
-              )}
+              {plottypes.length >= 1 &&
+                plotvars.length >= 1 &&
+                seasons.length >= 1 &&
+                periods.length >= 1 &&
+                regions.length >= 1 && (
+                  <DownloadPlotsButton
+                    plotvars={plotvars}
+                    seasons={seasons}
+                    periods={periods}
+                    plottypes={plottypes}
+                  />
+                )}
             </Container>
             <Container>
               {/* Conditionally render Download button if at least one of each variable is selected */}
-              {plottypes.length +
-                plotvars.length +
-                seasons.length +
-                periods.length +
-                regions.length >=
-                5 && (
-                <DownloadDataButton
-                  plotvars={plotvars}
-                  seasons={seasons}
-                  periods={periods}
-                  plottypes={plottypes}
-                />
-              )}
+              {plottypes.length >= 1 &&
+                plotvars.length >= 1 &&
+                seasons.length >= 1 &&
+                periods.length >= 1 &&
+                regions.length >= 1 && (
+                  <DownloadDataButton
+                    plotvars={plotvars}
+                    seasons={seasons}
+                    periods={periods}
+                    plottypes={plottypes}
+                  />
+                )}
             </Container>
           </Stack>
         </Col>
