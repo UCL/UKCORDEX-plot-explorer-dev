@@ -18,6 +18,7 @@ function PlotHelp() {
         <div key={plot}>
           <h5>{plot}</h5>
           <p>{description}</p>
+          <br></br>
         </div>
       ))}
     </Container>

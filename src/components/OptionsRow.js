@@ -21,10 +21,10 @@ const formatPlotvarLabel = ({ value, label, tag }) => (
 );
 
 // Styling Season Dropdown
-const formatSeasonLabel = ({ label, extra }) => (
+const formatSeasonLabel = ({ label, value }) => (
   <div style={{ display: "flex" }}>
-    <div className={`tag  ${label}`}>{label}</div>
-    <div className="description">{extra}</div>
+    <div className={`tag  ${label}`}>{value}</div>
+    <div className="description">{label}</div>
   </div>
 );
 
@@ -42,6 +42,30 @@ function OptionsRow({
   return (
     <Container fluid>
       <Row className="pt-4 opt-row">
+        {/* Plot variables dropdown */}
+        <Col sm={3} xs={5}>
+          <Select
+            options={plotvarOptionsContents}
+            formatOptionLabel={formatPlotvarLabel}
+            classNamePrefix={plotvarOptionsContents}
+            onChange={setPlotvars}
+            placeholder="Select variable"
+            isClearable={false}
+            isMulti
+            className="plotdropdown"
+          />
+        </Col>
+        {/* Plot types dropdown */}
+        <Col sm={2} xs={5}>
+          <Select
+            options={plottypeOptionsContents}
+            onChange={setPlottypes}
+            placeholder="Select plot type"
+            isClearable={false}
+            isMulti
+            className="plotdropdown"
+          />
+        </Col>
         {/* Spatial aggregation dropdown */}
         <Col sm={3} xs={5}>
           <Select
@@ -71,30 +95,6 @@ function OptionsRow({
             options={periodOptionsContents}
             onChange={setPeriods}
             placeholder="Select period"
-            isClearable={false}
-            isMulti
-            className="plotdropdown"
-          />
-        </Col>
-        {/* Plot variables dropdown */}
-        <Col sm={3} xs={5}>
-          <Select
-            options={plotvarOptionsContents}
-            formatOptionLabel={formatPlotvarLabel}
-            classNamePrefix={plotvarOptionsContents}
-            onChange={setPlotvars}
-            placeholder="Select variable"
-            isClearable={false}
-            isMulti
-            className="plotdropdown"
-          />
-        </Col>
-        {/* Plot types dropdown */}
-        <Col sm={2} xs={5}>
-          <Select
-            options={plottypeOptionsContents}
-            onChange={setPlottypes}
-            placeholder="Select plot type"
             isClearable={false}
             isMulti
             className="plotdropdown"
