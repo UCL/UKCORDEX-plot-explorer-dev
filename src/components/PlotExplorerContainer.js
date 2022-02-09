@@ -1,10 +1,12 @@
 import React, { useState, createContext } from "react";
 import Container from "react-bootstrap/Container";
-import { Alert } from "react-bootstrap";
-import DownloadButton from "./DownloadButton";
+import { Alert, Row, Col } from "react-bootstrap";
+import Stack from "react-bootstrap/Stack";
+import DownloadPlotsButton from "./DownloadButton";
 import FigureRow from "./FigureRow";
 import OptionsRow from "./OptionsRow";
 import "./PlotExplorerContainer.css";
+import DownloadDataButton from "./DownloadDataButton";
 
 export const PlotContext = createContext();
 
@@ -40,29 +42,51 @@ function PlotExplorerRow() {
         setPlottypes={setPlottypes}
         setRegion={setRegion}
       />
-
-      {/* Conditionally render Download button if at least one of each variable is selected */}
-      {plottypes.length +
-        plotvars.length +
-        seasons.length +
-        periods.length +
-        regions.length >=
-        5 && (
-        <DownloadButton
-          plotvars={plotvars}
-          seasons={seasons}
-          periods={periods}
-          plottypes={plottypes}
-        />
-      )}
-
-      <FigureRow
-        plotvars={plotvars}
-        seasons={seasons}
-        periods={periods}
-        plottypes={plottypes}
-        setRegion={setRegion}
-      />
+      <Row>
+        <Col xs={2} className="ml-3 position-fixed">
+          <Stack gap={1}>
+            <Container>
+              {/* Conditionally render Download button if at least one of each variable is selected */}
+              {plottypes.length >= 1 &&
+                plotvars.length >= 1 &&
+                seasons.length >= 1 &&
+                periods.length >= 1 &&
+                regions.length >= 1 && (
+                  <DownloadPlotsButton
+                    plotvars={plotvars}
+                    seasons={seasons}
+                    periods={periods}
+                    plottypes={plottypes}
+                  />
+                )}
+            </Container>
+            <Container>
+              {/* Conditionally render Download button if at least one of each variable is selected */}
+              {plottypes.length >= 1 &&
+                plotvars.length >= 1 &&
+                seasons.length >= 1 &&
+                periods.length >= 1 &&
+                regions.length >= 1 && (
+                  <DownloadDataButton
+                    plotvars={plotvars}
+                    seasons={seasons}
+                    periods={periods}
+                    plottypes={plottypes}
+                  />
+                )}
+            </Container>
+          </Stack>
+        </Col>
+        <Col lg={{ span: 14, offset: 1 }} md={{ span: 14, offset: 1 }}>
+          <FigureRow
+            plotvars={plotvars}
+            seasons={seasons}
+            periods={periods}
+            plottypes={plottypes}
+            setRegion={setRegion}
+          />
+        </Col>
+      </Row>
     </Container>
   );
 }
