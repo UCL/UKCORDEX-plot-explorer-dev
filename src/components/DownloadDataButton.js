@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
 import downloadzip from "./ZipFiles";
+import FileCheck from "./FileCheck";
 
 export default function DownloadDataButton({
   plotvars,
@@ -13,31 +14,9 @@ export default function DownloadDataButton({
 }) {
   // Handles what happens when save plot button is clicked
   const handleClick = () => {
-    let datalist = [];
-    plotvars.map((pvar) =>
-      seasons.map((season) =>
-        periods.map((period) =>
-          plottypes.map((ptype) => {
-            // TODO: add region
-            // regions.map((region) => {
-            // TODO: when adding data download functionality, this is the section to
-            // change the beginning of the path
-            let path =
-              "/data/" +
-              pvar.value +
-              "/" +
-              ptype.value +
-              "_" +
-              pvar.value +
-              "_" +
-              season.value +
-              "_" +
-              period.value;
-            return datalist.push(`${process.env.PUBLIC_URL}` + path);
-          })
-        )
-      )
-    );
+    const datalist = FileCheck({ plotvars, seasons, periods, plottypes }, "nc");
+    let downloadlist = datalist[0];
+
     // call zip function here
     return downloadzip(datalist, "data");
   };
