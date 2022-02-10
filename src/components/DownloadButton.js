@@ -1,11 +1,9 @@
 // Download button for individual plots
-import { saveAs } from "file-saver";
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
-
-import JSZip from "jszip";
-import JSZipUtils from "jszip-utils";
+import FileCheck from "./FileCheck";
+import downloadzip from "./ZipFiles";
 
 function DownloadPlotsButton({
   plotvars,
@@ -14,35 +12,12 @@ function DownloadPlotsButton({
   plottypes,
   regions,
 }) {
-  // zip multiple images
-  const downloadzip = (imglist) => {
-    var zip = new JSZip();
-    var count = 0;
-    var zipFilename = "UKCORDEX-plots.zip";
-    var urls = imglist;
-
-    urls.map((url) => {
-      // get the right basename for each image
-      var filename = url.slice(url.lastIndexOf("/") + 1);
-      // loading a file and add it in a zip file
-      JSZipUtils.getBinaryContent(url, function (err, data) {
-        if (err) {
-          throw err; // or handle the error
-        }
-        zip.file(filename, data, { binary: true });
-        count++;
-        if (count === urls.length) {
-          zip.generateAsync({ type: "blob" }).then(function (content) {
-            saveAs(content, zipFilename);
-          });
-        }
-      });
-      return console.log("this needed a return");
-    });
-  };
   // Handles what happens when save plot button is clicked
   const handleClick = () => {
+    FileCheck();
+
     let imglist = [];
+    let warnings = [];
     plotvars.map((pvar) =>
       seasons.map((season) =>
         periods.map((period) =>
@@ -52,6 +27,7 @@ function DownloadPlotsButton({
             // TODO: when adding data download functionality, this is the section to
             // change the beginning of the path
             let path =
+              `${process.env.PUBLIC_URL}` +
               "/images/" +
               pvar.value +
               "/" +
@@ -63,13 +39,22 @@ function DownloadPlotsButton({
               "_" +
               period.value +
               ".png";
-            return imglist.push(`${process.env.PUBLIC_URL}` + path);
+
+            return [
+              imglist.push(path),
+              warnings.push([
+                pvar.label,
+                ptype.label,
+                season.label,
+                period.label,
+              ]),
+            ];
           })
         )
       )
     );
     // call zip function here
-    return downloadzip(imglist);
+    return downloadzip(imglist, "plots");
   };
 
   return (
