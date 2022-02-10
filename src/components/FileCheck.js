@@ -35,8 +35,6 @@ export default function FileCheck(
             period.value +
             "." +
             ext;
-          //   let filename =
-          //     "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main/images/fwd/eval-Taylor_fwd_DJF_19890101-20081231.png";
 
           console.log(path);
 
@@ -57,10 +55,10 @@ export default function FileCheck(
                 period.label,
               ]);
             });
-          console.log("image list: ", imglist, "warnings: ", warnings);
-          return [imglist, warnings];
         })
       )
     )
   );
+
+  return [imglist, warnings];
 }

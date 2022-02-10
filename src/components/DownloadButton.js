@@ -14,8 +14,11 @@ function DownloadPlotsButton({
 }) {
   // Handles what happens when save plot button is clicked
   const handleClick = () => {
-    const imglist = FileCheck({ plotvars, seasons, periods, plottypes }, "png");
-    let downloadlist = imglist[0];
+    const [imglist, warnings] = FileCheck(
+      { plotvars, seasons, periods, plottypes },
+      "png"
+    );
+    console.log("image list: ", imglist, "warnings: ", warnings);
 
     // call zip function here
     return downloadzip(imglist, "plots");
