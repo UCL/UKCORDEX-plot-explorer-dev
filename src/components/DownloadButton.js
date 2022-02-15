@@ -12,16 +12,19 @@ function DownloadPlotsButton({
   plottypes,
   regions,
 }) {
-  // Handles what happens when save plot button is clicked
-  const handleClick = () => {
-    const [imglist, warnings] = FileCheck(
+  const handlePlotDownload = async () => {
+    console.log(plotvars);
+
+    const images = await FileCheck(
       { plotvars, seasons, periods, plottypes },
       "png"
     );
-    console.log("image list: ", imglist, "warnings: ", warnings);
+    //console.log("image list: ", imglist, "warnings: ", warnings);
+
+    console.log(images);
 
     // call zip function here
-    return downloadzip(imglist, "plots");
+    return downloadzip(images, "plots");
   };
 
   return (
@@ -32,7 +35,7 @@ function DownloadPlotsButton({
       size="med"
       className="downloadbtn"
       download="UKCORDEXimage"
-      onClick={handleClick}>
+      onClick={handlePlotDownload}>
       Save Plots
     </Button>
   );
