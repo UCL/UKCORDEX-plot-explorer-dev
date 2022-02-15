@@ -43,7 +43,7 @@ function PlotExplorerRow() {
         setRegion={setRegion}
       />
       <Row>
-        <Col xs={2} className="ml-3 position-fixed">
+        <Col xs={2} className="ml-2 position-sticky">
           <Stack gap={1}>
             <Container>
               {/* Conditionally render Download button if at least one of each variable is selected */}
@@ -77,7 +77,7 @@ function PlotExplorerRow() {
             </Container>
           </Stack>
         </Col>
-        <Col lg={{ span: 14, offset: 1 }} md={{ span: 14, offset: 1 }}>
+        <Col>
           <FigureRow
             plotvars={plotvars}
             seasons={seasons}
