@@ -19,16 +19,13 @@ function DownloadPlotsButton({
       { plotvars, seasons, periods, plottypes },
       "png"
     );
-    //console.log("image list: ", imglist, "warnings: ", warnings);
-
-    console.log(images);
 
     // call zip function here
     return downloadzip(images, "plots");
   };
 
   return (
-    // button with direct styling for bootstrap compatibility
+    // button with direct styling to overwrite bootstrap
     <Button
       variant="primary"
       style={{ background: "#6610f2", border: "none" }}

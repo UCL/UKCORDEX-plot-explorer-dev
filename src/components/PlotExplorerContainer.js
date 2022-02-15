@@ -2,7 +2,7 @@ import React, { useState, createContext } from "react";
 import Container from "react-bootstrap/Container";
 import { Alert, Row, Col } from "react-bootstrap";
 import Stack from "react-bootstrap/Stack";
-import DownloadPlotsButton from "./DownloadButton";
+import DownloadPlotsButton from "./DownloadPlotsButton";
 import FigureRow from "./FigureRow";
 import OptionsRow from "./OptionsRow";
 import "./PlotExplorerContainer.css";
@@ -10,7 +10,7 @@ import DownloadDataButton from "./DownloadDataButton";
 
 export const PlotContext = createContext();
 
-function PlotExplorerRow() {
+function PlotExplorerContainer() {
   /* This is the entry point to the main page. It handles state passing from
   user selected choices in OptionsRow to the array of plots displayed by
   FigureRow.
@@ -90,4 +90,4 @@ function PlotExplorerRow() {
     </Container>
   );
 }
-export default PlotExplorerRow;
+export default PlotExplorerContainer;

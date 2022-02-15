@@ -12,24 +12,27 @@ export default function DownloadDataButton({
   plottypes,
   regions,
 }) {
-  // Handles what happens when save plot button is clicked
-  const handleClick = () => {
-    const datalist = FileCheck({ plotvars, seasons, periods, plottypes }, "nc");
-    let downloadlist = datalist[0];
+  const handleDataDownload = async () => {
+    console.log(plotvars);
+
+    const files = await FileCheck(
+      { plotvars, seasons, periods, plottypes },
+      "nc"
+    );
 
     // call zip function here
-    return downloadzip(datalist, "data");
+    return downloadzip(files, "datafiles");
   };
 
   return (
-    // button with direct styling for bootstrap compatibility
+    // button with direct styling to override bootstrap
     <Button
       variant="primary"
       style={{ background: "#9560eb", border: "none" }}
       size="med"
       className="downloadbtn"
       download="UKCORDEXdata"
-      onClick={handleClick}>
+      onClick={handleDataDownload}>
       Save Data
     </Button>
   );
