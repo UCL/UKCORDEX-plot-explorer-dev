@@ -12,7 +12,6 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
   drowdowns. It will also automatically delete images as user deselects a
   choice.
 */
-  // TODO: this function should call filecheck? no, plot explorer first
 
   // Don't try to show a plot until the user has selected at least one value of
   // each dropdown

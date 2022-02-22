@@ -1,18 +1,10 @@
 // Download button for individual plots
 import React from "react";
-import { Alert, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
-import FileCheck from "./FileCheck";
 import downloadzip from "./ZipFiles";
 
-function DownloadPlotsButton({
-  plotvars,
-  seasons,
-  periods,
-  plottypes,
-  regions,
-  images,
-}) {
+function DownloadPlotsButton({ images }) {
   const handlePlotDownload = () => {
     // call zip function here
     return downloadzip(images, "plots");

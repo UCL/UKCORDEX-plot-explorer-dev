@@ -27,48 +27,32 @@ function PlotExplorerContainer() {
   const [plottypes, setPlottypes] = useState([]);
   const [regions, setRegion] = useState([]);
   const [images, setImages] = useState([]);
-  // const [datafiles, setDataFiles] = useState([]);
+  const [datafiles, setDataFiles] = useState([]);
   // const [warnings, setWarnings] = useState([]);
 
   // check files as selections are chosen
-
   useEffect(() => {
     let active = true;
     load();
     return () => {
       active = false;
     };
-
     async function load() {
       const images = await FileCheck(
         { plotvars, seasons, periods, plottypes },
         "png"
       );
+      const datafiles = await FileCheck(
+        { plotvars, seasons, periods, plottypes },
+        "nc"
+      );
       if (!active) {
         return;
       }
       setImages(images);
+      setDataFiles(datafiles);
     }
   }, [plotvars, seasons, periods, plottypes]);
-
-  // async function getValidImages() {
-  //   const vi = await FileCheck(
-  //     { plotvars, seasons, periods, plottypes },
-  //     "png"
-  //   );
-  //   event.setImages(vi);
-  //   console.log(typeof images);
-  //   console.log("valid images has run ", images);
-  // }
-
-  // function setValid({ setImages }) {
-  //   async function getValidImages(event) {
-  //     await event.FileCheck({ plotvars, seasons, periods, plottypes }, "png");
-  //     setImages((prevImages) => [images]);
-  //     console.log(typeof images);
-  //     console.log("valid images has run ", images);
-  //   }
-  // }
 
   return (
     <Container fluid>
@@ -99,15 +83,7 @@ function PlotExplorerContainer() {
                 plotvars.length >= 1 &&
                 seasons.length >= 1 &&
                 periods.length >= 1 &&
-                regions.length >= 1 && (
-                  <DownloadPlotsButton
-                    images={images}
-                    plotvars={plotvars}
-                    seasons={seasons}
-                    periods={periods}
-                    plottypes={plottypes}
-                  />
-                )}
+                regions.length >= 1 && <DownloadPlotsButton images={images} />}
             </Container>
             <Container>
               {/* Conditionally render Download button if at least one of each variable is selected */}
@@ -116,13 +92,7 @@ function PlotExplorerContainer() {
                 seasons.length >= 1 &&
                 periods.length >= 1 &&
                 regions.length >= 1 && (
-                  <DownloadDataButton
-                    // datafiles={datafiles}
-                    plotvars={plotvars}
-                    seasons={seasons}
-                    periods={periods}
-                    plottypes={plottypes}
-                  />
+                  <DownloadDataButton datafiles={datafiles} />
                 )}
             </Container>
           </Stack>
