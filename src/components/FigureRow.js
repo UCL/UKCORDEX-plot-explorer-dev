@@ -4,7 +4,7 @@ import Figure from "react-bootstrap/Figure";
 import { Container, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 
-function FigureRow({ plotvars, seasons, periods, plottypes }) {
+function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
   /*
   This displays the plots after checking the options chosen by the user.
   It will display something as soon as there's a choice made for each of the 4
@@ -22,38 +22,32 @@ function FigureRow({ plotvars, seasons, periods, plottypes }) {
     // TODO: check with research team this is the best way to proceed.
     return (
       <>
-        {plotvars.map((plotvar) =>
-          seasons.map((season) =>
-            periods.map((period) =>
-              plottypes.map((plottype) => (
-                <Container>
-                  <Card className="mb-4">
-                    <Figure>
-                      <Figure.Caption>
-                        {`${plotvar.label}/${plottype.label}_${plotvar.label}_${season.label}_${period.label}`}
-                      </Figure.Caption>
-                      <Image
-                        fluid="true"
-                        // width="100%"
-                        alt={
-                          plottype.label +
-                          " not found for '" +
-                          plotvar.label +
-                          "' on season '" +
-                          season.label +
-                          "' and period '" +
-                          period.label +
-                          "'."
-                        }
-                        src={`${process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png`}
-                      />
-                    </Figure>
-                  </Card>
-                </Container>
-              ))
-            )
-          )
-        )}
+        {images.map((plot) => (
+          <Container>
+            <Card className="mb-4">
+              <Figure>
+                <Figure.Caption>
+                  {`${plotvars.label}/${plottypes.label}_${plotvars.label}_${seasons.label}_${periods.label}`}
+                </Figure.Caption>
+                <Image
+                  fluid="true"
+                  // width="100%"
+                  alt={
+                    plottypes.label +
+                    " not found for '" +
+                    plotvars.label +
+                    "' on season '" +
+                    seasons.label +
+                    "' and period '" +
+                    periods.label +
+                    "'."
+                  }
+                  src={plot}
+                />
+              </Figure>
+            </Card>
+          </Container>
+        ))}
       </>
     );
   }
