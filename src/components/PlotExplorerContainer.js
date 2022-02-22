@@ -7,18 +7,14 @@ import FigureRow from "./FigureRow";
 import OptionsRow from "./OptionsRow";
 import "./PlotExplorerContainer.css";
 import DownloadDataButton from "./DownloadDataButton";
-// import { SetValid } from "./GetValid";
 import FileCheck from "./FileCheck";
-// import DisplayWarnings from "./DisplayWarnings";
+import DisplayWarnings from "./DisplayWarnings";
 
 function PlotExplorerContainer() {
   /* This is the entry point to the main page. It handles state passing from
   user selected choices in OptionsRow to the array of plots displayed by
   FigureRow.
   */
-
-  // TODO: Filecheck function should be called in this component(?) and the resulting lists passed to others as
-  // states/arrays?
 
   // Handles state for the different choice types the user has to make
   const [plotvars, setPlotvars] = useState([]);
@@ -27,8 +23,8 @@ function PlotExplorerContainer() {
   const [plottypes, setPlottypes] = useState([]);
   const [regions, setRegion] = useState([]);
   const [images, setImages] = useState([]);
-  const [datafiles, setDataFiles] = useState([]);
-  // const [warnings, setWarnings] = useState([]);
+  // const [datafiles, setDataFiles] = useState([]);
+  const [warnings, setWarnings] = useState([]);
 
   // check files as selections are chosen
   useEffect(() => {
@@ -39,18 +35,19 @@ function PlotExplorerContainer() {
     };
     async function load() {
       const images = await FileCheck(
-        { plotvars, seasons, periods, plottypes },
+        { plotvars, seasons, periods, plottypes, setWarnings },
         "png"
       );
-      const datafiles = await FileCheck(
-        { plotvars, seasons, periods, plottypes },
-        "nc"
-      );
+      // Commented for now just because files are not yet available
+      // const datafiles = await FileCheck(
+      //   { plotvars, seasons, periods, plottypes },
+      //   "nc"
+      // );
       if (!active) {
         return;
       }
       setImages(images);
-      setDataFiles(datafiles);
+      // setDataFiles(datafiles);
     }
   }, [plotvars, seasons, periods, plottypes]);
 
@@ -73,7 +70,9 @@ function PlotExplorerContainer() {
         setPlottypes={setPlottypes}
         setRegion={setRegion}
       />
-      <Row>{/* <DisplayWarnings warnings={warnings} /> */}</Row>
+      <Row>
+        <DisplayWarnings warnings={warnings} />
+      </Row>
       <Row>
         <Col xs={2} className="ml-3 position-fixed">
           <Stack gap={1}>
@@ -92,7 +91,9 @@ function PlotExplorerContainer() {
                 seasons.length >= 1 &&
                 periods.length >= 1 &&
                 regions.length >= 1 && (
-                  <DownloadDataButton datafiles={datafiles} />
+                  <DownloadDataButton
+                  // datafiles={datafiles}
+                  />
                 )}
             </Container>
           </Stack>

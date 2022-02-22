@@ -1,9 +1,8 @@
 // import CreateWarnings from "./CreateWarnings";
 
 export default async function FileCheck(
-  { plotvars, seasons, periods, plottypes },
-  ext,
-  setWarnings
+  { plotvars, seasons, periods, plottypes, setWarnings },
+  ext
 ) {
   let prefix = "images";
   if (ext !== "png") {
@@ -47,6 +46,7 @@ export default async function FileCheck(
 
   const fetchImage = async (path) => {
     const response = await fetch(path);
+    const warnings = [];
 
     if (response.ok) {
       const imageBlob = await response.blob();
@@ -55,12 +55,14 @@ export default async function FileCheck(
 
       // console.log(imageObjectURL);
       outputArray.push(imageObjectURL);
-      // } else if (response.status === 404) {
-      //   console.log(response.status);
-      // setWarnings = CreateWarnings(path);
+    } else if (response.status === 404) {
+      console.log(response.status);
+      warnings.push(path);
     }
+    setWarnings(warnings);
+    console.log("warnings: ", warnings);
   };
-  // const warnings = [];
+
   const paths = [];
   const outputArray = [];
 
