@@ -31,16 +31,6 @@ function PlotExplorerContainer() {
   // const [warnings, setWarnings] = useState([]);
 
   // check files as selections are chosen
-  const getValidImages = async () => {
-    // setImages(
-    const images = await FileCheck(
-      { plotvars, seasons, periods, plottypes },
-      "png"
-    );
-    // );
-    console.log(typeof images);
-    console.log("valid images has run " + images);
-  };
 
   useEffect(() => {
     let active = true;
@@ -98,7 +88,6 @@ function PlotExplorerContainer() {
         setPeriods={setPeriods}
         setPlottypes={setPlottypes}
         setRegion={setRegion}
-        onChange={getValidImages}
       />
       <Row>{/* <DisplayWarnings warnings={warnings} /> */}</Row>
       <Row>
@@ -112,7 +101,7 @@ function PlotExplorerContainer() {
                 periods.length >= 1 &&
                 regions.length >= 1 && (
                   <DownloadPlotsButton
-                    // images={images}
+                    images={images}
                     plotvars={plotvars}
                     seasons={seasons}
                     periods={periods}
@@ -139,35 +128,14 @@ function PlotExplorerContainer() {
           </Stack>
         </Col>
         <Col lg={{ span: 14, offset: 1 }} md={{ span: 14, offset: 1 }}>
-          {/* {(function () {
-            if (
-              plottypes.length >= 1 &&
-              plotvars.length >= 1 &&
-              seasons.length >= 1 &&
-              periods.length >= 1 &&
-              regions.length >= 1 &&
-              getValidImages
-            ) {
-              return ( */}
-          {plottypes.length >= 1 &&
-            plotvars.length >= 1 &&
-            seasons.length >= 1 &&
-            periods.length >= 1 &&
-            regions.length >= 1 &&
-            (getValidImages,
-            (
-              <FigureRow
-                plotvars={plotvars}
-                seasons={seasons}
-                periods={periods}
-                plottypes={plottypes}
-                regions={regions}
-                images={images}
-              />
-            ))}
-          {/* );
-            } else return null;
-          })()} */}
+          <FigureRow
+            plotvars={plotvars}
+            seasons={seasons}
+            periods={periods}
+            plottypes={plottypes}
+            regions={regions}
+            images={images}
+          />
         </Col>
       </Row>
     </Container>

@@ -1,6 +1,6 @@
 // Download button for individual plots
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Alert, Button } from "react-bootstrap";
 import "./DownloadButton.css";
 import FileCheck from "./FileCheck";
 import downloadzip from "./ZipFiles";
@@ -11,30 +11,29 @@ function DownloadPlotsButton({
   periods,
   plottypes,
   regions,
+  images,
 }) {
-  const handlePlotDownload = async () => {
-    console.log(plotvars);
-
-    const images = await FileCheck(
-      { plotvars, seasons, periods, plottypes },
-      "png"
-    );
-
+  const handlePlotDownload = () => {
     // call zip function here
     return downloadzip(images, "plots");
   };
 
   return (
-    // button with direct styling to overwrite bootstrap
-    <Button
-      variant="primary"
-      style={{ background: "#6610f2", border: "none" }}
-      size="med"
-      className="downloadbtn"
-      download="UKCORDEXimage"
-      onClick={handlePlotDownload}>
-      Save Plots
-    </Button>
+    <>
+      {/* <Alert variant="danger" className="position-top position-sticky">
+        {/* {warnings} */}
+      {/* </Alert> */}
+      {/* // button with direct styling to overwrite bootstrap */}
+      <Button
+        variant="primary"
+        style={{ background: "#6610f2", border: "none" }}
+        size="med"
+        className="downloadbtn"
+        download="UKCORDEXimage"
+        onClick={handlePlotDownload}>
+        Save Plots
+      </Button>
+    </>
   );
 }
 
