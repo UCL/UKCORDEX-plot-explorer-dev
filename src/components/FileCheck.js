@@ -1,29 +1,16 @@
+// import CreateWarnings from "./CreateWarnings";
+
 export default async function FileCheck(
   { plotvars, seasons, periods, plottypes },
-  ext
+  ext,
+  setWarnings
 ) {
   let prefix = "images";
   if (ext !== "png") {
     prefix = "data";
   }
 
-  // let imglist = [];
-  let warnings = [];
-
-  const fetchImage = async (path) => {
-    const response = await fetch(path);
-
-    if (response.ok) {
-      const imageBlob = await response.blob();
-
-      const imageObjectURL = URL.createObjectURL(imageBlob);
-
-      console.log(imageObjectURL);
-      imagesArray.push(imageObjectURL);
-    }
-  };
-
-  const buildImagePathsArray = () => {
+  const buildOutputPathsArray = () => {
     plotvars.map(async (pvar) =>
       seasons.map(async (season) =>
         periods.map(async (period) =>
@@ -49,7 +36,7 @@ export default async function FileCheck(
               "." +
               ext;
 
-            console.log(path);
+            // console.log(path);
 
             paths.push(path);
           })
@@ -58,12 +45,28 @@ export default async function FileCheck(
     );
   };
 
+  const fetchImage = async (path) => {
+    const response = await fetch(path);
+
+    if (response.ok) {
+      const imageBlob = await response.blob();
+
+      const imageObjectURL = URL.createObjectURL(imageBlob);
+
+      // console.log(imageObjectURL);
+      outputArray.push(imageObjectURL);
+      // } else if (response.status === 404) {
+      //   console.log(response.status);
+      // setWarnings = CreateWarnings(path);
+    }
+  };
+  // const warnings = [];
   const paths = [];
-  const imagesArray = [];
+  const outputArray = [];
 
   const buildPlotVarsDataObj = async () => {
-    buildImagePathsArray();
-    console.log(paths);
+    buildOutputPathsArray();
+    // console.log(paths);
 
     const promises = [];
 
@@ -79,7 +82,7 @@ export default async function FileCheck(
   };
 
   return buildPlotVarsDataObj().then(async (outputs) => {
-    console.log(imagesArray);
-    return imagesArray;
+    // console.log("fc" + typeof outputArray);
+    return outputArray;
   });
 }
