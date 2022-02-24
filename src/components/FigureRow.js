@@ -27,7 +27,8 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
             <Card className="mb-4">
               <Figure>
                 <Figure.Caption>
-                  {`${plotvars.label}/${plottypes.label}_${plotvars.label}_${seasons.label}_${periods.label}`}
+                  Figure Title Here
+                  {/* {`${plot.plotvars.label}/${plot.plottypes.label}_${plotvars.label}_${seasons.label}_${periods.label}`} */}
                 </Figure.Caption>
                 <Image
                   fluid="true"
