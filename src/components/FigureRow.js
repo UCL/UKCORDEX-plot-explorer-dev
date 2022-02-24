@@ -4,6 +4,7 @@ import Figure from "react-bootstrap/Figure";
 import { Container, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 
+
 function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
   /*
   This displays the plots after checking the options chosen by the user.
@@ -48,6 +49,7 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
               </Figure>
             </Card>
           </Container>
+
         ))}
       </>
     );
