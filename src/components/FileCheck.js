@@ -43,10 +43,9 @@ export default async function FileCheck(
       )
     );
   };
-
+  const warnings = [];
   const fetchImage = async (path) => {
     const response = await fetch(path);
-    const warnings = [];
 
     if (response.ok) {
       const imageBlob = await response.blob();

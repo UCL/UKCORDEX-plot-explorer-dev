@@ -71,7 +71,7 @@ function PlotExplorerContainer() {
         setRegion={setRegion}
       />
       <Row>
-        <DisplayWarnings warnings={warnings} />
+        {warnings.length >= 1 && <DisplayWarnings warnings={warnings} />}
       </Row>
       <Row>
         <Col xs={2} className="ml-3 position-fixed">

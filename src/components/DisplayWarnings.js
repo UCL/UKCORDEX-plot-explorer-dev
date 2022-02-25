@@ -1,19 +1,27 @@
 import { Alert, Container } from "react-bootstrap";
+import LinkContainer from "react-router-bootstrap/LinkContainer";
 
 export default function DisplayWarnings({ warnings }) {
   return (
     <>
       <Container fluid>
-        {warnings.map((warning) => (
-          <Alert variant="danger">
-            {" "}
-            <Alert.Heading>
-              Sorry! The following plots do not exist and so will not be
-              downloaded:
-            </Alert.Heading>
+        <Alert variant="danger">
+          {" "}
+          <Alert.Heading>
+            Sorry! The following plots do not exist and so will not be
+            downloaded:
+          </Alert.Heading>
+          {warnings.map((warning) => (
             <li key={warning.id}>{warning}</li>
-          </Alert>
-        ))}{" "}
+          ))}{" "}
+          <hr />
+          <p>
+            For information on why these plots are not available, see{" "}
+            <LinkContainer to="/plot-help">
+              <Alert.Link>help with plots</Alert.Link>
+            </LinkContainer>
+          </p>
+        </Alert>
       </Container>
     </>
   );
