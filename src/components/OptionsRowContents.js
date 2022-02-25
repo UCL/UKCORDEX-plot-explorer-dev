@@ -100,9 +100,29 @@ export const seasonOptionsContents = [
 
 // Plot Types
 export const plottypeOptionsContents = [
-  { value: "eval-boxplots", label: "Box plots of spread within each ensemble" },
-  { value: "eval-maps", label: "Maps of observations & biases" },
-  { value: "eval-pca-gcm", label: "PCA GCM plots" },
-  { value: "eval-pca-rcm", label: "PCA RCM plots" },
-  { value: "eval-Taylor", label: "Taylor plots" },
+  {
+    value: "eval-boxplots",
+    label: "Box plots of spread within each ensemble",
+    icon: "/icons/boxplots_of_spread.png",
+  },
+  {
+    value: "eval-maps",
+    label: "Maps of observations & biases",
+    icon: "/icons/obs_and_bias.png",
+  },
+  {
+    value: "eval-pca-gcm",
+    label: "PCA GCM plots",
+    icon: "/icons/pca_gcm.png",
+  },
+  {
+    value: "eval-pca-rcm",
+    label: "PCA RCM plots",
+    icon: "/icons/pca_rcm.png",
+  },
+  {
+    value: "eval-Taylor",
+    label: "Taylor plots",
+    icon: "/icons/taylor.png",
+  },
 ];

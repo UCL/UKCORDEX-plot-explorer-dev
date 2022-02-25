@@ -43,25 +43,34 @@
 
 /*********************** Section for Season Dropdown **********************/
 .Winter {
-  background-color: rgba(157, 202, 216, 0.979);
-  border-color: rgba(92, 138, 156, 0.979);
-  color: rgba(15, 102, 136, 0.979);
+  background-color: #e8f7fb;
+  border-color: #dff8f9;
+  color: #65a4aa;
 }
 
 .Spring {
-  background-color: rgba(247, 195, 242, 0.979);
-  border-color: rgba(243, 109, 243, 0.979);
-  color: rgba(211, 43, 189, 0.979);
+  background-color: #ccffe5;
+  border-color: #b2ffd8;
+  color: #23c071;
 }
 
 .Summer {
-  background-color: rgba(245, 227, 147, 0.979);
-  border-color: rgba(228, 180, 49, 0.979);
-  color: rgba(136, 114, 15, 0.979);
+  background-color: #f0bbcd;
+  border-color: #eb8291;
+  color: #eb7777;
 }
 
 .Autumn {
-  background-color: rgba(245, 147, 180, 0.979);
-  border-color: rgba(230, 85, 97, 0.979);
-  color: rgba(136, 39, 15, 0.979);
+  background-color: #eb8b62;
+  border-color: #bd4e33;
+  color: #a94343;
+}
+
+/******************* Section for Plot Type Dropdown ********************/
+.icon {
+  margin-right: 0.3em;
+  border: none;
+}
+.ptype-desc {
+  font-size: 90%;
 }
