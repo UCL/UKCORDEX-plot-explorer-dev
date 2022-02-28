@@ -1,6 +1,5 @@
 // splits the path string into parts to make it human readable
 import { plottypeOptionsContents as plottypes } from "../OptionsRowContents";
-// import { plotvarOptionsContents as plotvars } from "../OptionsRowContents";
 import { seasonOptionsContents as seasons } from "../OptionsRowContents";
 import { periodOptionsContents as periods } from "../OptionsRowContents";
 import { Translate } from "./Translate";
@@ -21,11 +20,11 @@ export function SplitToHR(path) {
   let season = secondSplit[2];
   let period = secondSplit[3];
 
+  // pvar is not translated since it's kept as is
   let ptypehr = Translate(ptype, plottypes);
-  //   let pvarhr = Translate(pvar, plotvars); // using pvar as is (for now?)
   let seasonhr = Translate(season, seasons);
   let periodhr = Translate(period, periods);
-  let hrString = `${ptypehr} for ${pvar} in ${seasonhr} during ${periodhr}`;
+  let hrString = `${ptypehr} for ${seasonhr} ${pvar} during ${periodhr}`;
   console.log(hrString);
   return hrString;
 }
