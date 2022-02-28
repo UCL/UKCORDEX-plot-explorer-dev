@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
-import downloadzip from "./ZipFiles";
+import downloadzip from "./Utils/ZipFiles";
 
 function DownloadPlotsButton({ images }) {
   const handlePlotDownload = () => {

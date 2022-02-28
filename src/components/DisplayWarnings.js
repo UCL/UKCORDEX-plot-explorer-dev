@@ -12,7 +12,7 @@ export default function DisplayWarnings({ warnings }) {
             downloaded:
           </Alert.Heading>
           {warnings.map((warning) => (
-            <li key={warning.id}>{warning}</li>
+            <li key={warning.index}>{warning}</li>
           ))}{" "}
           <hr />
           <p>

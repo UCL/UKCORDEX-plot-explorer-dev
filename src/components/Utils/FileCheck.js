@@ -1,5 +1,7 @@
 // import CreateWarnings from "./CreateWarnings";
 
+import { SplitToHR } from "./SplitToHR";
+
 export default async function FileCheck(
   { plotvars, seasons, periods, plottypes, setWarnings },
   ext
@@ -56,7 +58,9 @@ export default async function FileCheck(
       outputArray.push(imageObjectURL);
     } else if (response.status === 404) {
       console.log(response.status);
-      warnings.push(path);
+      let parts = SplitToHR(path);
+      // console.log(typeof parts);
+      warnings.push(parts);
     }
     setWarnings(warnings);
     console.log("warnings: ", warnings);

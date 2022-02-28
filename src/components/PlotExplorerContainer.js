@@ -7,7 +7,7 @@ import FigureRow from "./FigureRow";
 import OptionsRow from "./OptionsRow";
 import "./PlotExplorerContainer.css";
 import DownloadDataButton from "./DownloadDataButton";
-import FileCheck from "./FileCheck";
+import FileCheck from "./Utils/FileCheck";
 import DisplayWarnings from "./DisplayWarnings";
 
 function PlotExplorerContainer() {
