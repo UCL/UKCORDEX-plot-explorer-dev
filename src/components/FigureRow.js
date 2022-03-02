@@ -23,8 +23,8 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
     // TODO: check with research team this is the best way to proceed.
     return (
       <>
-        {images.map((plot) => (
-          <Row>
+        {images.map((plot, i) => (
+          <Row key={i}>
             <Figure>
               <Image fluid="true" src={plot} />
             </Figure>
