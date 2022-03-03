@@ -23,8 +23,9 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
     // TODO: check with research team this is the best way to proceed.
     return (
       <>
-        {images.map((plot) => (
-          <Container>
+
+        {images.map((plot, i) => (
+          <Container key={i}>
             <Card className="mb-4">
               <Figure>
                 <Figure.Caption>

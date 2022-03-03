@@ -1,9 +1,10 @@
 // import CreateWarnings from "./CreateWarnings";
 
+import { SplitToHR } from "./SplitToHR";
+
 export default async function FileCheck(
-  { plotvars, seasons, periods, plottypes },
-  ext,
-  setWarnings
+  { plotvars, seasons, periods, plottypes, setWarnings },
+  ext
 ) {
   let prefix = "images";
   if (ext !== "png") {
@@ -44,7 +45,7 @@ export default async function FileCheck(
       )
     );
   };
-
+  const warnings = [];
   const fetchImage = async (path) => {
     const response = await fetch(path);
 
@@ -55,12 +56,16 @@ export default async function FileCheck(
 
       // console.log(imageObjectURL);
       outputArray.push(imageObjectURL);
-      // } else if (response.status === 404) {
-      //   console.log(response.status);
-      // setWarnings = CreateWarnings(path);
+    } else if (response.status === 404) {
+      console.log(response.status);
+      let parts = SplitToHR(path);
+      // console.log(typeof parts);
+      warnings.push(parts);
     }
+    setWarnings(warnings);
+    console.log("warnings: ", warnings);
   };
-  // const warnings = [];
+
   const paths = [];
   const outputArray = [];
 

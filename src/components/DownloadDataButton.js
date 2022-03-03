@@ -2,8 +2,8 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
-import downloadzip from "./ZipFiles";
-import FileCheck from "./FileCheck";
+import downloadzip from "./Utils/ZipFiles";
+import FileCheck from "./Utils/FileCheck";
 
 export default function DownloadDataButton({
   plotvars,
