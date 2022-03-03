@@ -1,10 +1,10 @@
 import MenuHeader from "./components/MenuHeader";
-import PlotExplorerRow from "./components/PlotExplorerContainer";
 import About from "./components/ExtraPages/About";
 import PlotHelp from "./components/ExtraPages/PlotHelp";
 import DataHelp from "./components/ExtraPages/DataHelp";
 import IndicesHelp from "./components/ExtraPages/IndicesHelp";
 import { Route, Routes } from "react-router-dom";
+import PlotExplorerContainer from "./components/PlotExplorerContainer";
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       <MenuHeader />
       {/* Need to have Routes here and not in a separate file for them to be accessed properly */}
       <Routes>
-        <Route exact path="/" element={<PlotExplorerRow />} />
-        <Route path="index" element={<PlotExplorerRow />} />
+        <Route exact path="/" element={<PlotExplorerContainer />} />
+        <Route path="index" element={<PlotExplorerContainer />} />
         <Route path="about" element={<About />} />
         <Route path="plot-help" element={<PlotHelp />} />
         <Route path="data-help" element={<DataHelp />} />

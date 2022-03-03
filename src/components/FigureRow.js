@@ -1,9 +1,9 @@
 import React from "react";
-import Row from "react-bootstrap/Row";
 import Figure from "react-bootstrap/Figure";
-import { Image } from "react-bootstrap";
-// import FileCheck from "./FileCheck";
 // import FigureImage from "react-bootstrap/FigureImage";
+import { Container, Image } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+
 
 function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
   /*
@@ -23,12 +23,34 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
     // TODO: check with research team this is the best way to proceed.
     return (
       <>
+
         {images.map((plot, i) => (
-          <Row key={i}>
-            <Figure>
-              <Image fluid="true" src={plot} />
-            </Figure>
-          </Row>
+          <Container key={i}>
+            <Card className="mb-4">
+              <Figure>
+                <Figure.Caption>
+                  Figure Title Here
+                  {/* {`${plot.plotvars.label}/${plot.plottypes.label}_${plotvars.label}_${seasons.label}_${periods.label}`} */}
+                </Figure.Caption>
+                <Image
+                  fluid="true"
+                  // width="100%"
+                  alt={
+                    plottypes.label +
+                    " not found for '" +
+                    plotvars.label +
+                    "' on season '" +
+                    seasons.label +
+                    "' and period '" +
+                    periods.label +
+                    "'."
+                  }
+                  src={plot}
+                />
+              </Figure>
+            </Card>
+          </Container>
+
         ))}
       </>
     );
