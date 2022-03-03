@@ -11,8 +11,8 @@ export default function DisplayWarnings({ warnings }) {
             Sorry! The following plots do not exist and so will not be
             downloaded:
           </Alert.Heading>
-          {warnings.map((warning) => (
-            <li key={warning.index}>{warning}</li>
+          {warnings.map((warning, i) => (
+            <li key={i}>{warning}</li>
           ))}{" "}
           <hr />
           <p>
