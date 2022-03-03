@@ -28,6 +28,16 @@ const formatSeasonLabel = ({ label, value }) => (
   </div>
 );
 
+// Styling Plot Type Dropdown
+const formatPlotTypeLabel = ({ label, icon }) => (
+  <div style={{ display: "flex" }}>
+    <div className="icon">
+      <img src={`${process.env.PUBLIC_URL}${icon}`} alt={icon} height={25} />
+    </div>
+    <div className="ptype-desc">{label}</div>
+  </div>
+);
+
 function OptionsRow({
   setPlotvars,
   setSeasons,
@@ -60,6 +70,7 @@ function OptionsRow({
           <Select
             options={plottypeOptionsContents}
             onChange={setPlottypes}
+            formatOptionLabel={formatPlotTypeLabel}
             placeholder="Select plot type"
             isClearable={false}
             isMulti
@@ -67,7 +78,7 @@ function OptionsRow({
           />
         </Col>
         {/* Spatial aggregation dropdown */}
-        <Col sm={3} xs={5}>
+        <Col sm={3} xs={4}>
           <Select
             options={regionOptionsContents}
             onChange={setRegion}
