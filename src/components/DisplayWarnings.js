@@ -4,7 +4,7 @@ import LinkContainer from "react-router-bootstrap/LinkContainer";
 export default function DisplayWarnings({ warnings }) {
   return (
     <>
-      <Container fluid>
+      <Container fluid style={{ marginTop: 20 }}>
         <Alert variant="danger">
           {" "}
           <Alert.Heading>
