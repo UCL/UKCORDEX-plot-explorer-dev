@@ -1,6 +1,4 @@
-// import CreateWarnings from "./CreateWarnings";
-
-import { SplitToHR } from "./SplitToHR";
+import { makeHr } from "./Translate";
 
 export default async function FileCheck(
   { plotvars, seasons, periods, plottypes, setWarnings },
@@ -37,8 +35,6 @@ export default async function FileCheck(
               "." +
               ext;
 
-            // console.log(path);
-
             paths.push(path);
           })
         )
@@ -58,9 +54,10 @@ export default async function FileCheck(
       outputArray.push(imageObjectURL);
     } else if (response.status === 404) {
       console.log(response.status);
-      let parts = SplitToHR(path);
-      // console.log(typeof parts);
-      warnings.push(parts);
+
+      let warningMessage = makeHr(path.slice(path.lastIndexOf("/") + 1));
+
+      warnings.push(warningMessage);
     }
     setWarnings(warnings);
     console.log("warnings: ", warnings);
