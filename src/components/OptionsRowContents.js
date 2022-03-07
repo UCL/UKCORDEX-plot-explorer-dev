@@ -122,7 +122,7 @@ export const plottypeOptionsContents = [
   },
   {
     value: "ens-sd-maps",
-    label: " SD Maps of observations & biases",
+    label: "SD Maps of observations & biases",
     icon: "/icons/obs_and_bias.png",
     title: "Ensemble standard deviation of ",
   },
@@ -143,5 +143,35 @@ export const plottypeOptionsContents = [
     label: "Taylor plots",
     icon: "/icons/taylor.png",
     title: "Taylor diagram of ",
+  },
+  {
+    value: "epp-ukcp",
+    label: "UKCP18 EPPs",
+    icon: "/icons/taylor.png",
+    title: "UKCP18 12km EPPs of ",
+  },
+  {
+    value: "eurocordex-anova",
+    label: "EuroCORDEX Anova",
+    icon: "/icons/taylor.png",
+    title: "Decomposition of sources of variance in EuroCORDEX ensemble of ",
+  },
+  {
+    value: "stampplots-cmip5",
+    label: "CMIP5 Maps",
+    icon: "/icons/taylor.png",
+    title: "Maps of ",
+  },
+  {
+    value: "stampplots-eurocordex",
+    label: "EuroCORDEX Maps",
+    icon: "/icons/taylor.png",
+    title: "Maps of ",
+  },
+  {
+    value: "stampplots-ukcp",
+    label: "UKCP18 Maps",
+    icon: "/icons/taylor.png",
+    title: "Maps of ",
   },
 ];
