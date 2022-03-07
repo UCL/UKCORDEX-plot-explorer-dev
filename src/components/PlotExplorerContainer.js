@@ -23,6 +23,7 @@ function PlotExplorerContainer() {
   const [plottypes, setPlottypes] = useState([]);
   const [regions, setRegion] = useState([]);
   const [images, setImages] = useState([]);
+  const [downloadnames, setDownloadnames] = useState([]);
   // const [datafiles, setDataFiles] = useState([]);
   const [warnings, setWarnings] = useState([]);
 
@@ -35,7 +36,14 @@ function PlotExplorerContainer() {
     };
     async function load() {
       const images = await FileCheck(
-        { plotvars, seasons, periods, plottypes, setWarnings },
+        {
+          plotvars,
+          seasons,
+          periods,
+          plottypes,
+          setWarnings,
+          setDownloadnames,
+        },
         "png"
       );
       // Commented for now just because files are not yet available
@@ -47,6 +55,7 @@ function PlotExplorerContainer() {
         return;
       }
       setImages(images);
+      console.log(images);
       // setDataFiles(datafiles);
     }
   }, [plotvars, seasons, periods, plottypes]);
@@ -82,7 +91,12 @@ function PlotExplorerContainer() {
                 plotvars.length >= 1 &&
                 seasons.length >= 1 &&
                 periods.length >= 1 &&
-                regions.length >= 1 && <DownloadPlotsButton images={images} />}
+                regions.length >= 1 && (
+                  <DownloadPlotsButton
+                    images={images}
+                    downloadnames={downloadnames}
+                  />
+                )}
             </Container>
             <Container>
               {/* Conditionally render Download button if at least one of each variable is selected */}

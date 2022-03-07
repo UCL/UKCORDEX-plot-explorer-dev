@@ -1,7 +1,9 @@
 // splits the path string into variables
 
-export function SplitToVars(filename) {
-  let firstSplit = filename.replace(".png", "").split("_");
+export default function SplitToVars(filename, ext) {
+  ext = "." + ext;
+  //TODO: update for use with .nc as well
+  let firstSplit = filename.replace(ext, "").split("_");
   console.log(firstSplit);
 
   return {

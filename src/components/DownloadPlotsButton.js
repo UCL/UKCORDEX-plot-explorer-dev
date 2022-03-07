@@ -2,30 +2,24 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
-import downloadzip from "./Utils/ZipFiles";
+import downloadZip from "./Utils/downloadZip";
 
-function DownloadPlotsButton({ images }) {
+function DownloadPlotsButton({ images, downloadnames }) {
   const handlePlotDownload = () => {
     // call zip function here
-    return downloadzip(images, "plots");
+    return downloadZip(images, downloadnames, "plots");
   };
 
   return (
-    <>
-      {/* <Alert variant="danger" className="position-top position-sticky">
-        {/* {warnings} */}
-      {/* </Alert> */}
-      {/* // button with direct styling to overwrite bootstrap */}
-      <Button
-        variant="primary"
-        style={{ background: "#6610f2", border: "none" }}
-        size="med"
-        className="downloadbtn"
-        download="UKCORDEXimage"
-        onClick={handlePlotDownload}>
-        Save Plots
-      </Button>
-    </>
+    <Button
+      variant="primary"
+      style={{ background: "#6610f2", border: "none" }}
+      size="med"
+      className="downloadbtn"
+      download="UKCORDEXimage"
+      onClick={handlePlotDownload}>
+      Save Plots
+    </Button>
   );
 }
 
