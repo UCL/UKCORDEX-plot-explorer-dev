@@ -20,19 +20,21 @@ export default async function FileCheck(
             // TODO: when adding data download functionality, this is the section to
             // change the beginning of the path
             let path =
-              "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main/" +
+              // "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main/" +
+              "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/images/tas_plots" +
               "/" +
               prefix +
               "/" +
               pvar.value +
               "/" +
-              ptype.value +
-              "_" +
               pvar.value +
               "_" +
-              season.value +
+              "12km_" + //region
+              ptype.value +
               "_" +
               period.value +
+              "_" +
+              season.value +
               "." +
               ext;
 

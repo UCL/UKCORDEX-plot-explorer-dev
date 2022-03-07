@@ -79,7 +79,7 @@ export const plotvarOptionsContents = [
 
 // Region/Resolution
 export const regionOptionsContents = [
-  { value: "value", label: "12km grid" },
+  { value: "12km", label: "12km grid" },
   { value: "value", label: "Country" },
   { value: "value", label: "Administrative region" },
   { value: "value", label: "River basin" },
@@ -88,41 +88,60 @@ export const regionOptionsContents = [
 // Time Periods
 export const periodOptionsContents = [
   { value: "19890101-20081231", label: "1989-2008" },
+  { value: "19891201-20191130", label: "1989-2019" },
+  { value: "19991201-20291130", label: "1999-2029" },
+  { value: "20091201-20391130", label: "2009-2039" },
+  { value: "20191201-20491130", label: "2019-2049" },
+  { value: "20291201-20591130", label: "2029-2059" },
+  { value: "20391201-20691130", label: "2039-2069" },
+  { value: "20491201-20791130", label: "2049-2079" },
 ];
 
 // Seasons
 export const seasonOptionsContents = [
-  { value: "DJF", label: "Winter", extra: "Dec/Jan/Feb" },
-  { value: "MAM", label: "Spring", extra: "Mar/Apr/May" },
-  { value: "JJA", label: "Summer", extra: "Jun/Jul/Aug" },
-  { value: "SON", label: "Autumn", extra: "Sep/Oct/Nov" },
+  { value: "DJF", label: "Winter" },
+  { value: "MAM", label: "Spring" },
+  { value: "JJA", label: "Summer" },
+  { value: "SON", label: "Autumn" },
+  { value: "annual", label: "Annual" },
 ];
 
 // Plot Types
 export const plottypeOptionsContents = [
   {
-    value: "eval-boxplots",
+    value: "boxplots",
     label: "Box plots of spread within each ensemble",
     icon: "/icons/boxplots_of_spread.png",
+    title: "Boxplots of ",
   },
   {
-    value: "eval-maps",
-    label: "Maps of observations & biases",
+    value: "ens-mean-maps",
+    label: "Mean Maps of observations & biases",
     icon: "/icons/obs_and_bias.png",
+    title: "Ensemble mean",
   },
   {
-    value: "eval-pca-gcm",
+    value: "ens-sd-maps",
+    label: " SD Maps of observations & biases",
+    icon: "/icons/obs_and_bias.png",
+    title: "Ensemble standard deviation of ",
+  },
+  {
+    value: "epp-gcm",
     label: "PCA GCM plots",
     icon: "/icons/pca_gcm.png",
+    title: "EPP GCM of ",
   },
   {
-    value: "eval-pca-rcm",
+    value: "epp-rcm",
     label: "PCA RCM plots",
     icon: "/icons/pca_rcm.png",
+    title: "EPP RCM of ",
   },
   {
-    value: "eval-Taylor",
+    value: "Taylor-diagram",
     label: "Taylor plots",
     icon: "/icons/taylor.png",
+    title: "Taylor diagram of ",
   },
 ];
