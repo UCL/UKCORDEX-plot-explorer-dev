@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
-import downloadzip from "./Utils/ZipFiles";
+import downloadZip from "./Utils/downloadZip";
 import FileCheck from "./Utils/FileCheck";
 
 export default function DownloadDataButton({
@@ -21,7 +21,7 @@ export default function DownloadDataButton({
     );
 
     // call zip function here
-    return downloadzip(files, "datafiles");
+    return downloadZip(files, "datafiles");
   };
 
   return (

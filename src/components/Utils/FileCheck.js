@@ -1,9 +1,8 @@
-// import CreateWarnings from "./CreateWarnings";
-
-import { SplitToHR } from "./SplitToHR";
+import SplitToVars from "./SplitToVars";
+import makeHr from "./Translate";
 
 export default async function FileCheck(
-  { plotvars, seasons, periods, plottypes, setWarnings },
+  { plotvars, seasons, periods, plottypes, setWarnings, setDownloadnames },
   ext
 ) {
   let prefix = "images";
@@ -37,19 +36,25 @@ export default async function FileCheck(
               "." +
               ext;
 
-            // console.log(path);
-
             paths.push(path);
           })
         )
       )
     );
   };
+
   const warnings = [];
+  const downloadable = [];
   const fetchImage = async (path) => {
     const response = await fetch(path);
 
     if (response.ok) {
+      let downloadnames = SplitToVars(
+        path.slice(path.lastIndexOf("/") + 1),
+        ext
+      );
+      downloadable.push(downloadnames);
+
       const imageBlob = await response.blob();
 
       const imageObjectURL = URL.createObjectURL(imageBlob);
@@ -58,11 +63,14 @@ export default async function FileCheck(
       outputArray.push(imageObjectURL);
     } else if (response.status === 404) {
       console.log(response.status);
-      let parts = SplitToHR(path);
-      // console.log(typeof parts);
-      warnings.push(parts);
+
+      let warningMessage = makeHr(path.slice(path.lastIndexOf("/") + 1), ext);
+
+      warnings.push(warningMessage);
     }
     setWarnings(warnings);
+    setDownloadnames(downloadable);
+    console.log("downloadable: ", downloadable);
     console.log("warnings: ", warnings);
   };
 
