@@ -14,7 +14,7 @@ export default function downloadZip(filelist, filenames, zipname) {
 
     // set the name for each image
     var filename = `${fnames.ptype}_${fnames.pvar}_${fnames.season}_${fnames.period}`;
-    console.log("downloadname: ", filename);
+    // console.log("downloadname: ", filename);
     filenamearray.push(filename);
   }
 
@@ -33,8 +33,8 @@ export default function downloadZip(filelist, filenames, zipname) {
           });
         }
       });
-      return console.log("filenames have been mapped"); // function is unhappy without return
+      return null; // function is unhappy without return
     });
-    return console.log("files have been zipped"); // function is unhappy without return
+    return null; // function is unhappy without return
   });
 }
