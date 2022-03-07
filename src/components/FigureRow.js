@@ -1,17 +1,27 @@
 import React from "react";
 import Figure from "react-bootstrap/Figure";
-// import FigureImage from "react-bootstrap/FigureImage";
 import { Container, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
+import { makeTitle } from "./Utils/Translate";
 
-
-function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
+export default function FigureRow({
+  plotvars,
+  seasons,
+  periods,
+  plottypes,
+  images,
+}) {
   /*
   This displays the plots after checking the options chosen by the user.
   It will display something as soon as there's a choice made for each of the 4
   drowdowns. It will also automatically delete images as user deselects a
   choice.
 */
+  // const handleFigTitle = (plot) => {
+  //   let FigParts = SplitToVars(plot, "png");
+  //   let TitleParts = Translate(FigParts, "title");
+  //   return `${TitleParts}`;
+  // };
 
   // Don't try to show a plot until the user has selected at least one value of
   // each dropdown
@@ -23,38 +33,26 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
     // TODO: check with research team this is the best way to proceed.
     return (
       <>
-
         {images.map((plot, i) => (
+          // do split to vars for each
+
           <Container key={i}>
             <Card className="mb-4">
               <Figure>
                 <Figure.Caption>
-                  Figure Title Here
-                  {/* {`${plot.plotvars.label}/${plot.plottypes.label}_${plotvars.label}_${seasons.label}_${periods.label}`} */}
+                  {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
                 </Figure.Caption>
                 <Image
                   fluid="true"
                   // width="100%"
-                  alt={
-                    plottypes.label +
-                    " not found for '" +
-                    plotvars.label +
-                    "' on season '" +
-                    seasons.label +
-                    "' and period '" +
-                    periods.label +
-                    "'."
-                  }
+                  alt={"plot not found"}
                   src={plot}
                 />
               </Figure>
             </Card>
           </Container>
-
         ))}
       </>
     );
   }
 }
-
-export default FigureRow;
