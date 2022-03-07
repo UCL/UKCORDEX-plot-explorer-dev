@@ -87,14 +87,61 @@ export const regionOptionsContents = [
 
 // Time Periods
 export const periodOptionsContents = [
-  { value: "19890101-20081231", label: "1989-2008" },
-  { value: "19891201-20191130", label: "1989-2019" },
-  { value: "19991201-20291130", label: "1999-2029" },
-  { value: "20091201-20391130", label: "2009-2039" },
-  { value: "20191201-20491130", label: "2019-2049" },
-  { value: "20291201-20591130", label: "2029-2059" },
-  { value: "20391201-20691130", label: "2039-2069" },
-  { value: "20491201-20791130", label: "2049-2079" },
+  {
+    value: "1.5",
+    label: "1.5°C above pre-industrial",
+    title: "after GMST increase of 1.5°C ",
+  },
+  {
+    value: "2",
+    label: "2°C above pre-industrial",
+    title: "after GMST increase of 2°C ",
+  },
+  {
+    value: "3",
+    label: "3°C above pre-industrial",
+    title: "after GMST increase of 3°C ",
+  },
+  {
+    value: "19890101-20081231",
+    label: "1989-2008",
+    title: "19890101-20081231",
+  },
+  {
+    value: "19891201-20191130",
+    label: "1989-2019",
+    title: "19891201-20191130",
+  },
+  {
+    value: "19991201-20291130",
+    label: "1999-2029",
+    title: "19991201-20291130",
+  },
+  {
+    value: "20091201-20391130",
+    label: "2009-2039",
+    title: "20091201-20391130",
+  },
+  {
+    value: "20191201-20491130",
+    label: "2019-2049",
+    title: "20191201-20491130",
+  },
+  {
+    value: "20291201-20591130",
+    label: "2029-2059",
+    title: "20291201-20591130",
+  },
+  {
+    value: "20391201-20691130",
+    label: "2039-2069",
+    title: "20391201-20691130",
+  },
+  {
+    value: "20491201-20791130",
+    label: "2049-2079",
+    title: "20491201-20791130",
+  },
 ];
 
 // Seasons

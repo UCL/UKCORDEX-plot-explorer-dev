@@ -20,8 +20,7 @@ export default async function FileCheck(
             // TODO: when adding data download functionality, this is the section to
             // change the beginning of the path
             let path =
-              // "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main/" +
-              "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/images/tas_plots" +
+              "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main" +
               "/" +
               prefix +
               "/" +
@@ -29,7 +28,7 @@ export default async function FileCheck(
               "/" +
               pvar.value +
               "_" +
-              "12km_" + //region
+              "12km_" +
               ptype.value +
               "_" +
               period.value +
@@ -49,6 +48,7 @@ export default async function FileCheck(
   const downloadable = [];
   const fetchImage = async (path) => {
     const response = await fetch(path);
+    console.log(response);
 
     if (response.ok) {
       let downloadnames = SplitToVars(
