@@ -40,6 +40,7 @@ function PlotExplorerContainer() {
           seasons,
           periods,
           plottypes,
+          regions,
           setWarnings,
         },
         "png"
@@ -56,7 +57,7 @@ function PlotExplorerContainer() {
       console.log(images);
       // setDataFiles(datafiles);
     }
-  }, [plotvars, seasons, periods, plottypes]);
+  }, [plotvars, seasons, periods, plottypes, regions]);
 
   return (
     <Container fluid>

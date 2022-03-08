@@ -1,7 +1,7 @@
 import { makeHr } from "./Translate";
 
 export default async function FileCheck(
-  { plotvars, seasons, periods, plottypes, setWarnings },
+  { plotvars, seasons, periods, plottypes, regions, setWarnings },
   ext
 ) {
   let prefix = "images";
@@ -12,32 +12,35 @@ export default async function FileCheck(
   const buildOutputPathsArray = () => {
     plotvars.map(async (pvar) =>
       seasons.map(async (season) =>
-        periods.map(async (period) =>
-          plottypes.map(async (ptype) => {
-            // TODO: add region
-            // regions.map((region) => {
-            // TODO: when adding data download functionality, this is the section to
-            // change the beginning of the path
-            let path =
-              "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main" +
-              "/" +
-              prefix +
-              "/" +
-              pvar.value +
-              "/" +
-              pvar.value +
-              "_" +
-              "12km_" +
-              ptype.value +
-              "_" +
-              period.value +
-              "_" +
-              season.value +
-              "." +
-              ext;
+        regions.map(async (region) =>
+          periods.map(async (period) =>
+            plottypes.map(async (ptype) => {
+              // TODO: add region
+              // regions.map((region) => {
+              // TODO: when adding data download functionality, this is the section to
+              // change the beginning of the path
+              let path =
+                "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main" +
+                "/" +
+                prefix +
+                "/" +
+                pvar.value +
+                "/" +
+                pvar.value +
+                "_" +
+                region.value +
+                "_" +
+                ptype.value +
+                "_" +
+                period.value +
+                "_" +
+                season.value +
+                "." +
+                ext;
 
-            paths.push(path);
-          })
+              paths.push(path);
+            })
+          )
         )
       )
     );

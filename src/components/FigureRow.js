@@ -4,7 +4,7 @@ import { Container, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { makeTitle } from "./Utils/Translate";
 
-function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
+function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
   /*
   This displays the plots after checking the options chosen by the user.
   It will display something as soon as there's a choice made for each of the 4
@@ -14,7 +14,11 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
 
   // Don't try to show a plot until the user has selected at least one value of
   // each dropdown
-  if ([plotvars, seasons, periods, plottypes].some((el) => el.length === 0)) {
+  if (
+    [plotvars, seasons, periods, plottypes, regions].some(
+      (el) => el.length === 0
+    )
+  ) {
     return null;
   } else {
     // Once selection is made, group plots by plot type, then delve into the
