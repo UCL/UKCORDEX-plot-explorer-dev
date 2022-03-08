@@ -24,6 +24,7 @@ export function makeTitle(plot) {
   let ptypeTitle = Translate(dict.ptype, plottypes, "title");
   let seasonTitle = Translate(dict.season, seasons);
 
+  // specific function for pvar due to category nesting
   function createpvarTitle(variable, dictionary, field = "label") {
     for (let key1 in dictionary) {
       for (let key2 in key1) {
