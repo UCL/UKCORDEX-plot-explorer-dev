@@ -3,7 +3,7 @@ import { plottypeOptionsContents as plottypes } from "../OptionsRowContents";
 import { seasonOptionsContents as seasons } from "../OptionsRowContents";
 import { periodOptionsContents as periods } from "../OptionsRowContents";
 
-export default function makeHr(filename, ext) {
+export function makeHr(filename, ext) {
   let dict = SplitToVars(filename, ext);
   // pvar is not translated since it's kept as is
   let ptypehr = Translate(dict.ptype, plottypes);

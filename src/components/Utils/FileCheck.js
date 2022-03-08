@@ -1,8 +1,7 @@
-import SplitToVars from "./SplitToVars";
-import makeHr from "./Translate";
+import { makeHr } from "./Translate";
 
 export default async function FileCheck(
-  { plotvars, seasons, periods, plottypes, setWarnings, setDownloadnames },
+  { plotvars, seasons, periods, plottypes, setWarnings },
   ext
 ) {
   let prefix = "images";
@@ -20,19 +19,20 @@ export default async function FileCheck(
             // TODO: when adding data download functionality, this is the section to
             // change the beginning of the path
             let path =
-              "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main/" +
+              "https://raw.githubusercontent.com/UCL/UKCORDEX-plot-explorer-data/main" +
               "/" +
               prefix +
               "/" +
               pvar.value +
               "/" +
-              ptype.value +
-              "_" +
               pvar.value +
               "_" +
-              season.value +
+              "12km_" +
+              ptype.value +
               "_" +
               period.value +
+              "_" +
+              season.value +
               "." +
               ext;
 
@@ -44,33 +44,21 @@ export default async function FileCheck(
   };
 
   const warnings = [];
-  const downloadable = [];
   const fetchImage = async (path) => {
     const response = await fetch(path);
+    // console.log(response);
 
+    let url = response.url;
     if (response.ok) {
-      let downloadnames = SplitToVars(
-        path.slice(path.lastIndexOf("/") + 1),
-        ext
-      );
-      downloadable.push(downloadnames);
-
-      const imageBlob = await response.blob();
-
-      const imageObjectURL = URL.createObjectURL(imageBlob);
-
-      // console.log(imageObjectURL);
-      outputArray.push(imageObjectURL);
+      outputArray.push(url);
     } else if (response.status === 404) {
       console.log(response.status);
 
-      let warningMessage = makeHr(path.slice(path.lastIndexOf("/") + 1), ext);
+      let warningMessage = makeHr(url.slice(url.lastIndexOf("/") + 1), ext);
 
       warnings.push(warningMessage);
     }
     setWarnings(warnings);
-    setDownloadnames(downloadable);
-    console.log("downloadable: ", downloadable);
     console.log("warnings: ", warnings);
   };
 

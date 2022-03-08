@@ -23,7 +23,6 @@ function PlotExplorerContainer() {
   const [plottypes, setPlottypes] = useState([]);
   const [regions, setRegion] = useState([]);
   const [images, setImages] = useState([]);
-  const [downloadnames, setDownloadnames] = useState([]);
   // const [datafiles, setDataFiles] = useState([]);
   const [warnings, setWarnings] = useState([]);
 
@@ -42,7 +41,6 @@ function PlotExplorerContainer() {
           periods,
           plottypes,
           setWarnings,
-          setDownloadnames,
         },
         "png"
       );
@@ -91,12 +89,7 @@ function PlotExplorerContainer() {
                 plotvars.length >= 1 &&
                 seasons.length >= 1 &&
                 periods.length >= 1 &&
-                regions.length >= 1 && (
-                  <DownloadPlotsButton
-                    images={images}
-                    downloadnames={downloadnames}
-                  />
-                )}
+                regions.length >= 1 && <DownloadPlotsButton images={images} />}
             </Container>
             <Container>
               {/* Conditionally render Download button if at least one of each variable is selected */}
