@@ -194,31 +194,31 @@ export const plottypeOptionsContents = [
   {
     value: "epp-ukcp",
     label: "UKCP18 EPPs",
-    icon: "/icons/taylor.png",
+    icon: "/icons/ukcp-epp.png",
     title: "UKCP18 12km EPPs of ",
   },
   {
     value: "eurocordex-anova",
     label: "EuroCORDEX Anova",
-    icon: "/icons/taylor.png",
+    icon: "/icons/eurocordex-anova.png",
     title: "Decomposition of sources of variance in EuroCORDEX ensemble of ",
   },
   {
     value: "stampplots-cmip5",
     label: "CMIP5 Maps",
-    icon: "/icons/taylor.png",
+    icon: "/icons/cmip5.png",
     title: "Maps of ",
   },
   {
     value: "stampplots-eurocordex",
     label: "EuroCORDEX Maps",
-    icon: "/icons/taylor.png",
+    icon: "/icons/eurocordex-stampplots.png",
     title: "Maps of ",
   },
   {
     value: "stampplots-ukcp",
     label: "UKCP18 Maps",
-    icon: "/icons/taylor.png",
+    icon: "/icons/ukcp-stampplots.png",
     title: "Maps of ",
   },
 ];
