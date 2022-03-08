@@ -3,8 +3,8 @@
 .downloadbtn,
 .downloadbtn a,
 .downloadbtn a:hover {
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky;
+  position: sticky; */
   float: left;
   top: 65%;
   color: white;
