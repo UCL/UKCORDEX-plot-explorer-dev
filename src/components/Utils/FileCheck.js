@@ -1,5 +1,5 @@
 import SplitToVars from "./SplitToVars";
-import makeHr from "./Translate";
+import { makeHr } from "./Translate";
 
 export default async function FileCheck(
   { plotvars, seasons, periods, plottypes, setWarnings, setDownloadnames },
