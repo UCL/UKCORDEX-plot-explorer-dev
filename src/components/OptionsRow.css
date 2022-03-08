@@ -66,6 +66,12 @@
   color: #a94343;
 }
 
+.Annual {
+  background-color: #b876df;
+  border-color: #6d17c4;
+  color: #471777;
+}
+
 /******************* Section for Plot Type Dropdown ********************/
 .icon {
   margin-right: 0.3em;
