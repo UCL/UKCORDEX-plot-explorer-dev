@@ -7,8 +7,8 @@ import {
   regionOptionsContents as regions,
 } from "../OptionsRowContents";
 
-export function makeHr(filename, ext) {
-  let dict = SplitToVars(filename, ext);
+export function makeHr(filename) {
+  let dict = SplitToVars(filename);
   // pvar is not translated since it's kept as is
   let regionhr = Translate(dict.region, regions);
   let ptypehr = Translate(dict.ptype, plottypes).toLowerCase();
