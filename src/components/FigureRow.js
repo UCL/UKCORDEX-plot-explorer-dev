@@ -36,7 +36,9 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
                 <Image
                   fluid="true"
                   // width="100%"
-                  alt={"plot not found"}
+                  alt={`plot ${makeTitle(
+                    plot.slice(plot.lastIndexOf("/") + 1)
+                  )} not found`}
                   src={plot}
                 />
               </Figure>
