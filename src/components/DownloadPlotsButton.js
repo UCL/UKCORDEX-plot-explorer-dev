@@ -4,10 +4,10 @@ import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
 import downloadZip from "./Utils/downloadZip";
 
-function DownloadPlotsButton({ images, downloadnames }) {
+function DownloadPlotsButton({ images }) {
   const handlePlotDownload = () => {
     // call zip function here
-    return downloadZip(images, downloadnames, "plots");
+    return downloadZip(images, "plots");
   };
 
   return (

@@ -23,7 +23,7 @@ function PlotExplorerContainer() {
   const [plottypes, setPlottypes] = useState([]);
   const [regions, setRegion] = useState([]);
   const [images, setImages] = useState([]);
-  // const [datafiles, setDataFiles] = useState([]);
+  const [datafiles, setDataFiles] = useState([]);
   const [warnings, setWarnings] = useState([]);
 
   // check files as selections are chosen
@@ -46,16 +46,16 @@ function PlotExplorerContainer() {
         "png"
       );
       // Commented for now just because files are not yet available
-      // const datafiles = await FileCheck(
-      //   { plotvars, seasons, periods, plottypes },
-      //   "nc"
-      // );
+      const datafiles = await FileCheck(
+        { plotvars, seasons, periods, plottypes, regions, setWarnings },
+        "nc"
+      );
       if (!active) {
         return;
       }
       setImages(images);
       console.log(images);
-      // setDataFiles(datafiles);
+      setDataFiles(datafiles);
     }
   }, [plotvars, seasons, periods, plottypes, regions]);
 
@@ -99,9 +99,7 @@ function PlotExplorerContainer() {
                 seasons.length >= 1 &&
                 periods.length >= 1 &&
                 regions.length >= 1 && (
-                  <DownloadDataButton
-                  // datafiles={datafiles}
-                  />
+                  <DownloadDataButton datafiles={datafiles} />
                 )}
             </Container>
           </Stack>
