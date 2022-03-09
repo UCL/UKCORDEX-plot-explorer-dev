@@ -1,9 +1,8 @@
 import React from "react";
 import Figure from "react-bootstrap/Figure";
-// import FigureImage from "react-bootstrap/FigureImage";
 import { Container, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
-
+import { makeTitle } from "./Utils/Translate";
 
 function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
   /*
@@ -23,34 +22,22 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images }) {
     // TODO: check with research team this is the best way to proceed.
     return (
       <>
-
         {images.map((plot, i) => (
           <Container key={i}>
             <Card className="mb-4">
               <Figure>
                 <Figure.Caption>
-                  Figure Title Here
-                  {/* {`${plot.plotvars.label}/${plot.plottypes.label}_${plotvars.label}_${seasons.label}_${periods.label}`} */}
+                  {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
                 </Figure.Caption>
                 <Image
                   fluid="true"
                   // width="100%"
-                  alt={
-                    plottypes.label +
-                    " not found for '" +
-                    plotvars.label +
-                    "' on season '" +
-                    seasons.label +
-                    "' and period '" +
-                    periods.label +
-                    "'."
-                  }
+                  alt={"plot not found"}
                   src={plot}
                 />
               </Figure>
             </Card>
           </Container>
-
         ))}
       </>
     );
