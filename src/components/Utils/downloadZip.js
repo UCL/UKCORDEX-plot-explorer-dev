@@ -24,6 +24,6 @@ export default function downloadZip(filelist, zipname) {
         });
       }
     });
-    return console.log("this needed a return");
+    return null;
   });
 }
