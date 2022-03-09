@@ -11,7 +11,7 @@ export function makeHr(filename, ext) {
   let dict = SplitToVars(filename, ext);
   // pvar is not translated since it's kept as is
   let regionhr = Translate(dict.region, regions);
-  let ptypehr = Translate(dict.ptype, plottypes);
+  let ptypehr = Translate(dict.ptype, plottypes).toLowerCase();
   let seasonhr = Translate(dict.season, seasons);
   let periodhr = Translate(dict.period, periods);
   let hrString = `${regionhr} ${ptypehr} for ${seasonhr} ${dict.pvar} during ${periodhr}`;
