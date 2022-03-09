@@ -3,25 +3,11 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "./DownloadButton.css";
 import downloadZip from "./Utils/downloadZip";
-import FileCheck from "./Utils/FileCheck";
 
-export default function DownloadDataButton({
-  plotvars,
-  seasons,
-  periods,
-  plottypes,
-  regions,
-}) {
-  const handleDataDownload = async () => {
-    console.log(plotvars);
-
-    const files = await FileCheck(
-      { plotvars, seasons, periods, plottypes },
-      "nc"
-    );
-
+export default function DownloadDataButton({ datafiles }) {
+  const handleDataDownload = () => {
     // call zip function here
-    return downloadZip(files, "datafiles");
+    return downloadZip(datafiles, "datafiles");
   };
 
   return (
