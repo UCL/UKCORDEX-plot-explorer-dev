@@ -80,9 +80,9 @@ export const plotvarOptionsContents = [
 // Region/Resolution
 export const regionOptionsContents = [
   { value: "12km", label: "12km grid" },
-  { value: "value", label: "Country" },
-  { value: "value", label: "Administrative region" },
-  { value: "value", label: "River basin" },
+  { value: "country", label: "Country" },
+  { value: "admin", label: "Administrative region" },
+  { value: "river", label: "River basin" },
 ];
 
 // Time Periods
