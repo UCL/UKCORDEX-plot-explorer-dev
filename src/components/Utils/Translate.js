@@ -25,11 +25,11 @@ export function makeTitle(plot) {
   let seasonTitle = Translate(dict.season, seasons);
 
   // specific function for pvar due to category nesting
-  function createpvarTitle(variable, dictionary, field = "label") {
-    for (let key1 in dictionary) {
-      for (let key2 in key1) {
-        if (variable === dictionary[key1]["options"][key2].value) {
-          return dictionary[key1]["options"][key2][field];
+  function createpvarTitle(variable, varlist, field = "label") {
+    for (let varname in varlist) {
+      for (let abbr in varname) {
+        if (variable === varlist[varname]["options"][abbr].value) {
+          return varlist[varname]["options"][abbr][field];
         }
       }
     }
