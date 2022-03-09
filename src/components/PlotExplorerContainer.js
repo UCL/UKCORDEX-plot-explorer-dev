@@ -40,13 +40,14 @@ function PlotExplorerContainer() {
           seasons,
           periods,
           plottypes,
+          regions,
           setWarnings,
         },
         "png"
       );
       // Commented for now just because files are not yet available
       const datafiles = await FileCheck(
-        { plotvars, seasons, periods, plottypes, setWarnings },
+        { plotvars, seasons, periods, plottypes, regions, setWarnings },
         "nc"
       );
       if (!active) {
@@ -56,7 +57,7 @@ function PlotExplorerContainer() {
       console.log(images);
       setDataFiles(datafiles);
     }
-  }, [plotvars, seasons, periods, plottypes]);
+  }, [plotvars, seasons, periods, plottypes, regions]);
 
   return (
     <Container fluid>
