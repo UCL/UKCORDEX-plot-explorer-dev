@@ -21,7 +21,7 @@ export function makeHr(filename, ext) {
 export function makeTitle(plot) {
   let dict = SplitToVars(plot);
   let regionTitle = Translate(dict.region, regions);
-  let ptypeTitle = Translate(dict.ptype, plottypes, "title");
+  let ptypeTitle = Translate(dict.ptype, plottypes, "title").toLowerCase();
   let seasonTitle = Translate(dict.season, seasons);
 
   // specific function for pvar due to category nesting
