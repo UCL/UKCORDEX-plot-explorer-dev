@@ -80,9 +80,9 @@ function PlotExplorerContainer() {
       <Row>
         {warnings.length >= 1 && <DisplayWarnings warnings={warnings} />}
       </Row>
-      <Row>
+      <Row style={{ marginTop: 10 }}>
         <Col xs={2} className="ml-2 position-sticky">
-          <Stack gap={1}>
+          <Stack gap={1} style={{ position: "fixed" }}>
             <Container>
               {/* Conditionally render Download button if at least one of each variable is selected */}
               {plottypes.length >= 1 &&

@@ -51,7 +51,7 @@ function OptionsRow({
 */
   return (
     <Container fluid>
-      <Row className="pt-4 opt-row">
+      <Row className="pt-4 mb-4">
         {/* Plot variables dropdown */}
         <Col sm={3} xs={5}>
           <Select
