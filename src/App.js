@@ -26,7 +26,7 @@ function App() {
         <Route path="missing-plots" element={<MissingPlots />} />
         <Route path="time-help" element={<TimeHelp />} />
         <Route path="indices-help" element={<IndicesHelp />} />
-        <Route path="acknowledgments" element={<Acknowledgements />} />
+        <Route path="acknowledgements" element={<Acknowledgements />} />
         <Route path="about-team" element={<ProjectTeam />} />
       </Routes>
     </div>

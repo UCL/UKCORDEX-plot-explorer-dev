@@ -8,7 +8,12 @@ export default function Acknowledgements() {
     <Container className="about">
       <div>
         <h1>{AckInfo.title}</h1>
-        <p>{AckInfo.contents}</p>
+        <h6>{AckInfo.intro}</h6>
+        <ul>
+          {AckInfo.contents.map((contributor, i) => (
+            <li key={i}>{contributor}</li>
+          ))}
+        </ul>
       </div>
     </Container>
   );
