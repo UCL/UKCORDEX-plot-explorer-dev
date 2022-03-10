@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./ExtraPages.css";
+import "../ExtraPages.css";
 import { AboutInfo } from "./Contents/AboutInfo";
 
-function About() {
+export default function About() {
   return (
     <Container className="about">
       <div>
@@ -13,5 +13,3 @@ function About() {
     </Container>
   );
 }
-
-export default About;

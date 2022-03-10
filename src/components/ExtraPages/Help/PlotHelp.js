@@ -1,10 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { PlotInfoHead } from "./Contents/PlotInfo";
-import { PlotInfoContents } from "./Contents/PlotInfo";
-import "./ExtraPages.css";
+import { PlotInfoHead, PlotInfoContents } from "./Contents/PlotInfo";
+import "../ExtraPages.css";
 
-function PlotHelp() {
+export default function PlotHelp() {
   return (
     <Container className="plotHelp">
       <div>
@@ -14,8 +13,8 @@ function PlotHelp() {
       </div>
       <br></br>
       {/* section about the plots */}
-      {PlotInfoContents.map(({ plot, description }) => (
-        <div key={plot}>
+      {PlotInfoContents.map(({ plot, description, i }) => (
+        <div key={i}>
           <h5>{plot}</h5>
           <p>{description}</p>
           <br></br>
@@ -24,5 +23,3 @@ function PlotHelp() {
     </Container>
   );
 }
-
-export default PlotHelp;

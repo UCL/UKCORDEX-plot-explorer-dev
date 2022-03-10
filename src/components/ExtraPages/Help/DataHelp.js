@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { DataInfoContents, DataInfoHead } from "./Contents/DataInfo";
-import "./ExtraPages.css";
+import "../ExtraPages.css";
 
-function DataHelp() {
+export default function DataHelp() {
   return (
     <Container className="help">
       <div>
@@ -12,8 +12,8 @@ function DataHelp() {
       </div>
       <br></br>
       {/* section about the data */}
-      {DataInfoContents.map(({ data, description }) => (
-        <div key={data}>
+      {DataInfoContents.map(({ data, description, i }) => (
+        <div key={i}>
           <h5>{data}</h5>
           <p>{description}</p>
         </div>
@@ -21,5 +21,3 @@ function DataHelp() {
     </Container>
   );
 }
-
-export default DataHelp;
