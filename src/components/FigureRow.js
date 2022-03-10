@@ -2,7 +2,7 @@ import React from "react";
 import Figure from "react-bootstrap/Figure";
 import { Container, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
-import { makeTitle } from "./Utils/Translate";
+import { makeHr, makeTitle } from "./Utils/Translate";
 
 function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
   /*
