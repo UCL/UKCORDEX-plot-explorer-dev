@@ -70,7 +70,6 @@ function PlotExplorerContainer() {
           Each dropdown also allows as-you-type filtering.
         </p>
       </Alert>
-
       <OptionsRow
         setPlotvars={setPlotvars}
         setSeasons={setSeasons}
@@ -82,8 +81,13 @@ function PlotExplorerContainer() {
         {warnings.length >= 1 && <DisplayWarnings warnings={warnings} />}
       </Row>
       <Row style={{ marginTop: 10 }}>
-        <Col xs={2} className="ml-2 position-sticky">
-          <Stack gap={1} style={{ position: "fixed" }}>
+        <Col></Col>
+        <Col>
+          <Stack
+            gap={0}
+            direction={"horizontal"}
+            // style={{ position: "sticky" }}
+            sticky="top">
             <Container>
               {/* Conditionally render Download button if at least one of each variable is selected */}
               {plottypes.length >= 1 &&
@@ -104,16 +108,19 @@ function PlotExplorerContainer() {
             </Container>
           </Stack>
         </Col>
-        <Col>
-          <FigureRow
-            plotvars={plotvars}
-            seasons={seasons}
-            periods={periods}
-            plottypes={plottypes}
-            regions={regions}
-            images={images}
-          />
-        </Col>
+        <Col></Col>
+      </Row>
+      <Row style={{ marginTop: 10 }}>
+        {/* <Col> */}
+        <FigureRow
+          plotvars={plotvars}
+          seasons={seasons}
+          periods={periods}
+          plottypes={plottypes}
+          regions={regions}
+          images={images}
+        />
+        {/* </Col> */}
       </Row>
     </Container>
   );

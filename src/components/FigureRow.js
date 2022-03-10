@@ -39,7 +39,7 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
                 </Figure.Caption>
                 <Image
                   fluid="true"
-                  // width="100%"
+                  width="100%"
                   alt={`plot ${makeTitle(
                     plot.slice(plot.lastIndexOf("/") + 1)
                   )} not found`}
