@@ -34,7 +34,7 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
                   {" "}
                   {makeHr(plot.slice(plot.lastIndexOf("/") + 1))}
                 </h4>
-                <Figure.Caption>
+                <Figure.Caption style={{ textAlign: "center" }}>
                   {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
                 </Figure.Caption>
                 <Image
