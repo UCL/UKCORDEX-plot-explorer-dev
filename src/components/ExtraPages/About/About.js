@@ -8,7 +8,23 @@ export default function About() {
     <Container className="about">
       <div>
         <h1>{AboutInfo.title}</h1>
-        <p>{AboutInfo.contents}</p>
+        {AboutInfo.contents.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
+        <p style={{ textAlign: "center" }}>
+          <span
+            style={{
+              paddingRight: 20,
+            }}>
+            <a href={AboutInfo.links[1]}>Met Office Climate Projections </a>
+          </span>
+          <span
+            style={{
+              paddingLeft: 20,
+            }}>
+            <a href={AboutInfo.links[2]}>EuroCORDEX Ensemble</a>
+          </span>
+        </p>
       </div>
     </Container>
   );
