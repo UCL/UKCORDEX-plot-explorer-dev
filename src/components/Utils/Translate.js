@@ -49,7 +49,7 @@ export function makeTitle(plot) {
     pname = `after GMST increase of ${dict.period}°C (${seasonTitle})`;
   }
 
-  let titleString = `${regionTitle} ${ptypeTitle} ${ctype} ${pvarTitle} (${dict.pvar}) ${pname}`;
+  let titleString = `${regionTitle} ${ptypeTitle}: ${ctype} ${pvarTitle} (${dict.pvar}) ${pname}`;
   return titleString;
 }
 

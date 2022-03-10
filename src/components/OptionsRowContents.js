@@ -81,7 +81,7 @@ export const plotvarOptionsContents = [
 export const regionOptionsContents = [
   { value: "12km", label: "12km grid" },
   { value: "country", label: "Country" },
-  { value: "admin", label: "Administrative region" },
+  { value: "region", label: "Administrative region" },
   { value: "river", label: "River basin" },
 ];
 
