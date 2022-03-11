@@ -9,6 +9,7 @@ import MissingPlots from "./components/ExtraPages/Help/MissingPlots";
 import TimeHelp from "./components/ExtraPages/Help/TimeHelp";
 import Acknowledgements from "./components/ExtraPages/About/Acknowledgements";
 import ProjectTeam from "./components/ExtraPages/About/ProjectTeam";
+import Usage from "./components/ExtraPages/Help/Usage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="indices-help" element={<IndicesHelp />} />
         <Route path="acknowledgements" element={<Acknowledgements />} />
         <Route path="about-team" element={<ProjectTeam />} />
+        <Route path="how-to-use" element={<Usage />} />
       </Routes>
     </div>
   );

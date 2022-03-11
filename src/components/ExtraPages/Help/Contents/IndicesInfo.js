@@ -121,20 +121,20 @@ export const IndicesInfoContents = [
         value: "tmin10p",
         label: "number of cold nights",
         description:
-          "Let $q_{10}(\tmin[ir])$ be the 10th percentile of daily minimum temperatures in a five-day window centred on calendar day i in the reference period $r$ (1980-2010). Count the number of days where $\tmin[ij] < q_{10}(\tmin[ir])$ for the season of interest j.",
+          "Let q_{10}(tmin_ir) be the 10th percentile of daily minimum temperatures in a five-day window centred on calendar day i in the reference period $r$ (1980-2010). Count the number of days where tmin_ij < q_{10}(tmin_ir) for the season of interest j.",
       },
       {
         value: "tmin90p",
         label: "number of warm nights",
         description:
-          "Let $q_{90}(\tmin[ir])$ be the 90th percentile of daily minimum temperatures in a five-day window centred on calendar day i in the reference period $r$ (1980-2010). Count the number of days where $\tmin[ij] > q_{90}(\tmin[ir])$ for the season of interest j.",
+          "Let q_{90}(tmin[ir]) be the 90th percentile of daily minimum temperatures in a five-day window centred on calendar day i in the reference period $r$ (1980-2010). Count the number of days where tmin_ij > q_{90}(tmin_ir) for the season of interest j.",
       },
     ],
   },
   {
     category: "Precipitation",
     foreword:
-      "In defining the following indices of precipitation, let $pr[ij]$ be the daily precipitation amount in mm on day i in period j, and let prc_ij be the daily precipitation amount arising from convective processes in mm on day i in period j. pr_ij geq 1}$ denotes the subset of the pr_ij for which pr_ij geq 1$.",
+      "In defining the following indices of precipitation, let $pr[ij]$ be the daily precipitation amount in mm on day i in period j, and let prc_ij be the daily precipitation amount arising from convective processes in mm on day i in period j. pr_ij geq 1 denotes the subset of the pr_ij for which pr_ij geq 1.",
     options: [
       { value: "pr", label: "daily precipitation rate" },
       {
@@ -145,7 +145,7 @@ export const IndicesInfoContents = [
       {
         value: "fwd",
         label: "proportion of wet days",
-        description: "The proportion of days for which pr_ij geq 1$.",
+        description: "The proportion of days for which pr_ij geq 1.",
       },
       {
         value: "prc",
@@ -155,76 +155,76 @@ export const IndicesInfoContents = [
         value: "prcprop",
         label: "proportion of rainfall due to convection",
         description:
-          "Let prc_ij be the daily precipitation amount due to convective rainfall on day i in period j. The proportion of total precipitation due to convective processes in period j is the sum of prc_ij geq 1$ in period j divided by the total precipitation in period j, prcptot.",
+          "Let prc_ij be the daily precipitation amount due to convective rainfall on day i in period j. The proportion of total precipitation due to convective processes in period j is the sum of prc_ij geq 1 in period j divided by the total precipitation in period j, prcptot.",
       },
       {
         value: "pww",
         label: "proportion of wet days followed by a wet day",
         description:
-          "Where $n$ is the total number of days in period j, and $ind{pr[ij] > 1}$ is an indicator function with value one if $pr[ij] > 1$, and zero otherwise. The complementary transition probability is $P_j(wd) = 1-P_j(ww)$",
+          "Where n is the total number of days in period j, and pr_ij > 1 is an indicator function with value one if pr_ij > 1, and zero otherwise. The complementary transition probability is P_j(wd) = 1-P_j(ww)",
         image: "/content_images/pww_math.png",
       },
       {
         value: "pdd",
         label: "proportion of dry days followed by a dry day",
         description:
-          "Where $n$ is the total number of days in period j, and $ind{pr[ij] > 1}$ is an indicator function with value one if $pr[ij] > 1$, and zero otherwise. The complementary transition probability is $P_j(dw) = 1-P_j(dd)$",
+          "Where n is the total number of days in period j, and pr_ij > 1 is an indicator function with value one if pr_ij > 1, and zero otherwise. The complementary transition probability is P_j(dw) = 1-P_j(dd)",
         image: "/content_images/pdd_math.png",
       },
       {
         value: "rx1day",
         label: "maximum one-day precipitation",
         description:
-          "The maximum one-day precipitation for season j is $max (pr[ij])$.",
+          "The maximum one-day precipitation for season j is $max (pr_ij).",
       },
       {
         value: "rx5day",
         label: "maximum five-day precipitation",
         description:
-          "Let $\texttt{pr5}_{ij}$ be the total precipitation amount for the five-day interval ending on day i in season j. The maximum five-day values for period j are $max left(\texttt{pr5}_{ij}\right)$.",
+          "Let pr5_ij be the total precipitation amount for the five-day interval ending on day i in season j. The maximum five-day values for period j are max(pr5_ij).",
       },
       {
         value: "r95ptot",
         label:
           "proportion of precipitation falling on days exceeding 95th percentile",
         description:
-          "Let $q_{95}(pr[r])$ be the 95th percentile of daily wet-day precipitation in the reference period $r$ (1980-2010). The total precipitation exceeding the 95th percentile is the sum of  $\br{pr[ij] geq q_{95}(pr[r])}$.",
+          "Let $q_{95}(pr[r])$ be the 95th percentile of daily wet-day precipitation in the reference period $r$ (1980-2010). The total precipitation exceeding the 95th percentile is the sum of  pr_ij geq q_{95}(pr_r).",
       },
       {
         value: "r99ptot",
         label:
           "proportion of precipitation falling on days exceeding 99th percentile",
         description:
-          "Let $q_{99}(pr[r])$ be the 99th percentile of daily wet-day precipitation in the reference period $r$ (1980-2010). The total precipitation exceeding the 99th percentile is the sum of  $\br{pr[ij] geq q_{99}(pr[r])}$.",
+          "Let q_{99}(pr_r) be the 99th percentile of daily wet-day precipitation in the reference period $r$ (1980-2010). The total precipitation exceeding the 99th percentile is the sum of  pr_ij geq q_{99}(pr_r).",
       },
       {
         value: "sdii",
         label: "wet-day precipitation rate",
-        description: "Mean of $\br{pr[ij] geq 1}$ in season j.",
+        description: "Mean of pr_ij geq 1 in season j.",
       },
       {
         value: "dsmed",
         label: "median length of dry spell",
         description:
-          "Count the median number of consecutive days where $pr[ij] < 1$.",
+          "Count the median number of consecutive days where pr_ij < 1.",
       },
       {
         value: "dsmax",
         label: "maximum length of dry spell",
         description:
-          "Count the largest number of consecutive days where $pr[ij] < 1$.",
+          "Count the largest number of consecutive days where $pr[ij] < 1.",
       },
       {
         value: "wsmed",
         label: "median length of wet spell",
         description:
-          "Count the median number of consecutive days where $pr[ij] geq 1$.",
+          "Count the median number of consecutive days where $pr[ij] geq 1.",
       },
       {
         value: "wsmax",
         label: "maximum length of wet spell",
         description:
-          "Count the largest number of consecutive days where $pr[ij] geq 1$.",
+          "Count the largest number of consecutive days where $pr[ij] geq 1.",
       },
     ],
   },
