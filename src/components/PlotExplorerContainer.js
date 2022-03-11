@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import { Alert, Row, Col } from "react-bootstrap";
+import { Alert, Row } from "react-bootstrap";
 import Stack from "react-bootstrap/Stack";
 import DownloadPlotsButton from "./DownloadPlotsButton";
 import FigureRow from "./FigureRow";
@@ -81,37 +81,23 @@ function PlotExplorerContainer() {
         {warnings.length >= 1 && <DisplayWarnings warnings={warnings} />}
       </Row>
       <Row style={{ marginTop: 10 }}>
-        <Col></Col>
-        <Col>
-          <Stack
-            gap={0}
-            direction={"horizontal"}
-            // style={{ position: "sticky" }}
-            sticky="top">
-            <Container>
-              {/* Conditionally render Download button if at least one of each variable is selected */}
-              {plottypes.length >= 1 &&
-                plotvars.length >= 1 &&
-                seasons.length >= 1 &&
-                periods.length >= 1 &&
-                regions.length >= 1 && <DownloadPlotsButton images={images} />}
-            </Container>
-            <Container>
-              {/* Conditionally render Download button if at least one of each variable is selected */}
-              {plottypes.length >= 1 &&
-                plotvars.length >= 1 &&
-                seasons.length >= 1 &&
-                periods.length >= 1 &&
-                regions.length >= 1 && (
-                  <DownloadDataButton datafiles={datafiles} />
-                )}
-            </Container>
-          </Stack>
-        </Col>
-        <Col></Col>
+        {/* Conditionally render buttons if at least one of each variable is selected */}
+        {plottypes.length >= 1 &&
+          plotvars.length >= 1 &&
+          seasons.length >= 1 &&
+          periods.length >= 1 &&
+          regions.length >= 1 && (
+            <Stack
+              gap={5}
+              direction={"horizontal"}
+              className="justify-content-center"
+              sticky="top">
+              <DownloadPlotsButton images={images} />
+              <DownloadDataButton datafiles={datafiles} />
+            </Stack>
+          )}
       </Row>
-      <Row style={{ marginTop: 10 }}>
-        {/* <Col> */}
+      <Row style={{ marginTop: 20 }}>
         <FigureRow
           plotvars={plotvars}
           seasons={seasons}
