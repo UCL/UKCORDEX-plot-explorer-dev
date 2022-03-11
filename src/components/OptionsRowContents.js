@@ -30,7 +30,7 @@ export const plotvarOptionsContents = [
         label: "maximum daily near-surface air temperature",
       },
       {
-        tag: "temp",
+        tag: "core",
         value: "tasmin",
         label: "minimum daily near-surface air temperature",
       },

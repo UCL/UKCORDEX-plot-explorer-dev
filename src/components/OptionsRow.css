@@ -1,7 +1,7 @@
 /* Styling for the tags in the labels of the dropdowns */
 /*********************** For dropdown text  *******************************/
 .plotdropdown {
-  font-size: 85%;
+  font-size: 80%;
 }
 
 /*********************** Section for PlotVar Dropdown **********************/
@@ -12,9 +12,15 @@
 .tag {
   border-radius: 10%;
   margin-right: 0.3em;
-  padding: 0.3em;
+  padding: 0.2em;
   border: 2px solid;
-  font-size: 90%;
+  font-size: 85%;
+}
+
+.core {
+  background-color: rgb(115, 206, 112);
+  border-color: rgb(53, 138, 50);
+  color: rgb(15, 71, 13);
 }
 
 .temp {
@@ -25,14 +31,26 @@
 
 .precip {
   background-color: rgb(94, 169, 240);
-  border-color: rgba(22, 129, 201, 0.979);
+  border-color: rgb(22, 129, 201);
   color: rgb(7, 41, 119);
 }
 
 .wind {
-  background-color: rgba(147, 222, 245, 0.979);
-  border-color: rgba(49, 177, 228, 0.979);
-  color: rgba(15, 102, 136, 0.979);
+  background-color: rgb(147, 222, 245);
+  border-color: rgb(49, 177, 228);
+  color: rgb(15, 102, 136);
+}
+
+.extreme_pr {
+  background-color: rgb(78, 142, 201);
+  border-color: rgb(22, 129, 201);
+  color: rgb(13, 35, 87);
+}
+
+.extreme_wind {
+  background-color: rgb(140, 197, 214);
+  border-color: rgb(49, 177, 228);
+  color: rgb(12, 58, 77);
 }
 
 .other {
