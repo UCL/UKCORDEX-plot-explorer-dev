@@ -109,38 +109,38 @@ export const IndicesInfoContents = [
         value: "tmax10p",
         label: "number of cold days",
         description:
-          "Let q_{10}(tmax_ir) be the c10th percentile of daily maximum temperatures in a five-day window centred on calendar day i in the reference period $r$ (1980-2010). Count the number of days where tmax_ij < q_{10}(tmax_ir) for the season of interest j.",
+          "Let q_{10}(tmax_ir) be the c10th percentile of daily maximum temperatures in a five-day window centred on calendar day i in the reference period r (1980-2010). Count the number of days where tmax_ij < q_{10}(tmax_ir) for the season of interest j.",
       },
       {
         value: "tmax90p",
         label: "number of hot days",
         description:
-          "Let $q_{90}(tmax_ir) be the 90th percentile of daily maximum temperatures in a five-day window centred on calendar day i in the reference period $r$ (1980-2010). Count the number of days where tmax_ij > q_{90}(tmax_ir) for the season of interest j.",
+          "Let q_{90}(tmax_ir) be the 90th percentile of daily maximum temperatures in a five-day window centred on calendar day i in the reference period r (1980-2010). Count the number of days where tmax_ij > q_{90}(tmax_ir) for the season of interest j.",
       },
       {
         value: "tmin10p",
         label: "number of cold nights",
         description:
-          "Let q_{10}(tmin_ir) be the 10th percentile of daily minimum temperatures in a five-day window centred on calendar day i in the reference period $r$ (1980-2010). Count the number of days where tmin_ij < q_{10}(tmin_ir) for the season of interest j.",
+          "Let q_{10}(tmin_ir) be the 10th percentile of daily minimum temperatures in a five-day window centred on calendar day i in the reference period r (1980-2010). Count the number of days where tmin_ij < q_{10}(tmin_ir) for the season of interest j.",
       },
       {
         value: "tmin90p",
         label: "number of warm nights",
         description:
-          "Let q_{90}(tmin[ir]) be the 90th percentile of daily minimum temperatures in a five-day window centred on calendar day i in the reference period $r$ (1980-2010). Count the number of days where tmin_ij > q_{90}(tmin_ir) for the season of interest j.",
+          "Let q_{90}(tmin[ir]) be the 90th percentile of daily minimum temperatures in a five-day window centred on calendar day i in the reference period r (1980-2010). Count the number of days where tmin_ij > q_{90}(tmin_ir) for the season of interest j.",
       },
     ],
   },
   {
     category: "Precipitation",
     foreword:
-      "In defining the following indices of precipitation, let $pr[ij]$ be the daily precipitation amount in mm on day i in period j, and let prc_ij be the daily precipitation amount arising from convective processes in mm on day i in period j. pr_ij geq 1 denotes the subset of the pr_ij for which pr_ij geq 1.",
+      "In defining the following indices of precipitation, let pr_ij be the daily precipitation amount in mm on day i in period j, and let prc_ij be the daily precipitation amount arising from convective processes in mm on day i in period j. pr_ij geq 1 denotes the subset of the pr_ij for which pr_ij geq 1.",
     options: [
       { value: "pr", label: "daily precipitation rate" },
       {
         value: "prcptot",
         label: "accumulated precipitation",
-        description: "Sum of pr_ij geq 1$ in season j.",
+        description: "Sum of pr_ij geq 1 in season j.",
       },
       {
         value: "fwd",
@@ -175,7 +175,7 @@ export const IndicesInfoContents = [
         value: "rx1day",
         label: "maximum one-day precipitation",
         description:
-          "The maximum one-day precipitation for season j is $max (pr_ij).",
+          "The maximum one-day precipitation for season j is max (pr_ij).",
       },
       {
         value: "rx5day",
@@ -188,14 +188,14 @@ export const IndicesInfoContents = [
         label:
           "proportion of precipitation falling on days exceeding 95th percentile",
         description:
-          "Let $q_{95}(pr[r])$ be the 95th percentile of daily wet-day precipitation in the reference period $r$ (1980-2010). The total precipitation exceeding the 95th percentile is the sum of  pr_ij geq q_{95}(pr_r).",
+          "Let q_{95}(pr_r) be the 95th percentile of daily wet-day precipitation in the reference period r (1980-2010). The total precipitation exceeding the 95th percentile is the sum of  pr_ij geq q_{95}(pr_r).",
       },
       {
         value: "r99ptot",
         label:
           "proportion of precipitation falling on days exceeding 99th percentile",
         description:
-          "Let q_{99}(pr_r) be the 99th percentile of daily wet-day precipitation in the reference period $r$ (1980-2010). The total precipitation exceeding the 99th percentile is the sum of  pr_ij geq q_{99}(pr_r).",
+          "Let q_{99}(pr_r) be the 99th percentile of daily wet-day precipitation in the reference period r (1980-2010). The total precipitation exceeding the 99th percentile is the sum of  pr_ij geq q_{99}(pr_r).",
       },
       {
         value: "sdii",
@@ -212,26 +212,26 @@ export const IndicesInfoContents = [
         value: "dsmax",
         label: "maximum length of dry spell",
         description:
-          "Count the largest number of consecutive days where $pr[ij] < 1.",
+          "Count the largest number of consecutive days where pr_ij < 1.",
       },
       {
         value: "wsmed",
         label: "median length of wet spell",
         description:
-          "Count the median number of consecutive days where $pr[ij] geq 1.",
+          "Count the median number of consecutive days where pr_ij geq 1.",
       },
       {
         value: "wsmax",
         label: "maximum length of wet spell",
         description:
-          "Count the largest number of consecutive days where $pr[ij] geq 1.",
+          "Count the largest number of consecutive days where pr_ij geq 1.",
       },
     ],
   },
   {
     category: "Wind",
     foreword:
-      "In defining the following indices of wind speed, let $swind$ be the  mean daily wind speed on day i in season j, let maxwind be the maximum daily wind speed on day i in season j, and let maxgust be the maximum gust strength on day i in season j.",
+      "In defining the following indices of wind speed, let swind be the  mean daily wind speed on day i in season j, let maxwind be the maximum daily wind speed on day i in season j, and let maxgust be the maximum gust strength on day i in season j.",
     options: [
       { value: "sfcWind", label: "near-surface wind speed" },
       { value: "uas", label: "eastward near-surface wind" },
@@ -265,7 +265,7 @@ export const IndicesInfoContents = [
   {
     category: "Extreme Events",
     foreword:
-      "Indices of extreme wind and precipitation are not calculated per season and then averaged over the selected time period. Instead, let max(idx_j) be the maximum daily value of some index idx_ij in each season j, and let {max(idx_j)} denote the set of all such maxima during the time period of interest: this set contains 30 seasonal maxima for future periods, and 20 maxima for the evaluation period. A generalised extreme value distribution citep[GEV:][]{Coles2001} is fitted to the seasonal maxima {max(idx_j)} at each grid cell, and the parameters of this distribution are used to calculate selected return periods (the expected number of years between occurrences of  events of a given magnitude) and return levels (the magnitude of a once-in-$x$-years event).    Indices of extreme events are available for precipitation indices rx1day and rx5day, and for wind indices sfcWindmax and wsgsmax. For any of these indices, denoted here by the generic index 'idx', the following plots are available:",
+      "Indices of extreme wind and precipitation are not calculated per season and then averaged over the selected time period. Instead, let max(idx_j) be the maximum daily value of some index idx_ij in each season j, and let {max(idx_j)} denote the set of all such maxima during the time period of interest: this set contains 30 seasonal maxima for future periods, and 20 maxima for the evaluation period. A generalised extreme value distribution citep[GEV:][]{Coles2001} is fitted to the seasonal maxima {max(idx_j)} at each grid cell, and the parameters of this distribution are used to calculate selected return periods (the expected number of years between occurrences of  events of a given magnitude) and return levels (the magnitude of a once-in-x-years event).    Indices of extreme events are available for precipitation indices rx1day and rx5day, and for wind indices sfcWindmax and wsgsmax. For any of these indices, denoted here by the generic index 'idx', the following plots are available:",
     options: [
       {
         value: "idx_rl30",
