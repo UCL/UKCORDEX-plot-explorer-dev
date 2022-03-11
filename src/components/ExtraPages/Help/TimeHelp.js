@@ -1,21 +1,30 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { DataInfoContents, DataInfoHead } from "./Contents/DataInfo";
+import { Container, Image } from "react-bootstrap";
 import "../ExtraPages.css";
+import { TimeInfoContents, TimeInfoHead } from "./Contents/TimeInfo";
 
 export default function TimeHelp() {
   return (
     <Container className="help">
       <div>
-        <h1>{DataInfoHead.title}</h1>
-        <p>{DataInfoHead.intro}</p>
+        <h1>{TimeInfoHead.title}</h1>
+        <p>{TimeInfoHead.intro}</p>
       </div>
       <br></br>
       {/* section about the data */}
-      {DataInfoContents.map(({ period, description, i }) => (
+      {TimeInfoContents.map((period, i) => (
         <div key={i}>
-          <h5>{period}</h5>
-          <p>{description}</p>
+          <h5>{period.period}</h5>
+          {period.description.map((desc, i) => (
+            <p key={i}> {desc}</p>
+          ))}
+          {period.image && (
+            <Image
+              fluid="true"
+              src={`${process.env.PUBLIC_URL}${period.image}`}
+              alt=""
+            />
+          )}
         </div>
       ))}
     </Container>
