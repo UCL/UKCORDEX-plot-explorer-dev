@@ -1,6 +1,23 @@
 /* Styling for all the extra pages rather than doing each one individually */
 
-.help, .plotHelp, .about{
-    margin: 4em;
-    max-width: 80%;
+.help,
+.plotHelp,
+.about {
+  margin: 4em;
+  max-width: 80%;
+}
+
+.indices {
+  margin: 3em;
+}
+.indices b {
+  font-weight: 500;
+  font-size: 105%;
+}
+.foreword {
+  font-weight: 300;
+  font-style: oblique;
+}
+.contents {
+  margin: 1em;
 }
