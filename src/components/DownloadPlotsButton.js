@@ -13,7 +13,7 @@ function DownloadPlotsButton({ images }) {
   return (
     <Button
       variant="primary"
-      style={{ background: "#6610f2", border: "none" }}
+      style={{ background: "#9560eb", border: "none" }}
       size="med"
       className="downloadbtn"
       download="UKCORDEXimage"
