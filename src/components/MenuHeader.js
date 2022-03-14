@@ -34,13 +34,13 @@ function MenuHeader() {
           <LinkContainer to="/">
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
+
           <NavDropdown title="About" id="basic-nav-dropdown">
+            <LinkContainer to="/about-explorer">
+              <Nav.Link>About the plot explorer</Nav.Link>
+            </LinkContainer>{" "}
             <LinkContainer to="/about">
               <Nav.Link>About UKCORDEX</Nav.Link>
-            </LinkContainer>
-
-            <LinkContainer to="/about-team">
-              <Nav.Link>Project Team</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/acknowledgements">
               <Nav.Link>Acknowledgements</Nav.Link>
@@ -48,7 +48,7 @@ function MenuHeader() {
           </NavDropdown>
           <NavDropdown title="Help" id="basic-nav-dropdown">
             <LinkContainer to="/how-to-use">
-              <Nav.Link>How to use UKCORDEX</Nav.Link>
+              <NavDropdown.Item>How to use the plot explorer</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/indices-help">
               <NavDropdown.Item>Indices</NavDropdown.Item>
