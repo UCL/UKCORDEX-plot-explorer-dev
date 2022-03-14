@@ -62,7 +62,7 @@ function OptionsRow({
             placeholder="Select variable"
             isClearable={false}
             isMulti
-            className="plotdropdown"
+            className="plotdropdown mt-0 mb-0"
           />
         </Col>
         {/* Plot types dropdown */}

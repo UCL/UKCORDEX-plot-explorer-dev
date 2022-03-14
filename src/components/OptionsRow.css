@@ -7,12 +7,12 @@
 /*********************** Section for PlotVar Dropdown **********************/
 .description {
   font-size: 75%;
-  margin-top: 0.5em;
+  margin-top: 0.2em;
 }
 .tag {
   border-radius: 10%;
   margin-right: 0.3em;
-  padding: 0.2em;
+  padding: 0.1em;
   border: 2px solid;
   font-size: 85%;
 }
