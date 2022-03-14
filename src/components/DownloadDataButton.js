@@ -14,7 +14,7 @@ export default function DownloadDataButton({ datafiles }) {
     // button with direct styling to override bootstrap
     <Button
       variant="primary"
-      style={{ background: "#9560eb", border: "none" }}
+      style={{ background: "#6610f2", border: "none" }}
       size="med"
       className="downloadbtn"
       download="UKCORDEXdata"
