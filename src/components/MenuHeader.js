@@ -34,18 +34,36 @@ function MenuHeader() {
           <LinkContainer to="/">
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
-          <LinkContainer to="/about">
-            <Nav.Link>About</Nav.Link>
-          </LinkContainer>
+          <NavDropdown title="About" id="basic-nav-dropdown">
+            <LinkContainer to="/about">
+              <Nav.Link>About UKCORDEX</Nav.Link>
+            </LinkContainer>
+
+            <LinkContainer to="/about-team">
+              <Nav.Link>Project Team</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/acknowledgements">
+              <Nav.Link>Acknowledgements</Nav.Link>
+            </LinkContainer>
+          </NavDropdown>
           <NavDropdown title="Help" id="basic-nav-dropdown">
+            <LinkContainer to="/how-to-use">
+              <Nav.Link>How to use UKCORDEX</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/indices-help">
               <NavDropdown.Item>Indices</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/data-help">
-              <NavDropdown.Item>Data</NavDropdown.Item>
+              <NavDropdown.Item>Data Sources</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to="/time-help">
+              <NavDropdown.Item>Time Periods</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/plot-help">
               <NavDropdown.Item>Plots</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to="/missing-plots">
+              <NavDropdown.Item>Missing Plots</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
         </Nav>

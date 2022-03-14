@@ -2,7 +2,7 @@ import React from "react";
 import Figure from "react-bootstrap/Figure";
 import { Container, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
-import { makeHr, makeTitle } from "./Utils/Translate";
+import { makeTitle } from "./Utils/Translate";
 
 function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
   /*
@@ -28,13 +28,9 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
       <>
         {images.map((plot, i) => (
           <Container key={i}>
-            <Card className="mb-4">
+            <Card className="mb-4" style={{ border: "none" }}>
               <Figure>
-                <h4 style={{ textAlign: "center" }}>
-                  {" "}
-                  {makeHr(plot.slice(plot.lastIndexOf("/") + 1))}
-                </h4>
-                <Figure.Caption>
+                <Figure.Caption style={{ textAlign: "center" }}>
                   {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
                 </Figure.Caption>
                 <Image
