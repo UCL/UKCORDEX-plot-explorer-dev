@@ -30,7 +30,7 @@ export const plotvarOptionsContents = [
         label: "maximum daily near-surface air temperature",
       },
       {
-        tag: "temp",
+        tag: "core",
         value: "tasmin",
         label: "minimum daily near-surface air temperature",
       },
@@ -356,26 +356,6 @@ export const regionOptionsContents = [
 // Time Periods
 export const periodOptionsContents = [
   {
-    value: "1.5",
-    label: "1.5°C above pre-industrial",
-    title: "after GMST increase of 1.5°C ",
-  },
-  {
-    value: "2",
-    label: "2°C above pre-industrial",
-    title: "after GMST increase of 2°C ",
-  },
-  {
-    value: "3",
-    label: "3°C above pre-industrial",
-    title: "after GMST increase of 3°C ",
-  },
-  {
-    value: "19890101-20081231",
-    label: "1989-2008",
-    title: "19890101-20081231",
-  },
-  {
     value: "19891201-20191130",
     label: "1989-2019",
     title: "19891201-20191130",
@@ -409,6 +389,26 @@ export const periodOptionsContents = [
     value: "20491201-20791130",
     label: "2049-2079",
     title: "20491201-20791130",
+  },
+  {
+    value: "1.5",
+    label: "1.5°C above pre-industrial",
+    title: "after GMST increase of 1.5°C ",
+  },
+  {
+    value: "2",
+    label: "2°C above pre-industrial",
+    title: "after GMST increase of 2°C ",
+  },
+  {
+    value: "3",
+    label: "3°C above pre-industrial",
+    title: "after GMST increase of 3°C ",
+  },
+  {
+    value: "19890101-20081231",
+    label: "1989-2008",
+    title: "19890101-20081231",
   },
 ];
 

@@ -81,6 +81,7 @@ function IndicesHelp() {
                 {content.link && <a href={content.link}>See here</a>}
                 <Image
                   fluid="true"
+                  width="60%"
                   src={`${process.env.PUBLIC_URL}${content.image}`}
                   alt=""
                 />
