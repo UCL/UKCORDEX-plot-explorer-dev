@@ -11,7 +11,7 @@ export function makeHr(filename) {
   let dict = SplitToVars(filename);
   // pvar is not translated since it's kept as is
   let regionhr = Translate(dict.region, regions);
-  let ptypehr = Translate(dict.ptype, plottypes).toLowerCase();
+  let ptypehr = Translate(dict.ptype, plottypes);
   let seasonhr = Translate(dict.season, seasons);
   let periodhr = Translate(dict.period, periods);
   let hrString = `${regionhr} ${ptypehr} for ${seasonhr} ${dict.pvar} during ${periodhr}`;
@@ -22,7 +22,7 @@ export function makeHr(filename) {
 export function makeTitle(plot) {
   let dict = SplitToVars(plot);
   let regionTitle = Translate(dict.region, regions);
-  let ptypeTitle = Translate(dict.ptype, plottypes, "title").toLowerCase();
+  let ptypeTitle = Translate(dict.ptype, plottypes, "title");
   let seasonTitle = Translate(dict.season, seasons);
 
   // specific function for pvar due to category nesting
