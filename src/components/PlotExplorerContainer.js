@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import { Alert, Row, Col } from "react-bootstrap";
+import { Alert, Row } from "react-bootstrap";
 import Stack from "react-bootstrap/Stack";
 import DownloadPlotsButton from "./DownloadPlotsButton";
 import FigureRow from "./FigureRow";
@@ -70,7 +70,6 @@ function PlotExplorerContainer() {
           Each dropdown also allows as-you-type filtering.
         </p>
       </Alert>
-
       <OptionsRow
         setPlotvars={setPlotvars}
         setSeasons={setSeasons}
@@ -82,38 +81,32 @@ function PlotExplorerContainer() {
         {warnings.length >= 1 && <DisplayWarnings warnings={warnings} />}
       </Row>
       <Row style={{ marginTop: 10 }}>
-        <Col xs={2} className="ml-2 position-sticky">
-          <Stack gap={1} style={{ position: "fixed" }}>
-            <Container>
-              {/* Conditionally render Download button if at least one of each variable is selected */}
-              {plottypes.length >= 1 &&
-                plotvars.length >= 1 &&
-                seasons.length >= 1 &&
-                periods.length >= 1 &&
-                regions.length >= 1 && <DownloadPlotsButton images={images} />}
-            </Container>
-            <Container>
-              {/* Conditionally render Download button if at least one of each variable is selected */}
-              {plottypes.length >= 1 &&
-                plotvars.length >= 1 &&
-                seasons.length >= 1 &&
-                periods.length >= 1 &&
-                regions.length >= 1 && (
-                  <DownloadDataButton datafiles={datafiles} />
-                )}
-            </Container>
-          </Stack>
-        </Col>
-        <Col>
-          <FigureRow
-            plotvars={plotvars}
-            seasons={seasons}
-            periods={periods}
-            plottypes={plottypes}
-            regions={regions}
-            images={images}
-          />
-        </Col>
+        {/* Conditionally render buttons if at least one of each variable is selected */}
+        {plottypes.length >= 1 &&
+          plotvars.length >= 1 &&
+          seasons.length >= 1 &&
+          periods.length >= 1 &&
+          regions.length >= 1 && (
+            <Stack
+              gap={5}
+              direction={"horizontal"}
+              className="justify-content-center"
+              sticky="top">
+              <DownloadPlotsButton images={images} />
+              <DownloadDataButton datafiles={datafiles} />
+            </Stack>
+          )}
+      </Row>
+      <Row style={{ marginTop: 20 }}>
+        <FigureRow
+          plotvars={plotvars}
+          seasons={seasons}
+          periods={periods}
+          plottypes={plottypes}
+          regions={regions}
+          images={images}
+        />
+        {/* </Col> */}
       </Row>
     </Container>
   );
