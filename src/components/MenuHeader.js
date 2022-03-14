@@ -37,13 +37,13 @@ function MenuHeader() {
 
           <NavDropdown title="About" id="basic-nav-dropdown">
             <LinkContainer to="/about-explorer">
-              <Nav.Link>About the plot explorer</Nav.Link>
+              <NavDropdown.Item>About the plot explorer</NavDropdown.Item>
             </LinkContainer>{" "}
             <LinkContainer to="/about">
-              <Nav.Link>About UKCORDEX</Nav.Link>
+              <NavDropdown.Item>About UKCORDEX</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/acknowledgements">
-              <Nav.Link>Acknowledgements</Nav.Link>
+              <NavDropdown.Item>Acknowledgements</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
           <NavDropdown title="Help" id="basic-nav-dropdown">
