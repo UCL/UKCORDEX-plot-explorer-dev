@@ -1,34 +1,55 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../ExtraPages.css";
-import { UsageInfo } from "./Contents/UsageInfo";
 
 export default function Usage() {
   return (
-    <Container className="about">
+    <Container className="help">
       <div>
-        <h1>{UsageInfo.title}</h1>
-        <p>{UsageInfo.contents[0]}</p>
-        <p>{UsageInfo.contents[1]}</p>
+        <h1>
+          How to use this plot explorer to select a suitable subset of ensemble
+          members
+        </h1>
+        <p>
+          In situations where only a small number of ensemble members (i.e.
+          model runs) can be used, it is recommended that they are chosen so as
+          to be as representative as possible of the entire ensemble, with
+          respect to the specific climate indices that are most relevant in the
+          context of the application. To achieve this, users are advised to
+          identify and focus on the dominant sources of variation of these
+          indices within the ensemble. For example, in a situation where the
+          GCMs are responsible for 90% of the variation in the indices of
+          interest, the chosen sample of ensemble members should contain runs
+          driven by contrasting GCMs but the choice of RCM is relatively
+          unimportant.
+        </p>
+        <p>
+          The dominant sources of variation in an ensemble are index-dependent.
+          To identify a appropriate set of ensemble members for use in
+          applications examining the impacts of, or adaptation to, future
+          changes in UK climate, a suggested usage of this plot explorer tool
+          is:
+        </p>
 
         <ul>
           <li>
             Having identified the most relevant{" "}
-            <a href="/indices-help"> climate indices</a>, seasons and{" "}
-            <a href="/#">time period</a>, examine the boxplots showing the
+            <Link to="/indices-help"> climate indices</Link>, seasons and{" "}
+            <Link to="/#">time period</Link>, examine the boxplots showing the
             corresponding overall UK-averaged distribution(s) of future changes
             for the time period of interest. This will indicate the extent to
-            which any <a href="/plot-help">ensemble</a> captures the full range
-            of variation; for the EuroCORDEX ensemble, the boxplots can also
-            give a preliminary indication as to whether one potential source of
-            variation (e.g. the GCMs) is highly dominant, since this will
-            manifest itself via clustering of the plotted values by colour or
-            plotting symbol.
+            which any <Link to="/plot-help">ensemble</Link> captures the full
+            range of variation; for the EuroCORDEX ensemble, the boxplots can
+            also give a preliminary indication as to whether one potential
+            source of variation (e.g. the GCMs) is highly dominant, since this
+            will manifest itself via clustering of the plotted values by colour
+            or plotting symbol.
           </li>
           <li>
             Examine maps showing the{" "}
-            <a href="/plot-help">ANOVA decomposition</a> of the ensemble for the
-            indices of interest. The plot titles quantify the overall
+            <Link to="/plot-help">ANOVA decomposition</Link> of the ensemble for
+            the indices of interest. The plot titles quantify the overall
             partitioning of variation across the UK, and hence formalise the
             preliminary indications from the boxplots. Users working on
             applications in a specific part of the UK are advised to use the
@@ -40,7 +61,7 @@ export default function Usage() {
           <li>
             For indices where the GCMs contribute an appreciable component of
             the total ensemble variation, examine maps of the first two GCM{" "}
-            <a href="/plot-help">ensemble principal patterns</a> (EPPs) and
+            <Link to="/plot-help">ensemble principal patterns</Link> (EPPs) and
             their scores. If the first EPP accounts for most of the
             GCM-attributable variation, then this suggests choosing ensemble
             members driven by GCMs with scores extending along the range of the
@@ -54,15 +75,15 @@ export default function Usage() {
           <li>
             For indices where the residual component of variation is dominant in
             the region of interest, users may either select a random sample of
-            ensemble runs, or examine <a href="/plot-help">stamp plots</a> of
-            the individual runs and select a sample that spans the range of
+            ensemble runs, or examine <Link to="/plot-help">stamp plots</Link>{" "}
+            of the individual runs and select a sample that spans the range of
             values.
           </li>
           <li>
             In situations where the guidelines above do not allow users to
             identify a clear subset of ensemble members to use,{" "}
-            <a href="/plot-help">Taylor diagrams</a> and{" "}
-            <a href="/plot-help">maps of biases</a> for the selected indices
+            <Link to="/plot-help">Taylor diagrams</Link> and{" "}
+            <Link to="/plot-help">maps of biases</Link> for the selected indices
             over the evaluation period may be used to identify the runs that
             best reproduce relevant aspects of historical climate by comparison
             with observations: there is an argument for prioritising these runs

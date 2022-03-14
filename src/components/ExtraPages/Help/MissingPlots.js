@@ -1,26 +1,23 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "../ExtraPages.css";
-import {
-  MissingPlotInfoContents,
-  MissingPlotInfoHead,
-} from "./Contents/MissingPlotInfo";
 
 export default function MissingPlots() {
   return (
     <Container className="help">
       <div>
-        <h1>{MissingPlotInfoHead.title}</h1>
-        <p>{MissingPlotInfoHead.intro}</p>
+        <h1>Plots Missing from UKCORDEX Plot Explorer</h1>
+        <p>
+          Some of the combinations found in the given options do not exist and
+          so these plots cannot be created.
+        </p>
       </div>
       <br></br>
-      {/* section about the data */}
-      {MissingPlotInfoContents.map(({ plot, description, i }) => (
-        <div key={i}>
-          <h5>{plot}</h5>
-          <p>{description}</p>
-        </div>
-      ))}
+      {/* section about the missing plots */}
+      <div>
+        <h5>combination</h5>
+        <p>explanation?</p>
+      </div>
     </Container>
   );
 }
