@@ -6,7 +6,7 @@ import "../ExtraPages.css";
 
 export default function DataHelp() {
   return (
-    <Container className="help" fluid="true">
+    <Container className="help">
       <Row fluid="true">
         {/* sidenav for help pages */}
         <Col
