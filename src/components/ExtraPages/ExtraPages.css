@@ -1,7 +1,6 @@
 /* Styling for all the extra pages rather than doing each one individually */
 
 .help,
-.plotHelp,
 .about {
   margin: 4em;
   max-width: 80%;
