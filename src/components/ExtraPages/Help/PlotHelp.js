@@ -38,7 +38,7 @@ export default function PlotHelp() {
       </p>
       <Image
         fluid="true"
-        src={`${process.env.PUBLIC_URL}/content_images/legend.png`}
+        src={`${process.env.PUBLIC_URL}/content_images/legend.svg`}
         alt=""
       />
       {/* section about the plots */}
