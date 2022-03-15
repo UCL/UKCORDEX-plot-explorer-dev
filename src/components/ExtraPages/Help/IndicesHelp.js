@@ -39,8 +39,7 @@ function IndicesHelp() {
       </h6>{" "}
       <br></br>
       {/* core vars table */}
-      <Row>
-        {" "}
+      <Row className="indices">
         <h5>Core Variables</h5>
         <Col>
           <Table striped size="sm">
@@ -183,9 +182,145 @@ function IndicesHelp() {
             Public Health England heatwave plan
           </a>
           .
-          <div>
-            <Table></Table>
-          </div>
+          <Row>
+            <div>
+              <p style={{ fontSize: "80%" }}>
+                <b>Table 4:</b> Thresholds{" "}
+                <i>
+                  t<sub>1</sub>
+                </i>{" "}
+                (daytime temperature) and{" "}
+                <i>
+                  t<sub>2</sub>
+                </i>{" "}
+                (nighttime temperature) in °C used by Public Health England to
+                define a heatwave in each of the administrative regions of the
+                UK.
+              </p>
+            </div>
+            <Col>
+              <Table striped size="sm">
+                <thead>
+                  <tr>
+                    <td>Region</td>
+                    <td>
+                      <i>
+                        t<sub>1</sub>
+                      </i>
+                    </td>
+                    <td>
+                      <i>
+                        t<sub>2</sub>
+                      </i>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>London</td>
+                    <td>32</td>
+                    <td>18</td>
+                  </tr>
+                  <tr>
+                    <td>South East England</td>
+                    <td>31</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <td>South West England</td>
+                    <td>30</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>East of England</td>
+                    <td>30</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>West Midlands</td>
+                    <td>30</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>East Midlands</td>
+                    <td>30</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>North West England</td>
+                    <td>30</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>Yorkshire and Humber</td>
+                    <td>29</td>
+                    <td>15</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Col>
+            <Col>
+              <Table striped size="sm">
+                <thead>
+                  <tr>
+                    <td>Region</td>
+                    <td>
+                      <i>
+                        t<sub>1</sub>
+                      </i>
+                    </td>
+                    <td>
+                      <i>
+                        t<sub>2</sub>
+                      </i>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>North East England</td>
+                    <td>28</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>Isle of Man</td>
+                    <td>30</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>Channel Islands</td>
+                    <td>30</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>Wales</td>
+                    <td>30</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>East Scotland</td>
+                    <td>28</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>West Scotland</td>
+                    <td>28</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>North Scotland</td>
+                    <td>28</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>Northern Ireland</td>
+                    <td>28</td>
+                    <td>15</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Col>
+          </Row>
         </p>{" "}
         <p className="contents">
           <b>maximum near-surface air temperature on the hottest day</b>{" "}
