@@ -6,91 +6,116 @@ import "./HelpNav.css";
 
 export default function HelpNav() {
   return (
-    <Container style={{ marginLeft: "-100", maxWidth: "4em", marginTop: -45 }}>
+    <Container style={{ marginLeft: "-100", maxWidth: "4em", marginTop: -55 }}>
       <Nav className="flex-column" style={{ position: "fixed" }}>
-        <LinkContainer to="/indices-help">
-          <Nav.Link className="page">Indices</Nav.Link>
+        <LinkContainer to="/indices-help" className="page">
+          <Nav.Link>Indices</Nav.Link>
         </LinkContainer>
         <ul className="subsection">
           <li>
             {" "}
-            <NavHashLink to="/indices-help">Core Variables</NavHashLink>
+            <NavHashLink to="/indices-help#corevars">
+              Core Variables
+            </NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help">Temperature</NavHashLink>
+            <NavHashLink to="/indices-help#temp">Temperature</NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help">Precipitation</NavHashLink>
+            <NavHashLink to="/indices-help#precip">Precipitation</NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help">Wind</NavHashLink>
+            <NavHashLink to="/indices-help#wind">Wind</NavHashLink>
+          </li>
+          <li>
+            {" "}
+            <NavHashLink to="/indices-help#extreme">Extreme Events</NavHashLink>
+          </li>
+          <li>
+            {" "}
+            <NavHashLink to="/indices-help#impact">Impact Related</NavHashLink>
+          </li>
+          <li>
+            {" "}
+            <NavHashLink to="/indices-help#degree">
+              Degree Days and Seasons
+            </NavHashLink>
           </li>
         </ul>
-        <LinkContainer to="/data-help">
-          <Nav.Link className="page">Data</Nav.Link>
+
+        <LinkContainer to="/data-help" className="page">
+          <Nav.Link>Data</Nav.Link>
         </LinkContainer>
         <ul className="subsection">
           <li>
             {" "}
-            <NavHashLink to="/data-help">CMiP5-13</NavHashLink>
+            <NavHashLink to="/data-help#cmip5-13">CMiP5-13</NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help">CMiP5-EC</NavHashLink>
+            <NavHashLink to="/data-help#cmip5-ec">CMiP5-EC</NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help">EuroCORDEX regional</NavHashLink>
+            <NavHashLink to="/data-help#eurocordex">
+              EuroCORDEX regional
+            </NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help">ERA-EuroCORDEX</NavHashLink>
+            <NavHashLink to="/data-help#era">ERA-EuroCORDEX</NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help">UKCP18 global</NavHashLink>
+            <NavHashLink to="/data-help#global">UKCP18 global</NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help">UKCP18 regional</NavHashLink>
+            <NavHashLink to="/data-help#regional">UKCP18 regional</NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help">HadUK-Grid Observations</NavHashLink>
+            <NavHashLink to="/data-help#haduk">
+              HadUK-Grid Observations
+            </NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help">Other</NavHashLink>
+            <NavHashLink to="/data-help#other">Other</NavHashLink>
           </li>
         </ul>
-        <LinkContainer to="/time-help">
-          <Nav.Link className="page">Time</Nav.Link>
+
+        <LinkContainer to="/time-help" className="page">
+          <Nav.Link>Time</Nav.Link>
         </LinkContainer>
         <ul className="subsection">
           <li>
             {" "}
-            <NavHashLink to="/time-help">Evaluation Period</NavHashLink>
+            <NavHashLink to="/time-help#evaluation">
+              Evaluation Period
+            </NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/time-help">Future Periods</NavHashLink>
+            <NavHashLink to="/time-help#future">Future Periods</NavHashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/time-help">Warming Levels</NavHashLink>
+            <NavHashLink to="/time-help#warming">Warming Levels</NavHashLink>
           </li>
         </ul>
-        <LinkContainer to="/plot-help">
-          <Nav.Link className="page">Plots</Nav.Link>
+
+        <LinkContainer to="/plot-help" className="page">
+          <Nav.Link>Plots</Nav.Link>
         </LinkContainer>
         <ul className="subsection">
           <li>
             {" "}
             <NavHashLink to="/plot-help#ensemble-means">
-              Ensemle Means
+              Ensemble Means
             </NavHashLink>
           </li>
           <li>

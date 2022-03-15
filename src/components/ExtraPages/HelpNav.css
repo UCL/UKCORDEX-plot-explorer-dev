@@ -3,14 +3,19 @@ a {
 }
 
 .page {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1em;
   margin-bottom: 0.1em;
-  line-height: 1;
+  line-height: 0.8;
+  color: #4f0bcc;
 }
 .subsection {
   list-style-type: none;
   font-weight: 300;
   font-size: 0.8em;
   margin-left: -1em;
+  margin-bottom: 0.3em;
+}
+.subsection li a {
+  color: #390b9c;
 }

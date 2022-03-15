@@ -1,279 +1,296 @@
 import React from "react";
 import { Col, Container, Row, Table } from "react-bootstrap";
+import HelpNav from "../HelpNav";
 import "../ExtraPages.css";
 
 export default function TimeHelp() {
   return (
     <Container className="help">
-      <div>
-        <h1>Information on Time Periods</h1>
-      </div>
-      <br></br>
-      {/* section about the data */}
-      <div>
-        <h5>Evaluation period</h5>
-        <p>
-          Model outputs are compared to HadUK-Grid observations during the
-          evaluation period from January 1st 1989 - December 31st 2008. This
-          period was chosen based on the availability of EuroCORDEX evaluation
-          runs driven by ERA-Interim reanalysis, which are used to evaluate the
-          performance of the RCMs in the absence of errors or biases inherited
-          from the driving GCMs. Plots of model output during the evaluation
-          period show biases with respect to observations for the same period
-          from the HadUK-Grid dataset.
-        </p>
-      </div>
-      <div>
-        <h5>Future periods</h5>
-        <p>
-          Plots of changes in model climatology with respect to the baseline
-          period (December 1st 1980 - November 30th 2010) are provided for the
-          seven 30-year time periods described in Table 5.
-        </p>
-      </div>
-      <div>
-        <h5>Warming Levels</h5>
-        <p>
-          Plots of changes in model climatology with respect to the baseline
-          period (December 1st 1980 -- November 30th 2010) are also provided for
-          30-year periods centred on the years in which global mean surface
-          temperature (GMST) reaches 1.5°C, 2°C and 3°C above pre-industrial
-          levels in the driving GCM run. Area-weighted annual GMST was computed
-          for each global model in the CMIP5-EC and UKCP18 60km ensembles on the
-          native grid, then a 30-year rolling average calculated: the warming
-          level is the first year in which each temperature threshold was
-          exceeded by this rolling average. This is a slightly different
-          approach to that used to compute warming levels for the IPCC's
-          interactive atlas, where model output was first regridded to a
-          2°-resolution grid, with the land and sea surfaces on the native grid
-          mapped separately to the land and sea surfaces on the coarser grid
-          before averaging; however, the warming levels calculated are within
-          1-2 years of those produced by the IPCC method. Table 6 shows the
-          warming levels computed for each global model.
-        </p>
-        <p>
-          Output from the UKCP18 60km runs was not available prior to December
-          1899, so the preindustrial average (1850-1900) could not be computed
-          for these runs. In order to compute the warming levels, changes in the
-          UKCP18 runs were first calculated with respect to the mean temperature
-          during the first thirty years available (1900-1929). To account for
-          the change in GMST between this period and the preindustrial period,
-          the corresponding change was calculated from the HadGEM2-ES model
-          output and added to the UKCP18 changes: an offset of 0.059°C. Each
-          UKCP18 run therefore has the same mean change in GMST as HadGEM2-ES
-          for the period 1899-1929, with the projections diverging from that
-          point.
-        </p>
-        <p>
-          Model climatologies for each run were computed by selecting a 30-year
-          period centred on December 1st of the year in which the temperature
-          was first exceeded by the driving model: for example, for any run
-          driven by CNRM-CM5, the 1.5°C climatology was computed by averaging
-          the seasonal time series of each index from December 1st 2016 to
-          November 31st 2046. Data was only available up to November 31st 2080:
-          therefore where the threshold was crossed later than 2065 (highlighted
-          in yellow in the table), the model climatology was computed using the
-          longest available symmetric period centred on the crossing time: for
-          CNRM-CM5, this was the 26-year period from 2054--2080, and for
-          NorESM1-M, the 14-year period from 2066-2080.
-        </p>
-        <Row>
-          <p style={{ fontSize: "80%" }}>
-            <b>Table 6:</b> Global warming levels for global models used to
-            drive the regional ensemble members. Where no year is given, the
-            threshold was not exceeded before 2100. Cells highlighted in yellow
-            indicate runs that reached the threshold later than 1965, so that
-            model climatologies were computed from a truncated period. Plots are
-            not provided for global warming of 4°C, shaded in grey.
-          </p>
-          <Col>
+      <Row fluid="true">
+        {/* sidenav for help pages */}
+        <Col
+          xs={3}
+          sm={2}
+          m={1}
+          style={{ paddingLeft: 0, marginLeft: "-10%", marginRight: "10%" }}>
+          <HelpNav />
+        </Col>
+        {/* page contents */}
+        <Col>
+          <div>
+            <h1>Information on Time Periods</h1>
+          </div>
+          <br></br>
+          {/* section about the data */}
+          <div id="evaluation">
+            <h5>Evaluation period</h5>
             <p>
-              {" "}
-              <b>(a)</b> CMiP5-EC ensemble
+              Model outputs are compared to HadUK-Grid observations during the
+              evaluation period from January 1st 1989 - December 31st 2008. This
+              period was chosen based on the availability of EuroCORDEX
+              evaluation runs driven by ERA-Interim reanalysis, which are used
+              to evaluate the performance of the RCMs in the absence of errors
+              or biases inherited from the driving GCMs. Plots of model output
+              during the evaluation period show biases with respect to
+              observations for the same period from the HadUK-Grid dataset.
             </p>
-            <Table striped size="sm">
-              <thead>
-                <tr>
-                  <td>Driving model</td>
-                  <td>1.5°</td>
-                  <td>2°</td>
-                  <td>3°</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>CNRM-CM5 r1i1p1</td>
-                  <td>2031</td>
-                  <td>2044</td>
-                  <td style={{ backgroundColor: "yellow" }}>2067</td>
-                </tr>
-                <tr>
-                  <td>EC-EARTH r12i1p1</td>
-                  <td>2019</td>
-                  <td>2036</td>
-                  <td>2061</td>
-                </tr>
-                <tr>
-                  <td>EC-EARTH r1i1p1</td>
-                  <td>2019</td>
-                  <td>2036</td>
-                  <td>2061</td>
-                </tr>
-                <tr>
-                  <td>EC-EARTH r3i1p1</td>
-                  <td>2019</td>
-                  <td>2036</td>
-                  <td>2061</td>
-                </tr>
-                <tr>
-                  <td>HadGEM2-ES r1i1p1</td>
-                  <td>2023</td>
-                  <td>2036</td>
-                  <td>2055</td>
-                </tr>
-                <tr>
-                  <td>IPSL-CM5A-MR r1i1p1</td>
-                  <td>2016</td>
-                  <td>2030</td>
-                  <td>2050</td>
-                </tr>
-                <tr>
-                  <td>MPI-ESM-LR r1i1p1</td>
-                  <td>2019</td>
-                  <td>2036</td>
-                  <td>2061</td>
-                </tr>
-                <tr>
-                  <td>MPI-ESM-LR r2i1p1</td>
-                  <td>2019</td>
-                  <td>2036</td>
-                  <td>2061</td>
-                </tr>
-                <tr>
-                  <td>MPI-ESM-LR r3i1p1</td>
-                  <td>2019</td>
-                  <td>2036</td>
-                  <td>2061</td>
-                </tr>
-                <tr>
-                  <td>NorESM1-M r1i1p1</td>
-                  <td>2033</td>
-                  <td>2048</td>
-                  <td style={{ backgroundColor: "yellow" }}>2073</td>
-                </tr>
-              </tbody>
-            </Table>
-          </Col>
-          <Col>
+          </div>
+          <div id="future">
+            <h5>Future periods</h5>
             <p>
-              {" "}
-              <b>(b)</b> UKCP18 global ensemble
+              Plots of changes in model climatology with respect to the baseline
+              period (December 1st 1980 - November 30th 2010) are provided for
+              the seven 30-year time periods described in Table 5.
             </p>
-            <Table striped size="sm">
-              <thead>
-                <tr>
-                  <td>Member</td>
-                  <td>1.5°</td>
-                  <td>2°</td>
-                  <td>3°</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>01</td>
-                  <td>2020</td>
-                  <td>2031</td>
-                  <td>2049</td>
-                </tr>
-                <tr>
-                  <td>02</td>
-                  <td>2025</td>
-                  <td>2036</td>
-                  <td>2053</td>
-                </tr>
-                <tr>
-                  <td>03</td>
-                  <td>2020</td>
-                  <td>2030</td>
-                  <td>2047</td>
-                </tr>
-                <tr>
-                  <td>04</td>
-                  <td>2019</td>
-                  <td>2029</td>
-                  <td>2046</td>
-                </tr>
-                <tr>
-                  <td>05</td>
-                  <td>2023</td>
-                  <td>2034</td>
-                  <td>2052</td>
-                </tr>
-                <tr>
-                  <td>06</td>
-                  <td>2021</td>
-                  <td>2031</td>
-                  <td>2049</td>
-                </tr>
-                <tr>
-                  <td>07</td>
-                  <td>2025</td>
-                  <td>2037</td>
-                  <td>2054</td>
-                </tr>
-                <tr>
-                  <td>08</td>
-                  <td>2026</td>
-                  <td>2038</td>
-                  <td>2047</td>
-                </tr>
-                <tr>
-                  <td>09</td>
-                  <td>2022</td>
-                  <td>2032</td>
-                  <td>2047</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>2023</td>
-                  <td>2033</td>
-                  <td>2051</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>2018</td>
-                  <td>2029</td>
-                  <td>2048</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>2035</td>
-                  <td>2045</td>
-                  <td>2060</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>2023</td>
-                  <td>2034</td>
-                  <td>2052</td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>2019</td>
-                  <td>2030</td>
-                  <td>2049</td>
-                </tr>
-                <tr>
-                  <td>15</td>
-                  <td>2015</td>
-                  <td>2029</td>
-                  <td>2049</td>
-                </tr>
-              </tbody>
-            </Table>
-          </Col>
-        </Row>
-      </div>
+          </div>
+          <div id="warming">
+            <h5>Warming Levels</h5>
+            <p>
+              Plots of changes in model climatology with respect to the baseline
+              period (December 1st 1980 -- November 30th 2010) are also provided
+              for 30-year periods centred on the years in which global mean
+              surface temperature (GMST) reaches 1.5°C, 2°C and 3°C above
+              pre-industrial levels in the driving GCM run. Area-weighted annual
+              GMST was computed for each global model in the CMIP5-EC and UKCP18
+              60km ensembles on the native grid, then a 30-year rolling average
+              calculated: the warming level is the first year in which each
+              temperature threshold was exceeded by this rolling average. This
+              is a slightly different approach to that used to compute warming
+              levels for the IPCC's interactive atlas, where model output was
+              first regridded to a 2°-resolution grid, with the land and sea
+              surfaces on the native grid mapped separately to the land and sea
+              surfaces on the coarser grid before averaging; however, the
+              warming levels calculated are within 1-2 years of those produced
+              by the IPCC method. Table 6 shows the warming levels computed for
+              each global model.
+            </p>
+            <p>
+              Output from the UKCP18 60km runs was not available prior to
+              December 1899, so the preindustrial average (1850-1900) could not
+              be computed for these runs. In order to compute the warming
+              levels, changes in the UKCP18 runs were first calculated with
+              respect to the mean temperature during the first thirty years
+              available (1900-1929). To account for the change in GMST between
+              this period and the preindustrial period, the corresponding change
+              was calculated from the HadGEM2-ES model output and added to the
+              UKCP18 changes: an offset of 0.059°C. Each UKCP18 run therefore
+              has the same mean change in GMST as HadGEM2-ES for the period
+              1899-1929, with the projections diverging from that point.
+            </p>
+            <p>
+              Model climatologies for each run were computed by selecting a
+              30-year period centred on December 1st of the year in which the
+              temperature was first exceeded by the driving model: for example,
+              for any run driven by CNRM-CM5, the 1.5°C climatology was computed
+              by averaging the seasonal time series of each index from December
+              1st 2016 to November 31st 2046. Data was only available up to
+              November 31st 2080: therefore where the threshold was crossed
+              later than 2065 (highlighted in yellow in the table), the model
+              climatology was computed using the longest available symmetric
+              period centred on the crossing time: for CNRM-CM5, this was the
+              26-year period from 2054--2080, and for NorESM1-M, the 14-year
+              period from 2066-2080.
+            </p>
+            <Row>
+              <p style={{ fontSize: "80%" }}>
+                <b>Table 6:</b> Global warming levels for global models used to
+                drive the regional ensemble members. Where no year is given, the
+                threshold was not exceeded before 2100. Cells highlighted in
+                yellow indicate runs that reached the threshold later than 1965,
+                so that model climatologies were computed from a truncated
+                period. Plots are not provided for global warming of 4°C, shaded
+                in grey.
+              </p>
+              <Col>
+                <p>
+                  {" "}
+                  <b>(a)</b> CMiP5-EC ensemble
+                </p>
+                <Table striped size="sm">
+                  <thead>
+                    <tr>
+                      <td>Driving model</td>
+                      <td>1.5°</td>
+                      <td>2°</td>
+                      <td>3°</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>CNRM-CM5 r1i1p1</td>
+                      <td>2031</td>
+                      <td>2044</td>
+                      <td style={{ backgroundColor: "yellow" }}>2067</td>
+                    </tr>
+                    <tr>
+                      <td>EC-EARTH r12i1p1</td>
+                      <td>2019</td>
+                      <td>2036</td>
+                      <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>EC-EARTH r1i1p1</td>
+                      <td>2019</td>
+                      <td>2036</td>
+                      <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>EC-EARTH r3i1p1</td>
+                      <td>2019</td>
+                      <td>2036</td>
+                      <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>HadGEM2-ES r1i1p1</td>
+                      <td>2023</td>
+                      <td>2036</td>
+                      <td>2055</td>
+                    </tr>
+                    <tr>
+                      <td>IPSL-CM5A-MR r1i1p1</td>
+                      <td>2016</td>
+                      <td>2030</td>
+                      <td>2050</td>
+                    </tr>
+                    <tr>
+                      <td>MPI-ESM-LR r1i1p1</td>
+                      <td>2019</td>
+                      <td>2036</td>
+                      <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>MPI-ESM-LR r2i1p1</td>
+                      <td>2019</td>
+                      <td>2036</td>
+                      <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>MPI-ESM-LR r3i1p1</td>
+                      <td>2019</td>
+                      <td>2036</td>
+                      <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>NorESM1-M r1i1p1</td>
+                      <td>2033</td>
+                      <td>2048</td>
+                      <td style={{ backgroundColor: "yellow" }}>2073</td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </Col>
+              <Col>
+                <p>
+                  {" "}
+                  <b>(b)</b> UKCP18 global ensemble
+                </p>
+                <Table striped size="sm">
+                  <thead>
+                    <tr>
+                      <td>Member</td>
+                      <td>1.5°</td>
+                      <td>2°</td>
+                      <td>3°</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>2020</td>
+                      <td>2031</td>
+                      <td>2049</td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>2025</td>
+                      <td>2036</td>
+                      <td>2053</td>
+                    </tr>
+                    <tr>
+                      <td>03</td>
+                      <td>2020</td>
+                      <td>2030</td>
+                      <td>2047</td>
+                    </tr>
+                    <tr>
+                      <td>04</td>
+                      <td>2019</td>
+                      <td>2029</td>
+                      <td>2046</td>
+                    </tr>
+                    <tr>
+                      <td>05</td>
+                      <td>2023</td>
+                      <td>2034</td>
+                      <td>2052</td>
+                    </tr>
+                    <tr>
+                      <td>06</td>
+                      <td>2021</td>
+                      <td>2031</td>
+                      <td>2049</td>
+                    </tr>
+                    <tr>
+                      <td>07</td>
+                      <td>2025</td>
+                      <td>2037</td>
+                      <td>2054</td>
+                    </tr>
+                    <tr>
+                      <td>08</td>
+                      <td>2026</td>
+                      <td>2038</td>
+                      <td>2047</td>
+                    </tr>
+                    <tr>
+                      <td>09</td>
+                      <td>2022</td>
+                      <td>2032</td>
+                      <td>2047</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>2023</td>
+                      <td>2033</td>
+                      <td>2051</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>2018</td>
+                      <td>2029</td>
+                      <td>2048</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>2035</td>
+                      <td>2045</td>
+                      <td>2060</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>2023</td>
+                      <td>2034</td>
+                      <td>2052</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>2019</td>
+                      <td>2030</td>
+                      <td>2049</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>2015</td>
+                      <td>2029</td>
+                      <td>2049</td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </Col>
+            </Row>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }
