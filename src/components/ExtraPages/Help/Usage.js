@@ -36,15 +36,15 @@ export default function Usage() {
           <li>
             Having identified the most relevant{" "}
             <Link to="/indices-help"> climate indices</Link>, seasons and{" "}
-            <Link to="/#">time period</Link>, examine the boxplots showing the
-            corresponding overall UK-averaged distribution(s) of future changes
-            for the time period of interest. This will indicate the extent to
-            which any <Link to="/plot-help">ensemble</Link> captures the full
-            range of variation; for the EuroCORDEX ensemble, the boxplots can
-            also give a preliminary indication as to whether one potential
-            source of variation (e.g. the GCMs) is highly dominant, since this
-            will manifest itself via clustering of the plotted values by colour
-            or plotting symbol.
+            <Link to="/time-help">time period</Link>, examine the boxplots
+            showing the corresponding overall UK-averaged distribution(s) of
+            future changes for the time period of interest. This will indicate
+            the extent to which any <Link to="/plot-help">ensemble</Link>{" "}
+            captures the full range of variation; for the EuroCORDEX ensemble,
+            the boxplots can also give a preliminary indication as to whether
+            one potential source of variation (e.g. the GCMs) is highly
+            dominant, since this will manifest itself via clustering of the
+            plotted values by colour or plotting symbol.
           </li>
           <li>
             Examine maps showing the{" "}

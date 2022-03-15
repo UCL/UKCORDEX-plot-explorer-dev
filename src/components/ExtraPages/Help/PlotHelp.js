@@ -216,7 +216,7 @@ export default function PlotHelp() {
           estimated effects: the effects for models with positive scores tend to
           be positive in areas where the pattern itself is positive, and vice
           versa. The patterns are oriented such that positive scores tend to be
-          associated overall with high values of the underlying index.", "A
+          associated overall with high values of the underlying index. A
           potential use of such plots is to help users select a small number of
           GCMs or RCMs that span the range of variation in an ensemble, or to
           identify members of the UKCP18 12km ensemble that display unusual
