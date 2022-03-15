@@ -423,7 +423,7 @@ function IndicesHelp() {
           1-P_j(ww)
           <Image
             fluid="true"
-            width="40%"
+            width="30%"
             src={`${process.env.PUBLIC_URL}/content_images/pww_math.png`}
             alt=""
           />
@@ -436,7 +436,7 @@ function IndicesHelp() {
           1-P_j(dd)
           <Image
             fluid="true"
-            width="40%"
+            width="30%"
             src={`${process.env.PUBLIC_URL}/content_images/pdd_math.png`}
             alt=""
           />
@@ -624,7 +624,7 @@ function IndicesHelp() {
             averaging the daily values within season j.
             <Image
               fluid="true"
-              width="40%"
+              width="30%"
               src={`${process.env.PUBLIC_URL}/content_images/pet_math.png`}
               alt=""
             />
