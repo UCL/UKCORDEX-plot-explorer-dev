@@ -214,7 +214,7 @@ export default function DataHelp() {
                 UKCP18 global ensemble
               </a>{" "}
               using the HadREM3-GA7-05 regional model with the same parameter
-              perturbations as those used to generate the 60km `parent' run.
+              perturbations as those used to generate the 60km 'parent' run.
               Ensemble member 01 was produced without perturbations; this is the
               same RCM that appears in the EuroCORDEX ensemble.
             </p>
