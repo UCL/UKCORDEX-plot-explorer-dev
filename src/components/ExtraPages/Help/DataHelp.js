@@ -202,7 +202,7 @@ export default function DataHelp() {
               member 01 being run with the standard parameters, and each
               remaining ensemble member having slightly different perturbations
               to the parametrisations of model physics. The models have a
-              spatial resolution of 0.55° latitude * 0.83° longitude, or
+              spatial resolution of 0.55° latitude x 0.83° longitude, or
               approximately 60km over the UK.
             </p>
           </div>
