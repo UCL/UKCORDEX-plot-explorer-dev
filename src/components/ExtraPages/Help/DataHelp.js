@@ -25,39 +25,83 @@ export default function DataHelp() {
                 </HashLink>
                 <li>
                   {" "}
-                  <HashLink to="/data-help#cmip5-13">CMiP5-13</HashLink>
+                  <HashLink
+                    to="/data-help#cmip5-13"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    CMiP5-13
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/data-help#cmip5-ec">CMiP5-EC</HashLink>
+                  <HashLink
+                    to="/data-help#cmip5-ec"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    CMiP5-EC
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/data-help#eurocordex">
+                  <HashLink
+                    to="/data-help#eurocordex"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
                     EuroCORDEX regional
                   </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/data-help#era">ERA-EuroCORDEX</HashLink>
+                  <HashLink
+                    to="/data-help#era"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    ERA-EuroCORDEX
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/data-help#global">UKCP18 global</HashLink>
+                  <HashLink
+                    to="/data-help#global"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    UKCP18 global
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/data-help#regional">UKCP18 regional</HashLink>
+                  <HashLink
+                    to="/data-help#regional"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    UKCP18 regional
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/data-help#haduk">
+                  <HashLink
+                    to="/data-help#haduk"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
                     HadUK-Grid Observations
                   </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/data-help#other">Other</HashLink>
+                  <HashLink
+                    to="/data-help#other"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Other
+                  </HashLink>
                 </li>
               </ul>
             </Nav>{" "}

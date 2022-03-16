@@ -26,33 +26,71 @@ function IndicesHelp() {
                 </HashLink>
                 <li>
                   {" "}
-                  <HashLink to="/indices-help#corevars">
+                  <HashLink
+                    to="/indices-help#corevars"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
                     Core Variables
                   </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/indices-help#temp">Temperature</HashLink>
+                  <HashLink
+                    to="/indices-help#temp"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Temperature
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/indices-help#precip">Precipitation</HashLink>
+                  <HashLink
+                    to="/indices-help#precip"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Precipitation
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/indices-help#wind">Wind</HashLink>
+                  <HashLink
+                    to="/indices-help#wind"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Wind
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/indices-help#extreme">Extreme Events</HashLink>
+                  <HashLink
+                    to="/indices-help#extreme"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Extreme Events
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/indices-help#impact">Impact Related</HashLink>
+                  <HashLink
+                    to="/indices-help#impact"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Impact Related
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/indices-help#degree">
+                  <HashLink
+                    to="/indices-help#degree"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
                     Degree Days and Seasons
                   </HashLink>
                 </li>
@@ -94,8 +132,10 @@ function IndicesHelp() {
           </h6>{" "}
           <br></br>
           {/* core vars table */}
-          <Row className="indices" id="corevars">
-            <h5>Core Variables</h5>
+          <Row className="indices">
+            <h5 id="corevars">
+              <u>Core Variables</u>
+            </h5>
             <Col>
               <Table striped size="sm">
                 <thead>
@@ -210,8 +250,8 @@ function IndicesHelp() {
             </Col>
           </Row>
           {/* temperature */}
-          <Row className="indices" id="temp">
-            <h5>
+          <Row className="indices">
+            <h5 id="temp">
               <u>Temperature</u>
             </h5>
             <p className="foreword">
@@ -439,8 +479,8 @@ function IndicesHelp() {
             </p>
           </Row>
           {/* precipitation */}
-          <Row className="indices" id="precip">
-            <h5>
+          <Row className="indices">
+            <h5 id="precip">
               <u>Precipitation</u>
             </h5>
             <p className="foreword">
@@ -553,207 +593,192 @@ function IndicesHelp() {
             </p>
           </Row>
           {/* wind */}
-          <Row className="indices" id="wind">
-            <div>
-              <h5>
-                <u>Wind</u>
-              </h5>
-              <p className="foreword">
-                In defining the following indices of wind speed, let swind be
-                the mean daily wind speed on day i in season j, let maxwind be
-                the maximum daily wind speed on day i in season j, and let
-                maxgust be the maximum gust strength on day i in season j.
-              </p>
-              <p className="contents">
-                <b>near-surface wind speed</b> (sfcWind):{" "}
-              </p>
-              <p className="contents">
-                <b>eastward near-surface wind</b> (uas):{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>northward near-surface wind</b> (vas):{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>maximum sustained wind speed</b> (maxsfcWindmax): The maximum
-                sustained daily wind speed for season j is max(maxwind).
-              </p>{" "}
-              <p className="contents">
-                <b>maximum speed of wind gust</b> (maxwsgsmax): The maximum
-                daily gust speed for season j is max(maxgust)
-              </p>{" "}
-              <p className="contents">
-                <b>number of calm days</b> (ncalm): The number of calm days in
-                season j is the count of days where swind leq 2ms<sup>-1</sup>.
-              </p>{" "}
-              <p className="contents">
-                <b>number of windy days</b> (nwindy): The number of windy days
-                in season j is the count of days where swind geq 10.8ms
-                <sup>-1</sup>-.
-              </p>
-            </div>
+          <Row className="indices">
+            <h5 id="wind">
+              <u>Wind</u>
+            </h5>
+            <p className="foreword">
+              In defining the following indices of wind speed, let swind be the
+              mean daily wind speed on day i in season j, let maxwind be the
+              maximum daily wind speed on day i in season j, and let maxgust be
+              the maximum gust strength on day i in season j.
+            </p>
+            <p className="contents">
+              <b>near-surface wind speed</b> (sfcWind):{" "}
+            </p>
+            <p className="contents">
+              <b>eastward near-surface wind</b> (uas):{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>northward near-surface wind</b> (vas):{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>maximum sustained wind speed</b> (maxsfcWindmax): The maximum
+              sustained daily wind speed for season j is max(maxwind).
+            </p>{" "}
+            <p className="contents">
+              <b>maximum speed of wind gust</b> (maxwsgsmax): The maximum daily
+              gust speed for season j is max(maxgust)
+            </p>{" "}
+            <p className="contents">
+              <b>number of calm days</b> (ncalm): The number of calm days in
+              season j is the count of days where swind leq 2ms<sup>-1</sup>.
+            </p>{" "}
+            <p className="contents">
+              <b>number of windy days</b> (nwindy): The number of windy days in
+              season j is the count of days where swind geq 10.8ms
+              <sup>-1</sup>-.
+            </p>
           </Row>
           {/* extreme events */}
-          <Row className="indices" id="extreme">
-            <div>
-              <h5>
-                <u>Extreme Events</u>
-              </h5>
-              <p className="foreword">
-                Indices of extreme wind and precipitation are not calculated per
-                season and then averaged over the selected time period. Instead,
-                let max(idx_j) be the maximum daily value of some index idx_ij
-                in each season j, and let max(idx_j) denote the set of all such
-                maxima during the time period of interest: this set contains 30
-                seasonal maxima for future periods, and 20 maxima for the
-                evaluation period. A generalised extreme value distribution
-                citep[GEV:][]Coles2001 is fitted to the seasonal maxima
-                max(idx_j) at each grid cell, and the parameters of this
-                distribution are used to calculate selected return periods (the
-                expected number of years between occurrences of events of a
-                given magnitude) and return levels (the magnitude of a
-                once-in-x-years event).<br></br> Indices of extreme events are
-                available for precipitation indices rx1day and rx5day, and for
-                wind indices sfcWindmax and wsgsmax. For any of these indices,
-                denoted here by the generic index 'idx', the following plots are
-                available:
-              </p>
-              <p className="contents">
-                <b>30-year return level of idx</b> (idx_rl30):{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>50-year return level of idx</b> (idx_rl50):{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>
-                  30-year return level of idx rl30 from the baseline period
-                  (1980-2010)
-                </b>{" "}
-                (idx_rp30):{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>
-                  Future return period of idx rl50 from the baseline period
-                  (1980-2010)
-                </b>{" "}
-                (idx_rp50):{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>Location parameter of fitted GEV distribution</b> (idx_loc):{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>Shape parameter of fitted GEV distribution</b> (idx_shape):{" "}
-              </p>
-              <p className="contents">
-                <b>Scale parameter of fitted GEV distribution</b> (idx_scale):{" "}
-              </p>
-            </div>
+          <Row className="indices">
+            <h5 id="extreme">
+              <u>Extreme Events</u>
+            </h5>
+            <p className="foreword">
+              Indices of extreme wind and precipitation are not calculated per
+              season and then averaged over the selected time period. Instead,
+              let max(idx_j) be the maximum daily value of some index idx_ij in
+              each season j, and let max(idx_j) denote the set of all such
+              maxima during the time period of interest: this set contains 30
+              seasonal maxima for future periods, and 20 maxima for the
+              evaluation period. A generalised extreme value distribution
+              citep[GEV:][]Coles2001 is fitted to the seasonal maxima max(idx_j)
+              at each grid cell, and the parameters of this distribution are
+              used to calculate selected return periods (the expected number of
+              years between occurrences of events of a given magnitude) and
+              return levels (the magnitude of a once-in-x-years event).<br></br>{" "}
+              Indices of extreme events are available for precipitation indices
+              rx1day and rx5day, and for wind indices sfcWindmax and wsgsmax.
+              For any of these indices, denoted here by the generic index 'idx',
+              the following plots are available:
+            </p>
+            <p className="contents">
+              <b>30-year return level of idx</b> (idx_rl30):{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>50-year return level of idx</b> (idx_rl50):{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>
+                30-year return level of idx rl30 from the baseline period
+                (1980-2010)
+              </b>{" "}
+              (idx_rp30):{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>
+                Future return period of idx rl50 from the baseline period
+                (1980-2010)
+              </b>{" "}
+              (idx_rp50):{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>Location parameter of fitted GEV distribution</b> (idx_loc):{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>Shape parameter of fitted GEV distribution</b> (idx_shape):{" "}
+            </p>
+            <p className="contents">
+              <b>Scale parameter of fitted GEV distribution</b> (idx_scale):{" "}
+            </p>
           </Row>
           {/* impact relevant */}
-          <Row className="indices" id="impact">
-            <div>
-              <h5>
-                <u>Impact Relevant Indices</u>
-              </h5>
-              <p className="contents">
-                <b>soil moisture at depths of up to 1m</b> (mrso): Let mrso_ij
-                be the total soil moisture at a depth of up to 1m for day i in
-                period j. The mean soil moisture in season j is the average of
-                mrso_ij in season j.
-              </p>
-              <p className="contents">
-                <b>number of dangerously hot days</b> (ndhi):{" "}
-                <Latex displayMode={true}>
-                  Let T denote the daily maximum surface air temperature
-                  tasmaxij and R the relative humidity hursij for day i in
-                  period j. Then the heat index for day i in period j is HI_ij =
-                  c1 + c2T + c3R + c4TR + c5T2 + c6R2 + c7T2R + c8TR2 + c9T2R2
-                  where the ci are constants as given in equation 1 of ?. The
-                  heat index is only valid for air temperatures above 20◦C and
-                  will be reported as NA when T ≤20◦C. The number of days in
-                  period j on which the heat index is dangerously high is given
-                  by the count of HIij ≥32◦C.
-                </Latex>{" "}
-              </p>
-              <p className="contents">
-                <b>number of occurrences of drought</b> (ndrought): Drought
-                occurrences will be the count of the number of occasions on
-                which the monthly time series of spei6 falls below a threshold
-                in the interval (-2, -1.5) in each season.
-              </p>
-              <p className="contents">
-                <b>potential evapotranspiration</b> (pet): PET is computed for
-                each day i in season j using the REC: McGuinness-Bordne
-                equation, where λ is a constant representing the latent heat of
-                vaporisation and S(i) 0 is the extraterrestrial radiation on day
-                i, estimated from the time of year and latitude. Seasonal PET
-                time series are computed by averaging the daily values within
-                season j.
-                <Image
-                  fluid="true"
-                  width="30%"
-                  src={`${process.env.PUBLIC_URL}/content_images/pet_math.png`}
-                  alt=""
-                />
-              </p>
-              <p className="contents">
-                <b>6-month standardised precipitation index</b> (spi6): This
-                index is computed in the same way as spei6, but using a
-                six-month rolling average of prcptot rather than the climatic
-                water balance.
-              </p>
-              <p className="contents">
-                <b>
-                  6-month standardised precipitation-evapotranspiration index
-                </b>{" "}
-                (spei6): The climatic water balance is calculated for each month
-                by subtracting the total PET in that month from the total
-                accumulated precipitation prcptot, and computing a six-month
-                rolling average. This six-month average water balance is fitted
-                to a log-logistic distribution in order to transform the
-                original values to standardised units. Seasonal time series of
-                spei6 are computed by averaging the monthly values within each
-                season.
-              </p>
-              <p className="contents">
-                <b>number of tropical nights ({">"}20°C)</b> (tr): the number of
-                days in season j where tasmin_ij {">"} 20°C.
-              </p>
-            </div>
+          <Row className="indices">
+            <h5 id="impact">
+              <u>Impact Relevant Indices</u>
+            </h5>
+            <p className="contents">
+              <b>soil moisture at depths of up to 1m</b> (mrso): Let mrso_ij be
+              the total soil moisture at a depth of up to 1m for day i in period
+              j. The mean soil moisture in season j is the average of mrso_ij in
+              season j.
+            </p>
+            <p className="contents">
+              <b>number of dangerously hot days</b> (ndhi):{" "}
+              <Latex displayMode={true}>
+                Let T denote the daily maximum surface air temperature tasmaxij
+                and R the relative humidity hursij for day i in period j. Then
+                the heat index for day i in period j is HI_ij = c1 + c2T + c3R +
+                c4TR + c5T2 + c6R2 + c7T2R + c8TR2 + c9T2R2 where the ci are
+                constants as given in equation 1 of ?. The heat index is only
+                valid for air temperatures above 20◦C and will be reported as NA
+                when T ≤20◦C. The number of days in period j on which the heat
+                index is dangerously high is given by the count of HIij ≥32◦C.
+              </Latex>{" "}
+            </p>
+            <p className="contents">
+              <b>number of occurrences of drought</b> (ndrought): Drought
+              occurrences will be the count of the number of occasions on which
+              the monthly time series of spei6 falls below a threshold in the
+              interval (-2, -1.5) in each season.
+            </p>
+            <p className="contents">
+              <b>potential evapotranspiration</b> (pet): PET is computed for
+              each day i in season j using the REC: McGuinness-Bordne equation,
+              where λ is a constant representing the latent heat of vaporisation
+              and S(i) 0 is the extraterrestrial radiation on day i, estimated
+              from the time of year and latitude. Seasonal PET time series are
+              computed by averaging the daily values within season j.
+              <Image
+                fluid="true"
+                width="30%"
+                src={`${process.env.PUBLIC_URL}/content_images/pet_math.png`}
+                alt=""
+              />
+            </p>
+            <p className="contents">
+              <b>6-month standardised precipitation index</b> (spi6): This index
+              is computed in the same way as spei6, but using a six-month
+              rolling average of prcptot rather than the climatic water balance.
+            </p>
+            <p className="contents">
+              <b>6-month standardised precipitation-evapotranspiration index</b>{" "}
+              (spei6): The climatic water balance is calculated for each month
+              by subtracting the total PET in that month from the total
+              accumulated precipitation prcptot, and computing a six-month
+              rolling average. This six-month average water balance is fitted to
+              a log-logistic distribution in order to transform the original
+              values to standardised units. Seasonal time series of spei6 are
+              computed by averaging the monthly values within each season.
+            </p>
+            <p className="contents">
+              <b>number of tropical nights ({">"}20°C)</b> (tr): the number of
+              days in season j where tasmin_ij {">"} 20°C.
+            </p>
           </Row>
           {/* degree days */}
-          <Row className="indices" id="degree">
-            <div>
-              <h5>
-                <u>Degree Days and Season Lengths</u>
-              </h5>
-              <p className="foreword">
-                Plots of these indices are only provided at annual frequency.
-                Note that, unlike all other indices, the growing season length
-                and degree-days are based on calendar years, rather than
-                meteorological years.
-              </p>
-              <p className="contents">
-                <b>growing degree-days</b> (gdd):{" "}
-                <Latex displayMode={true}>
-                  The number of growing degree-days in year y is ∑i max(0,tasiy
-                  -5.6).
-                </Latex>{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>cooling degree-days</b> (cdd):{" "}
-                <Latex displayMode={true}>
-                  The number of cooling degree-days in year y is ∑i max(0,tasiy
-                  -22).
-                </Latex>{" "}
-              </p>{" "}
-              <p className="contents">
-                <b>heating degree-days</b> (hdd):{" "}
-                <Latex displayMode={true}>
-                  The number of heating degree-days in year y is ∑i max(0,15.5
-                  -tasiy).
-                </Latex>{" "}
-              </p>
-            </div>
+          <Row className="indices">
+            <h5 id="degree">
+              <u>Degree Days and Season Lengths</u>
+            </h5>
+            <p className="foreword">
+              Plots of these indices are only provided at annual frequency. Note
+              that, unlike all other indices, the growing season length and
+              degree-days are based on calendar years, rather than
+              meteorological years.
+            </p>
+            <p className="contents">
+              <b>growing degree-days</b> (gdd):{" "}
+              <Latex displayMode={true}>
+                The number of growing degree-days in year y is ∑i max(0,tasiy
+                -5.6).
+              </Latex>{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>cooling degree-days</b> (cdd):{" "}
+              <Latex displayMode={true}>
+                The number of cooling degree-days in year y is ∑i max(0,tasiy
+                -22).
+              </Latex>{" "}
+            </p>{" "}
+            <p className="contents">
+              <b>heating degree-days</b> (hdd):{" "}
+              <Latex displayMode={true}>
+                The number of heating degree-days in year y is ∑i max(0,15.5
+                -tasiy).
+              </Latex>{" "}
+            </p>
           </Row>
         </Col>
       </Row>

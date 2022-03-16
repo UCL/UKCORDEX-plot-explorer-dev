@@ -25,15 +25,33 @@ export default function Usage() {
                 </HashLink>
                 <li>
                   {" "}
-                  <HashLink to="/missing-plots#combo1">combo1</HashLink>
+                  <HashLink
+                    to="/missing-plots#combo1"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    combo1
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/missing-plots#combo2">combo2</HashLink>
+                  <HashLink
+                    to="/missing-plots#combo2"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    combo2
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/missing-plots#combo3">combo3</HashLink>
+                  <HashLink
+                    to="/missing-plots#combo3"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    combo3
+                  </HashLink>
                 </li>
               </ul>
             </Nav>

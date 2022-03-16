@@ -25,35 +25,73 @@ export default function PlotHelp() {
                 </HashLink>
                 <li>
                   {" "}
-                  <HashLink to="/plot-help#ensemble-means">
+                  <HashLink
+                    to="/plot-help#ensemble-means"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
                     Ensemble Means
                   </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/plot-help#ensemble-sd">
+                  <HashLink
+                    to="/plot-help#ensemble-sd"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
                     Ensemble Std. Deviations
                   </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/plot-help#boxplots">Boxplots</HashLink>
+                  <HashLink
+                    to="/plot-help#boxplots"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Boxplots
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/plot-help#taylor">Taylor diagrams</HashLink>
+                  <HashLink
+                    to="/plot-help#taylor"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Taylor diagrams
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/plot-help#anova">Maps of Variation</HashLink>
+                  <HashLink
+                    to="/plot-help#anova"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Maps of Variation
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/plot-help#epp">EPPs</HashLink>
+                  <HashLink
+                    to="/plot-help#epp"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    EPPs
+                  </HashLink>
                 </li>
                 <li>
                   {" "}
-                  <HashLink to="/plot-help#stamp">Stamp plots</HashLink>
+                  <HashLink
+                    to="/plot-help#stamp"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Stamp plots
+                  </HashLink>
                 </li>
               </ul>
             </Nav>
@@ -98,8 +136,9 @@ export default function PlotHelp() {
             alt=""
           />
           {/* section about the plots */}
-          <div id="ensemble-means">
-            <h5>Maps of ensemble means</h5>
+          {/* ensemble means */}
+          <div>
+            <h5 id="ensemble-means">Maps of ensemble means</h5>
             <p>
               Systematic differences between the ensembles --- both in spatial
               patterns common to all ensemble members and in the magnitude of
@@ -110,8 +149,9 @@ export default function PlotHelp() {
               with respect to the baseline period in each ensemble are provided.
             </p>
           </div>
-          <div id="ensemble-sd">
-            <h5>Maps of ensemble standard deviations</h5>
+          {/* ensemble sd */}
+          <div>
+            <h5 id="ensemble-sd">Maps of ensemble standard deviations</h5>
             <p>
               The locations within the UK where the ensemble members are most
               strongly in agreement (or disagreement) can be identified using
@@ -121,8 +161,9 @@ export default function PlotHelp() {
               as darker regions in these maps.
             </p>
           </div>
-          <div id="boxplots">
-            <h5>Boxplots of UK averages</h5>
+          {/* boxplots */}
+          <div>
+            <h5 id="boxplots">Boxplots of UK averages</h5>
             <p>
               The boxplots show the distribution of the mean changes in an index
               across the UK land surface within each ensemble. Each point
@@ -143,8 +184,9 @@ export default function PlotHelp() {
               red line indicates no change.
             </p>
           </div>
-          <div id="taylor">
-            <h5>Taylor diagrams</h5>
+          {/* taylor */}
+          <div>
+            <h5 id="taylor">Taylor diagrams</h5>
             <Row>
               <Col>
                 <Image
@@ -213,8 +255,11 @@ export default function PlotHelp() {
               </Col>
             </Row>
           </div>
-          <div id="anova">
-            <h5>Maps of sources of variation in the EuroCORDEX ensemble</h5>
+          {/* anova */}
+          <div>
+            <h5 id="anova">
+              Maps of sources of variation in the EuroCORDEX ensemble
+            </h5>
             <p>
               Analysis of variance (ANOVA) can be used to partition the
               variation within the EuroCORDEX ensemble into contributions that
@@ -243,8 +288,9 @@ export default function PlotHelp() {
               .
             </p>
           </div>
-          <div id="epp">
-            <h5>Ensemble principal patterns</h5>
+          {/* epp */}
+          <div>
+            <h5 id="epp">Ensemble principal patterns</h5>
             <p>
               These plots characterise the nature of the contributions from each
               GCM and each RCM, by displaying a small number of dominant `modes
@@ -290,8 +336,11 @@ export default function PlotHelp() {
               sequence of analyses.
             </p>
           </div>
-          <div id="stamp">
-            <h5>Stamp plots of seasonal climatologies for individual runs</h5>
+          {/* stamp */}
+          <div>
+            <h5 id="stamp">
+              Stamp plots of seasonal climatologies for individual runs
+            </h5>
             <p>
               Maps of the bias/change in seasonal climatology are provided for
               the individual runs in each ensemble. Plots can be downloaded for
