@@ -195,7 +195,7 @@ export default function DataHelp() {
             <p>
               This is a twelve-member perturbed physics ensemble (PPE) produced
               by the{" "}
-              <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-science-reports">
+              <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-science-reports#guidance">
                 UK Met Office
               </a>
               . The ensemble is derived from HadGEM3-GC3.05, with ensemble
