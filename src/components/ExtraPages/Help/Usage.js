@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "../ExtraPages.css";
 
 export default function Usage() {
@@ -39,30 +40,31 @@ export default function Usage() {
             <Link to="/time-help">time period</Link>, examine the boxplots
             showing the corresponding overall UK-averaged distribution(s) of
             future changes for the time period of interest. This will indicate
-            the extent to which any <Link to="/plot-help">ensemble</Link>{" "}
-            captures the full range of variation; for the EuroCORDEX ensemble,
-            the boxplots can also give a preliminary indication as to whether
-            one potential source of variation (e.g. the GCMs) is highly
-            dominant, since this will manifest itself via clustering of the
-            plotted values by colour or plotting symbol.
+            the extent to which any{" "}
+            <HashLink to="/plot-help#ensemble">ensemble</HashLink> captures the
+            full range of variation; for the EuroCORDEX ensemble, the boxplots
+            can also give a preliminary indication as to whether one potential
+            source of variation (e.g. the GCMs) is highly dominant, since this
+            will manifest itself via clustering of the plotted values by colour
+            or plotting symbol.
           </li>
           <li>
             Examine maps showing the{" "}
-            <Link to="/plot-help">ANOVA decomposition</Link> of the ensemble for
-            the indices of interest. The plot titles quantify the overall
-            partitioning of variation across the UK, and hence formalise the
-            preliminary indications from the boxplots. Users working on
-            applications in a specific part of the UK are advised to use the
-            maps to determine whether the overall partitioning is representative
-            of their area of interest — for example, for some indices the GCMs
-            are dominant overall but the RCMs play a more important role in
-            urban areas.
+            <HashLink to="/plot-help#anova">ANOVA decomposition</HashLink> of
+            the ensemble for the indices of interest. The plot titles quantify
+            the overall partitioning of variation across the UK, and hence
+            formalise the preliminary indications from the boxplots. Users
+            working on applications in a specific part of the UK are advised to
+            use the maps to determine whether the overall partitioning is
+            representative of their area of interest — for example, for some
+            indices the GCMs are dominant overall but the RCMs play a more
+            important role in urban areas.
           </li>
           <li>
             For indices where the GCMs contribute an appreciable component of
             the total ensemble variation, examine maps of the first two GCM{" "}
-            <Link to="/plot-help">ensemble principal patterns</Link> (EPPs) and
-            their scores. If the first EPP accounts for most of the
+            <HashLink to="/plot-help#epp">ensemble principal patterns</HashLink>{" "}
+            (EPPs) and their scores. If the first EPP accounts for most of the
             GCM-attributable variation, then this suggests choosing ensemble
             members driven by GCMs with scores extending along the range of the
             first EPP (horizontal axis); if the second EPP also accounts for a
@@ -75,14 +77,14 @@ export default function Usage() {
           <li>
             For indices where the residual component of variation is dominant in
             the region of interest, users may either select a random sample of
-            ensemble runs, or examine <Link to="/plot-help">stamp plots</Link>{" "}
-            of the individual runs and select a sample that spans the range of
-            values.
+            ensemble runs, or examine{" "}
+            <HashLink to="/plot-help#stamp">stamp plots</HashLink> of the
+            individual runs and select a sample that spans the range of values.
           </li>
           <li>
             In situations where the guidelines above do not allow users to
             identify a clear subset of ensemble members to use,{" "}
-            <Link to="/plot-help">Taylor diagrams</Link> and{" "}
+            <HashLink to="/plot-help#taylor">Taylor diagrams</HashLink> and{" "}
             <Link to="/plot-help">maps of biases</Link> for the selected indices
             over the evaluation period may be used to identify the runs that
             best reproduce relevant aspects of historical climate by comparison
