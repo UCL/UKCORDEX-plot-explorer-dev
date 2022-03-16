@@ -1,8 +1,9 @@
 import React from "react";
-import { Row, Col, Container, Image } from "react-bootstrap";
+import { Row, Col, Container, Image, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import HelpNav from "../HelpNav";
+import { HashLink } from "react-router-hash-link";
 import "../ExtraPages.css";
+import "../HelpNav.css";
 
 export default function PlotHelp() {
   return (
@@ -13,8 +14,50 @@ export default function PlotHelp() {
           xs={3}
           sm={2}
           m={1}
-          style={{ paddingLeft: 0, marginLeft: "-10%", marginRight: "10%" }}>
-          <HelpNav />
+          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "10%" }}>
+          <Container>
+            <Nav
+              className="flex-column"
+              style={{ position: "fixed", overflow: "auto" }}>
+              <HashLink to="/plot-help#" className="page">
+                Plots{" "}
+              </HashLink>
+              <ul className="subsection">
+                <li>
+                  {" "}
+                  <HashLink to="/plot-help#ensemble-means">
+                    Ensemble Means
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/plot-help#ensemble-sd">
+                    Ensemble Standard Deviations
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/plot-help#boxplots">Boxplots</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/plot-help#taylor">Taylor diagrams</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/plot-help#anova">Maps of Variation</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/plot-help#epp">EPPs</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/plot-help#stamp">Stamp plots</HashLink>
+                </li>
+              </ul>
+            </Nav>
+          </Container>
         </Col>
         {/* page contents */}
         <Col>

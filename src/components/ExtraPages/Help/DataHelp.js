@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Image, Row, Col } from "react-bootstrap";
-import HelpNav from "../HelpNav";
-
+import { Container, Image, Row, Col, Nav } from "react-bootstrap";
+import { HashLink } from "react-router-hash-link";
+import "../HelpNav.css";
 import "../ExtraPages.css";
 
 export default function DataHelp() {
@@ -13,8 +13,55 @@ export default function DataHelp() {
           xs={3}
           sm={2}
           m={1}
-          style={{ paddingLeft: 0, marginLeft: "-10%", marginRight: "10%" }}>
-          <HelpNav />
+          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "10%" }}>
+          <Container>
+            {" "}
+            <Nav
+              className="flex-column"
+              style={{ position: "fixed", overflow: "auto" }}>
+              <HashLink to="/data-help#" className="page">
+                Data
+              </HashLink>
+              <ul className="subsection">
+                <li>
+                  {" "}
+                  <HashLink to="/data-help#cmip5-13">CMiP5-13</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/data-help#cmip5-ec">CMiP5-EC</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/data-help#eurocordex">
+                    EuroCORDEX regional
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/data-help#era">ERA-EuroCORDEX</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/data-help#global">UKCP18 global</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/data-help#regional">UKCP18 regional</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/data-help#haduk">
+                    HadUK-Grid Observations
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/data-help#other">Other</HashLink>
+                </li>
+              </ul>
+            </Nav>{" "}
+          </Container>
         </Col>
         {/* page contents */}
         <Col>

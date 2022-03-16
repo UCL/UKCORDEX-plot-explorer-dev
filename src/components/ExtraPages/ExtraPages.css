@@ -3,7 +3,7 @@
 .help,
 .about {
   max-width: 80%;
-  margin: 4em;
+  margin: 1em 4em;
   scroll-padding-top: 4em !important ;
 }
 

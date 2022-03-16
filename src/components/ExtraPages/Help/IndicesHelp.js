@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Table, Row, Col, Image } from "react-bootstrap";
+import { Container, Table, Row, Col, Image, Nav } from "react-bootstrap";
 import "../ExtraPages.css";
+import "../HelpNav.css";
 import Latex from "react-latex";
-import HelpNav from "../HelpNav";
-// import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function IndicesHelp() {
   // var Latex = require("react-latex");
@@ -15,11 +15,53 @@ function IndicesHelp() {
           xs={3}
           sm={2}
           m={1}
-          style={{ paddingLeft: 0, marginLeft: "-10%", marginRight: "10%" }}>
-          <HelpNav />
+          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "10%" }}>
+          <Container>
+            <Nav
+              className="flex-column"
+              style={{ position: "fixed", overflow: "auto" }}>
+              <HashLink to="/indices-help#" className="page">
+                Indices
+              </HashLink>
+              <ul className="subsection">
+                <li>
+                  {" "}
+                  <HashLink to="/indices-help#corevars">
+                    Core Variables
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/indices-help#temp">Temperature</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/indices-help#precip">Precipitation</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/indices-help#wind">Wind</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/indices-help#extreme">Extreme Events</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/indices-help#impact">Impact Related</HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink to="/indices-help#degree">
+                    Degree Days and Seasons
+                  </HashLink>
+                </li>
+              </ul>
+            </Nav>{" "}
+          </Container>
         </Col>
         {/* page contents */}
-        <Col>
+        <Col className="ml-5">
           <div>
             <h1>Information about Indices</h1>
             <br></br>
