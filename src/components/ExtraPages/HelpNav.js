@@ -11,8 +11,9 @@ export default function HelpNav() {
       style={{
         marginLeft: "-100",
         maxWidth: "4em",
-        marginTop: "-25%",
+        marginTop: "-30%",
         maxHeight: "fit-content",
+        minHeight: "1vh",
       }}>
       <Nav className="flex-column" style={{ position: "fixed" }}>
         <LinkContainer to="/indices-help#" className="page">
