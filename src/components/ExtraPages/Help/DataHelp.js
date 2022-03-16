@@ -13,16 +13,16 @@ export default function DataHelp() {
           xs={3}
           sm={2}
           m={1}
-          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "10%" }}>
+          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "7%" }}>
           <Container>
             {" "}
             <Nav
               className="flex-column"
               style={{ position: "fixed", overflow: "auto" }}>
-              <HashLink to="/data-help#" className="page">
-                Data
-              </HashLink>
               <ul className="subsection">
+                <HashLink to="/data-help#" className="page">
+                  Data
+                </HashLink>
                 <li>
                   {" "}
                   <HashLink to="/data-help#cmip5-13">CMiP5-13</HashLink>

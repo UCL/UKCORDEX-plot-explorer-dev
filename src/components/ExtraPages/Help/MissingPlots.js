@@ -13,15 +13,16 @@ export default function MissingPlots() {
           xs={3}
           sm={2}
           m={1}
-          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "10%" }}>
+          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "7%" }}>
           <Container>
             <Nav
               className="flex-column"
               style={{ position: "fixed", overflow: "auto" }}>
-              <HashLink to="/missing-plots#" className="page">
-                Missing Plots
-              </HashLink>
               <ul className="subsection">
+                {" "}
+                <HashLink to="/missing-plots#" className="page">
+                  Missing Plots
+                </HashLink>
                 <li>
                   {" "}
                   <HashLink to="/missing-plots#combo1">combo1</HashLink>

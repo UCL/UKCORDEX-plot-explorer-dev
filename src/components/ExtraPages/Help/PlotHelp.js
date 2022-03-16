@@ -14,15 +14,15 @@ export default function PlotHelp() {
           xs={3}
           sm={2}
           m={1}
-          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "10%" }}>
+          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "7%" }}>
           <Container>
             <Nav
               className="flex-column"
               style={{ position: "fixed", overflow: "auto" }}>
-              <HashLink to="/plot-help#" className="page">
-                Plots{" "}
-              </HashLink>
               <ul className="subsection">
+                <HashLink to="/plot-help#" className="page">
+                  Plots{" "}
+                </HashLink>
                 <li>
                   {" "}
                   <HashLink to="/plot-help#ensemble-means">
@@ -32,7 +32,7 @@ export default function PlotHelp() {
                 <li>
                   {" "}
                   <HashLink to="/plot-help#ensemble-sd">
-                    Ensemble Standard Deviations
+                    Ensemble Std. Deviations
                   </HashLink>
                 </li>
                 <li>

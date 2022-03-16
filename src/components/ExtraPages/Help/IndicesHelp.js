@@ -15,15 +15,15 @@ function IndicesHelp() {
           xs={3}
           sm={2}
           m={1}
-          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "10%" }}>
+          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "7%" }}>
           <Container>
             <Nav
               className="flex-column"
               style={{ position: "fixed", overflow: "auto" }}>
-              <HashLink to="/indices-help#" className="page">
-                Indices
-              </HashLink>
               <ul className="subsection">
+                <HashLink to="/indices-help#" className="page">
+                  Indices
+                </HashLink>
                 <li>
                   {" "}
                   <HashLink to="/indices-help#corevars">
