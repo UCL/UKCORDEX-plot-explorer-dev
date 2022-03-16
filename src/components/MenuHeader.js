@@ -15,7 +15,7 @@ function MenuHeader() {
       <Container>
         <LinkContainer
           to="/"
-          style={{ justifyContent: "flex-start", marginLeft: "-1em" }}>
+          style={{ justifyContent: "flex-start", marginLeft: "-1%" }}>
           <Navbar.Brand>
             <img
               alt=""
