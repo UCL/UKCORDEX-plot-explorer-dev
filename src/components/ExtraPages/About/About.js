@@ -32,7 +32,7 @@ export default function About() {
         <p>
           This plot explorer is designed to enable rapid visualisation of the
           key structures of the model outputs in the UKCP18 projections and
-          EuroCORDEX ensembles, along with their driving models, for a large
+          the EuroCORDEX ensembles, along with their driving models, for a large
           number of weather variables and derived indices of climate over the
           UK. This enables users both to evaluate the outputs, and to choose
           appropriate subsets of model runs for use in their own applications.
