@@ -28,7 +28,9 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
       <>
         {images.map((plot, i) => (
           <Container key={i}>
-            <Card className="mb-4" style={{ border: "none" }}>
+            <Card
+              className="mb-4"
+              style={{ border: "none", width: "65%", margin: "auto" }}>
               <Figure>
                 <Figure.Caption style={{ textAlign: "center" }}>
                   {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
