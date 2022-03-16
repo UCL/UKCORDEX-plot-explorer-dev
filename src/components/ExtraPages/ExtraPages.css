@@ -2,8 +2,9 @@
 
 .help,
 .about {
-  margin: 4em;
   max-width: 80%;
+  margin: 4em;
+  scroll-padding-top: 4em !important ;
 }
 
 .indices {
@@ -16,7 +17,4 @@
 .foreword {
   font-weight: 300;
   font-style: italic;
-}
-.contents {
-  margin: 1em;
 }

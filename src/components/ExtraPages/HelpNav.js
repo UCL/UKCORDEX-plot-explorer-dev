@@ -1,148 +1,145 @@
 import React from "react";
 import { Container, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import { NavHashLink } from "react-router-hash-link";
+// import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import "./HelpNav.css";
 
 export default function HelpNav() {
   return (
-    <Container style={{ marginLeft: "-100", maxWidth: "4em", marginTop: -55 }}>
+    <Container
+      style={{
+        marginLeft: "-100",
+        maxWidth: "4em",
+        marginTop: "-25%",
+        maxHeight: "fit-content",
+      }}>
       <Nav className="flex-column" style={{ position: "fixed" }}>
-        <LinkContainer to="/indices-help" className="page">
+        <LinkContainer to="/indices-help#" className="page">
           <Nav.Link>Indices</Nav.Link>
         </LinkContainer>
         <ul className="subsection">
           <li>
             {" "}
-            <NavHashLink to="/indices-help#corevars">
-              Core Variables
-            </NavHashLink>
+            <HashLink to="/indices-help#corevars">Core Variables</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help#temp">Temperature</NavHashLink>
+            <HashLink to="/indices-help#temp">Temperature</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help#precip">Precipitation</NavHashLink>
+            <HashLink to="/indices-help#precip">Precipitation</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help#wind">Wind</NavHashLink>
+            <HashLink to="/indices-help#wind">Wind</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help#extreme">Extreme Events</NavHashLink>
+            <HashLink to="/indices-help#extreme">Extreme Events</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help#impact">Impact Related</NavHashLink>
+            <HashLink to="/indices-help#impact">Impact Related</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/indices-help#degree">
+            <HashLink to="/indices-help#degree">
               Degree Days and Seasons
-            </NavHashLink>
+            </HashLink>
           </li>
         </ul>
 
-        <LinkContainer to="/data-help" className="page">
+        <LinkContainer to="/data-help#" className="page">
           <Nav.Link>Data</Nav.Link>
         </LinkContainer>
         <ul className="subsection">
           <li>
             {" "}
-            <NavHashLink to="/data-help#cmip5-13">CMiP5-13</NavHashLink>
+            <HashLink to="/data-help#cmip5-13">CMiP5-13</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help#cmip5-ec">CMiP5-EC</NavHashLink>
+            <HashLink to="/data-help#cmip5-ec">CMiP5-EC</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help#eurocordex">
-              EuroCORDEX regional
-            </NavHashLink>
+            <HashLink to="/data-help#eurocordex">EuroCORDEX regional</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help#era">ERA-EuroCORDEX</NavHashLink>
+            <HashLink to="/data-help#era">ERA-EuroCORDEX</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help#global">UKCP18 global</NavHashLink>
+            <HashLink to="/data-help#global">UKCP18 global</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help#regional">UKCP18 regional</NavHashLink>
+            <HashLink to="/data-help#regional">UKCP18 regional</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help#haduk">
-              HadUK-Grid Observations
-            </NavHashLink>
+            <HashLink to="/data-help#haduk">HadUK-Grid Observations</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/data-help#other">Other</NavHashLink>
+            <HashLink to="/data-help#other">Other</HashLink>
           </li>
         </ul>
 
-        <LinkContainer to="/time-help" className="page">
+        <LinkContainer to="/time-help#" className="page">
           <Nav.Link>Time</Nav.Link>
         </LinkContainer>
         <ul className="subsection">
           <li>
             {" "}
-            <NavHashLink to="/time-help#evaluation">
-              Evaluation Period
-            </NavHashLink>
+            <HashLink to="/time-help#evaluation">Evaluation Period</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/time-help#future">Future Periods</NavHashLink>
+            <HashLink to="/time-help#future">Future Periods</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/time-help#warming">Warming Levels</NavHashLink>
+            <HashLink to="/time-help#warming">Warming Levels</HashLink>
           </li>
         </ul>
 
-        <LinkContainer to="/plot-help" className="page">
+        <LinkContainer to="/plot-help#" className="page">
           <Nav.Link>Plots</Nav.Link>
         </LinkContainer>
         <ul className="subsection">
           <li>
             {" "}
-            <NavHashLink to="/plot-help#ensemble-means">
-              Ensemble Means
-            </NavHashLink>
+            <HashLink to="/plot-help#ensemble-means">Ensemble Means</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/plot-help#ensemble-sd">
+            <HashLink to="/plot-help#ensemble-sd">
               Ensemble Standard Deviations
-            </NavHashLink>
+            </HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/plot-help#boxplots">Boxplots</NavHashLink>
+            <HashLink to="/plot-help#boxplots">Boxplots</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/plot-help#taylor">Taylor diagrams</NavHashLink>
+            <HashLink to="/plot-help#taylor">Taylor diagrams</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/plot-help#anova">Maps of Variation</NavHashLink>
+            <HashLink to="/plot-help#anova">Maps of Variation</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/plot-help#epp">EPPs</NavHashLink>
+            <HashLink to="/plot-help#epp">EPPs</HashLink>
           </li>
           <li>
             {" "}
-            <NavHashLink to="/plot-help#stamp">Stamp plots</NavHashLink>
+            <HashLink to="/plot-help#stamp">Stamp plots</HashLink>
           </li>
         </ul>
       </Nav>

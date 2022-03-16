@@ -1,5 +1,5 @@
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .page {
@@ -7,13 +7,13 @@ a {
   font-size: 1em;
   margin-bottom: 0.1em;
   line-height: 0.8;
-  color: #4f0bcc;
+  color: #4f0bcc !important;
 }
 .subsection {
   list-style-type: none;
   font-weight: 300;
   font-size: 0.8em;
-  margin-left: -1em;
+  /* margin-left: -1em; */
   margin-bottom: 0.3em;
 }
 .subsection li a {
