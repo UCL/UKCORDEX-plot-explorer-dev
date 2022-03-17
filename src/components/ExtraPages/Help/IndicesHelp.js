@@ -195,6 +195,11 @@ function IndicesHelp() {
                     <td>mm*</td>
                   </tr>
                   <tr>
+                    <td>tas</td>
+                    <td>Mean daily near-surface air temperature</td>
+                    <td>°C</td>
+                  </tr>
+                  <tr>
                     <td>tasmax</td>
                     <td>Maximum daily near-surface air temperature</td>
                     <td>°C</td>
