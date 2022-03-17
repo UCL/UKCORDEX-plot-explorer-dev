@@ -672,7 +672,7 @@ function IndicesHelp() {
               (idxrp50):{" "}
             </p>{" "}
             <p className="contents">
-              <b>Location parameter of fitted GEV distribution</b> (idx_loc):{" "}
+              <b>Location parameter of fitted GEV distribution</b> (idxloc):{" "}
             </p>{" "}
             <p className="contents">
               <b>Shape parameter of fitted GEV distribution</b> (idx_shape):{" "}
