@@ -264,7 +264,7 @@ function IndicesHelp() {
               <b>mean daily near-surface air temperature</b> (tas):{" "}
             </p>
             <p className="contents">
-              <b>number of cold spell days</b> (csdi): Count the number of days
+              <b>Number of cold spell days</b> (csdi): Count the number of days
               in season j where tas_ij {"<"} 2°C for more than two consecutive
               days.
             </p>{" "}
