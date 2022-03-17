@@ -495,7 +495,7 @@ function IndicesHelp() {
               <b>daily precipitation rate</b> (pr):{" "}
             </p>
             <p className="contents">
-              <b>accumulated precipitation</b> (prcptot): Sum of pr_ij geq 1 in
+              <b>Accumulated precipitation</b> (prcptot): Sum of pr_ij geq 1 in
               season j.
             </p>
             <p className="contents">
