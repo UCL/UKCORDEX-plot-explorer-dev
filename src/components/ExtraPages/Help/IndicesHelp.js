@@ -269,7 +269,7 @@ function IndicesHelp() {
               days.
             </p>{" "}
             <p className="contents">
-              <b>number of heatwave days</b> (hwdi): Count the number of days in
+              <b>Number of heatwave days</b> (hwdi): Count the number of days in
               season j where tmax_ij {">"} t_1 and tmin_ij {">"} t_2 for two or
               more consecutive days, where t_1 and t_2 are thresholds defined
               for each region as in the table below. These thresholds are taken
