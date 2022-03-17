@@ -195,7 +195,7 @@ export default function TimeHelp() {
               <Col>
                 <p>
                   {" "}
-                  <b>(a)</b> CMiP5-EC ensemble
+                  <b>(a)</b> CMIP5-EC ensemble
                 </p>
                 <Table striped size="sm">
                   <thead>
