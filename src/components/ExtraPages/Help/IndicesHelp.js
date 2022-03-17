@@ -499,7 +499,7 @@ function IndicesHelp() {
               season j.
             </p>
             <p className="contents">
-              <b>proportion of wet days</b> (fwd): The proportion of days for
+              <b>Proportion of wet days</b> (fwd): The proportion of days for
               which pr_ij geq 1.
             </p>
             <p className="contents">
