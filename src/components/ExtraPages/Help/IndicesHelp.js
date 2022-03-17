@@ -457,7 +457,7 @@ function IndicesHelp() {
               (tmax_ir) for the season of interest j.{" "}
             </p>{" "}
             <p className="contents">
-              <b>number of hot days</b> (tmax90p): Let q_{90}(tmax_ir) be the
+              <b>Number of hot days</b> (tmax90p): Let q_{90}(tmax_ir) be the
               90th percentile of daily maximum temperatures in a five-day window
               centred on calendar day i in the reference period r (1980-2010).
               Count the number of days where tmax_ij {">"} q_{90}(tmax_ir) for
