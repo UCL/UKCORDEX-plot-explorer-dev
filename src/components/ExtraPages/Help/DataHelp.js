@@ -236,10 +236,6 @@ export default function DataHelp() {
               averaged to the 12km grid used in this report.
             </p>
           </div>
-          <div id="other">
-            <h5>Other sources of observations</h5>
-            <p>description here</p>
-          </div>
         </Col>
       </Row>
     </Container>
