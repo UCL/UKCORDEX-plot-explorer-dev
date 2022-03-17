@@ -103,7 +103,7 @@ function IndicesHelp() {
           <div>
             <h1>Available indices</h1>
             <br></br>
-            <h3>How the Indices are Calculated</h3>
+            <h3>How the indices are calculated</h3>
             <p>
               Unless stated otherwise, a seasonal time series of each index is
               first computed from daily model output on the native grid, then
