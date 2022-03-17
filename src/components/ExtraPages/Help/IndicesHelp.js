@@ -200,20 +200,6 @@ function IndicesHelp() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>uas</td>
-                    <td>Eastward wind at 10m </td>
-                    <td>
-                      ms<sup>-1</sup>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>vas</td>
-                    <td>Northward wind at 10m</td>
-                    <td>
-                      ms<sup>-1</sup>
-                    </td>
-                  </tr>
-                  <tr>
                     <td>tas</td>
                     <td>Mean daily near-surface air temperature</td>
                     <td>°C</td>
