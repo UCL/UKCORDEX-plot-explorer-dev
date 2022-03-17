@@ -210,7 +210,7 @@ export default function DataHelp() {
             <h5>UKCP18 regional (12km) ensemble</h5>
             <p>
               This ensemble downscales the twelve runs of the{" "}
-              <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-science-reports">
+              <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-science-reports#guidance">
                 UKCP18 global ensemble
               </a>{" "}
               using the HadREM3-GA7-05 regional model with the same parameter
