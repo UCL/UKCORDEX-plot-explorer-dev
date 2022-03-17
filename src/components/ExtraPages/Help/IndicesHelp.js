@@ -431,7 +431,7 @@ function IndicesHelp() {
               <b>Maximum daily near-surface air temperature</b> (tasmax):{" "}
             </p>{" "}
             <p className="contents">
-              <b>minimum daily near-surface air temperature</b> (tasmin):{" "}
+              <b>Minimum daily near-surface air temperature</b> (tasmin):{" "}
             </p>{" "}
             <p className="contents">
               <b>1st percentile of daily mean near-surface air temperatures</b>{" "}
