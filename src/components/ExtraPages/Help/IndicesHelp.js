@@ -219,6 +219,16 @@ function IndicesHelp() {
                     <td>°C</td>
                   </tr>
                   <tr>
+                    <td> sfcWind</td>
+                    <td>Wind speed at 10m</td>
+                    <td>ms<sup>-1</sup></td>
+                  </tr>                  
+                  <tr>
+                    <td>snw</td>
+                    <td>Lying snow</td>
+                    <td>mm*</td>
+                  </tr>   
+                  <tr>                 
                     <td>tasmax</td>
                     <td>Maximum daily near-surface air temperature</td>
                     <td>°C</td>
