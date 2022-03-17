@@ -152,7 +152,7 @@ export default function PlotHelp() {
           <br></br>
           {/* ensemble sd */}
           <div>
-            <h5 id="ensemble-sd">Maps of ensemble standard deviations</h5>
+            <h5 id="ensemble-sd">Maps of standard deviations of biases/changes within each ensemble</h5>
             <p>
               The locations within the UK where the ensemble members are most
               strongly in agreement (or disagreement) can be identified using
