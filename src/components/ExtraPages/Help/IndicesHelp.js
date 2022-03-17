@@ -464,7 +464,7 @@ function IndicesHelp() {
               the season of interest j.
             </p>{" "}
             <p className="contents">
-              <b>number of cold nights</b> (tmin10p): Let q_{10}(tmin_ir) be the
+              <b>Number of cold nights</b> (tmin10p): Let q_{10}(tmin_ir) be the
               10th percentile of daily minimum temperatures in a five-day window
               centred on calendar day i in the reference period r (1980-2010).
               Count the number of days where tmin_ij {"<"} q_{10}(tmin_ir) for
