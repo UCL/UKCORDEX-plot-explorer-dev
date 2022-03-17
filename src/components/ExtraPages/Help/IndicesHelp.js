@@ -161,6 +161,31 @@ function IndicesHelp() {
                     <td>Specific humidity at 1.5m</td>
                     <td></td>
                   </tr>
+                   <tr>
+                    <td>pr</td>
+                    <td>Precipitation rate</td>
+                    <td>mm/day</td>
+                  </tr>
+                  <tr>
+                    <td>prsn</td>
+                    <td>Snowfall rate</td>
+                    <td>mm/day</td>
+                  </tr>
+                  <tr>
+                    <td>psl</td>
+                    <td>Sea level pressure</td>
+                    <td>hPa</td>
+                  </tr>
+                  <tr>
+                    <td>rls</td>
+                    <td>Net surface long wave flux</td>
+                    <td>wm<sup>-2</sup></td>
+                  </tr>
+                  <tr>
+                    <td>rss</td>
+                    <td>Net surface short wave flux</td>
+                    <td>wm<sup>-2</sup></td>
+                  </tr>
                   <tr>
                     <td>psl</td>
                     <td>Sea level pressure</td>
