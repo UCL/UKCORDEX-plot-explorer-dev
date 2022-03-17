@@ -138,7 +138,7 @@ export default function PlotHelp() {
           {/* section about the plots */}
           {/* ensemble means */}
           <div>
-            <h5 id="ensemble-means">Maps of ensemble means</h5>
+            <h5 id="ensemble-means">Maps of ensemble mean bias/change</h5>
             <p>
               Systematic differences between the ensembles --- both in spatial
               patterns common to all ensemble members and in the magnitude of
@@ -152,7 +152,7 @@ export default function PlotHelp() {
           <br></br>
           {/* ensemble sd */}
           <div>
-            <h5 id="ensemble-sd">Maps of ensemble standard deviations</h5>
+            <h5 id="ensemble-sd">Maps of standard deviations of biases/changes within each ensemble</h5>
             <p>
               The locations within the UK where the ensemble members are most
               strongly in agreement (or disagreement) can be identified using
@@ -165,7 +165,7 @@ export default function PlotHelp() {
           <br></br>
           {/* boxplots */}
           <div>
-            <h5 id="boxplots">Boxplots of UK averages</h5>
+            <h5 id="boxplots">Boxplots of UK average bias/change</h5>
             <p>
               The boxplots show the distribution of the mean changes in an index
               across the UK land surface within each ensemble. Each point
