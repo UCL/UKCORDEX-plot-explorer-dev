@@ -21,19 +21,18 @@ export default function About() {
           may not sample the full range of possible futures that is consistent
           with current scientific understanding. A more comprehensive assessment
           of potential climate futures for the UK can be obtained by
-          supplementing the UKCP18 regional projections with information from{" "}
-          <a href="https://euro-cordex.net/060374/index.php.en">
-            the EuroCORDEX ensemble
-          </a>{" "}
-          at the same 12km resolution. This combined set will allow a better
-          understanding of structural uncertainty in UK climate projections and
-          substantially enhances the information base available to support
-          future climate change risk assessments.
+          supplementing the UKCP18 regional projections with information from
+          the{" "}
+          <a href="https://euro-cordex.net/060374/index.php.en">EuroCORDEX</a>{" "}
+          ensemble at the same 12km resolution. This combined set will allow a
+          better understanding of structural uncertainty in UK climate
+          projections and substantially enhances the information base available
+          to support future climate change risk assessments.
         </p>
         <p>
           This plot explorer is designed to enable rapid visualisation of the
-          key structures of the model outputs in the UKCP18 projections and
-          the EuroCORDEX ensembles, along with their driving models, for a large
+          key structures of the model outputs in the UKCP18 projections and the
+          EuroCORDEX ensembles, along with their driving models, for a large
           number of weather variables and derived indices of climate over the
           UK. This enables users both to evaluate the outputs, and to choose
           appropriate subsets of model runs for use in their own applications.
