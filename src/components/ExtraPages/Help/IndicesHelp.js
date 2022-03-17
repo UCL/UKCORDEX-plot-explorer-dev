@@ -91,7 +91,7 @@ function IndicesHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Degree days & season lengths
+                    Degree-days & season lengths
                   </HashLink>
                 </li>
               </ul>
@@ -127,7 +127,7 @@ function IndicesHelp() {
                 <tbody>
                   <tr>
                     <td>clt</td>
-                    <td>total cloud cover</td>
+                    <td>Total cloud cover</td>
                     <td>%</td>
                   </tr>
                   <tr>
