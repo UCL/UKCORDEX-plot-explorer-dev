@@ -138,7 +138,7 @@ function IndicesHelp() {
                   <tr>
                     <td>huss</td>
                     <td>Specific humidity at 1.5m</td>
-                    <td></td>
+                    <td>1</td>
                   </tr>
                   <tr>
                     <td>pr</td>
