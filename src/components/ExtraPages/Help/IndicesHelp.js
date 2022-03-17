@@ -41,7 +41,7 @@ function IndicesHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Temperature
+                    Indices of Temperature
                   </HashLink>
                 </li>
                 <li>
