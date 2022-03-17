@@ -686,7 +686,7 @@ function IndicesHelp() {
           {/* impact relevant */}
           <Row className="indices">
             <h5 id="impact">
-              <u>Impact Relevant Indices</u>
+              <u>Impact-relevant Indices</u>
             </h5>
             <p className="contents">
               <b>soil moisture at depths of up to 1m</b> (mrso): Let mrso_ij be
