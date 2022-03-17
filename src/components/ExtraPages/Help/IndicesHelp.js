@@ -101,7 +101,7 @@ function IndicesHelp() {
         {/* page contents */}
         <Col className="ml-5">
           <div>
-            <h1>Information about Indices</h1>
+            <h1>Available indices</h1>
             <br></br>
             <h3>How the Indices are Calculated</h3>
             <p>
