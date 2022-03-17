@@ -162,11 +162,6 @@ function IndicesHelp() {
                     <td></td>
                   </tr>
                   <tr>
-                    <td>snw</td>
-                    <td>Amount of snow on the ground</td>
-                    <td>mm *</td>
-                  </tr>
-                  <tr>
                     <td>psl</td>
                     <td>Sea level pressure</td>
                     <td>hPa</td>
