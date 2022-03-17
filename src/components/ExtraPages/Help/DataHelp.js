@@ -160,7 +160,9 @@ export default function DataHelp() {
               This consists of 65 climate simulations produced by multiple
               dynamical downscaling models forced by multiple global climate
               models from the CMIP5 experiment. These simulations are derived
-              from the EuroCORDEX project and consist of outputs at 0.11°C
+              from the{" "}
+              <a href="https://euro-cordex.net/060374/index.php.en"> 
+                 EuroCORDEX</a>{" "}project and consist of outputs at 0.11°
               resolution from six different GCMs (two of which provided three
               independent realisations each) and thirteen RCMs. However, runs
               have only been produced for a subset of the possible GCM-RCM
@@ -233,10 +235,6 @@ export default function DataHelp() {
               interpolated to a 1km grid using inverse-distance weighting, then
               averaged to the 12km grid used in this report.
             </p>
-          </div>
-          <div id="other">
-            <h5>Other sources of observations</h5>
-            <p>description here</p>
           </div>
         </Col>
       </Row>

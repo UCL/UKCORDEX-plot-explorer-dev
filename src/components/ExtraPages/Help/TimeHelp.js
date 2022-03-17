@@ -138,7 +138,7 @@ export default function TimeHelp() {
             <h5 id="warming">Warming levels</h5>
             <p>
               Plots of changes in model climatology with respect to the baseline
-              period (December 1st 1980 -- November 30th 2010) are also provided
+              period (December 1st 1980 - November 30th 2010) are also provided
               for 30-year periods centred on the years in which global mean
               surface temperature (GMST) reaches 1.5°C, 2°C and 3°C above
               pre-industrial levels in the driving GCM run. Area-weighted annual
@@ -179,7 +179,7 @@ export default function TimeHelp() {
               later than 2065 (highlighted in yellow in the table), the model
               climatology was computed using the longest available symmetric
               period centred on the crossing time: for CNRM-CM5, this was the
-              26-year period from 2054--2080, and for NorESM1-M, the 14-year
+              26-year period from 2054-2080, and for NorESM1-M, the 14-year
               period from 2066-2080.
             </p>
             <Row>
@@ -195,7 +195,7 @@ export default function TimeHelp() {
               <Col>
                 <p>
                   {" "}
-                  <b>(a)</b> CMiP5-EC ensemble
+                  <b>(a)</b> CMIP5-EC ensemble
                 </p>
                 <Table striped size="sm">
                   <thead>
