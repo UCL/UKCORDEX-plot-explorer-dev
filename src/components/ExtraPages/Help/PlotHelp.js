@@ -149,6 +149,7 @@ export default function PlotHelp() {
               with respect to the baseline period in each ensemble are provided.
             </p>
           </div>
+          <br></br>
           {/* ensemble sd */}
           <div>
             <h5 id="ensemble-sd">Maps of ensemble standard deviations</h5>
@@ -161,6 +162,7 @@ export default function PlotHelp() {
               as darker regions in these maps.
             </p>
           </div>
+          <br></br>
           {/* boxplots */}
           <div>
             <h5 id="boxplots">Boxplots of UK averages</h5>
@@ -184,6 +186,7 @@ export default function PlotHelp() {
               red line indicates no change.
             </p>
           </div>
+          <br></br>
           {/* taylor */}
           <div>
             <h5 id="taylor">Taylor diagrams</h5>
@@ -221,6 +224,8 @@ export default function PlotHelp() {
                   more runs has a negative correlation with the reference
                   climatology, the plot will be semicircular.
                 </p>
+              </Col>
+              <Row>
                 <p>
                   The standard deviation of the reference climatology is marked
                   with a heavy dashed arc: points lying close to this arc
@@ -252,9 +257,10 @@ export default function PlotHelp() {
                   squared error excludes UK-wide biases in the runs, which must
                   be assessed separately using boxplots.
                 </p>
-              </Col>
+              </Row>
             </Row>
           </div>
+          <br></br>
           {/* anova */}
           <div>
             <h5 id="anova">
@@ -288,6 +294,7 @@ export default function PlotHelp() {
               .
             </p>
           </div>
+          <br></br>
           {/* epp */}
           <div>
             <h5 id="epp">Ensemble principal patterns</h5>
@@ -336,6 +343,7 @@ export default function PlotHelp() {
               sequence of analyses.
             </p>
           </div>
+          <br></br>
           {/* stamp */}
           <div>
             <h5 id="stamp">
