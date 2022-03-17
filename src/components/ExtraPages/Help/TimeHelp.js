@@ -83,6 +83,56 @@ export default function TimeHelp() {
               period (December 1st 1980 - November 30th 2010) are provided for
               the seven 30-year time periods described in Table 5.
             </p>
+            <p style={{ fontSize: "80%" }}>
+              <b>Table 5:</b> Definitions of time slices for which plots are
+              available.
+            </p>
+            <Table striped size="sm">
+              <thead>
+                <tr>
+                  <td>Period</td>
+                  <td>Start date</td>
+                  <td>End date</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1990-2020</td>
+                  <td>01-Dec-1989</td>
+                  <td>30-Nov-2019</td>
+                </tr>
+                <tr>
+                  <td>2000-2030</td>
+                  <td>01-Dec-1999</td>
+                  <td>30-Nov-2029</td>
+                </tr>
+                <tr>
+                  <td>2010-2040</td>
+                  <td>01-Dec-2009</td>
+                  <td>30-Nov-2039</td>
+                </tr>
+                <tr>
+                  <td>2020-2050</td>
+                  <td>01-Dec-2019</td>
+                  <td>30-Nov-2049</td>
+                </tr>
+                <tr>
+                  <td>2030-2060</td>
+                  <td>01-Dec-2029</td>
+                  <td>30-Nov-2059</td>
+                </tr>
+                <tr>
+                  <td>2040-2070</td>
+                  <td>01-Dec-2039</td>
+                  <td>30-Nov-2069</td>
+                </tr>
+                <tr>
+                  <td>2050-2080</td>
+                  <td>01-Dec-2049</td>
+                  <td>30-Nov-2079</td>
+                </tr>
+              </tbody>
+            </Table>
           </div>
           <div>
             <h5 id="warming">Warming levels</h5>
