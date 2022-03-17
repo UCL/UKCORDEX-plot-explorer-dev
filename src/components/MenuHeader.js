@@ -42,6 +42,11 @@ function MenuHeader() {
             <LinkContainer to="/about">
               <NavDropdown.Item>About UKCORDEX</NavDropdown.Item>
             </LinkContainer>
+            <LinkContainer to="/indices-calculation">
+              <NavDropdown.Item>
+                How the indices are calculated
+              </NavDropdown.Item>
+            </LinkContainer>
             <LinkContainer to="/acknowledgements">
               <NavDropdown.Item>Acknowledgements</NavDropdown.Item>
             </LinkContainer>
