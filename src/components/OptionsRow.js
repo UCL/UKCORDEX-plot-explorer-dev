@@ -57,30 +57,30 @@ function OptionsRow({
           formatOptionLabel={formatPlotvarLabel}
           classNamePrefix={plotvarOptionsContents}
           onChange={setPlotvars}
-          placeholder="Select variable"
+          placeholder="Variables"
           isClearable={false}
           isMulti
           className="plotdropdown"
         />
       </Col>
       {/* Plot types dropdown */}
-      <Col sm={2} xs={5}>
+      <Col sm={3} xs={5}>
         <Select
           options={plottypeOptionsContents}
           onChange={setPlottypes}
           formatOptionLabel={formatPlotTypeLabel}
-          placeholder="Select plot type"
+          placeholder="Plot types"
           isClearable={false}
           isMulti
           className="plotdropdown"
         />
       </Col>
       {/* Spatial aggregation dropdown */}
-      <Col sm={3} xs={4}>
+      <Col sm={2} xs={3}>
         <Select
           options={regionOptionsContents}
           onChange={setRegion}
-          placeholder="Select spatial aggregation"
+          placeholder="Spatial aggregations"
           isClearable={false}
           isMulti
           className="plotdropdown"
@@ -92,7 +92,7 @@ function OptionsRow({
           options={seasonOptionsContents}
           formatOptionLabel={formatSeasonLabel}
           onChange={setSeasons}
-          placeholder="Select season"
+          placeholder="Seasons"
           isClearable={false}
           isMulti
           className="plotdropdown"
@@ -103,7 +103,7 @@ function OptionsRow({
         <Select
           options={periodOptionsContents}
           onChange={setPeriods}
-          placeholder="Select period"
+          placeholder="Periods"
           isClearable={false}
           isMulti
           className="plotdropdown"
