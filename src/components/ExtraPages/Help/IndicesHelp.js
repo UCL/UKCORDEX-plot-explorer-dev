@@ -225,7 +225,7 @@ function IndicesHelp() {
                   </tr>
                 </tbody>
               </Table>
-              <span>*mm of liquid water equivalent</span>
+              <span><sup>*</sup>mm of liquid water equivalent</span>
             </Col>
           </Row>
           {/* temperature */}
