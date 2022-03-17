@@ -152,7 +152,9 @@ export default function PlotHelp() {
           <br></br>
           {/* ensemble sd */}
           <div>
-            <h5 id="ensemble-sd">Maps of standard deviations of biases/changes within each ensemble</h5>
+            <h5 id="ensemble-sd">
+              Maps of standard deviations of biases/changes within each ensemble
+            </h5>
             <p>
               The locations within the UK where the ensemble members are most
               strongly in agreement (or disagreement) can be identified using
@@ -281,9 +283,11 @@ export default function PlotHelp() {
               explained by each component: note that, due to the unbalanced
               structure of the EuroCORDEX ensemble (as seen in the table of
               available GCM-RCM pairs at{" "}
-              <Link to="link-to-ensembles-page">link-to-ensembles-page</Link>,
-              where some combinations are missing), the proportions of variance
-              attributed to each component do not sum to exactly 100%.
+              <HashLink to="data-help#eurocordex">
+                table of available GCM-RCM pairs
+              </HashLink>
+              , where some combinations are missing), the proportions of
+              variance attributed to each component do not sum to exactly 100%.
             </p>
             <p>
               For full details of the methodology used to accommodate the
