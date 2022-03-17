@@ -183,11 +183,6 @@ function IndicesHelp() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>tas</td>
-                    <td>Mean daily near-surface air temperature</td>
-                    <td>°C</td>
-                  </tr>
-                  <tr>
                     <td> sfcWind</td>
                     <td>Wind speed at 10m</td>
                     <td>
