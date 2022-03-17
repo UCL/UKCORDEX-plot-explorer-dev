@@ -471,7 +471,7 @@ function IndicesHelp() {
               the season of interest j.
             </p>{" "}
             <p className="contents">
-              <b>number of warm nights</b> (tmin90p): Let q_{90}(tmin[ir]) be
+              <b>Number of warm nights</b> (tmin90p): Let q_{90}(tmin[ir]) be
               the 90th percentile of daily minimum temperatures in a five-day
               window centred on calendar day i in the reference period r
               (1980-2010). Count the number of days where tmin_ij {">"} q_{90}
