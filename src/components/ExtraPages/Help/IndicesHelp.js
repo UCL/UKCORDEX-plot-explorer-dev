@@ -158,7 +158,7 @@ function IndicesHelp() {
                   </tr>
                   <tr>
                     <td>huss</td>
-                    <td>Near-surface specific humidity at 1.5m</td>
+                    <td>Specific humidity at 1.5m</td>
                     <td></td>
                   </tr>
                   <tr>
