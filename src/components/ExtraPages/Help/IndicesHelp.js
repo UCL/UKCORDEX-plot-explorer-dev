@@ -678,7 +678,7 @@ function IndicesHelp() {
               <b>Shape parameter of fitted GEV distribution</b> (idx_shape):{" "}
             </p>
             <p className="contents">
-              <b>Scale parameter of fitted GEV distribution</b> (idx_scale):{" "}
+              <b>Scale parameter of fitted GEV distribution</b> (idxscale):{" "}
             </p>
           </Row>
           {/* impact relevant */}
