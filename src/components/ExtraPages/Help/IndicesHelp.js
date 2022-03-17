@@ -192,7 +192,7 @@ function IndicesHelp() {
                   <tr>
                     <td>snw</td>
                     <td>Lying snow</td>
-                    <td>mm*</td>
+                    <td>mm<sup>*</sup></td>
                   </tr>
                   <tr>
                     <td>tas</td>
