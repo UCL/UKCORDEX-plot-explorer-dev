@@ -179,7 +179,7 @@ export default function TimeHelp() {
               later than 2065 (highlighted in yellow in the table), the model
               climatology was computed using the longest available symmetric
               period centred on the crossing time: for CNRM-CM5, this was the
-              26-year period from 2054--2080, and for NorESM1-M, the 14-year
+              26-year period from 2054-2080, and for NorESM1-M, the 14-year
               period from 2066-2080.
             </p>
             <Row>
