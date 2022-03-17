@@ -32,12 +32,16 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
               className="mb-4"
               style={{ border: "none", width: "65%", margin: "auto" }}>
               <Figure>
-                <Figure.Caption style={{ textAlign: "center" }}>
+                <Figure.Caption
+                  style={{
+                    marginLeft: "-20%",
+                    textAlign: "center",
+                    width: "150%",
+                  }}>
                   {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
                 </Figure.Caption>
                 <Image
                   fluid="true"
-                  width="100%"
                   alt={`plot ${makeTitle(
                     plot.slice(plot.lastIndexOf("/") + 1)
                   )} not found`}
