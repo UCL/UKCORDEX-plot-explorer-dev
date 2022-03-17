@@ -428,7 +428,7 @@ function IndicesHelp() {
               (mintmin): The lowest daily temperature tmin_ij in each season j.{" "}
             </p>{" "}
             <p className="contents">
-              <b>maximum daily near-surface air temperature</b> (tasmax):{" "}
+              <b>Maximum daily near-surface air temperature</b> (tasmax):{" "}
             </p>{" "}
             <p className="contents">
               <b>minimum daily near-surface air temperature</b> (tasmin):{" "}
