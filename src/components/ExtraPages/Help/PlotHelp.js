@@ -338,9 +338,8 @@ export default function PlotHelp() {
               plots is to help users select a small number of GCMs or RCMs that
               span the range of variation in an ensemble, or to identify members
               of the UKCP18 12km ensemble that display unusual patterns of
-              behaviour in a particular index. See{" "}
-              <Link to="/how-to-use">link-to-how-to-use </Link>for a suggested
-              sequence of analyses.
+              behaviour in a particular index. A suggested sequence of analyses is given{" "}
+              <Link to="/how-to-use">here</Link>.
             </p>
           </div>
           <br></br>
