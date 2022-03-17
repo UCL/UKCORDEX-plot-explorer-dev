@@ -750,7 +750,7 @@ function IndicesHelp() {
           {/* degree days */}
           <Row className="indices">
             <h5 id="degree">
-              <u>Degree Days and Season Lengths</u>
+              <u>Degree-days and season lengths</u>
             </h5>
             <p className="foreword">
               Plots of these indices are only provided at annual frequency. Note
