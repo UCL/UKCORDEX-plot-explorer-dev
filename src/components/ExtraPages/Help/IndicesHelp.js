@@ -27,16 +27,6 @@ function IndicesHelp() {
                 <li>
                   {" "}
                   <HashLink
-                    to="/indices-help#calculation"
-                    scroll={(el) =>
-                      el.scrollIntoView({ behavior: "auto", block: "center" })
-                    }>
-                    Indices Calculation
-                  </HashLink>
-                </li>
-                <li>
-                  {" "}
-                  <HashLink
                     to="/indices-help#corevars"
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
@@ -113,33 +103,12 @@ function IndicesHelp() {
           <div>
             <h1>Available indices</h1>
             <br></br>
-            <h3 id="calculation">How the indices are calculated</h3>
-            <p>
-              Unless stated otherwise, a seasonal time series of each index is
-              first computed from daily model output on the native grid, then
-              averaged over each time period to obtain a set of seasonal model
-              climatologies. These seasonal climatologies are then regridded
-              onto a common 12km grid (OSGB) using area weighting, so that
-              output from models on different grids can be compared directly.
-              For regional climate model output (EuroCORDEX and UKCP18 12km
-              runs), a land-sea mask is applied to remove any so that only cells
-              with 1 more than 50% land coverage are included; values in these
-              land surface cells are regridded onto the UK land surface grid.
-              For global climate model output (CMIP5 and UKCP18 60km runs), the
-              low-resolution data is regridded directly onto the land surface
-              12km grid. No bias correction has been carried out. To facilitate
-              comparison between models that use different calendars, any
-              indices that depend on the number of days in the season or year
-              (for example, number of tropical nights tr or accumulated
-              precipitation prcptot) are standardised by averaging over the
-              number of days in the model output and multiplying by 90 (for
-              seasonal indices) or 365 (for annual indices).
-            </p>
           </div>
-          <br></br>
-          <h6>
-            The following describes the indices for which plots are available.
-          </h6>{" "}
+          <p>
+            This page describes the indices for which plots are available. The
+            process used for index calculation is described{" "}
+            <HashLink to="/indices-calculation#">here</HashLink>.
+          </p>{" "}
           <br></br>
           {/* core vars table */}
           <Row className="indices">
@@ -221,14 +190,16 @@ function IndicesHelp() {
                   <tr>
                     <td> sfcWind</td>
                     <td>Wind speed at 10m</td>
-                    <td>ms<sup>-1</sup></td>
-                  </tr>                  
+                    <td>
+                      ms<sup>-1</sup>
+                    </td>
+                  </tr>
                   <tr>
                     <td>snw</td>
                     <td>Lying snow</td>
                     <td>mm*</td>
-                  </tr>   
-                  <tr>                 
+                  </tr>
+                  <tr>
                     <td>tasmax</td>
                     <td>Maximum daily near-surface air temperature</td>
                     <td>°C</td>
@@ -267,9 +238,6 @@ function IndicesHelp() {
               the daily mean temperature on day i in season j; the daily minimum
               and maximum temperature on day i in season j are denoted by
               tmin_ij and tmax_ij respectively.
-            </p>
-            <p className="contents">
-              <b>mean daily near-surface air temperature</b> (tas):{" "}
             </p>
             <p className="contents">
               <b>Number of cold spell days</b> (csdi): Count the number of days
@@ -500,9 +468,6 @@ function IndicesHelp() {
             </p>
 
             <p className="contents">
-              <b>daily precipitation rate</b> (pr):{" "}
-            </p>
-            <p className="contents">
               <b>Accumulated precipitation</b> (prcptot): Sum of pr_ij geq 1 in
               season j.
             </p>
@@ -511,10 +476,10 @@ function IndicesHelp() {
               which pr_ij geq 1.
             </p>
             <p className="contents">
-              <b>daily rate of convective precipitation</b> (prc):{" "}
+              <b>Daily rate of convective precipitation</b> (prc):{" "}
             </p>
             <p className="contents">
-              <b>proportion of rainfall due to convection</b> (prcprop): Let
+              <b>Proportion of rainfall due to convection</b> (prcprop): Let
               prc_ij be the daily precipitation amount due to convective
               rainfall on day i in period j. The proportion of total
               precipitation due to convective processes in period j is the sum
@@ -522,7 +487,7 @@ function IndicesHelp() {
               period j, prcptot.
             </p>
             <p className="contents">
-              <b>proportion of wet days followed by a wet day</b> (pww): Where n
+              <b>Proportion of wet days followed by a wet day</b> (pww): Where n
               is the total number of days in period j, and pr_ij {">"} 1 is an
               indicator function with value one if pr_ij {">"} 1, and zero
               otherwise. The complementary transition probability is P_j(wd) =
@@ -535,7 +500,7 @@ function IndicesHelp() {
               />
             </p>
             <p className="contents">
-              <b>proportion of dry days followed by a dry day</b> (pdd): Where n
+              <b>Proportion of dry days followed by a dry day</b> (pdd): Where n
               is the total number of days in period j, and pr_ij {">"} 1 is an
               indicator function with value one if pr_ij {">"} 1, and zero
               otherwise. The complementary transition probability is P_j(dw) =
@@ -548,18 +513,18 @@ function IndicesHelp() {
               />
             </p>
             <p className="contents">
-              <b>maximum one-day precipitation</b> (rx1day): The maximum one-day
+              <b>Maximum one-day precipitation</b> (rx1day): The maximum one-day
               precipitation for season j is max (pr_ij).
             </p>
             <p className="contents">
-              <b>maximum five-day precipitation</b> (rx5day): Let pr5_ij be the
+              <b>Maximum five-day precipitation</b> (rx5day): Let pr5_ij be the
               total precipitation amount for the five-day interval ending on day
               i in season j. The maximum five-day values for period j are
               max(pr5_ij).
             </p>
             <p className="contents">
               <b>
-                proportion of precipitation falling on days exceeding 95th
+                Proportion of precipitation falling on days exceeding 95th
                 percentile
               </b>{" "}
               (r95ptot): Let q_{95}(pr_r) be the 95th percentile of daily
@@ -570,7 +535,7 @@ function IndicesHelp() {
             </p>
             <p className="contents">
               <b>
-                proportion of precipitation falling on days exceeding 99th
+                Proportion of precipitation falling on days exceeding 99th
                 percentile
               </b>{" "}
               (r99ptot): Let q_{99}(pr_r) be the 99th percentile of daily
@@ -580,23 +545,23 @@ function IndicesHelp() {
               {99}(pr_r).
             </p>
             <p className="contents">
-              <b>wet-day precipitation rate</b> (sdii): Mean of pr_ij geq 1 in
+              <b>Wet-day precipitation rate</b> (sdii): Mean of pr_ij geq 1 in
               season j.
             </p>
             <p className="contents">
-              <b>median length of dry spell</b> (dsmed): Count the median number
+              <b>Median length of dry spell</b> (dsmed): Count the median number
               of consecutive days where pr_ij {"<"} 1.
             </p>
             <p className="contents">
-              <b>maximum length of dry spell</b> (dsmax): Count the largest
+              <b>Maximum length of dry spell</b> (dsmax): Count the largest
               number of consecutive days where pr_ij {"<"} 1.
             </p>
             <p className="contents">
-              <b>median length of wet spell</b> (wsmed): Count the median number
+              <b>Median length of wet spell</b> (wsmed): Count the median number
               of consecutive days where pr_ij geq 1.
             </p>
             <p className="contents">
-              <b>maximum length of wet spell</b> (wsmax): Count the largest
+              <b>Maximum length of wet spell</b> (wsmax): Count the largest
               number of consecutive days where pr_ij geq 1.
             </p>
           </Row>
@@ -612,28 +577,19 @@ function IndicesHelp() {
               the maximum gust strength on day i in season j.
             </p>
             <p className="contents">
-              <b>near-surface wind speed</b> (sfcWind):{" "}
-            </p>
-            <p className="contents">
-              <b>eastward near-surface wind</b> (uas):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>northward near-surface wind</b> (vas):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>maximum sustained wind speed</b> (maxsfcWindmax): The maximum
+              <b>Maximum sustained wind speed</b> (maxsfcWindmax): The maximum
               sustained daily wind speed for season j is max(maxwind).
             </p>{" "}
             <p className="contents">
-              <b>maximum speed of wind gust</b> (maxwsgsmax): The maximum daily
+              <b>Maximum speed of wind gust</b> (maxwsgsmax): The maximum daily
               gust speed for season j is max(maxgust)
             </p>{" "}
             <p className="contents">
-              <b>number of calm days</b> (ncalm): The number of calm days in
+              <b>Number of calm days</b> (ncalm): The number of calm days in
               season j is the count of days where swind leq 2ms<sup>-1</sup>.
             </p>{" "}
             <p className="contents">
-              <b>number of windy days</b> (nwindy): The number of windy days in
+              <b>Number of windy days</b> (nwindy): The number of windy days in
               season j is the count of days where swind geq 10.8ms
               <sup>-1</sup>-.
             </p>
@@ -641,7 +597,7 @@ function IndicesHelp() {
           {/* extreme events */}
           <Row className="indices">
             <h5 id="extreme">
-              <u>Extreme Events</u>
+              <u>Indices of extremes</u>
             </h5>
             <p className="foreword">
               Indices of extreme wind and precipitation are not calculated per
@@ -701,13 +657,13 @@ function IndicesHelp() {
               <u>Impact-relevant Indices</u>
             </h5>
             <p className="contents">
-              <b>soil moisture at depths of up to 1m</b> (mrso): Let mrso_ij be
+              <b>Soil moisture at depths of up to 1m</b> (mrso): Let mrso_ij be
               the total soil moisture at a depth of up to 1m for day i in period
               j. The mean soil moisture in season j is the average of mrso_ij in
               season j.
             </p>
             <p className="contents">
-              <b>number of dangerously hot days</b> (ndhi):{" "}
+              <b>Number of dangerously hot days</b> (ndhi):{" "}
               <Latex displayMode={true}>
                 Let T denote the daily maximum surface air temperature tasmaxij
                 and R the relative humidity hursij for day i in period j. Then
@@ -720,13 +676,13 @@ function IndicesHelp() {
               </Latex>{" "}
             </p>
             <p className="contents">
-              <b>number of occurrences of drought</b> (ndrought): Drought
+              <b>Number of occurrences of drought</b> (ndrought): Drought
               occurrences will be the count of the number of occasions on which
               the monthly time series of spei6 falls below a threshold in the
               interval (-2, -1.5) in each season.
             </p>
             <p className="contents">
-              <b>potential evapotranspiration</b> (pet): PET is computed for
+              <b>Potential evapotranspiration</b> (pet): PET is computed for
               each day i in season j using the REC: McGuinness-Bordne equation,
               where λ is a constant representing the latent heat of vaporisation
               and S(i) 0 is the extraterrestrial radiation on day i, estimated
@@ -755,7 +711,7 @@ function IndicesHelp() {
               computed by averaging the monthly values within each season.
             </p>
             <p className="contents">
-              <b>number of tropical nights ({">"}20°C)</b> (tr): the number of
+              <b>Number of tropical nights ({">"}20°C)</b> (tr): the number of
               days in season j where tasmin_ij {">"} 20°C.
             </p>
           </Row>
@@ -771,21 +727,21 @@ function IndicesHelp() {
               meteorological years.
             </p>
             <p className="contents">
-              <b>growing degree-days</b> (gdd):{" "}
+              <b>Growing degree-days</b> (gdd):{" "}
               <Latex displayMode={true}>
                 The number of growing degree-days in year y is ∑i max(0,tasiy
                 -5.6).
               </Latex>{" "}
             </p>{" "}
             <p className="contents">
-              <b>cooling degree-days</b> (cdd):{" "}
+              <b>Cooling degree-days</b> (cdd):{" "}
               <Latex displayMode={true}>
                 The number of cooling degree-days in year y is ∑i max(0,tasiy
                 -22).
               </Latex>{" "}
             </p>{" "}
             <p className="contents">
-              <b>heating degree-days</b> (hdd):{" "}
+              <b>Heating degree-days</b> (hdd):{" "}
               <Latex displayMode={true}>
                 The number of heating degree-days in year y is ∑i max(0,15.5
                 -tasiy).
