@@ -591,7 +591,7 @@ function IndicesHelp() {
             <p className="contents">
               <b>Number of windy days</b> (nwindy): The number of windy days in
               season j is the count of days where swind geq 10.8ms
-              <sup>-1</sup>-.
+              <sup>-1</sup>.
             </p>
           </Row>
           {/* extreme events */}
