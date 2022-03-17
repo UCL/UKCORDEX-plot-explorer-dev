@@ -186,32 +186,6 @@ function IndicesHelp() {
                     <td>Net surface short wave flux</td>
                     <td>wm<sup>-2</sup></td>
                   </tr>
-                  <tr>
-                    <td>psl</td>
-                    <td>Sea level pressure</td>
-                    <td>hPa</td>
-                  </tr>
-                  <tr>
-                    <td>rls</td>
-                    <td>Net surface long wave flux</td>
-                    <td>
-                      wm<sup>2</sup>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>rss</td>
-                    <td>Net surface short wave flux</td>
-                    <td>
-                      wm<sup>2</sup>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>sfcWind</td>
-                    <td>Wind speed at 10m</td>
-                    <td>
-                      ms<sup>-1</sup>
-                    </td>
-                  </tr>
                 </tbody>
               </Table>
             </Col>
