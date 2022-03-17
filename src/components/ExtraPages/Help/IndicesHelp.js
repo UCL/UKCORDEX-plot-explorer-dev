@@ -424,7 +424,7 @@ function IndicesHelp() {
               (maxtmax): The highest daily temperature tmax_ij in each season j.{" "}
             </p>{" "}
             <p className="contents">
-              <b>minimum near-surface air temperature on the coldest day</b>{" "}
+              <b>Minimum near-surface air temperature on the coldest day</b>{" "}
               (mintmin): The lowest daily temperature tmin_ij in each season j.{" "}
             </p>{" "}
             <p className="contents">
