@@ -138,7 +138,7 @@ export default function TimeHelp() {
             <h5 id="warming">Warming levels</h5>
             <p>
               Plots of changes in model climatology with respect to the baseline
-              period (December 1st 1980 -- November 30th 2010) are also provided
+              period (December 1st 1980 - November 30th 2010) are also provided
               for 30-year periods centred on the years in which global mean
               surface temperature (GMST) reaches 1.5°C, 2°C and 3°C above
               pre-industrial levels in the driving GCM run. Area-weighted annual
