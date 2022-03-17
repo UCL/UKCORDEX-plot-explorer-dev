@@ -667,10 +667,9 @@ function IndicesHelp() {
             </p>{" "}
             <p className="contents">
               <b>
-                Future return period of idx rl50 from the baseline period
-                (1980-2010)
+                For the evaluation period, this is the 50-year return period of the observed idxrl50; for future time slices, it is the 50-year return level of idxrl50 computed over the the baseline period (1980-2010).
               </b>{" "}
-              (idx_rp50):{" "}
+              (idxrp50):{" "}
             </p>{" "}
             <p className="contents">
               <b>Location parameter of fitted GEV distribution</b> (idx_loc):{" "}
