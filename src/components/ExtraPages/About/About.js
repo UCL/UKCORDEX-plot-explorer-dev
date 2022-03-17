@@ -10,7 +10,7 @@ export default function About() {
         <p>
           The Met Office's{" "}
           <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/about">
-            The Met Office's UK Climate Projections (UKCP18)
+            UK Climate Projections (UKCP18)
           </a>{" "}
           provide several different products giving information about the future
           climate of the UK, including projections at global (60km), regional
