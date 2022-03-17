@@ -27,6 +27,16 @@ function IndicesHelp() {
                 <li>
                   {" "}
                   <HashLink
+                    to="/indices-help#calculation"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Indices Calculation
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink
                     to="/indices-help#corevars"
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
@@ -41,7 +51,7 @@ function IndicesHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Indices of Temperature
+                    Temperature
                   </HashLink>
                 </li>
                 <li>
@@ -103,7 +113,7 @@ function IndicesHelp() {
           <div>
             <h1>Available indices</h1>
             <br></br>
-            <h3>How the indices are calculated</h3>
+            <h3 id="calculation">How the indices are calculated</h3>
             <p>
               Unless stated otherwise, a seasonal time series of each index is
               first computed from daily model output on the native grid, then
@@ -161,7 +171,7 @@ function IndicesHelp() {
                     <td>Specific humidity at 1.5m</td>
                     <td></td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>pr</td>
                     <td>Precipitation rate</td>
                     <td>mm/day</td>
@@ -179,12 +189,16 @@ function IndicesHelp() {
                   <tr>
                     <td>rls</td>
                     <td>Net surface long wave flux</td>
-                    <td>wm<sup>-2</sup></td>
+                    <td>
+                      wm<sup>-2</sup>
+                    </td>
                   </tr>
                   <tr>
                     <td>rss</td>
                     <td>Net surface short wave flux</td>
-                    <td>wm<sup>-2</sup></td>
+                    <td>
+                      wm<sup>-2</sup>
+                    </td>
                   </tr>
                 </tbody>
               </Table>
@@ -236,7 +250,7 @@ function IndicesHelp() {
           {/* temperature */}
           <Row className="indices">
             <h5 id="temp">
-              <u>Temperature</u>
+              <u>Indices of temperature</u>
             </h5>
             <p className="foreword">
               In defining the following indices of temperature, let tas_ij be
@@ -645,13 +659,19 @@ function IndicesHelp() {
             </p>{" "}
             <p className="contents">
               <b>
-                For the evaluation period, this is the 20-year return period of the observed idxrl20; for future time slices, it is the 20-year return level of idxrl20 computed over the the baseline period (1980-2010).
+                For the evaluation period, this is the 20-year return period of
+                the observed idxrl20; for future time slices, it is the 20-year
+                return level of idxrl20 computed over the the baseline period
+                (1980-2010).
               </b>{" "}
               (idxrp20):{" "}
             </p>{" "}
             <p className="contents">
               <b>
-                For the evaluation period, this is the 50-year return period of the observed idxrl50; for future time slices, it is the 50-year return level of idxrl50 computed over the the baseline period (1980-2010).
+                For the evaluation period, this is the 50-year return period of
+                the observed idxrl50; for future time slices, it is the 50-year
+                return level of idxrl50 computed over the the baseline period
+                (1980-2010).
               </b>{" "}
               (idxrp50):{" "}
             </p>{" "}
