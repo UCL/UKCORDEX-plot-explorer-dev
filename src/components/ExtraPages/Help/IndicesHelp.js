@@ -661,10 +661,9 @@ function IndicesHelp() {
             </p>{" "}
             <p className="contents">
               <b>
-                30-year return level of idx rl30 from the baseline period
-                (1980-2010)
+                For the evaluation period, this is the 20-year return period of the observed idxrl20; for future time slices, it is the 20-year return level of idxrl20 computed over the the baseline period (1980-2010).
               </b>{" "}
-              (idx_rp30):{" "}
+              (idxrp20):{" "}
             </p>{" "}
             <p className="contents">
               <b>
