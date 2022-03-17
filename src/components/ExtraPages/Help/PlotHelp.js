@@ -138,7 +138,7 @@ export default function PlotHelp() {
           {/* section about the plots */}
           {/* ensemble means */}
           <div>
-            <h5 id="ensemble-means">Maps of ensemble means</h5>
+            <h5 id="ensemble-means">Maps of ensemble mean bias/change</h5>
             <p>
               Systematic differences between the ensembles --- both in spatial
               patterns common to all ensemble members and in the magnitude of
