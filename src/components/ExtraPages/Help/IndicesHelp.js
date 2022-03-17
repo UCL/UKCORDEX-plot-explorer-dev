@@ -200,11 +200,6 @@ function IndicesHelp() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>prsn</td>
-                    <td>Snowfall amount</td>
-                    <td>mm/day</td>
-                  </tr>
-                  <tr>
                     <td>uas</td>
                     <td>Eastward wind at 10m </td>
                     <td>
