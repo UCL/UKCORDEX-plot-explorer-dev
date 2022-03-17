@@ -657,7 +657,7 @@ function IndicesHelp() {
               <b>20-year return level of idx</b> (idxrl20):{" "}
             </p>{" "}
             <p className="contents">
-              <b>50-year return level of idx</b> (idx_rl50):{" "}
+              <b>50-year return level of idx</b> (idxrl50):{" "}
             </p>{" "}
             <p className="contents">
               <b>
