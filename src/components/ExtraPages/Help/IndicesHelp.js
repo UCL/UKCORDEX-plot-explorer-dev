@@ -481,7 +481,7 @@ function IndicesHelp() {
           {/* precipitation */}
           <Row className="indices">
             <h5 id="precip">
-              <u>Precipitation</u>
+              <u>Indices of precipitation</u>
             </h5>
             <p className="foreword">
               In defining the following indices of precipitation, let pr_ij be
