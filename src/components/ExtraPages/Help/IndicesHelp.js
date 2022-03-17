@@ -654,7 +654,7 @@ function IndicesHelp() {
               the following plots are available:
             </p>
             <p className="contents">
-              <b>30-year return level of idx</b> (idx_rl30):{" "}
+              <b>20-year return level of idx</b> (idxrl20):{" "}
             </p>{" "}
             <p className="contents">
               <b>50-year return level of idx</b> (idx_rl50):{" "}
