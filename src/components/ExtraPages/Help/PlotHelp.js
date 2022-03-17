@@ -165,7 +165,7 @@ export default function PlotHelp() {
           <br></br>
           {/* boxplots */}
           <div>
-            <h5 id="boxplots">Boxplots of UK averages</h5>
+            <h5 id="boxplots">Boxplots of UK average bias/change</h5>
             <p>
               The boxplots show the distribution of the mean changes in an index
               across the UK land surface within each ensemble. Each point
