@@ -15,6 +15,7 @@ a {
   font-size: 90%;
   margin-bottom: 0.3em;
   line-height: 2em;
+  margin-left: -10%;
 }
 .subsection li a {
   color: #390b9c;
