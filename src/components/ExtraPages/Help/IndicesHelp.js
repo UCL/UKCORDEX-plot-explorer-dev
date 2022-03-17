@@ -420,7 +420,7 @@ function IndicesHelp() {
               </Row>
             </p>{" "}
             <p className="contents">
-              <b>maximum near-surface air temperature on the hottest day</b>{" "}
+              <b>Maximum near-surface air temperature on the hottest day</b>{" "}
               (maxtmax): The highest daily temperature tmax_ij in each season j.{" "}
             </p>{" "}
             <p className="contents">
