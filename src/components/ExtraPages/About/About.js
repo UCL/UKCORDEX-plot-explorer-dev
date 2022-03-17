@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Container className="about">
       <div>
-        <h1>About UK CORDEX</h1>
+        <h1>About the UKCORDEX project</h1>
         <p>
           The Met Office's{" "}
           <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/about">
