@@ -220,11 +220,6 @@ function IndicesHelp() {
                     </td>
                   </tr>
                   <tr>
-                    <td>pr</td>
-                    <td>Daily precipitation rate</td>
-                    <td>mm/day</td>
-                  </tr>
-                  <tr>
                     <td>tas</td>
                     <td>Mean daily near-surface air temperature</td>
                     <td>°C</td>
