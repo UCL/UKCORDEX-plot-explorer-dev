@@ -595,7 +595,7 @@ function IndicesHelp() {
           {/* wind */}
           <Row className="indices">
             <h5 id="wind">
-              <u>Wind</u>
+              <u>Indices of wind</u>
             </h5>
             <p className="foreword">
               In defining the following indices of wind speed, let swind be the
