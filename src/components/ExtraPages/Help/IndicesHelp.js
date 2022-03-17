@@ -214,6 +214,20 @@ function IndicesHelp() {
                     <td>Minimum daily near-surface air temperature</td>
                     <td>°C</td>
                   </tr>
+                  <tr>
+                    <td>uas</td>
+                    <td>Eastward wind at 10m </td>
+                    <td>
+                      ms<sup>-1</sup>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>vas</td>
+                    <td>Northward wind at 10m</td>
+                    <td>
+                      ms<sup>-1</sup>
+                    </td>
+                  </tr>
                 </tbody>
               </Table>
               <span>*mm of liquid water equivalent</span>
