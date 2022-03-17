@@ -29,7 +29,7 @@ export default function TimeHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Evaluation Period
+                    Evaluation period
                   </HashLink>
                 </li>
                 <li>
@@ -39,7 +39,7 @@ export default function TimeHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Future Periods
+                    Future periods
                   </HashLink>
                 </li>
                 <li>
@@ -49,7 +49,7 @@ export default function TimeHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Warming Levels
+                    Warming levels
                   </HashLink>
                 </li>
               </ul>
@@ -59,7 +59,7 @@ export default function TimeHelp() {
         {/* page contents */}
         <Col>
           <div>
-            <h1>Information on Time Periods</h1>
+            <h1>Information on time periods</h1>
           </div>
           <br></br>
           {/* section about the data */}
@@ -85,7 +85,7 @@ export default function TimeHelp() {
             </p>
           </div>
           <div>
-            <h5 id="warming">Warming Levels</h5>
+            <h5 id="warming">Warming levels</h5>
             <p>
               Plots of changes in model climatology with respect to the baseline
               period (December 1st 1980 -- November 30th 2010) are also provided

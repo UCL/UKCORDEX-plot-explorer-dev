@@ -59,16 +59,16 @@ function MenuHeader() {
               <NavDropdown.Item>Indices</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/data-help">
-              <NavDropdown.Item>Data Sources</NavDropdown.Item>
+              <NavDropdown.Item>Data sources</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/time-help">
-              <NavDropdown.Item>Time Periods</NavDropdown.Item>
+              <NavDropdown.Item>Time periods</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/plot-help">
               <NavDropdown.Item>Plots</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/missing-plots">
-              <NavDropdown.Item>Missing Plots</NavDropdown.Item>
+              <NavDropdown.Item>Missing plots</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
         </Nav>

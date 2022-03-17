@@ -30,7 +30,7 @@ export default function PlotHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Ensemble Means
+                    Maps of ensemble means
                   </HashLink>
                 </li>
                 <li>
@@ -40,7 +40,7 @@ export default function PlotHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Ensemble Std. Deviations
+                    Maps of ensemble std dev{" "}
                   </HashLink>
                 </li>
                 <li>
@@ -50,7 +50,7 @@ export default function PlotHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Boxplots
+                    Boxplots of UK avgs
                   </HashLink>
                 </li>
                 <li>
@@ -70,7 +70,7 @@ export default function PlotHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Maps of Variation
+                    Maps of sources of variation
                   </HashLink>
                 </li>
                 <li>
@@ -80,7 +80,7 @@ export default function PlotHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    EPPs
+                    Ensemble principal patterns
                   </HashLink>
                 </li>
                 <li>
@@ -101,7 +101,7 @@ export default function PlotHelp() {
         <Col>
           <div>
             {/* intro section */}
-            <h1>Information on Available Plots</h1>
+            <h1>Information on available plots</h1>
             <p>
               All plots are based on seasonal climatologies of each index during
               the selected time period, regridded to a common 12km grid. No bias
@@ -115,13 +115,13 @@ export default function PlotHelp() {
           </div>
           <br></br>
           <p>
-            The same legend (shown in Figure 1) is used for the boxplots, Taylor
-            diagrams and EPP score plots, in which each run is represented by a
-            single point. Members of the CMIP5-EC ensemble are represented by
-            symbols shaded in white, with members of the CMIP5-13 ensemble
-            filled in grey; where a model appears in both ensembles, a white
-            symbol is used. Some symbols are used in both ensembles, but this
-            does not necessarily connote any relationship between the
+            The same legend (shown in the figure below) is used for the
+            boxplots, Taylor diagrams and EPP score plots, in which each run is
+            represented by a single point. Members of the CMIP5-EC ensemble are
+            represented by symbols shaded in white, with members of the CMIP5-13
+            ensemble filled in grey; where a model appears in both ensembles, a
+            white symbol is used. Some symbols are used in both ensembles, but
+            this does not necessarily connote any relationship between the
             corresponding runs. Members of the EuroCORDEX ensemble are
             represented by coloured symbols, with the shape indicating the
             member of the CMIP5-EC ensemble used to force the run, and the
@@ -191,7 +191,7 @@ export default function PlotHelp() {
           <div>
             <h5 id="taylor">Taylor diagrams</h5>
             <Row>
-              <Col>
+              <Col fluid="true">
                 <Image
                   fluid="true"
                   src={`${process.env.PUBLIC_URL}/icons/taylor.png`}

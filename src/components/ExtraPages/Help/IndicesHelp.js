@@ -31,7 +31,7 @@ function IndicesHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Core Variables
+                    Core variables
                   </HashLink>
                 </li>
                 <li>
@@ -71,7 +71,7 @@ function IndicesHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Extreme Events
+                    Extreme events
                   </HashLink>
                 </li>
                 <li>
@@ -81,7 +81,7 @@ function IndicesHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Impact Related
+                    Impact-relevant
                   </HashLink>
                 </li>
                 <li>
@@ -91,7 +91,7 @@ function IndicesHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Degree Days and Seasons
+                    Degree days & season lengths
                   </HashLink>
                 </li>
               </ul>
@@ -113,7 +113,7 @@ function IndicesHelp() {
           {/* core vars table */}
           <Row className="indices">
             <h5 id="corevars">
-              <u>Core Variables</u>
+              <u>Core variables</u>
             </h5>
             <Col>
               <Table striped size="sm">
@@ -192,7 +192,9 @@ function IndicesHelp() {
                   <tr>
                     <td>snw</td>
                     <td>Lying snow</td>
-                    <td>mm<sup>*</sup></td>
+                    <td>
+                      mm<sup>*</sup>
+                    </td>
                   </tr>
                   <tr>
                     <td>tas</td>
@@ -225,7 +227,9 @@ function IndicesHelp() {
                   </tr>
                 </tbody>
               </Table>
-              <span><sup>*</sup>mm of liquid water equivalent</span>
+              <span>
+                <sup>*</sup>mm of liquid water equivalent
+              </span>
             </Col>
           </Row>
           {/* temperature */}
@@ -654,7 +658,7 @@ function IndicesHelp() {
           {/* impact relevant */}
           <Row className="indices">
             <h5 id="impact">
-              <u>Impact-relevant Indices</u>
+              <u>Impact-relevant indices</u>
             </h5>
             <p className="contents">
               <b>Soil moisture at depths of up to 1m</b> (mrso): Let mrso_ij be

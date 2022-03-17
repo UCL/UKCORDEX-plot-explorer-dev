@@ -90,7 +90,7 @@ export default function DataHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    HadUK-Grid Observations
+                    HadUK-Grid observations
                   </HashLink>
                 </li>
                 <li>
@@ -149,7 +149,7 @@ export default function DataHelp() {
             <Image
               className="mb-3"
               fluid="true"
-              width="60%"
+              width="80%"
               src={`${process.env.PUBLIC_URL}/content_images/cmip5-table.png`}
               alt=""
             />
@@ -171,7 +171,7 @@ export default function DataHelp() {
             <Image
               className="mb-3"
               fluid="true"
-              width="60%"
+              width="80%"
               src={`${process.env.PUBLIC_URL}/content_images/eurocordex-12km-table.png`}
               alt=""
             />

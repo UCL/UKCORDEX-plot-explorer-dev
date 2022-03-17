@@ -60,7 +60,7 @@ export default function MissingPlots() {
         {/* page contents */}
         <Col>
           <div>
-            <h1>Plots Missing from UKCORDEX Plot Explorer</h1>
+            <h1>Plots missing from UKCORDEX Plot Explorer</h1>
             <p>
               Some of the combinations found in the given options do not exist
               and so these plots cannot be created.
