@@ -153,7 +153,7 @@ function IndicesHelp() {
                   </tr>
                   <tr>
                     <td>hurs</td>
-                    <td>Near-surface relative humidity at 1.5m</td>
+                    <td>Relative humidity at 1.5m</td>
                     <td>%</td>
                   </tr>
                   <tr>
