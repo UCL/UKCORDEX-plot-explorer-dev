@@ -1,0 +1,22 @@
+a {
+  text-decoration: none !important;
+}
+
+.page {
+  font-weight: 500;
+  font-size: 100%;
+  margin-bottom: 0.1em;
+  /* line-height: 0.8; */
+  color: #4f0bcc !important;
+}
+.subsection {
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 90%;
+  margin-bottom: 0.3em;
+  line-height: 2em;
+  margin-left: -10%;
+}
+.subsection li a {
+  color: #390b9c;
+}

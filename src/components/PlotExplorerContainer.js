@@ -106,7 +106,6 @@ function PlotExplorerContainer() {
           regions={regions}
           images={images}
         />
-        {/* </Col> */}
       </Row>
     </Container>
   );

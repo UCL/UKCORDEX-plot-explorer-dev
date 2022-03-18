@@ -356,6 +356,11 @@ export const regionOptionsContents = [
 // Time Periods
 export const periodOptionsContents = [
   {
+    value: "19890101-20081231",
+    label: "1989-2008",
+    title: "19890101-20081231",
+  },
+  {
     value: "19891201-20191130",
     label: "1989-2019",
     title: "19891201-20191130",
@@ -404,11 +409,6 @@ export const periodOptionsContents = [
     value: "3",
     label: "3°C above pre-industrial",
     title: "after GMST increase of 3°C ",
-  },
-  {
-    value: "19890101-20081231",
-    label: "1989-2008",
-    title: "19890101-20081231",
   },
 ];
 

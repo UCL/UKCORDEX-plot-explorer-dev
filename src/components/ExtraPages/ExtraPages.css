@@ -1,10 +1,10 @@
 /* Styling for all the extra pages rather than doing each one individually */
 
 .help,
-.plotHelp,
 .about {
-  margin: 4em;
   max-width: 80%;
+  margin: 1em 4em;
+  scroll-padding-top: 4em !important ;
 }
 
 .indices {
@@ -16,7 +16,7 @@
 }
 .foreword {
   font-weight: 300;
-  font-style: oblique;
+  font-style: italic;
 }
 .contents {
   margin: 1em;

@@ -7,7 +7,7 @@ export default function DisplayWarnings({ warnings }) {
       <Container fluid>
         <Alert variant="danger">
           {" "}
-          <Alert.Heading>
+          <Alert.Heading style={{ fontSize: "1.1em" }}>
             Sorry! The following plots do not exist and so will not be
             downloaded:
           </Alert.Heading>
@@ -17,7 +17,7 @@ export default function DisplayWarnings({ warnings }) {
           <hr />
           <p>
             For information on why these plots are not available, see{" "}
-            <LinkContainer to="/plot-help">
+            <LinkContainer to="/missing-plots">
               <Alert.Link>help with plots</Alert.Link>
             </LinkContainer>
           </p>

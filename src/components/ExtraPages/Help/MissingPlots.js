@@ -1,26 +1,79 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Nav, Row } from "react-bootstrap";
+import { HashLink } from "react-router-hash-link";
 import "../ExtraPages.css";
-import {
-  MissingPlotInfoContents,
-  MissingPlotInfoHead,
-} from "./Contents/MissingPlotInfo";
+import "../HelpNav.css";
 
 export default function MissingPlots() {
   return (
     <Container className="help">
-      <div>
-        <h1>{MissingPlotInfoHead.title}</h1>
-        <p>{MissingPlotInfoHead.intro}</p>
-      </div>
-      <br></br>
-      {/* section about the data */}
-      {MissingPlotInfoContents.map(({ plot, description, i }) => (
-        <div key={i}>
-          <h5>{plot}</h5>
-          <p>{description}</p>
-        </div>
-      ))}
+      <Row fluid="true">
+        {/* sidenav for help pages */}
+        <Col
+          xs={3}
+          sm={2}
+          m={1}
+          style={{ paddingLeft: 0, marginLeft: "-1%", marginRight: "7%" }}>
+          <Container>
+            <Nav
+              className="flex-column"
+              style={{ position: "fixed", overflow: "auto" }}>
+              <ul className="subsection">
+                {" "}
+                <HashLink to="/missing-plots#" className="page">
+                  Missing Plots
+                </HashLink>
+                <li>
+                  {" "}
+                  <HashLink
+                    to="/missing-plots#combo1"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    combo1
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink
+                    to="/missing-plots#combo2"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    combo2
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink
+                    to="/missing-plots#combo3"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    combo3
+                  </HashLink>
+                </li>
+              </ul>
+            </Nav>
+          </Container>
+        </Col>
+        {/* page contents */}
+        <Col>
+          <div>
+            <h1>Plots missing from UKCORDEX Plot Explorer</h1>
+            <p>
+              Some of the combinations found in the given options do not exist
+              and so these plots cannot be created.
+            </p>
+          </div>
+          <br></br>
+          {/* section about the missing plots */}
+          <div>
+            <h5>combination</h5>
+            <p>explanation?</p>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }

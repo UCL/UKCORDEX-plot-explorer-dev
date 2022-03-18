@@ -15,7 +15,7 @@ function MenuHeader() {
       <Container>
         <LinkContainer
           to="/"
-          style={{ justifyContent: "flex-start", marginLeft: "-1em" }}>
+          style={{ justifyContent: "flex-start", marginLeft: "-1%" }}>
           <Navbar.Brand>
             <img
               alt=""
@@ -25,7 +25,7 @@ function MenuHeader() {
               className="d-inline-block align-top"
             />
             {"    "}
-            UK CORDEX Plot Explorer
+            UKCORDEX Plot Explorer
           </Navbar.Brand>
         </LinkContainer>
         {/* This allows the links to show when they're active */}
@@ -34,36 +34,41 @@ function MenuHeader() {
           <LinkContainer to="/">
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
-          <NavDropdown title="About" id="basic-nav-dropdown">
-            <LinkContainer to="/about">
-              <Nav.Link>About UKCORDEX</Nav.Link>
-            </LinkContainer>
 
-            <LinkContainer to="/about-team">
-              <Nav.Link>Project Team</Nav.Link>
+          <NavDropdown title="About" id="basic-nav-dropdown">
+            <LinkContainer to="/about-explorer">
+              <NavDropdown.Item>About the plot explorer</NavDropdown.Item>
+            </LinkContainer>{" "}
+            <LinkContainer to="/about">
+              <NavDropdown.Item>About UKCORDEX</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to="/indices-calculation">
+              <NavDropdown.Item>
+                How the indices are calculated
+              </NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/acknowledgements">
-              <Nav.Link>Acknowledgements</Nav.Link>
+              <NavDropdown.Item>Acknowledgements</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
           <NavDropdown title="Help" id="basic-nav-dropdown">
             <LinkContainer to="/how-to-use">
-              <Nav.Link>How to use UKCORDEX</Nav.Link>
+              <NavDropdown.Item>How to use the plot explorer</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/indices-help">
               <NavDropdown.Item>Indices</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/data-help">
-              <NavDropdown.Item>Data Sources</NavDropdown.Item>
+              <NavDropdown.Item>Data sources</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/time-help">
-              <NavDropdown.Item>Time Periods</NavDropdown.Item>
+              <NavDropdown.Item>Time periods</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/plot-help">
               <NavDropdown.Item>Plots</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/missing-plots">
-              <NavDropdown.Item>Missing Plots</NavDropdown.Item>
+              <NavDropdown.Item>Missing plots</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
         </Nav>
