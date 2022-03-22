@@ -19,7 +19,7 @@ export const CoreVarsContents = {
     },
     {
       value: "huss",
-      label: "Near-surface specific humidity at 1.5,",
+      label: "Near-surface specific humidity at 1.5m",
       unit: "",
     },
     { value: "snw", label: "Amount of snow on the ground", unit: "mm*" },
@@ -55,7 +55,7 @@ export const IndicesInfoContents = [
   {
     category: "Temperature",
     foreword:
-      "In defining the following indices of temperature, let tas_ij be the daily mean temperature on day i in season j; the daily minimum and maximum temperature on day i in season j are denoted by tmin_ij and tmax_ij respectively.",
+      "In defining the following indices of temperature, let <TeX math={_`\texttt{tas}_{ij}`} /> be the daily mean temperature on day <TeX math={_`i`} /> in season <TeX math={_`j`} />; the daily minimum and maximum temperature on day <TeX math={_`i`} /> in season <TeX math={_`j`} /> are denoted by <TeX math={_`\texttt{tasmin}_{ij}`} /> and <TeX math={_`\texttt{tasmax}_{ij}`} /> respectively.",
     options: [
       {
         value: "tas",
