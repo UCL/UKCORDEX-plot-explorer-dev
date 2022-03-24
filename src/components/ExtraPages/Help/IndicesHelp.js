@@ -473,32 +473,29 @@ function IndicesHelp() {
             <p className="foreword">
               In defining the following indices of precipitation, let{" "}
               <InlineMath math={'\\texttt{pr}_{ij}'} /> be the daily precipitation amount
-              in mm on day <InlineMath math={'i'} /> in period <InlineMath math={'j'} />, and let
+              in mm on day <InlineMath math={'i'} /> in period <InlineMath math={'j'} />, and let{" "}
               <InlineMath math={'\\texttt{prc}_{ij}'} /> be the daily precipitation amount arising from convective processes 
               in mm on day <InlineMath math={'i'} /> in period <InlineMath math={'j'} />. {" "}
               <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace'} /> denotes the
-              subset of the <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \\rbrace'} /> for which
+              subset of the{" "}
+              <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \\rbrace'} /> for which{" "}
               <InlineMath math={'\\texttt{pr}_{ij} \\geq 1'} />.
             </p>
 
             <p className="contents">
-              <b>Accumulated precipitation</b> (prcptot): Sum of pr_ij geq 1 in
-              season j.
+              <b>Accumulated precipitation</b> (prcptot): Sum of <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace'} /> in season <InlineMath math={'j'} />.
             </p>
             <p className="contents">
               <b>Proportion of wet days</b> (fwd): The proportion of days for
-              which pr_ij geq 1.
+              which <InlineMath math={'\\texttt{pr}_{ij} \\geq 1'} />.
             </p>
             <p className="contents">
-              <b>Daily rate of convective precipitation</b> (prc):{" "}
-            </p>
-            <p className="contents">
-              <b>Proportion of rainfall due to convection</b> (prcprop): Let
-              prc_ij be the daily precipitation amount due to convective
-              rainfall on day i in period j. The proportion of total
-              precipitation due to convective processes in period j is the sum
-              of prc_ij geq 1 in period j divided by the total precipitation in
-              period j, prcptot.
+              <b>Proportion of rainfall due to convection</b> (prcprop): The proportion of total
+              precipitation due to convective processes in period{" "}
+              <InlineMath math={'j'} /> is the sum of{" "}
+              <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \geq 1\\rbrace'} /> {" "}
+              in period <InlineMath math={'j'} /> divided by the total precipitation in
+              period <InlineMath math={'j'} />, <InlineMath math={'\\texttt{prcptot}'} />.
             </p>
             <p className="contents">
               <b>Proportion of wet days followed by a wet day</b> (pww): Where n
@@ -528,13 +525,15 @@ function IndicesHelp() {
             </p>
             <p className="contents">
               <b>Maximum one-day precipitation</b> (rx1day): The maximum one-day
-              precipitation for season j is max (pr_ij).
+              precipitation for season <InlineMath math={'j'} /> is <InlineMath math={'\\max(\\texttt{pr}_{ij})'} />.
             </p>
             <p className="contents">
-              <b>Maximum five-day precipitation</b> (rx5day): Let pr5_ij be the
+              <b>Maximum five-day precipitation</b> (rx5day): 
+              Let <InlineMath math={'\\texttt{pr5}_{ij}'} /> be the
               total precipitation amount for the five-day interval ending on day
-              i in season j. The maximum five-day values for period j are
-              max(pr5_ij).
+              <InlineMath math={'i'} /> in season <InlineMath math={'j'} />. 
+              The maximum five-day values for period <InlineMath math={'j'} /> are{" "}
+              <InlineMath math={'\\max(\\texttt{pr5}_{ij})'} />.
             </p>
             <p className="contents">
               <b>
