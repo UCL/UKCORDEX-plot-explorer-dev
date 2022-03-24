@@ -246,12 +246,12 @@ function IndicesHelp() {
             </p>
             <p className="contents">
               <b>Number of cold spell days</b> (csdi): Count the number of days
-              in season <InlineMath math={'j'} /> where <InlineMath math={'\\texttt{tas}_{ij} < 2^\\circ C'} /> for more than two consecutive
+              in season <InlineMath math={'j'} /> where <InlineMath math={'\\texttt{tas}_{ij} \\lt 2^\\circ C'} /> for more than two consecutive
               days.
             </p>{" "}
             <p className="contents">
               <b>Number of heatwave days</b> (hwdi): Count the number of days in
-              season <InlineMath math={'j'} /> where <InlineMath math={'\\texttt{tasmax}_{ij} > t_1'} /> and <InlineMath math={'\\texttt{tasmin}_{ij} > t_2'} /> for two or
+              season <InlineMath math={'j'} /> where <InlineMath math={'\\texttt{tasmax}_{ij} \\gt t_1'} /> and <InlineMath math={'\\texttt{tasmin}_{ij} > t_2'} /> for two or
               more consecutive days, where <InlineMath math={'t_1'} and <InlineMath math={'t_2'} are thresholds defined
               for each region as in the table below. These thresholds are taken
               from the{" "}
@@ -431,7 +431,7 @@ function IndicesHelp() {
               window centred on calendar day <InlineMath math={'i'} />
               in the reference period <InlineMath math={'r'} />
               (1980-2010). Count the number of days where 
-              <InlineMath math={'\\texttt{tasmax_{ij} < q_{10}(\\texttt{tasmax}_{ir})'} />
+              <InlineMath math={'\\texttt{tasmax_{ij} \\lt q_{10}(\\texttt{tasmax}_{ir})'} />
                for the season of interest <InlineMath math={'j'} />.{" "}
             </p>{" "}
             <p className="contents">
@@ -441,7 +441,7 @@ function IndicesHelp() {
               centred on calendar day <InlineMath math={'i'} /> 
               in the reference period <InlineMath math={'r'} /> (1980-2010).
               Count the number of days where 
-              <InlineMath math={'\\texttt{tasmax_{ij} > q_{90}(\\texttt{tasmax}_{ir})'} /> for
+              <InlineMath math={'\\texttt{tasmax_{ij} \\gt q_{90}(\\texttt{tasmax}_{ir})'} /> for
               the season of interest  <InlineMath math={'j'} />.
             </p>{" "}
             <p className="contents">
@@ -451,7 +451,7 @@ function IndicesHelp() {
               centred on calendar day <InlineMath math={'i'} /> 
               in the reference period <InlineMath math={'r'} /> (1980-2010).
               Count the number of days where 
-              <InlineMath math={'\\texttt{tasmin_{ij} < q_{10}(\\texttt{tasmin}_{ir})'} /> for
+              <InlineMath math={'\\texttt{tasmin_{ij} \\lt q_{10}(\\texttt{tasmin}_{ir})'} /> for
               the season of interest <InlineMath math={'j'} />.
             </p>{" "}
             <p className="contents">
@@ -461,7 +461,7 @@ function IndicesHelp() {
               window centred on calendar day <InlineMath math={'i'} /> 
               in the reference period <InlineMath math={'r'} /> (1980-2010). 
               Count the number of days where 
-              <InlineMath math={'\\texttt{tasmin_{ij} > q_{90}(\\texttt{tasmin}_{ir})'} />
+              <InlineMath math={'\\texttt{tasmin_{ij} \\gt q_{90}(\\texttt{tasmin}_{ir})'} />
                for the season of interest <InlineMath math={'j'} />.
             </p>
           </Row>
