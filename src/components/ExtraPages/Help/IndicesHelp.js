@@ -3,6 +3,7 @@ import { Container, Table, Row, Col, Image, Nav } from "react-bootstrap";
 import "../ExtraPages.css";
 import "../HelpNav.css";
 import { InlineMath } from "react-katex";
+import 'katex/dist/katex.min.css';
 import { HashLink } from "react-router-hash-link";
 
 function IndicesHelp() {
