@@ -467,118 +467,142 @@ function IndicesHelp() {
           </Row>
           {/* precipitation */}
           <Row className="indices">
-            <h5 id="precip">
-              <u>Indices of precipitation</u>
-            </h5>
-            <p className="foreword">
-              In defining the following indices of precipitation, let{" "}
-              <InlineMath math={'\\texttt{pr}_{ij}'} /> be the daily precipitation amount
-              in mm on day <InlineMath math={'i'} /> in period <InlineMath math={'j'} />, and let
-              <InlineMath math={'\\texttt{prc}_{ij}'} /> be the daily precipitation amount arising from convective processes 
-              in mm on day <InlineMath math={'i'} /> in period <InlineMath math={'j'} />. {" "}
-              <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace'} /> denotes the
-              subset of the <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \\rbrace'} /> for which
-              <InlineMath math={'\\texttt{pr}_{ij} \\geq 1'} />.
-            </p>
-
-            <p className="contents">
-              <b>Accumulated precipitation</b> (prcptot): Sum of pr_ij geq 1 in
-              season j.
-            </p>
-            <p className="contents">
-              <b>Proportion of wet days</b> (fwd): The proportion of days for
-              which pr_ij geq 1.
-            </p>
-            <p className="contents">
-              <b>Daily rate of convective precipitation</b> (prc):{" "}
-            </p>
-            <p className="contents">
-              <b>Proportion of rainfall due to convection</b> (prcprop): Let
-              prc_ij be the daily precipitation amount due to convective
-              rainfall on day i in period j. The proportion of total
-              precipitation due to convective processes in period j is the sum
-              of prc_ij geq 1 in period j divided by the total precipitation in
-              period j, prcptot.
-            </p>
-            <p className="contents">
-              <b>Proportion of wet days followed by a wet day</b> (pww): Where n
-              is the total number of days in period j, and pr_ij {">"} 1 is an
-              indicator function with value one if pr_ij {">"} 1, and zero
-              otherwise. The complementary transition probability is P_j(wd) =
-              1-P_j(ww)
-              <Image
-                fluid="true"
-                width="30%"
-                src={`${process.env.PUBLIC_URL}/content_images/pww_math.png`}
-                alt=""
-              />
-            </p>
-            <p className="contents">
-              <b>Proportion of dry days followed by a dry day</b> (pdd): Where n
-              is the total number of days in period j, and pr_ij {">"} 1 is an
-              indicator function with value one if pr_ij {">"} 1, and zero
-              otherwise. The complementary transition probability is P_j(dw) =
-              1-P_j(dd)
-              <Image
-                fluid="true"
-                width="30%"
-                src={`${process.env.PUBLIC_URL}/content_images/pdd_math.png`}
-                alt=""
-              />
-            </p>
-            <p className="contents">
-              <b>Maximum one-day precipitation</b> (rx1day): The maximum one-day
-              precipitation for season j is max (pr_ij).
-            </p>
-            <p className="contents">
-              <b>Maximum five-day precipitation</b> (rx5day): Let pr5_ij be the
-              total precipitation amount for the five-day interval ending on day
-              i in season j. The maximum five-day values for period j are
-              max(pr5_ij).
-            </p>
-            <p className="contents">
-              <b>
-                Proportion of precipitation falling on days exceeding 95th
-                percentile
-              </b>{" "}
-              (r95ptot): Let q_{95}(pr_r) be the 95th percentile of daily
-              wet-day precipitation in the reference period r (1980-2010). The
-              total precipitation exceeding the 95th percentile is the sum of
-              pr_ij geq q_
-              {95}(pr_r).
-            </p>
-            <p className="contents">
-              <b>
-                Proportion of precipitation falling on days exceeding 99th
-                percentile
-              </b>{" "}
-              (r99ptot): Let q_{99}(pr_r) be the 99th percentile of daily
-              wet-day precipitation in the reference period r (1980-2010). The
-              total precipitation exceeding the 99th percentile is the sum of
-              pr_ij geq q_
-              {99}(pr_r).
-            </p>
-            <p className="contents">
-              <b>Wet-day precipitation rate</b> (sdii): Mean of pr_ij geq 1 in
-              season j.
-            </p>
-            <p className="contents">
-              <b>Median length of dry spell</b> (dsmed): Count the median number
-              of consecutive days where pr_ij {"<"} 1.
-            </p>
-            <p className="contents">
-              <b>Maximum length of dry spell</b> (dsmax): Count the largest
-              number of consecutive days where pr_ij {"<"} 1.
-            </p>
-            <p className="contents">
-              <b>Median length of wet spell</b> (wsmed): Count the median number
-              of consecutive days where pr_ij geq 1.
-            </p>
-            <p className="contents">
-              <b>Maximum length of wet spell</b> (wsmax): Count the largest
-              number of consecutive days where pr_ij geq 1.
-            </p>
-          </Row>
+      <h5 id="precip">
+        <u>Indices of precipitation</u>
+      </h5>
+      <p className="foreword">
+        In defining the following indices of precipitation, let{" "}
+        <InlineMath math={"\\texttt{pr}_{ij}"} /> be the daily precipitation
+        amount in mm on day <InlineMath math={"i"} /> in period{" "}
+        <InlineMath math={"j"} />, and let{" "}
+        <InlineMath math={"\\texttt{prc}_{ij}"} /> be the daily precipitation
+        amount arising from convective processes in mm on day{" "}
+        <InlineMath math={"i"} /> in period <InlineMath math={"j"} />.{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} />{" "}
+        denotes the subset of the{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\rbrace"} /> for which{" "}
+        <InlineMath math={"\\texttt{pr}_{ij} \\geq 1"} />.
+      </p>
+      <p className="contents">
+        <b>Accumulated precipitation</b> (prcptot): The sum of{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} /> in
+        season <InlineMath math={"j"} />.
+      </p>
+      <p className="contents">
+        <b>Proportion of wet days</b> (fwd): The proportion of days for which{" "}
+        <InlineMath math={"\\texttt{pr}_{ij} \\geq 1"} />.
+      </p>
+      <p className="contents">
+        <b>Proportion of rainfall due to convection</b> (prcprop): The
+        proportion of total precipitation due to convective processes in period{" "}
+        <InlineMath math={"j"} /> is the sum of{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1\\rbrace"} /> in
+        period <InlineMath math={"j"} /> divided by the total precipitation in
+        period <InlineMath math={"j"} />,{" "}
+        <InlineMath math={"\\texttt{prcptot}"} />.
+      </p>
+      <p className="contents">
+        <b>Proportion of wet days followed by a wet day</b> (pww): This is
+        <Image
+          fluid="true"
+          width="30%"
+          src={`${process.env.PUBLIC_URL}/content_images/pww_math.png`}
+          alt=""
+        />
+        where <InlineMath math={"n_j"} /> is the total number of days in period{" "}
+        <InlineMath math={"j"} />, and{" "}
+        <InlineMath math={"1_{\\lbrace \\texttt{pr}_{i,j} \\geq 1\\rbrace}"} />
+        an indicator function with value one if{" "}
+        <InlineMath math={"\\texttt{pr}_{ij} \\geq 1"} />, and zero otherwise.
+        The complementary transition probability is{" "}
+        <InlineMath math={"P_j(wd) = 1 - P_j(ww)"} />.
+      </p>
+      <p className="contents">
+        <b>Proportion of dry days followed by a dry day</b> (pdd): This is
+        <Image
+          fluid="true"
+          width="30%"
+          src={`${process.env.PUBLIC_URL}/content_images/pdd_math.png`}
+          alt=""
+        />
+        where <InlineMath math={"n_j"} /> is the total number of days in period{" "}
+        <InlineMath math={"j"} />, and{" "}
+        <InlineMath math={"1_{\\lbrace \\texttt{pr}_{i,j} \\lt 1\\rbrace}"} />
+        is an indicator function with value one if{" "}
+        <InlineMath math={"\\texttt{pr}_{ij} \\lt 1"} />, and zero otherwise.
+        The complementary transition probability is{" "}
+        <InlineMath math={"P_j(dw) = 1 - P_j(dd)"} />.
+      </p>
+      <p className="contents">
+        <b>Maximum one-day precipitation</b> (rx1day): The maximum one-day
+        precipitation for season <InlineMath math={"j"} /> is{" "}
+        <InlineMath math={"\\max(\\texttt{pr}_{ij})"} />.
+      </p>
+      <p className="contents">
+        <b>Maximum five-day precipitation</b> (rx5day): Let{" "}
+        <InlineMath math={"\\texttt{pr5}_{ij}"} /> be the total precipitation
+        amount for the five-day interval ending on day <InlineMath math={"i"} />{" "}
+        in season <InlineMath math={"j"} />. The maximum five-day values for
+        period <InlineMath math={"j"} /> are{" "}
+        <InlineMath math={"\\max(\\texttt{pr5}_{ij})"} />.
+      </p>
+      <p className="contents">
+        <b>
+          Proportion of precipitation falling on days exceeding 95th percentile
+        </b>{" "}
+        (r95ptot): Let <InlineMath math={"q_{95}(\\texttt{pr}_{rj})"} /> be the
+        95th percentile of daily wet-day precipitation during all seasons{" "}
+        <InlineMath math={"j"} /> (eg. during all winters) in the reference
+        period <InlineMath math={"r"} /> (1980-2010). The total precipitation
+        exceeding the 95th percentile in season <InlineMath math={"j"} /> is the
+        sum of{" "}
+        <InlineMath math={"\\texttt{pr}_{ij} \\geq q_{95}(\\texttt{pr}_{r})"} />
+        .
+      </p>
+      <p className="contents">
+        <b>
+          Proportion of precipitation falling on days exceeding 99th percentile
+        </b>{" "}
+        (r99ptot): Let <InlineMath math={"q_{99}(\\texttt{pr}_{rj})"} /> be the
+        99th percentile of daily wet-day precipitation during all seasons{" "}
+        <InlineMath math={"j"} /> (eg. during all winters) in the reference
+        period <InlineMath math={"r"} /> (1980-2010). The total precipitation
+        exceeding the 99th percentile in season <InlineMath math={"j"} /> is the
+        sum of{" "}
+        <InlineMath math={"\\texttt{pr}_{ij} \\geq q_{99}(\\texttt{pr}_{r})"} />
+        .
+      </p>
+      <p className="contents">
+        <b>Simple daily precipitation intensity index </b> (sdii): The mean of{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} /> in
+        season <InlineMath math={"j"} />. Also known as the wet-day
+        precipitation rate.
+      </p>
+      <p className="contents">
+        <b>Median length of dry spell</b> (dsmed): Count the median number of
+        consecutive days in season <InlineMath math={"j"} /> where{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\lt 1 \\rbrace"} />. Dry
+        spells are assumed to occur in the season in which they finish.
+      </p>
+      <p className="contents">
+        <b>Maximum length of dry spell</b> (dsmax): Count the largest number of
+        consecutive days in season <InlineMath math={"j"} /> where{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\lt 1 \\rbrace"} />. Dry
+        spells are assumed to occur in the season in which they finish.
+      </p>
+      <p className="contents">
+        <b>Median length of wet spell</b> (wsmed): Count the median number of
+        consecutive days in season <InlineMath math={"j"} /> where{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} />. Wet
+        spells are assumed to occur in the season in which they finish.
+      </p>
+      <p className="contents">
+        <b>Maximum length of wet spell</b> (wsmax): Count the largest number of
+        consecutive days in season <InlineMath math={"j"} /> where{" "}
+        <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} />. Wet
+        spells are assumed to occur in the season in which they finish.
+      </p>
+    </Row>
           {/* wind */}
           <Row className="indices">
             <h5 id="wind">
