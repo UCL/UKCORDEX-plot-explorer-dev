@@ -239,7 +239,7 @@ function IndicesHelp() {
               <u>Indices of temperature</u>
             </h5>
             <p className="foreword">
-              In defining the following indices of temperature, let <InlineMath math={'\\cos (2\\theta) = \\cos^2 \\theta - \\sin^2 \\theta'} /> be
+              In defining the following indices of temperature, let <InlineMath math={'\texttt{tas}_{ij}'} /> or  <InlineMath math={'\\texttt{tas}_{ij}'} /> be
               the daily mean temperature on day i in season j; the daily minimum
               and maximum temperature on day i in season j are denoted by
               tasmin_ij and tasmax_ij respectively.
