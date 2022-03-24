@@ -239,20 +239,20 @@ function IndicesHelp() {
               <u>Indices of temperature</u>
             </h5>
             <p className="foreword">
-              In defining the following indices of temperature, let <InlineMath math={'\texttt{tas}_{ij}'} /> or  <InlineMath math={'\\texttt{tas}_{ij}'} /> be
-              the daily mean temperature on day i in season j; the daily minimum
-              and maximum temperature on day i in season j are denoted by
-              tasmin_ij and tasmax_ij respectively.
+              In defining the following indices of temperature, let <InlineMath math={'\\texttt{tas}_{ij}'} /> be
+              the daily mean temperature on day <InlineMath math={'i'} /> in season <InlineMath math={'j'} />; the daily minimum
+              and maximum temperature on day <InlineMath math={'i'} /> in season <InlineMath math={'j'} /> are denoted by
+              <InlineMath math={'\\texttt{tasmin}_{ij}'} /> and <InlineMath math={'\\texttt{tasmax}_{ij}'} /> respectively.
             </p>
             <p className="contents">
               <b>Number of cold spell days</b> (csdi): Count the number of days
-              in season j where tas_ij {"<"} 2°C for more than two consecutive
+              in season <InlineMath math={'j'} /> where <InlineMath math={'\\texttt{tas}_{ij} < 2^\\circ C'} /> for more than two consecutive
               days.
             </p>{" "}
             <p className="contents">
               <b>Number of heatwave days</b> (hwdi): Count the number of days in
-              season j where tmax_ij {">"} t_1 and tmin_ij {">"} t_2 for two or
-              more consecutive days, where t_1 and t_2 are thresholds defined
+              season <InlineMath math={'j'} /> where <InlineMath math={'\\texttt{tasmax}_{ij} > t_1'} /> and <InlineMath math={'\\texttt{tasmin}_{ij} > t_2'} /> for two or
+              more consecutive days, where <InlineMath math={'t_1'} and <InlineMath math={'t_2'} are thresholds defined
               for each region as in the table below. These thresholds are taken
               from the{" "}
               <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/888668/Heatwave_plan_for_England_2020.pdf">
@@ -402,17 +402,11 @@ function IndicesHelp() {
             </p>{" "}
             <p className="contents">
               <b>Maximum near-surface air temperature on the hottest day</b>{" "}
-              (maxtmax): The highest daily temperature tmax_ij in each season j.{" "}
+              (maxtmax): The highest daily temperature <InlineMath math={'\\texttt{tasmax}_{ij}'} /> in each season <InlineMath math={'j'} />.{" "}
             </p>{" "}
             <p className="contents">
               <b>Minimum near-surface air temperature on the coldest day</b>{" "}
-              (mintmin): The lowest daily temperature tmin_ij in each season j.{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Maximum daily near-surface air temperature</b> (tasmax):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Minimum daily near-surface air temperature</b> (tasmin):{" "}
+              (mintmin): The lowest daily temperature <InlineMath math={'\\texttt{tasmin}_{ij}'} /> in each season <InlineMath math={'j'} />.{" "}
             </p>{" "}
             <p className="contents">
               <b>1st percentile of daily mean near-surface air temperatures</b>{" "}
