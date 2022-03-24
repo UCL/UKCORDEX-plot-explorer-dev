@@ -402,17 +402,11 @@ function IndicesHelp() {
             </p>{" "}
             <p className="contents">
               <b>Maximum near-surface air temperature on the hottest day</b>{" "}
-              (maxtmax): The highest daily temperature tmax_ij in each season j.{" "}
+              (maxtmax): The highest daily temperature <InlineMath math={'\\texttt{tasmax}_{ij}'} /> in each season <InlineMath math={'j'} />.{" "}
             </p>{" "}
             <p className="contents">
               <b>Minimum near-surface air temperature on the coldest day</b>{" "}
-              (mintmin): The lowest daily temperature tmin_ij in each season j.{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Maximum daily near-surface air temperature</b> (tasmax):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Minimum daily near-surface air temperature</b> (tasmin):{" "}
+              (mintmin): The lowest daily temperature <InlineMath math={'\\texttt{tasmin}_{ij}'} /> in each season <InlineMath math={'j'} />.{" "}
             </p>{" "}
             <p className="contents">
               <b>1st percentile of daily mean near-surface air temperatures</b>{" "}
@@ -431,32 +425,44 @@ function IndicesHelp() {
               the pooled seasonal temperatures is calculated.{" "}
             </p>{" "}
             <p className="contents">
-              <b>Number of cold days</b> (tmax10p): Let q_{10}(tmax_ir) be the
-              c10th percentile of daily maximum temperatures in a five-day
-              window centred on calendar day i in the reference period r
-              (1980-2010). Count the number of days where tmax_ij {"<"} q_{10}
-              (tmax_ir) for the season of interest j.{" "}
+              <b>Number of cold days</b> (tmax10p): Let{" "}
+              <InlineMath math={'q_{10}(\\texttt{tasmax}_{ir})'} /> be the
+              10th percentile of daily maximum temperatures in a five-day
+              window centred on calendar day <InlineMath math={'j'} />{" "}
+              in the reference period <InlineMath math={'r'} /> (1980-2010). 
+              Count the number of days where{" "}
+              <InlineMath math={'\\texttt{tasmax}_{ij} < q_{10}(\\texttt{tasmax}_{ir})'} />{" "}
+               for the season of interest <InlineMath math={'j'} />.
             </p>{" "}
             <p className="contents">
-              <b>Number of hot days</b> (tmax90p): Let q_{90}(tmax_ir) be the
-              90th percentile of daily maximum temperatures in a five-day window
-              centred on calendar day i in the reference period r (1980-2010).
-              Count the number of days where tmax_ij {">"} q_{90}(tmax_ir) for
-              the season of interest j.
+              <b>Number of hot days</b> (tmax90p): Let{" "}
+              <InlineMath math={'q_{90}(\\texttt{tasmax}_{ir})'} /> be the
+              90th percentile of daily maximum temperatures in a five-day
+              window centred on calendar day <InlineMath math={'j'} />{" "}
+              in the reference period <InlineMath math={'r'} /> (1980-2010). 
+              Count the number of days where{" "}
+              <InlineMath math={'\\texttt{tasmax}_{ij} > q_{90}(\\texttt{tasmax}_{ir})'} />{" "}
+               for the season of interest <InlineMath math={'j'} />.
             </p>{" "}
             <p className="contents">
-              <b>Number of cold nights</b> (tmin10p): Let q_{10}(tmin_ir) be the
-              10th percentile of daily minimum temperatures in a five-day window
-              centred on calendar day i in the reference period r (1980-2010).
-              Count the number of days where tmin_ij {"<"} q_{10}(tmin_ir) for
-              the season of interest j.
+              <b>Number of cold nights</b> (tmin10p): Let{" "}
+              <InlineMath math={'q_{10}(\\texttt{tasmin}_{ir})'} /> be the
+              10th percentile of daily maximum temperatures in a five-day
+              window centred on calendar day <InlineMath math={'j'} />{" "}
+              in the reference period <InlineMath math={'r'} /> (1980-2010). 
+              Count the number of days where{" "}
+              <InlineMath math={'\\texttt{tasmin}_{ij} < q_{10}(\\texttt{tasmin}_{ir})'} />{" "}
+               for the season of interest <InlineMath math={'j'} />.
             </p>{" "}
             <p className="contents">
-              <b>Number of warm nights</b> (tmin90p): Let q_{90}(tmin[ir]) be
-              the 90th percentile of daily minimum temperatures in a five-day
-              window centred on calendar day i in the reference period r
-              (1980-2010). Count the number of days where tmin_ij {">"} q_{90}
-              (tmin_ir) for the season of interest j.
+              <b>Number of warm nights</b> (tmin90p): Let{" "}
+              <InlineMath math={'q_{90}(\\texttt{tasmin}_{ir})'} /> be the
+              10th percentile of daily maximum temperatures in a five-day
+              window centred on calendar day <InlineMath math={'j'} />{" "}
+              in the reference period <InlineMath math={'r'} /> (1980-2010). 
+              Count the number of days where{" "}
+              <InlineMath math={'\\texttt{tasmin}_{ij} > q_{90}(\\texttt{tasmin}_{ir})'} />{" "}
+               for the season of interest <InlineMath math={'j'} />.
             </p>
           </Row>
           {/* precipitation */}
