@@ -471,11 +471,14 @@ function IndicesHelp() {
               <u>Indices of precipitation</u>
             </h5>
             <p className="foreword">
-              In defining the following indices of precipitation, let pr_ij be
-              the daily precipitation amount in mm on day i in period j, and let
-              prc_ij be the daily precipitation amount arising from convective
-              processes in mm on day i in period j. pr_ij geq 1 denotes the
-              subset of the pr_ij for which pr_ij geq 1.
+              In defining the following indices of precipitation, let{" "}
+              <InlineMath math={'\\texttt{pr}_{ij}'} /> be the daily precipitation amount
+              in mm on day <InlineMath math={'i'} /> in period <InlineMath math={'j'} />, and let
+              <InlineMath math={'\\texttt{prc}_{ij}'} /> be the daily precipitation amount arising from convective processes 
+              in mm on day <InlineMath math={'i'} /> in period <InlineMath math={'j'} />. {" "}
+              <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace'} /> denotes the
+              subset of the <InlineMath math={'\\lbrace \\texttt{pr}_{ij} \\rbrace'} /> for which
+              <InlineMath math={'\\texttt{pr}_{ij} \\geq 1'} />.
             </p>
 
             <p className="contents">
