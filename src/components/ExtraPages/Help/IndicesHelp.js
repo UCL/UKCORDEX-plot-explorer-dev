@@ -238,10 +238,10 @@ function IndicesHelp() {
               <u>Indices of temperature</u>
             </h5>
             <p className="foreword">
-              In defining the following indices of temperature, let tas_ij be
-              the daily mean temperature on day i in season j; the daily minimum
-              and maximum temperature on day i in season j are denoted by
-              tmin_ij and tmax_ij respectively.
+              In defining the following indices of temperature, let <TeX math={_`\texttt{tas}_{ij}`} /> be
+              the daily mean temperature on day <TeX math={_`\textit{i}`} /> in season <TeX math={_`\textit{j}`} />; the daily minimum
+              and maximum temperature on day <TeX math={_`\textit{i}`} /> in season <TeX math={_`\textit{j}`} /> are denoted by
+              <TeX math={_`\texttt{tasmin}_{ij}`} /> and <TeX math={_`\texttt{tasmax}_{ij}`} /> respectively.
             </p>
             <p className="contents">
               <b>Number of cold spell days</b> (csdi): Count the number of days
