@@ -97,76 +97,76 @@ export const plotvarOptionsContents = [
     options: [
       {
         tag: "extreme_pr",
-        value: "rx1day_rl30",
-        label: "30-year return level of 1-day precipitation",
+        value: "rx1dayrl20",
+        label: "20-year return level of 1-day precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx1day_rl50",
+        value: "rx1dayrl50",
         label: "50-year return level of 1-day precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx1day_rp30",
+        value: "rx1dayrp20",
         label:
-          "30-year return period of current 30-year return level of 1-day precipitation ",
+          "20-year return period of current 20-year return level of 1-day precipitation ",
       },
       {
         tag: "extreme_pr",
-        value: "rx1day_rp50",
+        value: "rx1dayrp50",
         label:
           "50-year return period of current 50-year return level of 1-day precipitation ",
       },
       {
         tag: "extreme_pr",
-        value: "rx1day_loc",
+        value: "rx1dayloc",
         label: "location parameter for extreme 1-day precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx1day_shape",
+        value: "rx1dayshape",
         label: "shape parameter for extreme 1-day precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx1day_scale",
+        value: "rx1dayscale",
         label: "scale parameter for extreme 1-day precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx5day_rl30",
-        label: "30-year return level of 5-day accumulated precipitation",
+        value: "rx5dayrl20",
+        label: "20-year return level of 5-day accumulated precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx5day_rl50",
+        value: "rx5dayrl50",
         label: "50-year return level of 5-day accumulated precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx5day_rp30",
+        value: "rx5dayrp20",
         label:
-          "30-year return period of current 30-year return level of 5-day accumulated precipitation",
+          "20-year return period of current 20-year return level of 5-day accumulated precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx5day_rp50",
+        value: "rx5dayrp50",
         label:
           "50-year return period of current 50-year return level of 5-day accumulated precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx5day_loc",
+        value: "rx5dayloc",
         label: "location parameter for extreme 5-day accumulated precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx5day_shape",
+        value: "rx5dayshape",
         label: "shape parameter for extreme 5-day accumulated precipitation",
       },
       {
         tag: "extreme_pr",
-        value: "rx5day_scale",
+        value: "rx5dayscale",
         label: "scale parameter for extreme 5-day accumulated precipitation",
       },
     ],
@@ -176,76 +176,76 @@ export const plotvarOptionsContents = [
     options: [
       {
         tag: "extreme_wind",
-        value: "maxwsgsmax_rl30",
-        label: "30-year return level of gust speeds",
+        value: "maxwsgsmaxrl20",
+        label: "20-year return level of gust speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxwsgsmax_rl50",
+        value: "maxwsgsmaxrl50",
         label: "50-year return level of gust speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxwsgsmax_rp30",
+        value: "maxwsgsmaxrp20",
         label:
-          "30-year return period of current 30-year return level of gust speeds ",
+          "20-year return period of current 20-year return level of gust speeds ",
       },
       {
         tag: "extreme_wind",
-        value: "maxwsgsmax_rp50",
+        value: "maxwsgsmaxrp50",
         label:
           "50-year return period of current 50-year return level of gust speeds ",
       },
       {
         tag: "extreme_wind",
-        value: "maxwsgsmax_loc",
+        value: "maxwsgsmaxloc",
         label: "location parameter for extreme gust speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxwsgsmax_shape",
+        value: "maxwsgsmaxshape",
         label: "shape parameter for extreme gust speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxwsgsmax_scale",
+        value: "maxwsgsmaxscale",
         label: "scale parameter for extreme gust speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxsfcWindmax_rl30",
-        label: "30-year return level of extreme sustained wind speeds",
+        value: "maxsfcWindmaxrl20",
+        label: "20-year return level of extreme sustained wind speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxsfcWindmax_rl50",
+        value: "maxsfcWindmaxrl50",
         label: "50-year return level of extreme sustained wind speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxsfcWindmax_rp30",
+        value: "maxsfcWindmaxrp20",
         label:
-          "30-year return period of current 30-year return level of extreme sustained wind speeds",
+          "20-year return period of current 20-year return level of extreme sustained wind speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxsfcWindmax_rp50",
+        value: "maxsfcWindmaxrp50",
         label:
           "50-year return period of current 50-year return level of extreme sustained wind speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxsfcWindmax_loc",
+        value: "maxsfcWindmaxloc",
         label: "location parameter for extreme sustained wind speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxsfcWindmax_shape",
+        value: "maxsfcWindmaxshape",
         label: "shape parameter for extreme sustained wind speeds",
       },
       {
         tag: "extreme_wind",
-        value: "maxsfcWindmax_scale",
+        value: "maxsfcWindmaxscale",
         label: "scale parameter for extreme sustained wind speeds",
       },
     ],
