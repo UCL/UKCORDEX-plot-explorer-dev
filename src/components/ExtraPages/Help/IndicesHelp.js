@@ -520,12 +520,12 @@ function IndicesHelp() {
       <p className="contents">
         <b>Proportion of wet days followed by a wet day</b>,{" "}
         <InlineMath math={"\\texttt{pww}"} />: This is
-        <Image
+        <br></br><Image
           fluid="true"
           width="30%"
           src={`${process.env.PUBLIC_URL}/content_images/pww_math.png`}
           alt=""
-        />
+        /><br></br>
         where <InlineMath math={"n_j"} /> is the total number of days in period{" "}
         <InlineMath math={"j"} />, and{" "}
         <InlineMath math={"1_{\\lbrace \\texttt{pr}_{i,j} \\geq 1\\rbrace}"} />
@@ -537,12 +537,13 @@ function IndicesHelp() {
       <p className="contents">
         <b>Proportion of dry days followed by a dry day</b>,{" "}
         <InlineMath math={"\\texttt{pdd}"} />: This is
+        <br></br>
         <Image
           fluid="true"
           width="30%"
           src={`${process.env.PUBLIC_URL}/content_images/pdd_math.png`}
           alt=""
-        />
+        /><br></br>
         where <InlineMath math={"n_j"} /> is the total number of days in period{" "}
         <InlineMath math={"j"} />, and{" "}
         <InlineMath math={"1_{\\lbrace \\texttt{pr}_{i,j} \\lt 1\\rbrace}"} />
