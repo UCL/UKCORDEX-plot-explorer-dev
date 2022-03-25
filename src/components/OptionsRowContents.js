@@ -253,33 +253,17 @@ export const plotvarOptionsContents = [
   {
     label: "Other",
     options: [
+      { tag: "other", value: "mrso", label: "soil moisture at depths of up to 1m", },
+      { tag: "other", value: "ndhi", label: "number of dangerously hot days" },
+      { tag: "other", value: "ndrought", label: "number of occurrences of drought", },
+      { tag: "other", value: "pet", label: "potential evapotranspiration" },
+      { tag: "other", value: "spei6", label: "6-month standardised precipitation-evapotranspiration index", },
+      { tag: "other", value: "spi6", label: "6-month standardised precipitation index", },
+      { tag: "other", value: "tr", label: "number of tropical nights (>20°C)" },
       { tag: "other", value: "gsl", label: "growing season length" },
       { tag: "other", value: "gdd", label: "growing degree-days" },
       { tag: "other", value: "cdd", label: "cooling degree-days" },
       { tag: "other", value: "hdd", label: "heating degree-days" },
-      {
-        tag: "other",
-        value: "mrso",
-        label: "soil moisture at depths of up to 1m",
-      },
-      { tag: "other", value: "ndhi", label: "number of dangerously hot days" },
-      {
-        tag: "other",
-        value: "ndrought",
-        label: "number of occurrences of drought",
-      },
-      { tag: "other", value: "pet", label: "potential evapotranspiration" },
-      {
-        tag: "other",
-        value: "spi6",
-        label: "6-month standardised precipitation index",
-      },
-      {
-        tag: "other",
-        value: "spei6",
-        label: "6-month standardised precipitation-evapotranspiration index",
-      },
-      { tag: "other", value: "tr", label: "number of tropical nights (>20°C)" },
     ],
   },
 ];
@@ -381,6 +365,12 @@ export const plottypeOptionsContents = [
     title: "Ensemble standard deviation of ",
   },
   {
+    value: "eurocordex-anova",
+    label: "EuroCORDEX ANOVA",
+    icon: "/icons/eurocordex-anova.png",
+    title: "Decomposition of sources of variance in EuroCORDEX ensemble of ",
+  },
+  {
     value: "epp-gcm",
     label: "GCM EPPs",
     icon: "/icons/pca_gcm.png",
@@ -393,22 +383,16 @@ export const plottypeOptionsContents = [
     title: "RCM EPPs of ",
   },
   {
-    value: "Taylor-diagram",
-    label: "Taylor diagram",
-    icon: "/icons/taylor.png",
-    title: "Taylor diagram of ",
-  },
-  {
     value: "epp-ukcp",
     label: "UKCP18 EPPs",
     icon: "/icons/ukcp-epp.png",
     title: "UKCP18 12km EPPs of ",
   },
   {
-    value: "eurocordex-anova",
-    label: "EuroCORDEX ANOVA",
-    icon: "/icons/eurocordex-anova.png",
-    title: "Decomposition of sources of variance in EuroCORDEX ensemble of ",
+    value: "Taylor-diagram",
+    label: "Taylor diagram",
+    icon: "/icons/taylor.png",
+    title: "Taylor diagram of ",
   },
   {
     value: "stampplots-cmip5",
