@@ -632,74 +632,86 @@ function IndicesHelp() {
       </p>{" "}
       <p className="contents">
         <b>Number of calm days</b> (ncalm): The number of calm days in season{" "}
-        <InlineMath math={"j"} />
+        <InlineMath math={"j"} />{" "}
         is the count of days where{" "}
         <InlineMath math={"\\texttt{sfcWind}_{ij} \\leq 2ms^{-1}"} />.
       </p>{" "}
       <p className="contents">
-        <b>Number of windy days</b> (nwindy): The number of windy days in season
-        <InlineMath math={"j"} />
+        <b>Number of windy days</b> (nwindy): The number of windy days in season{" "}
+        <InlineMath math={"j"} />{" "}
         is the count of days where{" "}
         <InlineMath math={"\\texttt{sfcWind}_{ij} \\geq 10.8ms^{-1}"} />.
       </p>
     </Row>
           {/* extreme events */}
           <Row className="indices">
-            <h5 id="extreme">
-              <u>Indices of extremes</u>
-            </h5>
-            <p className="foreword">
-              Indices of extreme wind and precipitation are not calculated per
-              season and then averaged over the selected time period. Instead,
-              let max(idx_j) be the maximum daily value of some index idx_ij in
-              each season j, and let max(idx_j) denote the set of all such
-              maxima during the time period of interest: this set contains 30
-              seasonal maxima for future periods, and 20 maxima for the
-              evaluation period. A generalised extreme value distribution
-              citep[GEV:][]Coles2001 is fitted to the seasonal maxima max(idx_j)
-              at each grid cell, and the parameters of this distribution are
-              used to calculate selected return periods (the expected number of
-              years between occurrences of events of a given magnitude) and
-              return levels (the magnitude of a once-in-x-years event).<br></br>{" "}
-              Indices of extreme events are available for precipitation indices
-              rx1day and rx5day, and for wind indices sfcWindmax and wsgsmax.
-              For any of these indices, denoted here by the generic index 'idx',
-              the following plots are available:
-            </p>
-            <p className="contents">
-              <b>20-year return level of idx</b> (idxrl20):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>50-year return level of idx</b> (idxrl50):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>
-                For the evaluation period, this is the 20-year return period of
-                the observed idxrl20; for future time slices, it is the 20-year
-                return level of idxrl20 computed over the the baseline period
-                (1980-2010).
-              </b>{" "}
-              (idxrp20):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>
-                For the evaluation period, this is the 50-year return period of
-                the observed idxrl50; for future time slices, it is the 50-year
-                return level of idxrl50 computed over the the baseline period
-                (1980-2010).
-              </b>{" "}
-              (idxrp50):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Location parameter of fitted GEV distribution</b> (idxloc):{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Shape parameter of fitted GEV distribution</b> (idxshape):{" "}
-            </p>
-            <p className="contents">
-              <b>Scale parameter of fitted GEV distribution</b> (idxscale):{" "}
-            </p>
-          </Row>
+      <h5 id="extreme">
+        <u>Indices of extremes</u>
+      </h5>
+      <p className="foreword">
+        Indices of extreme wind and precipitation are not calculated per season
+        and then averaged over the selected time period. Instead, let{" "}
+        <InlineMath math={"\\lbrace\\max_j(\\texttt{idx}_{ij})\\rbrace"} />{" "}
+        denote the set of seasonal maxima of some index{" "}
+        <InlineMath math={"\\texttt{idx}_{ij}"} /> during the time period of
+        interest: this set contains 30 seasonal maxima for future periods, and
+        20 maxima for the evaluation period.
+        <br></br>
+        <br></br>A generalised extreme value distribution (GEV,{" "}
+        <a href="https://link.springer.com/book/10.1007/978-1-4471-3675-0">
+          Coles, 2001
+        </a>
+        ) is fitted to the seasonal maxima{" "}
+        <InlineMath math={"\\lbrace\\max_j(\\texttt{idx}_{ij})\\rbrace"} /> at
+        each grid cell, and the parameters of this distribution are used to
+        calculate selected return levels (the magnitude of a once-in-
+        <InlineMath math={"x"} />
+        -years event) and return periods (the expected number of years between
+        occurrences of events of a given magnitude).
+        <br></br>
+        <br></br>
+        Fitted parameters, return levels and return periods have been calculated
+        for seasonal precipitation maxima{" "}
+        <InlineMath math={"\\texttt{rx1day}"} /> and{" "}
+        <InlineMath math={"\\texttt{rx5day}"} />, and for seasonal windspeed
+        maxima <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and{" "}
+        <InlineMath math={"\\texttt{maxwsgsmax}"} />. For any of these indices,
+        denoted here by the generic index '<InlineMath math={"\\texttt{idx}"} />
+        ', the following plots are available:
+      </p>
+      <p className="contents">
+        <InlineMath math={"\\texttt{idxrl20:}"} /> 20-year return level of{" "}
+        <InlineMath math={"\\texttt{idx}"} />
+      </p>{" "}
+      <p className="contents">
+        <InlineMath math={"\\texttt{idxrl50:}"} /> 50-year return level of{" "}
+        <InlineMath math={"\\texttt{idx}"} />
+      </p>{" "}
+      <p className="contents">
+        <InlineMath math={"\\texttt{idxrp20:}"} /> The 20-year return period of
+        the 20-year return level <InlineMath math={"\\texttt{idxrl20}"} />{" "}
+        computed over the the baseline period (1980-2010). This index is only
+        available for future time periods.
+      </p>{" "}
+      <p className="contents">
+        <InlineMath math={"\\texttt{idxrp50:}"} /> The 50-year return period of
+        the 50-year return level <InlineMath math={"\\texttt{idxrl50}"} />{" "}
+        computed over the the baseline period (1980-2010). This index is only
+        available for future time periods.
+      </p>{" "}
+      <p className="contents">
+        <InlineMath math={"\\texttt{idxloc:}"} /> Location parameter of fitted
+        GEV distribution
+      </p>{" "}
+      <p className="contents">
+        <InlineMath math={"\\texttt{idxshape:}"} /> Shape parameter of fitted
+        GEV distribution
+      </p>{" "}
+      <p className="contents">
+        <InlineMath math={"\\texttt{idxscale:}"} /> Scale parameter of fitted
+        GEV distribution
+      </p>{" "}
+    </Row>
           {/* impact relevant */}
           <Row className="indices">
             <h5 id="impact">
