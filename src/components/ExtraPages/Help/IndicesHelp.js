@@ -748,7 +748,7 @@ function IndicesHelp() {
         <InlineMath math={"20^\\circ\\text{C}"} /> and will be reported as NA
         when{" "}
         <InlineMath math={"\\texttt{tasmax}_{ij} \\leq 20^\\circ\\text{C}"} />.{" "}
-        <br></br>The number of days in period j on which the heat index is
+        The number of days in period j on which the heat index is
         dangerously high is given by the count of{" "}
         <InlineMath math={"\\texttt{HI}_{ij} \\geq 32^\\circ\\text{C}"} />.
       </p>
@@ -811,38 +811,43 @@ function IndicesHelp() {
       </p>
     </Row>
           {/* degree days */}
-          <Row className="indices">
-            <h5 id="degree">
-              <u>Degree-days and season lengths</u>
-            </h5>
-            <p className="foreword">
-              Plots of these indices are only provided at annual frequency. Note
-              that, unlike all other indices, the growing season length and
-              degree-days are based on calendar years, rather than
-              meteorological years.
-            </p>
-            <p className="contents">
-              <b>Growing degree-days</b> (gdd):{" "}
-              <InlineMath>
-                The number of growing degree-days in year y is ∑i max(0,tasiy
-                -5.6).
-              </InlineMath>{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Cooling degree-days</b> (cdd):{" "}
-              <InlineMath>
-                The number of cooling degree-days in year y is ∑i max(0,tasiy
-                -22).
-              </InlineMath>{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Heating degree-days</b> (hdd):{" "}
-              <InlineMath>
-                The number of heating degree-days in year y is ∑i max(0,15.5
-                -tasiy).
-              </InlineMath>{" "}
-            </p>
-          </Row>
+              <Row className="indices">
+      <h5 id="degree">
+        <u>Degree-days and season lengths</u>
+      </h5>
+      <p className="foreword">
+        In defining the following indices of temperature, let{" "}
+        <InlineMath math={"\\texttt{tas}_{iy}"} /> be the daily mean temperature
+        on day <InlineMath math={"i"} /> in year <InlineMath math={"y"} />.
+        <br></br>
+        Plots of these indices are only provided at annual frequency. Note that,
+        unlike all other indices, the growing season length and degree-days are
+        based on calendar years, rather than meteorological years.
+      </p>
+      <p className="contents">
+        <b>Growing season length</b> (gsl): The growing season length for year{" "}
+        <InlineMath math={"y"} /> is the count of the number of days between the
+        first occurrence of at least six consecutive days where{" "}
+        <InlineMath math={"\\texttt{tas}_{iy} \\gt 5.6^\\circ\\text{C}"} /> and
+        the first occurrence after 1 July of at least six consecutive days where{" "}
+        <InlineMath math={"\\texttt{tas}_{iy} \\lt 5.6^\\circ\\text{C}"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Growing degree-days</b> (gdd): The number of growing degree-days in
+        year y is{" "}
+        <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 5.6)"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Cooling degree-days</b> (cdd): The number of cooling degree-days in
+        year y is{" "}
+        <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 22)"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Heating degree-days</b> (hdd): The number of heating degree-days in
+        year y is{" "}
+        <InlineMath math={"\\sum_i \\max(0, 15.5 - \\texttt{tas}_{iy})"} />.
+      </p>{" "}
+    </Row>
         </Col>
       </Row>
     </Container>
