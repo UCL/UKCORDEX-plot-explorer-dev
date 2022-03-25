@@ -715,12 +715,12 @@ function IndicesHelp() {
         the following plots are available:
       </p>
       <p className="contents">
-        <InlineMath math={"\\texttt{idxrl20:}"} /> 20-year return level of{" "}
-        <InlineMath math={"\\texttt{idx}"} />
+        <InlineMath math={"\\texttt{idxrl20:}"} /> 20-year return level (magnitude of a once-in-20-years event) of{" "}
+        <InlineMath math={"\\texttt{idx}"} />.
       </p>{" "}
       <p className="contents">
-        <InlineMath math={"\\texttt{idxrl50:}"} /> 50-year return level of{" "}
-        <InlineMath math={"\\texttt{idx}"} />
+        <InlineMath math={"\\texttt{idxrl50:}"} /> 50-year return level  (magnitude of a once-in-20-years event) of{" "}
+        <InlineMath math={"\\texttt{idx}"} />.
       </p>{" "}
       <p className="contents">
         <InlineMath math={"\\texttt{idxrp20:}"} /> The 20-year return period of
@@ -736,15 +736,15 @@ function IndicesHelp() {
       </p>{" "}
       <p className="contents">
         <InlineMath math={"\\texttt{idxloc:}"} /> Location parameter of fitted
-        GEV distribution
+        GEV distribution.
       </p>{" "}
       <p className="contents">
         <InlineMath math={"\\texttt{idxshape:}"} /> Shape parameter of fitted
-        GEV distribution
+        GEV distribution.
       </p>{" "}
       <p className="contents">
         <InlineMath math={"\\texttt{idxscale:}"} /> Scale parameter of fitted
-        GEV distribution
+        GEV distribution.
       </p>{" "}
     </Row>
       {/* impact relevant */}
