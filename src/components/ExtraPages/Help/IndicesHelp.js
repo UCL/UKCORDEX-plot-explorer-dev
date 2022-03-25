@@ -686,8 +686,7 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{idx}_{ij}"} /> during the time period of
         interest: this set contains 30 seasonal maxima for future periods, and
         20 maxima for the evaluation period.
-        <br></br>
-        <br></br>A generalised extreme value distribution (GEV;{" "}
+        A generalised extreme value distribution (GEV;{" "}
         <a href="https://link.springer.com/book/10.1007/978-1-4471-3675-0">
           Coles, 2001
         </a>
