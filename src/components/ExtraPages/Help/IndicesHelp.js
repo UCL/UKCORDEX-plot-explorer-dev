@@ -811,7 +811,7 @@ function IndicesHelp() {
       </p>
     </Row>
           {/* degree days */}
-              <Row className="indices">
+    <Row className="indices">
       <h5 id="degree">
         <u>Degree-days and season lengths</u>
       </h5>
@@ -825,26 +825,27 @@ function IndicesHelp() {
         based on calendar years, rather than meteorological years.
       </p>
       <p className="contents">
-        <b>Growing season length</b> (gsl): The growing season length for year{" "}
-        <InlineMath math={"y"} /> is the count of the number of days between the
-        first occurrence of at least six consecutive days where{" "}
+        <b>Growing season length</b> <InlineMath math={"\\texttt{gsl}"} />: The
+        growing season length for year <InlineMath math={"y"} /> is the count of
+        the number of days between the first occurrence of at least six
+        consecutive days where{" "}
         <InlineMath math={"\\texttt{tas}_{iy} \\gt 5.6^\\circ\\text{C}"} /> and
         the first occurrence after 1 July of at least six consecutive days where{" "}
         <InlineMath math={"\\texttt{tas}_{iy} \\lt 5.6^\\circ\\text{C}"} />.
       </p>{" "}
       <p className="contents">
-        <b>Growing degree-days</b> (gdd): The number of growing degree-days in
-        year y is{" "}
+        <b>Growing degree-days</b> <InlineMath math={"\\texttt{gdd}"} />: The
+        number of growing degree-days in year y is{" "}
         <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 5.6)"} />.
       </p>{" "}
       <p className="contents">
-        <b>Cooling degree-days</b> (cdd): The number of cooling degree-days in
-        year y is{" "}
+        <b>Cooling degree-days</b> <InlineMath math={"\\texttt{gcddsl}"} />: The
+        number of cooling degree-days in year y is{" "}
         <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 22)"} />.
       </p>{" "}
       <p className="contents">
-        <b>Heating degree-days</b> (hdd): The number of heating degree-days in
-        year y is{" "}
+        <b>Heating degree-days</b> <InlineMath math={"\\texttt{hdd}"} />: The
+        number of heating degree-days in year y is{" "}
         <InlineMath math={"\\sum_i \\max(0, 15.5 - \\texttt{tas}_{iy})"} />.
       </p>{" "}
     </Row>
