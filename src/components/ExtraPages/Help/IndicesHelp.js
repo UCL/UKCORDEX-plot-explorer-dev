@@ -604,34 +604,45 @@ function IndicesHelp() {
       </p>
     </Row>
           {/* wind */}
-          <Row className="indices">
-            <h5 id="wind">
-              <u>Indices of wind</u>
-            </h5>
-            <p className="foreword">
-              In defining the following indices of wind speed, let swind be the
-              mean daily wind speed on day i in season j, let maxwind be the
-              maximum daily wind speed on day i in season j, and let maxgust be
-              the maximum gust strength on day i in season j.
-            </p>
-            <p className="contents">
-              <b>Maximum sustained wind speed</b> (maxsfcWindmax): The maximum
-              sustained daily wind speed for season j is max(maxwind).
-            </p>{" "}
-            <p className="contents">
-              <b>Maximum speed of wind gust</b> (maxwsgsmax): The maximum daily
-              gust speed for season j is max(maxgust)
-            </p>{" "}
-            <p className="contents">
-              <b>Number of calm days</b> (ncalm): The number of calm days in
-              season j is the count of days where swind leq 2ms<sup>-1</sup>.
-            </p>{" "}
-            <p className="contents">
-              <b>Number of windy days</b> (nwindy): The number of windy days in
-              season j is the count of days where swind geq 10.8ms
-              <sup>-1</sup>.
-            </p>
-          </Row>
+             <Row className="indices">
+      <h5 id="wind">
+        <u>Indices of wind</u>
+      </h5>
+      <p className="foreword">
+        In defining the following indices of wind speed, let{" "}
+        <InlineMath math={"\\texttt{sfcWind}_{ij}"} /> be the mean daily wind
+        speed on day <InlineMath math={"i"} /> in season{" "}
+        <InlineMath math={"j"} />, let{" "}
+        <InlineMath math={"\\texttt{sfcWindmax}_{ij}"} /> be the maximum daily
+        wind speed on day <InlineMath math={"i"} /> in season{" "}
+        <InlineMath math={"j"} />, and let{" "}
+        <InlineMath math={"\\texttt{wsgsmax}_{ij}"} /> be the maximum gust
+        strength on day <InlineMath math={"i"} /> in season{" "}
+        <InlineMath math={"j"} />.
+      </p>
+      <p className="contents">
+        <b>Maximum sustained wind speed</b> (maxsfcWindmax): The maximum
+        sustained daily wind speed for season <InlineMath math={"j"} /> is{" "}
+        <InlineMath math={"\\max(\\texttt{sfcWindmax}_{ij})"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Maximum speed of wind gust</b> (maxwsgsmax): The maximum daily gust
+        speed for season <InlineMath math={"j"} /> is{" "}
+        <InlineMath math={"\\max(\\texttt{wsgsmax}_{ij})"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Number of calm days</b> (ncalm): The number of calm days in season{" "}
+        <InlineMath math={"j"} />
+        is the count of days where{" "}
+        <InlineMath math={"\\texttt{sfcWind}_{ij} \\leq 2ms^{-1}"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Number of windy days</b> (nwindy): The number of windy days in season
+        <InlineMath math={"j"} />
+        is the count of days where{" "}
+        <InlineMath math={"\\texttt{sfcWind}_{ij} \\geq 10.8ms^{-1}"} />.
+      </p>
+    </Row>
           {/* extreme events */}
           <Row className="indices">
             <h5 id="extreme">
