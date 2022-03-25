@@ -112,127 +112,127 @@ function IndicesHelp() {
           </p>{" "}
           <br></br>
           {/* core vars table */}
-          <Row className="indices">
-            <h5 id="corevars">
-              <u>Core variables</u>
-            </h5>
-            <Col>
-              <Table striped size="sm">
-                <thead>
-                  <tr>
-                    <th>code</th>
-                    <th>index</th>
-                    <th>unit</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>clt</td>
-                    <td>Total cloud cover</td>
-                    <td>%</td>
-                  </tr>
-                  <tr>
-                    <td>hurs</td>
-                    <td>Relative humidity at 1.5m</td>
-                    <td>%</td>
-                  </tr>
-                  <tr>
-                    <td>huss</td>
-                    <td>Specific humidity at 1.5m</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>pr</td>
-                    <td>Precipitation rate</td>
-                    <td>mm/day</td>
-                  </tr>
-                  <tr>
-                    <td>prsn</td>
-                    <td>Snowfall rate</td>
-                    <td>mm/day</td>
-                  </tr>
-                  <tr>
-                    <td>psl</td>
-                    <td>Sea level pressure</td>
-                    <td>hPa</td>
-                  </tr>
-                  <tr>
-                    <td>rls</td>
-                    <td>Net surface long wave flux</td>
-                    <td>
-                      wm<sup>-2</sup>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>rss</td>
-                    <td>Net surface short wave flux</td>
-                    <td>
-                      wm<sup>-2</sup>
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
-            </Col>
-            <Col>
-              <Table striped size="sm">
-                <thead>
-                  <tr>
-                    <th>code</th>
-                    <th>index</th>
-                    <th>unit</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td> sfcWind</td>
-                    <td>Wind speed at 10m</td>
-                    <td>
-                      ms<sup>-1</sup>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>snw</td>
-                    <td>Lying snow</td>
-                    <td>
-                      mm<sup>*</sup>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>tas</td>
-                    <td>Mean daily near-surface air temperature</td>
-                    <td>°C</td>
-                  </tr>
-                  <tr>
-                    <td>tasmax</td>
-                    <td>Maximum daily near-surface air temperature</td>
-                    <td>°C</td>
-                  </tr>
-                  <tr>
-                    <td>tasmin</td>
-                    <td>Minimum daily near-surface air temperature</td>
-                    <td>°C</td>
-                  </tr>
-                  <tr>
-                    <td>uas</td>
-                    <td>Eastward wind at 10m </td>
-                    <td>
-                      ms<sup>-1</sup>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>vas</td>
-                    <td>Northward wind at 10m</td>
-                    <td>
-                      ms<sup>-1</sup>
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
-              <span>
-                <sup>*</sup>mm of liquid water equivalent
-              </span>
-            </Col>
-          </Row>
+    <Row className="indices">
+      <h5 id="corevars">
+        <u>Core variables</u>
+      </h5>
+      <Col>
+        <Table striped size="sm">
+          <thead>
+            <tr>
+              <th>code</th>
+              <th>index</th>
+              <th>unit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><InlineMath math={"\\texttt{clt}"} /></td>
+              <td>Total cloud cover</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{hurs}"} /></td>
+              <td>Relative humidity at 1.5m</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{huss}"} /></td>
+              <td>Specific humidity at 1.5m</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{pr}"} /></td>
+              <td>Precipitation rate</td>
+              <td>mm/day</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{prsn}"} /></td>
+              <td>Snowfall rate</td>
+              <td>mm/day</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{psl}"} /></td>
+              <td>Sea level pressure</td>
+              <td>hPa</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{rls}"} /></td>
+              <td>Net surface long wave flux</td>
+              <td>
+                wm<sup>-2</sup>
+              </td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{rss}"} /></td>
+              <td>Net surface short wave flux</td>
+              <td>
+                wm<sup>-2</sup>
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+      </Col>
+      <Col>
+        <Table striped size="sm">
+          <thead>
+            <tr>
+              <th>code</th>
+              <th>index</th>
+              <th>unit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><InlineMath math={"\\texttt{sfcWind}"} /></td>
+              <td>Wind speed at 10m</td>
+              <td>
+                ms<sup>-1</sup>
+              </td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{snw}"} /></td>
+              <td>Lying snow</td>
+              <td>
+                mm<sup>*</sup>
+              </td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{tas}"} /></td>
+              <td>Mean daily near-surface air temperature</td>
+              <td>°C</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{tasmax}"} /></td>
+              <td>Maximum daily near-surface air temperature</td>
+              <td>°C</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{tasmin}"} /></td>
+              <td>Minimum daily near-surface air temperature</td>
+              <td>°C</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{uas}"} /></td>
+              <td>Eastward wind at 10m </td>
+              <td>
+                ms<sup>-1</sup>
+              </td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{vas}"} /></td>
+              <td>Northward wind at 10m</td>
+              <td>
+                ms<sup>-1</sup>
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+        <span>
+          <sup>*</sup>mm of liquid water equivalent
+        </span>
+      </Col>
+    </Row>
           {/* temperature */}
               <Row className="indices">
       <h5 id="temp">
