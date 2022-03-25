@@ -234,237 +234,250 @@ function IndicesHelp() {
             </Col>
           </Row>
           {/* temperature */}
-          <Row className="indices">
-            <h5 id="temp">
-              <u>Indices of temperature</u>
-            </h5>
-            <p className="foreword">
-              In defining the following indices of temperature, let <InlineMath math={'\\texttt{tas}_{ij}'} /> be
-              the daily mean temperature on day <InlineMath math={'i'} /> in season <InlineMath math={'j'} />; the daily minimum
-              and maximum temperature on day <InlineMath math={'i'} /> in season <InlineMath math={'j'} /> are denoted by{" "}
-              <InlineMath math={'\\texttt{tasmin}_{ij}'} /> and <InlineMath math={'\\texttt{tasmax}_{ij}'} /> respectively.
+              <Row className="indices">
+      <h5 id="temp">
+        <u>Indices of temperature</u>
+      </h5>
+      <p className="foreword">
+        In defining the following indices of temperature, let{" "}
+        <InlineMath math={"\\texttt{tas}_{ij}"} /> be the daily mean temperature
+        on day <InlineMath math={"i"} /> in season <InlineMath math={"j"} />;
+        the daily minimum and maximum temperature on day{" "}
+        <InlineMath math={"i"} /> in season <InlineMath math={"j"} /> are
+        denoted by <InlineMath math={"\\texttt{tasmin}_{ij}"} /> and{" "}
+        <InlineMath math={"\\texttt{tasmax}_{ij}"} /> respectively.
+      </p>
+      <p className="contents">
+        <b>Number of cold spell days</b> <InlineMath math={"\\texttt{csdi}"} />:
+        Count the number of days in season <InlineMath math={"j"} /> where{" "}
+        <InlineMath math={"\\texttt{tasmin}_{ij} > 2^\\circ\\text{C}"} /> for
+        more than two consecutive days.
+      </p>{" "}
+      <p className="contents">
+        <b>Number of heatwave days</b> <InlineMath math={"\\texttt{hwdi}"} />:
+        Count the number of days in season <InlineMath math={"j"} /> where{" "}
+        <InlineMath math={"\\texttt{tasmax}_{ij} > t_1"} /> and{" "}
+        <InlineMath math={"\\texttt{tasmin}_{ij} > t_2"} /> for two or more
+        consecutive days, where <InlineMath math={"t_1"} /> and{" "}
+        <InlineMath math={"t_2"} /> are thresholds defined for each region as in
+        the table below. These thresholds are taken from the{" "}
+        <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/888668/Heatwave_plan_for_England_2020.pdf">
+          {" "}
+          Public Health England heatwave plan
+        </a>
+        .
+        <Row>
+          <div>
+            <p style={{ fontSize: "80%" }}>
+              <b>Table 4:</b> Thresholds{" "}
+              <i>
+                t<sub>1</sub>
+              </i>{" "}
+              (daytime temperature) and{" "}
+              <i>
+                t<sub>2</sub>
+              </i>{" "}
+              (nighttime temperature) in °C used by Public Health England to
+              define a heatwave in each of the administrative regions of the UK.
             </p>
-            <p className="contents">
-              <b>Number of cold spell days</b> (csdi): Count the number of days
-              in season <InlineMath math={'j'} /> where <InlineMath math={'\\texttt{tasmin}_{ij} > 2^\\circ\\text{C}'} /> for more than two consecutive
-              days.
-            </p>{" "}
-            <p className="contents">
-              <b>Number of heatwave days</b> (hwdi): Count the number of days in
-              season <InlineMath math={'j'} /> where <InlineMath math={'\\texttt{tasmax}_{ij} > t_1'} /> and <InlineMath math={'\\texttt{tasmin}_{ij} > t_2'} /> for two or
-              more consecutive days, where <InlineMath math={'t_1'} /> and <InlineMath math={'t_2'} /> are thresholds defined
-              for each region as in the table below. These thresholds are taken
-              from the{" "}
-              <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/888668/Heatwave_plan_for_England_2020.pdf">
-                {" "}
-                Public Health England heatwave plan
-              </a>
-              .
-              <Row>
-                <div>
-                  <p style={{ fontSize: "80%" }}>
-                    <b>Table 4:</b> Thresholds{" "}
+          </div>
+          <Col>
+            <Table striped size="sm">
+              <thead>
+                <tr>
+                  <td>Region</td>
+                  <td>
                     <i>
                       t<sub>1</sub>
-                    </i>{" "}
-                    (daytime temperature) and{" "}
+                    </i>
+                  </td>
+                  <td>
                     <i>
                       t<sub>2</sub>
-                    </i>{" "}
-                    (nighttime temperature) in °C used by Public Health England
-                    to define a heatwave in each of the administrative regions
-                    of the UK.
-                  </p>
-                </div>
-                <Col>
-                  <Table striped size="sm">
-                    <thead>
-                      <tr>
-                        <td>Region</td>
-                        <td>
-                          <i>
-                            t<sub>1</sub>
-                          </i>
-                        </td>
-                        <td>
-                          <i>
-                            t<sub>2</sub>
-                          </i>
-                        </td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>London</td>
-                        <td>32</td>
-                        <td>18</td>
-                      </tr>
-                      <tr>
-                        <td>South East England</td>
-                        <td>31</td>
-                        <td>16</td>
-                      </tr>
-                      <tr>
-                        <td>South West England</td>
-                        <td>30</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>East of England</td>
-                        <td>30</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>West Midlands</td>
-                        <td>30</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>East Midlands</td>
-                        <td>30</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>North West England</td>
-                        <td>30</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>Yorkshire and Humber</td>
-                        <td>29</td>
-                        <td>15</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Col>
-                <Col>
-                  <Table striped size="sm">
-                    <thead>
-                      <tr>
-                        <td>Region</td>
-                        <td>
-                          <i>
-                            t<sub>1</sub>
-                          </i>
-                        </td>
-                        <td>
-                          <i>
-                            t<sub>2</sub>
-                          </i>
-                        </td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>North East England</td>
-                        <td>28</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>Isle of Man</td>
-                        <td>30</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>Channel Islands</td>
-                        <td>30</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>Wales</td>
-                        <td>30</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>East Scotland</td>
-                        <td>28</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>West Scotland</td>
-                        <td>28</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>North Scotland</td>
-                        <td>28</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td>Northern Ireland</td>
-                        <td>28</td>
-                        <td>15</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Col>
-              </Row>
-            </p>{" "}
-            <p className="contents">
-              <b>Maximum near-surface air temperature on the hottest day</b>{" "}
-              (maxtmax): The highest daily temperature <InlineMath math={'\\texttt{tasmax}_{ij}'} /> in each season <InlineMath math={'j'} />.{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Minimum near-surface air temperature on the coldest day</b>{" "}
-              (mintmin): The lowest daily temperature <InlineMath math={'\\texttt{tasmin}_{ij}'} /> in each season <InlineMath math={'j'} />.{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>1st percentile of daily mean near-surface air temperatures</b>{" "}
-              (tas01): This index is not computed by averaging a seasonal time
-              series over the period of interest. Instead, the daily mean
-              temperatures tas during the season of interest for all years in
-              the selected time period are pooled, and the 1st percentile of the
-              pooled seasonal temperatures is calculated.
-            </p>{" "}
-            <p className="contents">
-              <b>99th percentile of daily mean near-surface air temperatures</b>{" "}
-              (tas99): This index is not computed by averaging a seasonal time
-              series over the period of interest. Instead, the daily mean
-              temperatures tas during the season of interest for all years in
-              the selected time period are pooled, and the 99th percentile of
-              the pooled seasonal temperatures is calculated.{" "}
-            </p>{" "}
-            <p className="contents">
-              <b>Number of cold days</b> (tmax10p): Let{" "}
-              <InlineMath math={'q_{10}(\\texttt{tasmax}_{ir})'} /> be the
-              10th percentile of daily maximum temperatures in a five-day
-              window centred on calendar day <InlineMath math={'j'} />{" "}
-              in the reference period <InlineMath math={'r'} /> (1980-2010). 
-              Count the number of days where{" "}
-              <InlineMath math={'\\texttt{tasmax}_{ij} < q_{10}(\\texttt{tasmax}_{ir})'} />{" "}
-               for the season of interest <InlineMath math={'j'} />.
-            </p>{" "}
-            <p className="contents">
-              <b>Number of hot days</b> (tmax90p): Let{" "}
-              <InlineMath math={'q_{90}(\\texttt{tasmax}_{ir})'} /> be the
-              90th percentile of daily maximum temperatures in a five-day
-              window centred on calendar day <InlineMath math={'j'} />{" "}
-              in the reference period <InlineMath math={'r'} /> (1980-2010). 
-              Count the number of days where{" "}
-              <InlineMath math={'\\texttt{tasmax}_{ij} > q_{90}(\\texttt{tasmax}_{ir})'} />{" "}
-               for the season of interest <InlineMath math={'j'} />.
-            </p>{" "}
-            <p className="contents">
-              <b>Number of cold nights</b> (tmin10p): Let{" "}
-              <InlineMath math={'q_{10}(\\texttt{tasmin}_{ir})'} /> be the
-              10th percentile of daily maximum temperatures in a five-day
-              window centred on calendar day <InlineMath math={'j'} />{" "}
-              in the reference period <InlineMath math={'r'} /> (1980-2010). 
-              Count the number of days where{" "}
-              <InlineMath math={'\\texttt{tasmin}_{ij} < q_{10}(\\texttt{tasmin}_{ir})'} />{" "}
-               for the season of interest <InlineMath math={'j'} />.
-            </p>{" "}
-            <p className="contents">
-              <b>Number of warm nights</b> (tmin90p): Let{" "}
-              <InlineMath math={'q_{90}(\\texttt{tasmin}_{ir})'} /> be the
-              10th percentile of daily maximum temperatures in a five-day
-              window centred on calendar day <InlineMath math={'j'} />{" "}
-              in the reference period <InlineMath math={'r'} /> (1980-2010). 
-              Count the number of days where{" "}
-              <InlineMath math={'\\texttt{tasmin}_{ij} > q_{90}(\\texttt{tasmin}_{ir})'} />{" "}
-               for the season of interest <InlineMath math={'j'} />.
-            </p>
-          </Row>
+                    </i>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>London</td>
+                  <td>32</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>South East England</td>
+                  <td>31</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>South West England</td>
+                  <td>30</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>East of England</td>
+                  <td>30</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>West Midlands</td>
+                  <td>30</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>East Midlands</td>
+                  <td>30</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>North West England</td>
+                  <td>30</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Yorkshire and Humber</td>
+                  <td>29</td>
+                  <td>15</td>
+                </tr>
+              </tbody>
+            </Table>
+          </Col>
+          <Col>
+            <Table striped size="sm">
+              <thead>
+                <tr>
+                  <td>Region</td>
+                  <td>
+                    <i>
+                      t<sub>1</sub>
+                    </i>
+                  </td>
+                  <td>
+                    <i>
+                      t<sub>2</sub>
+                    </i>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>North East England</td>
+                  <td>28</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Isle of Man</td>
+                  <td>30</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Channel Islands</td>
+                  <td>30</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Wales</td>
+                  <td>30</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>East Scotland</td>
+                  <td>28</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>West Scotland</td>
+                  <td>28</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>North Scotland</td>
+                  <td>28</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Northern Ireland</td>
+                  <td>28</td>
+                  <td>15</td>
+                </tr>
+              </tbody>
+            </Table>
+          </Col>
+        </Row>
+      </p>{" "}
+      <p className="contents">
+        <b>Maximum near-surface air temperature on the hottest day</b>{" "}
+        <InlineMath math={"\\texttt{maxtmax}"} />: The highest daily temperature{" "}
+        <InlineMath math={"\\texttt{tasmax}_{ij}"} /> in each season{" "}
+        <InlineMath math={"j"} />.{" "}
+      </p>{" "}
+      <p className="contents">
+        <b>Minimum near-surface air temperature on the coldest day</b>{" "}
+        <InlineMath math={"\\texttt{mintmin}"} />: The lowest daily temperature{" "}
+        <InlineMath math={"\\texttt{tasmin}_{ij}"} /> in each season{" "}
+        <InlineMath math={"j"} />.{" "}
+      </p>{" "}
+      <p className="contents">
+        <b>1st percentile of daily mean near-surface air temperatures</b>{" "}
+        <InlineMath math={"\\texttt{tas01}"} />: This index is not computed by
+        averaging a seasonal time series over the period of interest. Instead,
+        the daily mean temperatures tas during the season of interest for all
+        years in the selected time period are pooled, and the 1st percentile of
+        the pooled seasonal temperatures is calculated.
+      </p>{" "}
+      <p className="contents">
+        <b>99th percentile of daily mean near-surface air temperatures</b>{" "}
+        <InlineMath math={"\\texttt{tas99}"} />: This index is not computed by
+        averaging a seasonal time series over the period of interest. Instead,
+        the daily mean temperatures tas during the season of interest for all
+        years in the selected time period are pooled, and the 99th percentile of
+        the pooled seasonal temperatures is calculated.{" "}
+      </p>{" "}
+      <p className="contents">
+        <b>Number of cold days</b> <InlineMath math={"\\texttt{tmax10p}"} />:
+        Let <InlineMath math={"q_{10}(\\texttt{tasmax}_{ir})"} /> be the 10th
+        percentile of daily maximum temperatures in a five-day window centred on
+        calendar day <InlineMath math={"j"} /> in the reference period{" "}
+        <InlineMath math={"r"} /> (1980-2010). Count the number of days where{" "}
+        <InlineMath
+          math={"\\texttt{tasmax}_{ij} < q_{10}(\\texttt{tasmax}_{ir})"}
+        />{" "}
+        for the season of interest <InlineMath math={"j"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Number of hot days</b> <InlineMath math={"\\texttt{tmax90p}"} />: Let{" "}
+        <InlineMath math={"q_{90}(\\texttt{tasmax}_{ir})"} /> be the 90th
+        percentile of daily maximum temperatures in a five-day window centred on
+        calendar day <InlineMath math={"j"} /> in the reference period{" "}
+        <InlineMath math={"r"} /> (1980-2010). Count the number of days where{" "}
+        <InlineMath
+          math={"\\texttt{tasmax}_{ij} > q_{90}(\\texttt{tasmax}_{ir})"}
+        />{" "}
+        for the season of interest <InlineMath math={"j"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Number of cold nights</b> <InlineMath math={"\\texttt{tmin10p}"} />:
+        Let <InlineMath math={"q_{10}(\\texttt{tasmin}_{ir})"} /> be the 10th
+        percentile of daily maximum temperatures in a five-day window centred on
+        calendar day <InlineMath math={"j"} /> in the reference period{" "}
+        <InlineMath math={"r"} /> (1980-2010). Count the number of days where{" "}
+        <InlineMath
+          math={"\\texttt{tasmin}_{ij} < q_{10}(\\texttt{tasmin}_{ir})"}
+        />{" "}
+        for the season of interest <InlineMath math={"j"} />.
+      </p>{" "}
+      <p className="contents">
+        <b>Number of warm nights</b> <InlineMath math={"\\texttt{tmin90p}"} />:
+        Let <InlineMath math={"q_{90}(\\texttt{tasmin}_{ir})"} /> be the 90th
+        percentile of daily maximum temperatures in a five-day window centred on
+        calendar day <InlineMath math={"j"} /> in the reference period{" "}
+        <InlineMath math={"r"} /> (1980-2010). Count the number of days where{" "}
+        <InlineMath
+          math={"\\texttt{tasmin}_{ij} > q_{90}(\\texttt{tasmin}_{ir})"}
+        />{" "}
+        for the season of interest <InlineMath math={"j"} />.
+      </p>
+    </Row>
           {/* precipitation */}
           <Row className="indices">
       <h5 id="precip">
@@ -839,7 +852,7 @@ function IndicesHelp() {
         <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 5.6)"} />.
       </p>{" "}
       <p className="contents">
-        <b>Cooling degree-days</b> <InlineMath math={"\\texttt{gcddsl}"} />: The
+        <b>Cooling degree-days</b> <InlineMath math={"\\texttt{cdd}"} />: The
         number of cooling degree-days in year y is{" "}
         <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 22)"} />.
       </p>{" "}
