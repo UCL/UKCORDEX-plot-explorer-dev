@@ -479,7 +479,7 @@ function IndicesHelp() {
       </p>
     </Row>
           {/* precipitation */}
-          <Row className="indices">
+    <Row className="indices">
       <h5 id="precip">
         <u>Indices of precipitation</u>
       </h5>
@@ -497,17 +497,20 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{pr}_{ij} \\geq 1"} />.
       </p>
       <p className="contents">
-        <b>Accumulated precipitation</b> (prcptot): The sum of{" "}
+        <b>Accumulated precipitation</b>{" "}
+        <InlineMath math={"\\texttt{prcptot}"} />: The sum of{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} /> in
         season <InlineMath math={"j"} />.
       </p>
       <p className="contents">
-        <b>Proportion of wet days</b> (fwd): The proportion of days for which{" "}
+        <b>Proportion of wet days</b> <InlineMath math={"\\texttt{fwd}"} />: The
+        proportion of days for which{" "}
         <InlineMath math={"\\texttt{pr}_{ij} \\geq 1"} />.
       </p>
       <p className="contents">
-        <b>Proportion of rainfall due to convection</b> (prcprop): The
-        proportion of total precipitation due to convective processes in period{" "}
+        <b>Proportion of rainfall due to convection</b>{" "}
+        <InlineMath math={"\\texttt{prcprop}"} />: The proportion of total
+        precipitation due to convective processes in period{" "}
         <InlineMath math={"j"} /> is the sum of{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1\\rbrace"} /> in
         period <InlineMath math={"j"} /> divided by the total precipitation in
@@ -515,7 +518,8 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{prcptot}"} />.
       </p>
       <p className="contents">
-        <b>Proportion of wet days followed by a wet day</b> (pww): This is
+        <b>Proportion of wet days followed by a wet day</b>{" "}
+        <InlineMath math={"\\texttt{pww}"} />: This is
         <Image
           fluid="true"
           width="30%"
@@ -531,7 +535,8 @@ function IndicesHelp() {
         <InlineMath math={"P_j(wd) = 1 - P_j(ww)"} />.
       </p>
       <p className="contents">
-        <b>Proportion of dry days followed by a dry day</b> (pdd): This is
+        <b>Proportion of dry days followed by a dry day</b>{" "}
+        <InlineMath math={"\\texttt{pdd}"} />: This is
         <Image
           fluid="true"
           width="30%"
@@ -547,12 +552,14 @@ function IndicesHelp() {
         <InlineMath math={"P_j(dw) = 1 - P_j(dd)"} />.
       </p>
       <p className="contents">
-        <b>Maximum one-day precipitation</b> (rx1day): The maximum one-day
+        <b>Maximum one-day precipitation</b>{" "}
+        <InlineMath math={"\\texttt{rx1day}"} />: The maximum one-day
         precipitation for season <InlineMath math={"j"} /> is{" "}
         <InlineMath math={"\\max(\\texttt{pr}_{ij})"} />.
       </p>
       <p className="contents">
-        <b>Maximum five-day precipitation</b> (rx5day): Let{" "}
+        <b>Maximum five-day precipitation</b>{" "}
+        <InlineMath math={"\\texttt{rx5day}"} />: Let{" "}
         <InlineMath math={"\\texttt{pr5}_{ij}"} /> be the total precipitation
         amount for the five-day interval ending on day <InlineMath math={"i"} />{" "}
         in season <InlineMath math={"j"} />. The maximum five-day values for
@@ -563,8 +570,9 @@ function IndicesHelp() {
         <b>
           Proportion of precipitation falling on days exceeding 95th percentile
         </b>{" "}
-        (r95ptot): Let <InlineMath math={"q_{95}(\\texttt{pr}_{rj})"} /> be the
-        95th percentile of daily wet-day precipitation during all seasons{" "}
+        <InlineMath math={"\\texttt{r95ptot}"} />: Let{" "}
+        <InlineMath math={"q_{95}(\\texttt{pr}_{rj})"} /> be the 95th percentile
+        of daily wet-day precipitation during all seasons{" "}
         <InlineMath math={"j"} /> (eg. during all winters) in the reference
         period <InlineMath math={"r"} /> (1980-2010). The total precipitation
         exceeding the 95th percentile in season <InlineMath math={"j"} /> is the
@@ -576,8 +584,9 @@ function IndicesHelp() {
         <b>
           Proportion of precipitation falling on days exceeding 99th percentile
         </b>{" "}
-        (r99ptot): Let <InlineMath math={"q_{99}(\\texttt{pr}_{rj})"} /> be the
-        99th percentile of daily wet-day precipitation during all seasons{" "}
+        <InlineMath math={"\\texttt{r99ptot}"} />: Let{" "}
+        <InlineMath math={"q_{99}(\\texttt{pr}_{rj})"} /> be the 99th percentile
+        of daily wet-day precipitation during all seasons{" "}
         <InlineMath math={"j"} /> (eg. during all winters) in the reference
         period <InlineMath math={"r"} /> (1980-2010). The total precipitation
         exceeding the 99th percentile in season <InlineMath math={"j"} /> is the
@@ -586,31 +595,36 @@ function IndicesHelp() {
         .
       </p>
       <p className="contents">
-        <b>Simple daily precipitation intensity index </b> (sdii): The mean of{" "}
+        <b>Simple daily precipitation intensity index </b>{" "}
+        <InlineMath math={"\\texttt{sdii}"} />: The mean of{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} /> in
         season <InlineMath math={"j"} />. Also known as the wet-day
         precipitation rate.
       </p>
       <p className="contents">
-        <b>Median length of dry spell</b> (dsmed): Count the median number of
+        <b>Median length of dry spell</b>{" "}
+        <InlineMath math={"\\texttt{dsmed}"} />: Count the median number of
         consecutive days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\lt 1 \\rbrace"} />. Dry
         spells are assumed to occur in the season in which they finish.
       </p>
       <p className="contents">
-        <b>Maximum length of dry spell</b> (dsmax): Count the largest number of
+        <b>Maximum length of dry spell</b>{" "}
+        <InlineMath math={"\\texttt{dsmax}"} />: Count the largest number of
         consecutive days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\lt 1 \\rbrace"} />. Dry
         spells are assumed to occur in the season in which they finish.
       </p>
       <p className="contents">
-        <b>Median length of wet spell</b> (wsmed): Count the median number of
+        <b>Median length of wet spell</b>{" "}
+        <InlineMath math={"\\texttt{wsmed}"} />: Count the median number of
         consecutive days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} />. Wet
         spells are assumed to occur in the season in which they finish.
       </p>
       <p className="contents">
-        <b>Maximum length of wet spell</b> (wsmax): Count the largest number of
+        <b>Maximum length of wet spell</b>{" "}
+        <InlineMath math={"\\texttt{wsmax}"} />: Count the largest number of
         consecutive days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} />. Wet
         spells are assumed to occur in the season in which they finish.
@@ -848,17 +862,17 @@ function IndicesHelp() {
       </p>{" "}
       <p className="contents">
         <b>Growing degree-days</b> <InlineMath math={"\\texttt{gdd}"} />: The
-        number of growing degree-days in year y is{" "}
+        number of growing degree-days in year <InlineMath math={"y"} /> is{" "}
         <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 5.6)"} />.
       </p>{" "}
       <p className="contents">
         <b>Cooling degree-days</b> <InlineMath math={"\\texttt{cdd}"} />: The
-        number of cooling degree-days in year y is{" "}
+        number of cooling degree-days in year <InlineMath math={"y"} /> is{" "}
         <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 22)"} />.
       </p>{" "}
       <p className="contents">
         <b>Heating degree-days</b> <InlineMath math={"\\texttt{hdd}"} />: The
-        number of heating degree-days in year y is{" "}
+        number of heating degree-days in year <InlineMath math={"y"} /> is{" "}
         <InlineMath math={"\\sum_i \\max(0, 15.5 - \\texttt{tas}_{iy})"} />.
       </p>{" "}
     </Row>
