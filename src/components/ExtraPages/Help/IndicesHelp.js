@@ -631,7 +631,7 @@ function IndicesHelp() {
       </p>
     </Row>
           {/* wind */}
-             <Row className="indices">
+    <Row className="indices">
       <h5 id="wind">
         <u>Indices of wind</u>
       </h5>
@@ -648,25 +648,27 @@ function IndicesHelp() {
         <InlineMath math={"j"} />.
       </p>
       <p className="contents">
-        <b>Maximum sustained wind speed</b> (maxsfcWindmax): The maximum
-        sustained daily wind speed for season <InlineMath math={"j"} /> is{" "}
+        <b>Maximum sustained wind speed</b>{" "}
+        <InlineMath math={"\\texttt{maxsfcWindmax}"} />: The maximum sustained
+        daily wind speed for season <InlineMath math={"j"} /> is{" "}
         <InlineMath math={"\\max(\\texttt{sfcWindmax}_{ij})"} />.
       </p>{" "}
       <p className="contents">
-        <b>Maximum speed of wind gust</b> (maxwsgsmax): The maximum daily gust
+        <b>Maximum speed of wind gust</b>{" "}
+        <InlineMath math={"\\texttt{maxwsgsmax}"} />: The maximum daily gust
         speed for season <InlineMath math={"j"} /> is{" "}
         <InlineMath math={"\\max(\\texttt{wsgsmax}_{ij})"} />.
       </p>{" "}
       <p className="contents">
-        <b>Number of calm days</b> (ncalm): The number of calm days in season{" "}
-        <InlineMath math={"j"} />{" "}
-        is the count of days where{" "}
-        <InlineMath math={"\\texttt{sfcWind}_{ij} \\leq 2ms^{-1}"} />.
+        <b>Number of calm days</b> <InlineMath math={"\\texttt{ncalm}"} />: The
+        number of calm days in season <InlineMath math={"j"} /> is the count of
+        days where <InlineMath math={"\\texttt{sfcWind}_{ij} \\leq 2ms^{-1}"} />
+        .
       </p>{" "}
       <p className="contents">
-        <b>Number of windy days</b> (nwindy): The number of windy days in season{" "}
-        <InlineMath math={"j"} />{" "}
-        is the count of days where{" "}
+        <b>Number of windy days</b> <InlineMath math={"\\texttt{nwindy}"} />:
+        The number of windy days in season <InlineMath math={"j"} /> is the
+        count of days where{" "}
         <InlineMath math={"\\texttt{sfcWind}_{ij} \\geq 10.8ms^{-1}"} />.
       </p>
     </Row>
@@ -684,7 +686,7 @@ function IndicesHelp() {
         interest: this set contains 30 seasonal maxima for future periods, and
         20 maxima for the evaluation period.
         <br></br>
-        <br></br>A generalised extreme value distribution (GEV,{" "}
+        <br></br>A generalised extreme value distribution (GEV;{" "}
         <a href="https://link.springer.com/book/10.1007/978-1-4471-3675-0">
           Coles, 2001
         </a>
@@ -740,12 +742,13 @@ function IndicesHelp() {
       </p>{" "}
     </Row>
       {/* impact relevant */}
-      <Row className="indices">
+          <Row className="indices">
       <h5 id="impact">
         <u>Impact-relevant indices</u>
       </h5>
       <p className="contents">
-        <b>Soil moisture at depths of up to 1m</b> (mrso): Let{" "}
+        <b>Soil moisture at depths of up to 1m</b>{" "}
+        <InlineMath math={"\\texttt{mrso}"} />: Let{" "}
         <InlineMath math={"\\texttt{mrso}_{ij}"} /> be the total soil moisture
         at a depth of up to 1m for day <InlineMath math={"i"} /> in period{" "}
         <InlineMath math={"j"} />. The mean soil moisture in season j is the
@@ -753,9 +756,10 @@ function IndicesHelp() {
         <InlineMath math={"j"} />.
       </p>
       <p className="contents">
-        <b>Number of dangerously hot days</b> (ndhi): Let{" "}
-        <InlineMath math={"T"} /> denote the daily maximum surface air
-        temperature <InlineMath math={"\\texttt{tasmax}_{ij}"} /> and{" "}
+        <b>Number of dangerously hot days</b>{" "}
+        <InlineMath math={"\\texttt{ndhi}"} />: Let <InlineMath math={"T"} />{" "}
+        denote the daily maximum surface air temperature{" "}
+        <InlineMath math={"\\texttt{tasmax}_{ij}"} /> and{" "}
         <InlineMath math={"R"} /> the relative humidity{" "}
         <InlineMath math={"\\texttt{hurs}_{ij}"} /> for day{" "}
         <InlineMath math={"i"} /> in period <InlineMath math={"j"} />. Then the
@@ -775,12 +779,13 @@ function IndicesHelp() {
         <InlineMath math={"20^\\circ\\text{C}"} /> and will be reported as NA
         when{" "}
         <InlineMath math={"\\texttt{tasmax}_{ij} \\leq 20^\\circ\\text{C}"} />.{" "}
-        The number of days in period j on which the heat index is
+        <br></br>The number of days in period j on which the heat index is
         dangerously high is given by the count of{" "}
         <InlineMath math={"\\texttt{HI}_{ij} \\geq 32^\\circ\\text{C}"} />.
       </p>
       <p className="contents">
-        <b>Potential evapotranspiration</b> (pet): PET is computed for each day{" "}
+        <b>Potential evapotranspiration</b>{" "}
+        <InlineMath math={"\\texttt{pet}"} />: PET is computed for each day{" "}
         <InlineMath math={"i"} /> in season <InlineMath math={"j"} /> using a
         version of the McGuinness-Bordne equation calibrated to the UK climate (
         <a href="https://essd.copernicus.org/articles/10/951/2018/">
@@ -801,12 +806,13 @@ function IndicesHelp() {
       </p>
       <p className="contents">
         <b>6-month standardised precipitation-evapotranspiration index</b>{" "}
-        (spei6): The climatic water balance is calculated for each month by
-        subtracting the total PET in that month from the total accumulated
-        precipitation <InlineMath math={"\\texttt{prcptot}"} />, and computing a
-        six-month rolling average. This six-month average water balance is
-        fitted to a log-logistic distribution in order to transform the original
-        values to standardised units (
+        <InlineMath math={"\\texttt{spei6}"} />: The climatic water balance is
+        calculated for each month by subtracting the total PET in that month
+        from the total accumulated precipitation{" "}
+        <InlineMath math={"\\texttt{prcptot}"} />, and computing a six-month
+        rolling average. This six-month average water balance is fitted to a
+        log-logistic distribution in order to transform the original values to
+        standardised units (
         <a href="https://journals.ametsoc.org/view/journals/clim/23/7/2009jcli2909.1.xml">
           Vicente-Serrano et al, 2010
         </a>
@@ -814,17 +820,18 @@ function IndicesHelp() {
         computed by averaging the monthly values within each season.
       </p>
       <p className="contents">
-        <b>6-month standardised precipitation index</b> (spi6): This index is
-        computed in the same way as <InlineMath math={"\\texttt{spei6}"} />, but
-        using a six-month rolling average of{" "}
-        <InlineMath math={"\\texttt{prcptot}"} /> rather than the climatic water
-        balance.
+        <b>6-month standardised precipitation index</b>{" "}
+        <InlineMath math={"\\texttt{spi6}"} />: This index is computed in the
+        same way as <InlineMath math={"\\texttt{spei6}"} />, but using a
+        six-month rolling average of <InlineMath math={"\\texttt{prcptot}"} />{" "}
+        rather than the climatic water balance.
       </p>
       <p className="contents">
-        <b>Number of occurrences of drought</b> (ndrought): Drought occurrences
-        will be the count of the number of occasions in each season on which the
-        monthly time series of <InlineMath math={"\\texttt{spei6}"} /> falls
-        below a regional threshold in the interval (-2, -1.5) (
+        <b>Number of occurrences of drought</b>{" "}
+        <InlineMath math={"\\texttt{ndrought}"} />: Drought occurrences will be
+        the count of the number of occasions in each season on which the monthly
+        time series of <InlineMath math={"\\texttt{spei6}"} /> falls below a
+        regional threshold in the interval (-2, -1.5) (
         <a href="https://www.sciencedirect.com/science/article/pii/S0308521X18310643">
           Parsons et al, 2019
         </a>
@@ -832,8 +839,8 @@ function IndicesHelp() {
       </p>
 
       <p className="contents">
-        <b>Number of tropical nights</b> (tr): the number of days in season{" "}
-        <InlineMath math={"j"} /> where{" "}
+        <b>Number of tropical nights</b> <InlineMath math={"\\texttt{tr}"} />:
+        the number of days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\texttt{tasmin}_{ij} > 20^\\circ\\text{C}"} />.
       </p>
     </Row>
@@ -843,7 +850,7 @@ function IndicesHelp() {
         <u>Degree-days and season lengths</u>
       </h5>
       <p className="foreword">
-        In defining the following indices of temperature, let{" "}
+        In defining the following indices, let{" "}
         <InlineMath math={"\\texttt{tas}_{iy}"} /> be the daily mean temperature
         on day <InlineMath math={"i"} /> in year <InlineMath math={"y"} />.
         <br></br>
