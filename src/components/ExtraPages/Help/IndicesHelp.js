@@ -676,8 +676,8 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{rx5day}"} />, and for seasonal windspeed
         maxima <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and{" "}
         <InlineMath math={"\\texttt{maxwsgsmax}"} />. For any of these indices,
-        denoted here by the generic index '<InlineMath math={"\\texttt{idx}"} />
-        ', the following plots are available:
+        denoted here by the generic index <InlineMath math={"\\texttt{idx}"} />,
+        the following plots are available:
       </p>
       <p className="contents">
         <InlineMath math={"\\texttt{idxrl20:}"} /> 20-year return level of{" "}
@@ -712,70 +712,104 @@ function IndicesHelp() {
         GEV distribution
       </p>{" "}
     </Row>
-          {/* impact relevant */}
-          <Row className="indices">
-            <h5 id="impact">
-              <u>Impact-relevant indices</u>
-            </h5>
-            <p className="contents">
-              <b>Soil moisture at depths of up to 1m</b> (mrso): Let mrso_ij be
-              the total soil moisture at a depth of up to 1m for day i in period
-              j. The mean soil moisture in season j is the average of mrso_ij in
-              season j.
-            </p>
-            <p className="contents">
-              <b>Number of dangerously hot days</b> (ndhi):{" "}
-              <InlineMath>
-                Let T denote the daily maximum surface air temperature tasmaxij
-                and R the relative humidity hursij for day i in period j. Then
-                the heat index for day i in period j is HI_ij = c1 + c2T + c3R +
-                c4TR + c5T2 + c6R2 + c7T2R + c8TR2 + c9T2R2 where the ci are
-                constants as given in equation 1 of ?. The heat index is only
-                valid for air temperatures above 20◦C and will be reported as NA
-                when T ≤20◦C. The number of days in period j on which the heat
-                index is dangerously high is given by the count of HIij ≥32◦C.
-              </InlineMath>{" "}
-            </p>
-            <p className="contents">
-              <b>Number of occurrences of drought</b> (ndrought): Drought
-              occurrences will be the count of the number of occasions on which
-              the monthly time series of spei6 falls below a threshold in the
-              interval (-2, -1.5) in each season.
-            </p>
-            <p className="contents">
-              <b>Potential evapotranspiration</b> (pet): PET is computed for
-              each day i in season j using the REC: McGuinness-Bordne equation,
-              where λ is a constant representing the latent heat of vaporisation
-              and S(i) 0 is the extraterrestrial radiation on day i, estimated
-              from the time of year and latitude. Seasonal PET time series are
-              computed by averaging the daily values within season j.
-              <Image
-                fluid="true"
-                width="30%"
-                src={`${process.env.PUBLIC_URL}/content_images/pet_math.png`}
-                alt=""
-              />
-            </p>
-            <p className="contents">
-              <b>6-month standardised precipitation index</b> (spi6): This index
-              is computed in the same way as spei6, but using a six-month
-              rolling average of prcptot rather than the climatic water balance.
-            </p>
-            <p className="contents">
-              <b>6-month standardised precipitation-evapotranspiration index</b>{" "}
-              (spei6): The climatic water balance is calculated for each month
-              by subtracting the total PET in that month from the total
-              accumulated precipitation prcptot, and computing a six-month
-              rolling average. This six-month average water balance is fitted to
-              a log-logistic distribution in order to transform the original
-              values to standardised units. Seasonal time series of spei6 are
-              computed by averaging the monthly values within each season.
-            </p>
-            <p className="contents">
-              <b>Number of tropical nights ({">"}20°C)</b> (tr): the number of
-              days in season j where tasmin_ij {">"} 20°C.
-            </p>
-          </Row>
+      {/* impact relevant */}
+      <Row className="indices">
+      <h5 id="impact">
+        <u>Impact-relevant indices</u>
+      </h5>
+      <p className="contents">
+        <b>Soil moisture at depths of up to 1m</b> (mrso): Let{" "}
+        <InlineMath math={"\\texttt{mrso}_{ij}"} /> be the total soil moisture
+        at a depth of up to 1m for day <InlineMath math={"i"} /> in period{" "}
+        <InlineMath math={"j"} />. The mean soil moisture in season j is the
+        average of <InlineMath math={"\\texttt{mrso}_{ij}"} /> in season{" "}
+        <InlineMath math={"j"} />.
+      </p>
+      <p className="contents">
+        <b>Number of dangerously hot days</b> (ndhi): Let{" "}
+        <InlineMath math={"T"} /> denote the daily maximum surface air
+        temperature <InlineMath math={"\\texttt{tasmax}_{ij}"} /> and{" "}
+        <InlineMath math={"R"} /> the relative humidity{" "}
+        <InlineMath math={"\\texttt{hurs}_{ij}"} /> for day{" "}
+        <InlineMath math={"i"} /> in period <InlineMath math={"j"} />. Then the
+        heat index for day <InlineMath math={"i"} /> in period{" "}
+        <InlineMath math={"j"} /> is
+        <BlockMath
+          math={
+            "\\texttt{HI}_{ij} = c_1 + c_2T + c_3 R + c_4TR + c_5 T^2 + c_6R^2 + c_7T^2R + c_8TR^2 + c_9 T^2R^2"
+          }
+        />
+        where the <InlineMath math={"\\lbrace c_i\\rbrace"} /> are constants as
+        given in equation 1 of{" "}
+        <a href="https://link.springer.com/article/10.1007/s00484-011-0453-2">
+          Blazejczyk et al (2012)
+        </a>
+        . The heat index is only valid for air temperatures above{" "}
+        <InlineMath math={"20^\\circ\\text{C}"} /> and will be reported as NA
+        when{" "}
+        <InlineMath math={"\\texttt{tasmax}_{ij} \\leq 20^\\circ\\text{C}"} />.{" "}
+        <br></br>The number of days in period j on which the heat index is
+        dangerously high is given by the count of{" "}
+        <InlineMath math={"\\texttt{HI}_{ij} \\geq 32^\\circ\\text{C}"} />.
+      </p>
+      <p className="contents">
+        <b>Potential evapotranspiration</b> (pet): PET is computed for each day{" "}
+        <InlineMath math={"i"} /> in season <InlineMath math={"j"} /> using a
+        version of the McGuinness-Bordne equation calibrated to the UK climate (
+        <a href="https://essd.copernicus.org/articles/10/951/2018/">
+          Tanguy et al, 2017
+        </a>
+        ):
+        <BlockMath
+          math={
+            "\\texttt{PET}_{ij} = \\frac{1}{\\lambda}S_0^{(i)} \\Bigg(\\frac{\\texttt{tas}_{ij} + 5}{100}\\Bigg),"
+          }
+        />
+        where <InlineMath math={"\\lambda"} /> is a constant representing the
+        latent heat of vaporisation and <InlineMath math={"S_0^{(i)}"} /> is the
+        extraterrestrial radiation on calendar day <InlineMath math={"i"} />,
+        estimated from the time of year and latitude. Seasonal time series of
+        PET are computed by averaging the daily values within season{" "}
+        <InlineMath math={"j"} />.
+      </p>
+      <p className="contents">
+        <b>6-month standardised precipitation-evapotranspiration index</b>{" "}
+        (spei6): The climatic water balance is calculated for each month by
+        subtracting the total PET in that month from the total accumulated
+        precipitation <InlineMath math={"\\texttt{prcptot}"} />, and computing a
+        six-month rolling average. This six-month average water balance is
+        fitted to a log-logistic distribution in order to transform the original
+        values to standardised units (
+        <a href="https://journals.ametsoc.org/view/journals/clim/23/7/2009jcli2909.1.xml">
+          Vicente-Serrano et al, 2010
+        </a>
+        ). Seasonal time series of <InlineMath math={"\\texttt{spei6}"} /> are
+        computed by averaging the monthly values within each season.
+      </p>
+      <p className="contents">
+        <b>6-month standardised precipitation index</b> (spi6): This index is
+        computed in the same way as <InlineMath math={"\\texttt{spei6}"} />, but
+        using a six-month rolling average of{" "}
+        <InlineMath math={"\\texttt{prcptot}"} /> rather than the climatic water
+        balance.
+      </p>
+      <p className="contents">
+        <b>Number of occurrences of drought</b> (ndrought): Drought occurrences
+        will be the count of the number of occasions in each season on which the
+        monthly time series of <InlineMath math={"\\texttt{spei6}"} /> falls
+        below a regional threshold in the interval (-2, -1.5) (
+        <a href="https://www.sciencedirect.com/science/article/pii/S0308521X18310643">
+          Parsons et al, 2019
+        </a>
+        ).
+      </p>
+
+      <p className="contents">
+        <b>Number of tropical nights</b> (tr): the number of days in season{" "}
+        <InlineMath math={"j"} /> where{" "}
+        <InlineMath math={"\\texttt{tasmin}_{ij} > 20^\\circ\\text{C}"} />.
+      </p>
+    </Row>
           {/* degree days */}
           <Row className="indices">
             <h5 id="degree">
