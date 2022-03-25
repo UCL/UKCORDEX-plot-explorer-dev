@@ -280,7 +280,7 @@ export const regionOptionsContents = [
 export const periodOptionsContents = [
   {
     value: "19890101-20081231",
-    label: "1989-2008",
+    label: "Evaluation period: 1989-2008",
     title: "19890101-20081231",
   },
   {
