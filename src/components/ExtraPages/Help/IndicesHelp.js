@@ -493,7 +493,6 @@ function IndicesHelp() {
         In defining the following indices of precipitation, let{" "}
         <InlineMath math={"\\texttt{pr}_{ij}"} /> be the daily precipitation
         amount in mm on day <InlineMath math={"i"} /> in period{" "}
-        <InlineMath math={"j"} />, and let{" "}
         <InlineMath math={"\\texttt{prc}_{ij}"} /> be the daily precipitation
         amount arising from convective processes in mm on day{" "}
         <InlineMath math={"i"} /> in period <InlineMath math={"j"} />.{" "}
@@ -537,8 +536,6 @@ function IndicesHelp() {
         <InlineMath math={"1_{\\lbrace \\texttt{pr}_{i,j} \\geq 1\\rbrace}"} />
         an indicator function with value one if{" "}
         <InlineMath math={"\\texttt{pr}_{ij} \\geq 1"} />, and zero otherwise.
-        The complementary transition probability is{" "}
-        <InlineMath math={"P_j(wd) = 1 - P_j(ww)"} />.
       </p>
       <p className="contents">
         <b>Proportion of dry days followed by a dry day</b>,{" "}
@@ -555,8 +552,6 @@ function IndicesHelp() {
         <InlineMath math={"1_{\\lbrace \\texttt{pr}_{i,j} \\lt 1\\rbrace}"} />
         is an indicator function with value one if{" "}
         <InlineMath math={"\\texttt{pr}_{ij} \\lt 1"} />, and zero otherwise.
-        The complementary transition probability is{" "}
-        <InlineMath math={"P_j(dw) = 1 - P_j(dd)"} />.
       </p>
       <p className="contents">
         <b>Maximum one-day precipitation</b>,{" "}
