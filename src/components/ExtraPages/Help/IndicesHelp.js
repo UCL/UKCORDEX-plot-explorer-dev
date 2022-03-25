@@ -248,13 +248,13 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{tasmax}_{ij}"} /> respectively.
       </p>
       <p className="contents">
-        <b>Number of cold spell days</b> <InlineMath math={"\\texttt{csdi}"} />:
+        <b>Number of cold spell days</b>, <InlineMath math={"\\texttt{csdi}"} />:
         Count the number of days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\texttt{tasmin}_{ij} > 2^\\circ\\text{C}"} /> for
         more than two consecutive days.
       </p>{" "}
       <p className="contents">
-        <b>Number of heatwave days</b> <InlineMath math={"\\texttt{hwdi}"} />:
+        <b>Number of heatwave days</b>, <InlineMath math={"\\texttt{hwdi}"} />:
         Count the number of days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\texttt{tasmax}_{ij} > t_1"} /> and{" "}
         <InlineMath math={"\\texttt{tasmin}_{ij} > t_2"} /> for two or more
@@ -269,7 +269,7 @@ function IndicesHelp() {
         <Row>
           <div>
             <p style={{ fontSize: "80%" }}>
-              <b>Table 4:</b> Thresholds{" "}
+              <b>Table 4:</b>, Thresholds{" "}
               <i>
                 t<sub>1</sub>
               </i>{" "}
@@ -406,19 +406,19 @@ function IndicesHelp() {
         </Row>
       </p>{" "}
       <p className="contents">
-        <b>Maximum near-surface air temperature on the hottest day</b>{" "}
+        <b>Maximum near-surface air temperature on the hottest day</b>,{" "}
         <InlineMath math={"\\texttt{maxtmax}"} />: The highest daily temperature{" "}
         <InlineMath math={"\\texttt{tasmax}_{ij}"} /> in each season{" "}
         <InlineMath math={"j"} />.{" "}
       </p>{" "}
       <p className="contents">
-        <b>Minimum near-surface air temperature on the coldest day</b>{" "}
+        <b>Minimum near-surface air temperature on the coldest day</b>,{" "}
         <InlineMath math={"\\texttt{mintmin}"} />: The lowest daily temperature{" "}
         <InlineMath math={"\\texttt{tasmin}_{ij}"} /> in each season{" "}
         <InlineMath math={"j"} />.{" "}
       </p>{" "}
       <p className="contents">
-        <b>1st percentile of daily mean near-surface air temperatures</b>{" "}
+        <b>1st percentile of daily mean near-surface air temperatures</b>,{" "}
         <InlineMath math={"\\texttt{tas01}"} />: This index is not computed by
         averaging a seasonal time series over the period of interest. Instead,
         the daily mean temperatures tas during the season of interest for all
@@ -426,7 +426,7 @@ function IndicesHelp() {
         the pooled seasonal temperatures is calculated.
       </p>{" "}
       <p className="contents">
-        <b>99th percentile of daily mean near-surface air temperatures</b>{" "}
+        <b>99th percentile of daily mean near-surface air temperatures</b>,{" "}
         <InlineMath math={"\\texttt{tas99}"} />: This index is not computed by
         averaging a seasonal time series over the period of interest. Instead,
         the daily mean temperatures tas during the season of interest for all
@@ -434,7 +434,7 @@ function IndicesHelp() {
         the pooled seasonal temperatures is calculated.{" "}
       </p>{" "}
       <p className="contents">
-        <b>Number of cold days</b> <InlineMath math={"\\texttt{tmax10p}"} />:
+        <b>Number of cold days</b>, <InlineMath math={"\\texttt{tmax10p}"} />:
         Let <InlineMath math={"q_{10}(\\texttt{tasmax}_{ir})"} /> be the 10th
         percentile of daily maximum temperatures in a five-day window centred on
         calendar day <InlineMath math={"j"} /> in the reference period{" "}
@@ -445,7 +445,7 @@ function IndicesHelp() {
         for the season of interest <InlineMath math={"j"} />.
       </p>{" "}
       <p className="contents">
-        <b>Number of hot days</b> <InlineMath math={"\\texttt{tmax90p}"} />: Let{" "}
+        <b>Number of hot days</b>, <InlineMath math={"\\texttt{tmax90p}"} />: Let{" "}
         <InlineMath math={"q_{90}(\\texttt{tasmax}_{ir})"} /> be the 90th
         percentile of daily maximum temperatures in a five-day window centred on
         calendar day <InlineMath math={"j"} /> in the reference period{" "}
@@ -456,7 +456,7 @@ function IndicesHelp() {
         for the season of interest <InlineMath math={"j"} />.
       </p>{" "}
       <p className="contents">
-        <b>Number of cold nights</b> <InlineMath math={"\\texttt{tmin10p}"} />:
+        <b>Number of cold nights</b>, <InlineMath math={"\\texttt{tmin10p}"} />:
         Let <InlineMath math={"q_{10}(\\texttt{tasmin}_{ir})"} /> be the 10th
         percentile of daily maximum temperatures in a five-day window centred on
         calendar day <InlineMath math={"j"} /> in the reference period{" "}
@@ -467,7 +467,7 @@ function IndicesHelp() {
         for the season of interest <InlineMath math={"j"} />.
       </p>{" "}
       <p className="contents">
-        <b>Number of warm nights</b> <InlineMath math={"\\texttt{tmin90p}"} />:
+        <b>Number of warm nights</b>, <InlineMath math={"\\texttt{tmin90p}"} />:
         Let <InlineMath math={"q_{90}(\\texttt{tasmin}_{ir})"} /> be the 90th
         percentile of daily maximum temperatures in a five-day window centred on
         calendar day <InlineMath math={"j"} /> in the reference period{" "}
@@ -497,18 +497,18 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{pr}_{ij} \\geq 1"} />.
       </p>
       <p className="contents">
-        <b>Accumulated precipitation</b>{" "}
+        <b>Accumulated precipitation</b>,{" "}
         <InlineMath math={"\\texttt{prcptot}"} />: The sum of{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} /> in
         season <InlineMath math={"j"} />.
       </p>
       <p className="contents">
-        <b>Proportion of wet days</b> <InlineMath math={"\\texttt{fwd}"} />: The
+        <b>Proportion of wet days</b>, <InlineMath math={"\\texttt{fwd}"} />: The
         proportion of days for which{" "}
         <InlineMath math={"\\texttt{pr}_{ij} \\geq 1"} />.
       </p>
       <p className="contents">
-        <b>Proportion of rainfall due to convection</b>{" "}
+        <b>Proportion of rainfall due to convection</b>,{" "}
         <InlineMath math={"\\texttt{prcprop}"} />: The proportion of total
         precipitation due to convective processes in period{" "}
         <InlineMath math={"j"} /> is the sum of{" "}
@@ -518,7 +518,7 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{prcptot}"} />.
       </p>
       <p className="contents">
-        <b>Proportion of wet days followed by a wet day</b>{" "}
+        <b>Proportion of wet days followed by a wet day</b>,{" "}
         <InlineMath math={"\\texttt{pww}"} />: This is
         <Image
           fluid="true"
@@ -535,7 +535,7 @@ function IndicesHelp() {
         <InlineMath math={"P_j(wd) = 1 - P_j(ww)"} />.
       </p>
       <p className="contents">
-        <b>Proportion of dry days followed by a dry day</b>{" "}
+        <b>Proportion of dry days followed by a dry day</b>,{" "}
         <InlineMath math={"\\texttt{pdd}"} />: This is
         <Image
           fluid="true"
@@ -552,13 +552,13 @@ function IndicesHelp() {
         <InlineMath math={"P_j(dw) = 1 - P_j(dd)"} />.
       </p>
       <p className="contents">
-        <b>Maximum one-day precipitation</b>{" "}
+        <b>Maximum one-day precipitation</b>,{" "}
         <InlineMath math={"\\texttt{rx1day}"} />: The maximum one-day
         precipitation for season <InlineMath math={"j"} /> is{" "}
         <InlineMath math={"\\max(\\texttt{pr}_{ij})"} />.
       </p>
       <p className="contents">
-        <b>Maximum five-day precipitation</b>{" "}
+        <b>Maximum five-day precipitation</b>,{" "}
         <InlineMath math={"\\texttt{rx5day}"} />: Let{" "}
         <InlineMath math={"\\texttt{pr5}_{ij}"} /> be the total precipitation
         amount for the five-day interval ending on day <InlineMath math={"i"} />{" "}
@@ -569,7 +569,7 @@ function IndicesHelp() {
       <p className="contents">
         <b>
           Proportion of precipitation falling on days exceeding 95th percentile
-        </b>{" "}
+        </b>,{" "}
         <InlineMath math={"\\texttt{r95ptot}"} />: Let{" "}
         <InlineMath math={"q_{95}(\\texttt{pr}_{rj})"} /> be the 95th percentile
         of daily wet-day precipitation during all seasons{" "}
@@ -583,7 +583,7 @@ function IndicesHelp() {
       <p className="contents">
         <b>
           Proportion of precipitation falling on days exceeding 99th percentile
-        </b>{" "}
+        </b>,{" "}
         <InlineMath math={"\\texttt{r99ptot}"} />: Let{" "}
         <InlineMath math={"q_{99}(\\texttt{pr}_{rj})"} /> be the 99th percentile
         of daily wet-day precipitation during all seasons{" "}
@@ -595,35 +595,35 @@ function IndicesHelp() {
         .
       </p>
       <p className="contents">
-        <b>Simple daily precipitation intensity index </b>{" "}
+        <b>Simple daily precipitation intensity index </b>,{" "}
         <InlineMath math={"\\texttt{sdii}"} />: The mean of{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} /> in
         season <InlineMath math={"j"} />. Also known as the wet-day
         precipitation rate.
       </p>
       <p className="contents">
-        <b>Median length of dry spell</b>{" "}
+        <b>Median length of dry spell</b>,{" "}
         <InlineMath math={"\\texttt{dsmed}"} />: Count the median number of
         consecutive days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\lt 1 \\rbrace"} />. Dry
         spells are assumed to occur in the season in which they finish.
       </p>
       <p className="contents">
-        <b>Maximum length of dry spell</b>{" "}
+        <b>Maximum length of dry spell</b>,{" "}
         <InlineMath math={"\\texttt{dsmax}"} />: Count the largest number of
         consecutive days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\lt 1 \\rbrace"} />. Dry
         spells are assumed to occur in the season in which they finish.
       </p>
       <p className="contents">
-        <b>Median length of wet spell</b>{" "}
+        <b>Median length of wet spell</b>,{" "}
         <InlineMath math={"\\texttt{wsmed}"} />: Count the median number of
         consecutive days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} />. Wet
         spells are assumed to occur in the season in which they finish.
       </p>
       <p className="contents">
-        <b>Maximum length of wet spell</b>{" "}
+        <b>Maximum length of wet spell</b>,{" "}
         <InlineMath math={"\\texttt{wsmax}"} />: Count the largest number of
         consecutive days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\lbrace \\texttt{pr}_{ij} \\geq 1 \\rbrace"} />. Wet
@@ -648,25 +648,25 @@ function IndicesHelp() {
         <InlineMath math={"j"} />.
       </p>
       <p className="contents">
-        <b>Maximum sustained wind speed</b>{" "}
+        <b>Maximum sustained wind speed</b>,{" "}
         <InlineMath math={"\\texttt{maxsfcWindmax}"} />: The maximum sustained
         daily wind speed for season <InlineMath math={"j"} /> is{" "}
         <InlineMath math={"\\max(\\texttt{sfcWindmax}_{ij})"} />.
       </p>{" "}
       <p className="contents">
-        <b>Maximum speed of wind gust</b>{" "}
+        <b>Maximum speed of wind gust</b>,{" "}
         <InlineMath math={"\\texttt{maxwsgsmax}"} />: The maximum daily gust
         speed for season <InlineMath math={"j"} /> is{" "}
         <InlineMath math={"\\max(\\texttt{wsgsmax}_{ij})"} />.
       </p>{" "}
       <p className="contents">
-        <b>Number of calm days</b> <InlineMath math={"\\texttt{ncalm}"} />: The
+        <b>Number of calm days</b>, <InlineMath math={"\\texttt{ncalm}"} />: The
         number of calm days in season <InlineMath math={"j"} /> is the count of
         days where <InlineMath math={"\\texttt{sfcWind}_{ij} \\leq 2ms^{-1}"} />
         .
       </p>{" "}
       <p className="contents">
-        <b>Number of windy days</b> <InlineMath math={"\\texttt{nwindy}"} />:
+        <b>Number of windy days</b>, <InlineMath math={"\\texttt{nwindy}"} />:
         The number of windy days in season <InlineMath math={"j"} /> is the
         count of days where{" "}
         <InlineMath math={"\\texttt{sfcWind}_{ij} \\geq 10.8ms^{-1}"} />.
@@ -747,7 +747,7 @@ function IndicesHelp() {
         <u>Impact-relevant indices</u>
       </h5>
       <p className="contents">
-        <b>Soil moisture at depths of up to 1m</b>{" "}
+        <b>Soil moisture at depths of up to 1m</b>,{" "}
         <InlineMath math={"\\texttt{mrso}"} />: Let{" "}
         <InlineMath math={"\\texttt{mrso}_{ij}"} /> be the total soil moisture
         at a depth of up to 1m for day <InlineMath math={"i"} /> in period{" "}
@@ -756,7 +756,7 @@ function IndicesHelp() {
         <InlineMath math={"j"} />.
       </p>
       <p className="contents">
-        <b>Number of dangerously hot days</b>{" "}
+        <b>Number of dangerously hot days</b>,{" "}
         <InlineMath math={"\\texttt{ndhi}"} />: Let <InlineMath math={"T"} />{" "}
         denote the daily maximum surface air temperature{" "}
         <InlineMath math={"\\texttt{tasmax}_{ij}"} /> and{" "}
@@ -784,7 +784,7 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{HI}_{ij} \\geq 32^\\circ\\text{C}"} />.
       </p>
       <p className="contents">
-        <b>Potential evapotranspiration</b>{" "}
+        <b>Potential evapotranspiration</b>,{" "}
         <InlineMath math={"\\texttt{pet}"} />: PET is computed for each day{" "}
         <InlineMath math={"i"} /> in season <InlineMath math={"j"} /> using a
         version of the McGuinness-Bordne equation calibrated to the UK climate (
@@ -805,7 +805,7 @@ function IndicesHelp() {
         <InlineMath math={"j"} />.
       </p>
       <p className="contents">
-        <b>6-month standardised precipitation-evapotranspiration index</b>{" "}
+        <b>6-month standardised precipitation-evapotranspiration index</b>,{" "}
         <InlineMath math={"\\texttt{spei6}"} />: The climatic water balance is
         calculated for each month by subtracting the total PET in that month
         from the total accumulated precipitation{" "}
@@ -820,14 +820,14 @@ function IndicesHelp() {
         computed by averaging the monthly values within each season.
       </p>
       <p className="contents">
-        <b>6-month standardised precipitation index</b>{" "}
+        <b>6-month standardised precipitation index</b>,{" "}
         <InlineMath math={"\\texttt{spi6}"} />: This index is computed in the
         same way as <InlineMath math={"\\texttt{spei6}"} />, but using a
         six-month rolling average of <InlineMath math={"\\texttt{prcptot}"} />{" "}
         rather than the climatic water balance.
       </p>
       <p className="contents">
-        <b>Number of occurrences of drought</b>{" "}
+        <b>Number of occurrences of drought</b>,{" "}
         <InlineMath math={"\\texttt{ndrought}"} />: Drought occurrences will be
         the count of the number of occasions in each season on which the monthly
         time series of <InlineMath math={"\\texttt{spei6}"} /> falls below a
@@ -839,7 +839,7 @@ function IndicesHelp() {
       </p>
 
       <p className="contents">
-        <b>Number of tropical nights</b> <InlineMath math={"\\texttt{tr}"} />:
+        <b>Number of tropical nights</b>, <InlineMath math={"\\texttt{tr}"} />:
         the number of days in season <InlineMath math={"j"} /> where{" "}
         <InlineMath math={"\\texttt{tasmin}_{ij} > 20^\\circ\\text{C}"} />.
       </p>
@@ -859,7 +859,7 @@ function IndicesHelp() {
         based on calendar years, rather than meteorological years.
       </p>
       <p className="contents">
-        <b>Growing season length</b> <InlineMath math={"\\texttt{gsl}"} />: The
+        <b>Growing season length</b>, <InlineMath math={"\\texttt{gsl}"} />: The
         growing season length for year <InlineMath math={"y"} /> is the count of
         the number of days between the first occurrence of at least six
         consecutive days where{" "}
@@ -868,17 +868,17 @@ function IndicesHelp() {
         <InlineMath math={"\\texttt{tas}_{iy} \\lt 5.6^\\circ\\text{C}"} />.
       </p>{" "}
       <p className="contents">
-        <b>Growing degree-days</b> <InlineMath math={"\\texttt{gdd}"} />: The
+        <b>Growing degree-days</b>, <InlineMath math={"\\texttt{gdd}"} />: The
         number of growing degree-days in year <InlineMath math={"y"} /> is{" "}
         <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 5.6)"} />.
       </p>{" "}
       <p className="contents">
-        <b>Cooling degree-days</b> <InlineMath math={"\\texttt{cdd}"} />: The
+        <b>Cooling degree-days</b>, <InlineMath math={"\\texttt{cdd}"} />: The
         number of cooling degree-days in year <InlineMath math={"y"} /> is{" "}
         <InlineMath math={"\\sum_i \\max(0, \\texttt{tas}_{iy} - 22)"} />.
       </p>{" "}
       <p className="contents">
-        <b>Heating degree-days</b> <InlineMath math={"\\texttt{hdd}"} />: The
+        <b>Heating degree-days</b>, <InlineMath math={"\\texttt{hdd}"} />: The
         number of heating degree-days in year <InlineMath math={"y"} /> is{" "}
         <InlineMath math={"\\sum_i \\max(0, 15.5 - \\texttt{tas}_{iy})"} />.
       </p>{" "}
