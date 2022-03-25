@@ -198,18 +198,24 @@ function IndicesHelp() {
               </td>
             </tr>
             <tr>
-              <td><InlineMath math={"\\texttt{tas}"} /></td>
-              <td>Mean daily near-surface air temperature</td>
+              <td>
+                <InlineMath math={"\\texttt{tas}"} />
+              </td>
+              <td>Daily mean air temperature at 1.5m</td>
               <td>°C</td>
             </tr>
             <tr>
-              <td><InlineMath math={"\\texttt{tasmax}"} /></td>
-              <td>Maximum daily near-surface air temperature</td>
+              <td>
+                <InlineMath math={"\\texttt{tasmax}"} />
+              </td>
+              <td>Daily maximum air temperature at 1.5m</td>
               <td>°C</td>
             </tr>
             <tr>
-              <td><InlineMath math={"\\texttt{tasmin}"} /></td>
-              <td>Minimum daily near-surface air temperature</td>
+              <td>
+                <InlineMath math={"\\texttt{tasmin}"} />
+              </td>
+              <td>Daily minimum air temperature at 1.5m</td>
               <td>°C</td>
             </tr>
             <tr>
