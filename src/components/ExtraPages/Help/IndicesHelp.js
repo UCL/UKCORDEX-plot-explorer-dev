@@ -7,7 +7,6 @@ import 'katex/dist/katex.min.css';
 import { HashLink } from "react-router-hash-link";
 
 function IndicesHelp() {
-  // var InlineMath = require("react-InlineMath");
   return (
     <Container className="help">
       <Row fluid="true">
