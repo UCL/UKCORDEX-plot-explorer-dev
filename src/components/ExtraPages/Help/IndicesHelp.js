@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Table, Row, Col, Image, Nav } from "react-bootstrap";
 import "../ExtraPages.css";
 import "../HelpNav.css";
-import Latex from "react-latex";
+import { InlineMath } from "react-katex";
 import { HashLink } from "react-router-hash-link";
 
 function IndicesHelp() {
-  // var Latex = require("react-latex");
+  // var InlineMath = require("react-InlineMath");
   return (
     <Container className="help">
       <Row fluid="true">
@@ -668,7 +668,7 @@ function IndicesHelp() {
             </p>
             <p className="contents">
               <b>Number of dangerously hot days</b> (ndhi):{" "}
-              <Latex displayMode={true}>
+              <InlineMath>
                 Let T denote the daily maximum surface air temperature tasmaxij
                 and R the relative humidity hursij for day i in period j. Then
                 the heat index for day i in period j is HI_ij = c1 + c2T + c3R +
@@ -677,7 +677,7 @@ function IndicesHelp() {
                 valid for air temperatures above 20◦C and will be reported as NA
                 when T ≤20◦C. The number of days in period j on which the heat
                 index is dangerously high is given by the count of HIij ≥32◦C.
-              </Latex>{" "}
+              </InlineMath>{" "}
             </p>
             <p className="contents">
               <b>Number of occurrences of drought</b> (ndrought): Drought
@@ -732,24 +732,24 @@ function IndicesHelp() {
             </p>
             <p className="contents">
               <b>Growing degree-days</b> (gdd):{" "}
-              <Latex displayMode={true}>
+              <InlineMath>
                 The number of growing degree-days in year y is ∑i max(0,tasiy
                 -5.6).
-              </Latex>{" "}
+              </InlineMath>{" "}
             </p>{" "}
             <p className="contents">
               <b>Cooling degree-days</b> (cdd):{" "}
-              <Latex displayMode={true}>
+              <InlineMath>
                 The number of cooling degree-days in year y is ∑i max(0,tasiy
                 -22).
-              </Latex>{" "}
+              </InlineMath>{" "}
             </p>{" "}
             <p className="contents">
               <b>Heating degree-days</b> (hdd):{" "}
-              <Latex displayMode={true}>
+              <InlineMath>
                 The number of heating degree-days in year y is ∑i max(0,15.5
                 -tasiy).
-              </Latex>{" "}
+              </InlineMath>{" "}
             </p>
           </Row>
         </Col>
