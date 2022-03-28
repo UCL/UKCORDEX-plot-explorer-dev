@@ -239,7 +239,7 @@ function IndicesHelp() {
       </Col>
     </Row>
           {/* temperature */}
-              <Row className="indices">
+      <Row className="indices">
       <h5 id="temp">
         <u>Indices of temperature</u>
       </h5>
@@ -674,7 +674,7 @@ function IndicesHelp() {
       </p>
     </Row>
           {/* extreme events */}
-          <Row className="indices">
+    <Row className="indices">
       <h5 id="extreme">
         <u>Indices of extremes</u>
       </h5>
@@ -742,7 +742,7 @@ function IndicesHelp() {
       </p>{" "}
     </Row>
       {/* impact relevant */}
-          <Row className="indices">
+    <Row className="indices">
       <h5 id="impact">
         <u>Impact-relevant indices</u>
       </h5>
