@@ -4,7 +4,6 @@ import "../ExtraPages.css";
 import "../HelpNav.css";
 import { InlineMath, BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
-
 import { HashLink } from "react-router-hash-link";
 
 function IndicesHelp() {
@@ -303,12 +302,10 @@ function IndicesHelp() {
                 <div>
                   <p style={{ fontSize: "80%" }}>
                     <b>Table 4:</b>, Thresholds{" "}
-
                     <i>
                       t<sub>1</sub>
-                    </i>
-                  </td>
-                  <td>
+                    </i>{" "}
+                    (daytime temperature) and{" "}
                     <i>
                       t<sub>2</sub>
                     </i>{" "}
@@ -989,7 +986,6 @@ function IndicesHelp() {
               .
             </p>{" "}
           </Row>
-
         </Col>
       </Row>
     </Container>
