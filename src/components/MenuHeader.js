@@ -69,6 +69,9 @@ function MenuHeader() {
             </LinkContainer>
             <LinkContainer to="/missing-plots">
               <NavDropdown.Item>Missing plots</NavDropdown.Item>
+              <LinkContainer to="/download-help">
+                <NavDropdown.Item>Downloaded Data</NavDropdown.Item>
+              </LinkContainer>
             </LinkContainer>
           </NavDropdown>
         </Nav>

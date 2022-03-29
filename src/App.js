@@ -11,6 +11,7 @@ import Acknowledgements from "./components/ExtraPages/About/Acknowledgements";
 import Usage from "./components/ExtraPages/Help/Usage";
 import AboutExplorer from "./components/ExtraPages/About/AboutExplorer";
 import IndicesCalculation from "./components/ExtraPages/About/IndicesCalculation";
+import DownloadHelp from "./components/ExtraPages/Help/DownloadHelp";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="about-explorer" element={<AboutExplorer />} />
         <Route path="how-to-use" element={<Usage />} />
         <Route path="indices-calculation" element={<IndicesCalculation />} />
+        <Route path="download-help" element={<DownloadHelp />} />
       </Routes>
     </div>
   );
