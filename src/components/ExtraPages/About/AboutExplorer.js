@@ -5,12 +5,12 @@ export default function AboutExplorer() {
   return (
     <Container className="about">
       <div>
-        <h1>About UKCORDEX Plot Explorer</h1>
+        <h1>About the UKCORDEX Plot Explorer</h1>
         <p>
-          This section will have a short summary of what the plot explorer is
-          and a link to the
-          <HashLink to="/how-to-use#">how-to guide</HashLink>
-          for further information on how to use it.
+          This analysis and visualisation tool is designed to allow rapid exploration of the UKCORDEX projections.
+          Users can select climate indices, seasons and time periods of interest and can compare the various model outputs, 
+          produce maps of projections and historical biases in these indices, and quantify the dominant sources of variation and uncertainty within the projections.
+          The plots and underlying data are downloadable directly from the plot explorer.
         </p>
       </div>
     </Container>
