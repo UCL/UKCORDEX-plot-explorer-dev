@@ -177,80 +177,81 @@ export const plotvarOptionsContents = [
   {
     label: "Extreme Wind",
     options: [
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxrl20",
-        label: "20-year return level of gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxrl50",
-        label: "50-year return level of gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxrp20",
-        label:
-          "20-year return period of current 20-year return level of gust speeds ",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxrp50",
-        label:
-          "50-year return period of current 50-year return level of gust speeds ",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxloc",
-        label: "location parameter for extreme gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxshape",
-        label: "shape parameter for extreme gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxscale",
-        label: "scale parameter for extreme gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxrl20",
-        label: "20-year return level of extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxrl50",
-        label: "50-year return level of extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxrp20",
-        label:
-          "20-year return period of current 20-year return level of extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxrp50",
-        label:
-          "50-year return period of current 50-year return level of extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxloc",
-        label: "location parameter for extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxshape",
-        label: "shape parameter for extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxscale",
-        label: "scale parameter for extreme sustained wind speeds",
-      },
+      { tag: "extreme_wind", value: "placeholder", label: "indices of extreme wind speeds will appear here" },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxwsgsmaxrl20",
+      //   label: "20-year return level of gust speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxwsgsmaxrl50",
+      //   label: "50-year return level of gust speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxwsgsmaxrp20",
+      //   label:
+      //     "20-year return period of current 20-year return level of gust speeds ",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxwsgsmaxrp50",
+      //   label:
+      //     "50-year return period of current 50-year return level of gust speeds ",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxwsgsmaxloc",
+      //   label: "location parameter for extreme gust speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxwsgsmaxshape",
+      //   label: "shape parameter for extreme gust speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxwsgsmaxscale",
+      //   label: "scale parameter for extreme gust speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxsfcWindmaxrl20",
+      //   label: "20-year return level of extreme sustained wind speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxsfcWindmaxrl50",
+      //   label: "50-year return level of extreme sustained wind speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxsfcWindmaxrp20",
+      //   label:
+      //     "20-year return period of current 20-year return level of extreme sustained wind speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxsfcWindmaxrp50",
+      //   label:
+      //     "50-year return period of current 50-year return level of extreme sustained wind speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxsfcWindmaxloc",
+      //   label: "location parameter for extreme sustained wind speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxsfcWindmaxshape",
+      //   label: "shape parameter for extreme sustained wind speeds",
+      // },
+      // {
+      //   tag: "extreme_wind",
+      //   value: "maxsfcWindmaxscale",
+      //   label: "scale parameter for extreme sustained wind speeds",
+      // },
     ],
   },
   {
