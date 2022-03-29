@@ -21,7 +21,7 @@ export const plotvarOptionsContents = [
       { tag: "core", value: "tasmax", label: "maximum daily air temperature at 1.5m" },
       { tag: "core", value: "tasmin", label: "minimum daily air temperature at 1.5m" },
 //      { tag: "core", value: "uas", label: "eastward wind at 10m" },
-//     { tag: "core", value: "vas", label: "northward wind at 10m" },
+//      { tag: "core", value: "vas", label: "northward wind at 10m" },
     ],
   },
   {
@@ -31,31 +31,15 @@ export const plotvarOptionsContents = [
       { tag: "temp", value: "tasmax", label: "maximum daily near-surface air temperature", },
       { tag: "temp", value: "tasmin",   label: "minimum daily near-surface air temperature", },
       { tag: "temp", value: "csdi", label: "number of cold spell days" },
-      { tag: "temp", value: "hwdi", label: "number of heatwave days" },
-      { tag: "temp",
-        value: "maxtmax",
-        label: "maximum near-surface air temperature on the hottest day",
-      },
-      {
-        tag: "temp",
-        value: "mintmin",
-        label: "minimum near-surface air temperature on the coldest day",
-      },
-
-      {
-        tag: "temp",
-        value: "tas01",
-        label: "1st percentile of daily mean near-surface air temperatures",
-      },
-      {
-        tag: "temp",
-        value: "tas99",
-        label: "99th percentile of daily mean near-surface air temperatures",
-      },
-      { tag: "temp", value: "tmax10p", label: "number of cold days" },
-      { tag: "temp", value: "tmax90p", label: "number of hot days" },
-      { tag: "temp", value: "tmin10p", label: "number of cold nights" },
-      { tag: "temp", value: "tmin90p", label: "number of warm nights" },
+//      { tag: "temp", value: "hwdi", label: "number of heatwave days" },
+      { tag: "temp", value: "maxtmax", label: "maximum near-surface air temperature on the hottest day", },
+      { tag: "temp", value: "mintmin", label: "minimum near-surface air temperature on the coldest day", },
+      { tag: "temp", value: "tas01", label: "1st percentile of daily mean near-surface air temperatures", },
+      { tag: "temp", value: "tas99", label: "99th percentile of daily mean near-surface air temperatures", },
+//      { tag: "temp", value: "tmax10p", label: "number of cold days" },
+//      { tag: "temp", value: "tmax90p", label: "number of hot days" },
+//      { tag: "temp", value: "tmin10p", label: "number of cold nights" },
+//      { tag: "temp", value: "tmin90p", label: "number of warm nights" },
     ],
   },
   {
@@ -64,208 +48,148 @@ export const plotvarOptionsContents = [
       { tag: "precip", value: "pr", label: "daily precipitation rate" },
       { tag: "precip", value: "prcptot", label: "accumulated precipitation" },
       { tag: "precip", value: "fwd", label: "proportion of wet days" },
-      { tag: "precip", value: "prc", label: "daily rate of convective precipitation ", },
-      { tag: "precip", value: "prcprop", label: "proportion of rainfall due to convection", },
-      { tag: "precip", value: "pdd", label: "proportion of dry days followed by a dry day", },
-      { tag: "precip", value: "pww", label: "proportion of wet days followed by a wet day",},
+//      { tag: "precip", value: "prc", label: "daily rate of convective precipitation ", },
+//      { tag: "precip", value: "prcprop", label: "proportion of rainfall due to convection", },
+//      { tag: "precip", value: "pdd", label: "proportion of dry days followed by a dry day", },
+//      { tag: "precip", value: "pww", label: "proportion of wet days followed by a wet day",},
       { tag: "precip", value: "r95ptot", label: "proportion of precipitation falling on days exceeding 95th percentile", },
       { tag: "precip", value: "r99ptot", label: "proportion of precipitation falling on days exceeding 99th percentile", },
       { tag: "precip", value: "rx1day", label: "maximum one-day precipitation",},
       { tag: "precip", value: "rx5day", label: "maximum five-day precipitation", },
       { tag: "precip", value: "r95ptot", label: "proportion of precipitation falling on days exceeding 95th percentile", },
       { tag: "precip", value: "sdii", label: "wet-day precipitation rate" },
-      { tag: "precip", value: "dsmed", label: "median length of dry spell" },
-      { tag: "precip", value: "dsmax", label: "maximum length of dry spell" },
-      { tag: "precip", value: "wsmed", label: "median length of wet spell" },
-      { tag: "precip", value: "wsmax", label: "maximum length of wet spell" },
+//      { tag: "precip", value: "dsmed", label: "median length of dry spell" },
+//      { tag: "precip", value: "dsmax", label: "maximum length of dry spell" },
+//      { tag: "precip", value: "wsmed", label: "median length of wet spell" },
+//      { tag: "precip", value: "wsmax", label: "maximum length of wet spell" },
     ],
   },
   {
-    label: "Wind",
-    options: [
-      { tag: "wind", value: "sfcWind", label: "near-surface wind speed" },
-      { tag: "wind", value: "uas", label: "eastward near-surface wind" },
-      { tag: "wind", value: "vas", label: "northward near-surface wind" },
-      { tag: "wind", value: "maxsfcWindmax", label: "maximum sustained wind speed", },
-      { tag: "wind", value: "maxwsgsmax", label: "maximum speed of wind gust" },
-      { tag: "wind", value: "ncalm", label: "number of calm days" },
-      { tag: "wind", value: "nwindy", label: "number of windy days" },
-    ],
-  },
-  {
-    label: "Extreme Precipitation",
-    options: [
-      {
-        tag: "extreme_pr",
-        value: "rx1dayrl20",
-        label: "20-year return level of 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayrl50",
-        label: "50-year return level of 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayrp20",
-        label:
-          "20-year return period of current 20-year return level of 1-day precipitation ",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayrp50",
-        label:
-          "50-year return period of current 50-year return level of 1-day precipitation ",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayloc",
-        label: "location parameter for extreme 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayshape",
-        label: "shape parameter for extreme 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayscale",
-        label: "scale parameter for extreme 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayrl20",
-        label: "20-year return level of 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayrl50",
-        label: "50-year return level of 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayrp20",
-        label:
-          "20-year return period of current 20-year return level of 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayrp50",
-        label:
-          "50-year return period of current 50-year return level of 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayloc",
-        label: "location parameter for extreme 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayshape",
-        label: "shape parameter for extreme 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayscale",
-        label: "scale parameter for extreme 5-day accumulated precipitation",
-      },
-    ],
-  },
-  {
-    label: "Extreme Wind",
-    options: [
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxrl20",
-        label: "20-year return level of gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxrl50",
-        label: "50-year return level of gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxrp20",
-        label:
-          "20-year return period of current 20-year return level of gust speeds ",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxrp50",
-        label:
-          "50-year return period of current 50-year return level of gust speeds ",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxloc",
-        label: "location parameter for extreme gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxshape",
-        label: "shape parameter for extreme gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxwsgsmaxscale",
-        label: "scale parameter for extreme gust speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxrl20",
-        label: "20-year return level of extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxrl50",
-        label: "50-year return level of extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxrp20",
-        label:
-          "20-year return period of current 20-year return level of extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxrp50",
-        label:
-          "50-year return period of current 50-year return level of extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxloc",
-        label: "location parameter for extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxshape",
-        label: "shape parameter for extreme sustained wind speeds",
-      },
-      {
-        tag: "extreme_wind",
-        value: "maxsfcWindmaxscale",
-        label: "scale parameter for extreme sustained wind speeds",
-      },
-    ],
-  },
-  {
-    label: "Other",
-    options: [
-      { tag: "other", value: "mrso", label: "soil moisture at depths of up to 1m", },
-      { tag: "other", value: "ndhi", label: "number of dangerously hot days" },
-      { tag: "other", value: "ndrought", label: "number of occurrences of drought", },
-      { tag: "other", value: "pet", label: "potential evapotranspiration" },
-      { tag: "other", value: "spei6", label: "6-month standardised precipitation-evapotranspiration index", },
-      { tag: "other", value: "spi6", label: "6-month standardised precipitation index", },
-      { tag: "other", value: "tr", label: "number of tropical nights (>20°C)" },
-      { tag: "other", value: "gsl", label: "growing season length" },
-      { tag: "other", value: "gdd", label: "growing degree-days" },
-      { tag: "other", value: "cdd", label: "cooling degree-days" },
-      { tag: "other", value: "hdd", label: "heating degree-days" },
-    ],
-  },
+//    label: "Wind",
+//    options: [
+//      { tag: "wind", value: "sfcWind", label: "near-surface wind speed" },
+//      { tag: "wind", value: "uas", label: "eastward near-surface wind" },
+//      { tag: "wind", value: "vas", label: "northward near-surface wind" },
+//      { tag: "wind", value: "maxsfcWindmax", label: "maximum sustained wind speed", },
+//      { tag: "wind", value: "maxwsgsmax", label: "maximum speed of wind gust" },
+//      { tag: "wind", value: "ncalm", label: "number of calm days" },
+//      { tag: "wind", value: "nwindy", label: "number of windy days" },
+//    ],
+//  },
+//  {
+//    label: "Extreme Precipitation",
+//    options: [
+//      { tag: "extreme_pr", value: "rx1dayrl20", label: "20-year return level of 1-day precipitation", },
+//      { tag: "extreme_pr", value: "rx1dayrl50", label: "50-year return level of 1-day precipitation", },
+//      { tag: "extreme_pr", value: "rx1dayrp20", label: "20-year return period of current 20-year return level of 1-day precipitation ", },
+//      { tag: "extreme_pr", value: "rx1dayrp50", label: "50-year return period of current 50-year return level of 1-day precipitation ", },
+//      { tag: "extreme_pr", value: "rx1dayloc", label: "location parameter for extreme 1-day precipitation", },
+//      { tag: "extreme_pr", value: "rx1dayshape", label: "shape parameter for extreme 1-day precipitation", },
+//      { tag: "extreme_pr", value: "rx1dayscale", label: "scale parameter for extreme 1-day precipitation", },
+//      { tag: "extreme_pr", value: "rx5dayrl20", label: "20-year return level of 5-day accumulated precipitation", },
+//      { tag: "extreme_pr", value: "rx5dayrl50", label: "50-year return level of 5-day accumulated precipitation", },
+//      { tag: "extreme_pr", value: "rx5dayrp20", label: "20-year return period of current 20-year return level of 5-day accumulated precipitation", },
+//      { tag: "extreme_pr", value: "rx5dayrp50", label: "50-year return period of current 50-year return level of 5-day accumulated precipitation", },
+//      { tag: "extreme_pr", value: "rx5dayloc", label: "location parameter for extreme 5-day accumulated precipitation", },
+//      { tag: "extreme_pr", value: "rx5dayshape", label: "shape parameter for extreme 5-day accumulated precipitation", },
+//      { tag: "extreme_pr", value: "rx5dayscale", label: "scale parameter for extreme 5-day accumulated precipitation", },
+//    ],
+//  },
+  // {
+  //   label: "Extreme Wind",
+  //   options: [
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxwsgsmaxrl20",
+  //       label: "20-year return level of gust speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxwsgsmaxrl50",
+  //       label: "50-year return level of gust speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxwsgsmaxrp20",
+  //       label:
+  //         "20-year return period of current 20-year return level of gust speeds ",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxwsgsmaxrp50",
+  //       label:
+  //         "50-year return period of current 50-year return level of gust speeds ",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxwsgsmaxloc",
+  //       label: "location parameter for extreme gust speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxwsgsmaxshape",
+  //       label: "shape parameter for extreme gust speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxwsgsmaxscale",
+  //       label: "scale parameter for extreme gust speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxsfcWindmaxrl20",
+  //       label: "20-year return level of extreme sustained wind speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxsfcWindmaxrl50",
+  //       label: "50-year return level of extreme sustained wind speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxsfcWindmaxrp20",
+  //       label:
+  //         "20-year return period of current 20-year return level of extreme sustained wind speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxsfcWindmaxrp50",
+  //       label:
+  //         "50-year return period of current 50-year return level of extreme sustained wind speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxsfcWindmaxloc",
+  //       label: "location parameter for extreme sustained wind speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxsfcWindmaxshape",
+  //       label: "shape parameter for extreme sustained wind speeds",
+  //     },
+  //     {
+  //       tag: "extreme_wind",
+  //       value: "maxsfcWindmaxscale",
+  //       label: "scale parameter for extreme sustained wind speeds",
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: "Other",
+  //   options: [
+  //     { tag: "other", value: "mrso", label: "soil moisture at depths of up to 1m", },
+  //     { tag: "other", value: "ndhi", label: "number of dangerously hot days" },
+  //     { tag: "other", value: "ndrought", label: "number of occurrences of drought", },
+  //     { tag: "other", value: "pet", label: "potential evapotranspiration" },
+  //     { tag: "other", value: "spei6", label: "6-month standardised precipitation-evapotranspiration index", },
+  //     { tag: "other", value: "spi6", label: "6-month standardised precipitation index", },
+  //     { tag: "other", value: "tr", label: "number of tropical nights (>20°C)" },
+  //     { tag: "other", value: "gsl", label: "growing season length" },
+  //     { tag: "other", value: "gdd", label: "growing degree-days" },
+  //     { tag: "other", value: "cdd", label: "cooling degree-days" },
+  //     { tag: "other", value: "hdd", label: "heating degree-days" },
+  //   ],
+  // },
 ];
 
 // Region/Resolution
