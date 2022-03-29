@@ -20,8 +20,8 @@ export const plotvarOptionsContents = [
       { tag: "core", value: "tas", label: "mean daily air temperature at 1.5m" },
       { tag: "core", value: "tasmax", label: "maximum daily air temperature at 1.5m" },
       { tag: "core", value: "tasmin", label: "minimum daily air temperature at 1.5m" },
-      { tag: "core", value: "uas", label: "eastward wind at 10m" },
-      { tag: "core", value: "vas", label: "northward wind at 10m" },
+//      { tag: "core", value: "uas", label: "eastward wind at 10m" },
+//     { tag: "core", value: "vas", label: "northward wind at 10m" },
     ],
   },
   {
