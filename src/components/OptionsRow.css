@@ -2,6 +2,7 @@
 /*********************** For dropdown text  *******************************/
 .plotdropdown {
   font-size: 80%;
+  line-height: 0.9em;
 }
 
 /*********************** Section for PlotVar Dropdown **********************/
