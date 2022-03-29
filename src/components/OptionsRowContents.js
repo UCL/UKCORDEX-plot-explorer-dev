@@ -346,7 +346,7 @@ export const seasonOptionsContents = [
   { value: "MAM", label: "Spring" },
   { value: "JJA", label: "Summer" },
   { value: "SON", label: "Autumn" },
-  { value: "annual", label: "Annual" },
+  { value: "annual", label: "annual" },
 ];
 
 // Plot Types
