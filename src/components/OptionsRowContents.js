@@ -195,9 +195,9 @@ export const plotvarOptionsContents = [
 // Region/Resolution
 export const regionOptionsContents = [
   { value: "12km", label: "12km grid" },
-  { value: "country", label: "Country" },
-  { value: "region", label: "Administrative region" },
-  { value: "river", label: "River basin" },
+  // { value: "country", label: "Country" },
+  // { value: "region", label: "Administrative region" },
+  // { value: "river", label: "River basin" },
 ];
 
 // Time Periods
@@ -265,7 +265,7 @@ export const seasonOptionsContents = [
   { value: "MAM", label: "Spring" },
   { value: "JJA", label: "Summer" },
   { value: "SON", label: "Autumn" },
-  { value: "annual", label: "Annual" },
+  { value: "annual", label: "annual" },
 ];
 
 // Plot Types
