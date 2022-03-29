@@ -97,80 +97,81 @@ export const plotvarOptionsContents = [
   {
     label: "Extreme Precipitation",
     options: [
-      {
-        tag: "extreme_pr",
-        value: "rx1dayrl20",
-        label: "20-year return level of 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayrl50",
-        label: "50-year return level of 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayrp20",
-        label:
-          "20-year return period of current 20-year return level of 1-day precipitation ",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayrp50",
-        label:
-          "50-year return period of current 50-year return level of 1-day precipitation ",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayloc",
-        label: "location parameter for extreme 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayshape",
-        label: "shape parameter for extreme 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx1dayscale",
-        label: "scale parameter for extreme 1-day precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayrl20",
-        label: "20-year return level of 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayrl50",
-        label: "50-year return level of 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayrp20",
-        label:
-          "20-year return period of current 20-year return level of 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayrp50",
-        label:
-          "50-year return period of current 50-year return level of 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayloc",
-        label: "location parameter for extreme 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayshape",
-        label: "shape parameter for extreme 5-day accumulated precipitation",
-      },
-      {
-        tag: "extreme_pr",
-        value: "rx5dayscale",
-        label: "scale parameter for extreme 5-day accumulated precipitation",
-      },
+      { tag: "extreme_pr", value: "placeholder", label: "indices of extreme precipitation will appear here" },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx1dayrl20",
+      //   label: "20-year return level of 1-day precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx1dayrl50",
+      //   label: "50-year return level of 1-day precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx1dayrp20",
+      //   label:
+      //     "20-year return period of current 20-year return level of 1-day precipitation ",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx1dayrp50",
+      //   label:
+      //     "50-year return period of current 50-year return level of 1-day precipitation ",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx1dayloc",
+      //   label: "location parameter for extreme 1-day precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx1dayshape",
+      //   label: "shape parameter for extreme 1-day precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx1dayscale",
+      //   label: "scale parameter for extreme 1-day precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx5dayrl20",
+      //   label: "20-year return level of 5-day accumulated precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx5dayrl50",
+      //   label: "50-year return level of 5-day accumulated precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx5dayrp20",
+      //   label:
+      //     "20-year return period of current 20-year return level of 5-day accumulated precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx5dayrp50",
+      //   label:
+      //     "50-year return period of current 50-year return level of 5-day accumulated precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx5dayloc",
+      //   label: "location parameter for extreme 5-day accumulated precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx5dayshape",
+      //   label: "shape parameter for extreme 5-day accumulated precipitation",
+      // },
+      // {
+      //   tag: "extreme_pr",
+      //   value: "rx5dayscale",
+      //   label: "scale parameter for extreme 5-day accumulated precipitation",
+      // },
     ],
   },
   {
