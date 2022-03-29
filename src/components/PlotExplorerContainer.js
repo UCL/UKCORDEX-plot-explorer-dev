@@ -63,11 +63,11 @@ function PlotExplorerContainer() {
     <Container fluid>
       <Alert variant="info" className="intro">
         <p>
-          To start, select one of each of the following parameters. Your
-          graph(s) will be shown when at least one of each parameter has been
-          selected. For information on the data, plots or indices, see our help
-          pages. To clear all of your selections, refresh the page. <br></br>
-          Each dropdown also allows as-you-type filtering.
+          To start, select one of each of the following parameters (each dropdown also allows as-you-type filtering).
+          Your plot(s) will be shown when at least one item has been selected in each dropdown.
+          To clear all selections, refresh the page. <br></br>
+          The reference guide gives more information on the available indices, plot types, and time periods, as well as details of the sources of climate data.<br></br>
+          For a suggested order of analyses, see the usage guide.
         </p>
       </Alert>
       <OptionsRow
