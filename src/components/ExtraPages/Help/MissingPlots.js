@@ -26,11 +26,11 @@ export default function MissingPlots() {
                 <li>
                   {" "}
                   <HashLink
-                    to="/missing-plots#combo1"
+                    to="/missing-plots#evalplots"
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    combo1
+                    Evaluation plots
                   </HashLink>
                 </li>
                 <li>
@@ -60,17 +60,22 @@ export default function MissingPlots() {
         {/* page contents */}
         <Col>
           <div>
-            <h1>Plots missing from UKCORDEX Plot Explorer</h1>
+            <h1>Plots not available from UKCORDEX Plot Explorer</h1>
             <p>
-              Some of the combinations found in the given options do not exist
-              and so these plots cannot be created.
+              Some combinations of the available options will result in an error message that the selected plots do not exist.
+              Common reasons for this are given below.
             </p>
           </div>
-          <br></br>
           {/* section about the missing plots */}
           <div>
-            <h5>combination</h5>
-            <p>explanation?</p>
+            <h5 id="evalplots">Missing evaluation plots where suitable observations are unavailable</h5>
+            <p>Plots of biases during the evaluation period are provided where appropriate observations are available. 
+              At present, all biases are calculated with respect to the 
+              <HashLink to="/data-help#haduk">HadUK-Grid dataset</HashLink></p>,
+              which provides daily time series of rainfall and of daily maximum and minimum temperature, 
+              from which a daily mean temperature is derived; and monthly time series of relative humidity, sea level pressure, 
+              surface wind speeds and snow depth. Plots of other variables, or of indices requiring daily time series of variables
+              other than temperature or precipitation, are therefore not available.
           </div>
         </Col>
       </Row>
