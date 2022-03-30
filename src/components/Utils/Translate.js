@@ -36,6 +36,7 @@ export function makeTitle(plot) {
     }
   }
   let pvarTitle = createpvarTitle(dict.pvar, plotvars);
+  console.log(pvarTitle);
 
   // for periods
   let ctype = "change in";
@@ -49,7 +50,8 @@ export function makeTitle(plot) {
     pname = `after GMST increase of ${dict.period}°C (${seasonTitle})`;
   }
 
-  let titleString = `${regionTitle} ${ptypeTitle}: ${ctype} ${pvarTitle} (${dict.pvar}) ${pname}`;
+  // temporarily removing pvarTitle until we can figure out why it doesn't display properly
+  let titleString = `${regionTitle} ${ptypeTitle}: ${ctype} (${dict.pvar}) ${pname}`;
   return titleString;
 }
 
