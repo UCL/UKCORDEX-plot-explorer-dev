@@ -36,21 +36,21 @@ export default function MissingPlots() {
                 <li>
                   {" "}
                   <HashLink
-                    to="/missing-plots#combo2"
+                    to="/missing-plots#Taylorbl"
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    combo2
+                    Taylor diagrams
                   </HashLink>
                 </li>
                 <li>
                   {" "}
                   <HashLink
-                    to="/missing-plots#combo3"
+                    to="/missing-plots#annualonly"
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    combo3
+                    Season lengths and degree-days
                   </HashLink>
                 </li>
               </ul>
@@ -76,6 +76,18 @@ export default function MissingPlots() {
               from which a daily mean temperature is derived; and monthly time series of relative humidity, sea level pressure, 
               surface wind speeds and snow depth. Plots of other variables, or of indices requiring daily time series of variables
               other than temperature or precipitation, are therefore not available.
+          </div>
+          <div>
+            <h5 id="Taylorbl">Taylor diagrams not produced for baseline period</h5>
+            <p><HashLink to="/plot-help#taylor">Taylor diagrams</HashLink></p>
+            compare the spatial patterns in the model output with a reference field. 
+            During the evaluation period, model output is compared to the observed climatology, and for future periods,
+            to the climatology during the baseline period: plots for the baseline period have no reference, so Taylor diagrams cannot be produced.
+          </div>
+          <div>
+            <h5 id="annualonly">Degree-days and growing season length are only available at annual timescales</h5>
+            As noted in the <p><HashLink to="/indices-help#degree">indices reference</HashLink></p>, season lengths and degree-days are calculated
+            per calendar year, and seasonal plots are not available.
           </div>
         </Col>
       </Row>

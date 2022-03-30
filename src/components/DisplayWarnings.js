@@ -16,9 +16,9 @@ export default function DisplayWarnings({ warnings }) {
           ))}{" "}
           <hr />
           <p>
-            For information on why these plots are not available, see{" "}
+            Find more information on why these plots are not available{" "}
             <LinkContainer to="/missing-plots">
-              <Alert.Link>help with plots</Alert.Link>
+              <Alert.Link>here</Alert.Link>.
             </LinkContainer>
           </p>
         </Alert>
