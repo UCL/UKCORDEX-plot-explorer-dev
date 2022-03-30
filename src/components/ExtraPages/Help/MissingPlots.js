@@ -75,7 +75,7 @@ export default function MissingPlots() {
               Some combinations of the available options will result in an error message that the selected plots do not exist.
               Common reasons for this are given below.
             </p>
-          </div>
+          
           {/* section about the missing plots */}
           <div>
             <h5 id="evalplots">Missing evaluation plots where suitable observations are unavailable</h5>
@@ -105,6 +105,7 @@ export default function MissingPlots() {
               In some cases, plots are produced but individual model runs are missing. This is usually due to a particular variable being unavailable
               in the model output. A table of missing variables is under construction and will be provided here when complete.
             </p>
+            </div>
         </Col>
       </Row>
     </Container>
