@@ -179,23 +179,24 @@ export default function TimeHelp() {
               later than 2065 (highlighted in yellow in the table), the model
               climatology was computed using the longest available symmetric
               period centred on the crossing time: for CNRM-CM5, this was the
-              26-year period from 2054-2080, and for NorESM1-M, the 14-year
-              period from 2066-2080.
+              26-year period from 2054-2080; for MRI-CGCM3, the 10-year period from 2070-2080;
+              and for NorESM1-M, the 14-year period from 2066-2080. 
+              No model climatology was computed for warming of 3°C for GFDL-ESM2G,
+              because the run only reached this threshold in 2080.
             </p>
             <Row>
               <p style={{ fontSize: "80%" }}>
                 <b>Table 6:</b> Global warming levels for global models used to
-                drive the regional ensemble members. Where no year is given, the
-                threshold was not exceeded before 2100. Cells highlighted in
+                drive the regional ensemble members. Cells highlighted in
                 yellow indicate runs that reached the threshold later than 1965,
                 so that model climatologies were computed from a truncated
-                period. Plots are not provided for global warming of 4°C, shaded
-                in grey.
+                period. Cells shaded in grey indicate runs that reached the threshold
+                later than 2080, for which model climatologies were not computed.
               </p>
               <Col>
                 <p>
                   {" "}
-                  <b>(a)</b> CMIP5-EC ensemble
+                  <b>(a)</b> CMIP5 runs
                 </p>
                 <Table striped size="sm">
                   <thead>
@@ -208,10 +209,46 @@ export default function TimeHelp() {
                   </thead>
                   <tbody>
                     <tr>
+                      <td>ACCESS1-3 r1i1p1</td>
+                      <td>2030</td>
+                      <td>2041</td>
+                      <td>2060</td>
+                    </tr>
+                    <tr>
+                      <td>bcc-csm1-1 r1i1p1</td>
+                      <td>2019</td>
+                      <td>2036</td>
+                      <td>2060</td>
+                    </tr>
+                    <tr>
+                      <td>CCSM4 r1i1p1</td>
+                      <td>2013</td>
+                      <td>2030</td>
+                      <td>2057</td>
+                    </tr>
+                    <tr>
+                      <td>CESM1-BGC r1i1p1</td>
+                      <td>2016</td>
+                      <td>2033</td>
+                      <td>2059</td>
+                    </tr>
+                    <tr>
+                      <td>CMCC-CM r1i1p1</td>
+                      <td>2029</td>
+                      <td>2041</td>
+                      <td>2061</td>
+                    </tr>
+                    <tr>
                       <td>CNRM-CM5 r1i1p1</td>
                       <td>2031</td>
                       <td>2044</td>
                       <td style={{ backgroundColor: "yellow" }}>2067</td>
+                    </tr>
+                    <tr>
+                      <td>CanESM2 r1i1p1</td>
+                      <td>2013</td>
+                      <td>2027</td>
+                      <td>2049</td>
                     </tr>
                     <tr>
                       <td>EC-EARTH r12i1p1</td>
@@ -230,6 +267,12 @@ export default function TimeHelp() {
                       <td>2019</td>
                       <td>2036</td>
                       <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>GFDL-ESM2G r1i1p1</td>
+                      <td>2037</td>
+                      <td>2054</td>
+                      <td style={{ backgroundColor: "grey" }}>2080</td>
                     </tr>
                     <tr>
                       <td>HadGEM2-ES r1i1p1</td>
@@ -260,6 +303,18 @@ export default function TimeHelp() {
                       <td>2019</td>
                       <td>2036</td>
                       <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>MPI-ESM-MR r1i1p1</td>
+                      <td>2021</td>
+                      <td>2038</td>
+                      <td>2060</td>
+                    </tr>
+                    <tr>
+                      <td>MRI-CGCM3 r1i1p1</td>
+                      <td>2040</td>
+                      <td>2052</td>
+                      <td style={{ backgroundColor: "yellow" }}>2075</td>
                     </tr>
                     <tr>
                       <td>NorESM1-M r1i1p1</td>

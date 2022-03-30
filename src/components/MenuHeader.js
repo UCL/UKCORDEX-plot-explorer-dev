@@ -35,26 +35,36 @@ function MenuHeader() {
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
 
-          <NavDropdown title="About" id="basic-nav-dropdown">
+          <NavDropdown title="Overview" id="basic-nav-dropdown">
             <LinkContainer to="/about-explorer">
               <NavDropdown.Item>About the plot explorer</NavDropdown.Item>
             </LinkContainer>{" "}
             <LinkContainer to="/about">
               <NavDropdown.Item>About UKCORDEX</NavDropdown.Item>
             </LinkContainer>
+            <LinkContainer to="/acknowledgements">
+              <NavDropdown.Item>Acknowledgements</NavDropdown.Item>
+            </LinkContainer>
+          </NavDropdown>
+          <NavDropdown title="Usage Guide" id="basic-nav-dropdown">
             <LinkContainer to="/indices-calculation">
               <NavDropdown.Item>
                 How the indices are calculated
               </NavDropdown.Item>
             </LinkContainer>
-            <LinkContainer to="/acknowledgements">
-              <NavDropdown.Item>Acknowledgements</NavDropdown.Item>
-            </LinkContainer>
-          </NavDropdown>
-          <NavDropdown title="Help" id="basic-nav-dropdown">
             <LinkContainer to="/how-to-use">
               <NavDropdown.Item>How to use the plot explorer</NavDropdown.Item>
             </LinkContainer>
+            <LinkContainer to="/download-help">
+              <NavDropdown.Item>
+                Working with downloaded netcdfs
+              </NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to="/missing-plots">
+              <NavDropdown.Item>Missing plots/data</NavDropdown.Item>
+            </LinkContainer>
+          </NavDropdown>
+          <NavDropdown title="Reference" id="basic-nav-dropdown">
             <LinkContainer to="/indices-help">
               <NavDropdown.Item>Indices</NavDropdown.Item>
             </LinkContainer>
@@ -66,9 +76,6 @@ function MenuHeader() {
             </LinkContainer>
             <LinkContainer to="/plot-help">
               <NavDropdown.Item>Plots</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to="/missing-plots">
-              <NavDropdown.Item>Missing plots</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
         </Nav>
