@@ -10,8 +10,13 @@ export default function DownloadHelp() {
     <Container className="help">
       {/* page contents */}
       <div>
-        <h1>How to use the downloaded data</h1>
-        <p>info here</p>
+        <h1>Using the downloaded data</h1>
+        <p>The plot explorer provides the option to download the data used to produce the plots, as well as the plots themselves.
+          <br></br>
+          The data is provided in netcdf4 format, and each file contains only the data used to produce the selected plot.
+          Jupyter notebooks containing the Python code used to produce the plots are currently in development and will be provided via Binder.
+        </p>
+        {/* Also add notebooks on how to combine files eg. to get relative changes or recreate absolute values of indices? */}
       </div>
     </Container>
   );

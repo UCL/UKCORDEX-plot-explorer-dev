@@ -104,8 +104,9 @@ function IndicesHelp() {
             <h1>Available indices</h1>
           </div>
           <p>
-            This page describes the indices for which plots are available. The general
-            process used for calculation of the climatologies is described{" "}
+            This page describes the indices for which plots are available.
+            <br></br>
+            The general process used for calculation of the index climatologies is described{" "}
             <HashLink to="/indices-calculation#">here</HashLink>.
           </p>{" "}
           <br></br>
