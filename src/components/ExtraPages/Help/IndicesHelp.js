@@ -102,11 +102,11 @@ function IndicesHelp() {
         <Col className="ml-5">
           <div>
             <h1>Available indices</h1>
-            <br></br>
           </div>
           <p>
-            This page describes the indices for which plots are available. The
-            process used for index calculation is described{" "}
+            This page describes the indices for which plots are available.
+            <br></br>
+            The general process used for calculation of the index climatologies is described{" "}
             <HashLink to="/indices-calculation#">here</HashLink>.
           </p>{" "}
           <br></br>

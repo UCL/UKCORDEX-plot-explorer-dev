@@ -30,7 +30,7 @@ export default function DataHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    CMiP5-13
+                    CMIP5-13
                   </HashLink>
                 </li>
                 <li>
@@ -40,7 +40,7 @@ export default function DataHelp() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    CMiP5-EC
+                    CMIP5-EC
                   </HashLink>
                 </li>
                 <li>
@@ -116,10 +116,9 @@ export default function DataHelp() {
               the EuroCORDEX and UKCP18 regional ensembles, but several other
               sources are also used: brief descriptions of these are provided
               here. All indices are first computed on each model's native grid,
-              then{" "}
-              <a href="/indices-help">
-                regridded to a common 12km OSGB grid to facilitate comparisons.
-              </a>
+              then regridded to a common 12km OSGB grid to facilitate comparisons. 
+              The general process used for calculation of the climatologies is described 
+              <HashLink to="/indices-calculation#">here</HashLink>.
             </p>
           </div>
           <br></br>

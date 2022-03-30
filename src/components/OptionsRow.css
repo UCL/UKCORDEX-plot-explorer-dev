@@ -2,6 +2,7 @@
 /*********************** For dropdown text  *******************************/
 .plotdropdown {
   font-size: 80%;
+  line-height: 0.9em;
 }
 
 /*********************** Section for PlotVar Dropdown **********************/
@@ -84,7 +85,7 @@
   color: #a94343;
 }
 
-.Annual {
+.annual {
   background-color: #b876df;
   border-color: #6d17c4;
   color: #471777;
