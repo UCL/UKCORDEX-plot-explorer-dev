@@ -27,7 +27,7 @@ export const plotvarOptionsContents = [
   {
     label: "Temperature",
     options: [
-      { tag: "temp", value: "tas", label: "mean daily near-surface air temperature" },
+      { tag: "temp", value: "tas", label: "mean daily near-surface air temperature test" },
       { tag: "temp", value: "tasmax", label: "maximum daily near-surface air temperature" },
       { tag: "temp", value: "tasmin", label: "minimum daily near-surface air temperature" },
       // { tag: "temp", value: "csdi", label: "number of cold spell days" },
