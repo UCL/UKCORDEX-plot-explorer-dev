@@ -53,6 +53,16 @@ export default function MissingPlots() {
                     Season lengths and degree-days
                   </HashLink>
                 </li>
+                <li>
+                  {" "}
+                  <HashLink
+                    to="/missing-plots#missingruns"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Missing model output
+                  </HashLink>
+                </li>
               </ul>
             </Nav>
           </Container>
@@ -88,6 +98,11 @@ export default function MissingPlots() {
             <h5 id="annualonly">Degree-days and growing season length are only available at annual timescales</h5>
             As noted in the <p><HashLink to="/indices-help#degree">indices reference</HashLink></p>, season lengths and degree-days are calculated
             per calendar year, and seasonal plots are not available.
+          </div>
+          <div>
+            <h5 id="missingruns">Model runs missing from particular plots</h5>
+            In some cases, plots are produced but individual model runs are missing. This is usually due to a particular variable being unavailable
+            in the model output. A table of missing variables is under construction and will be provided here when complete.
           </div>
         </Col>
       </Row>
