@@ -21,9 +21,10 @@ export function makeHr(filename) {
 
 export function makeTitle(plot) {
   let dict = SplitToVars(plot);
-  let regionTitle = Translate(dict.region, regions);
+  let regionTitle = Translate(dict.region, regions, "label");
   let ptypeTitle = Translate(dict.ptype, plottypes, "title");
-  let seasonTitle = Translate(dict.season, seasons);
+  let seasonTitle = Translate(dict.season, seasons, "label");
+  let periodTitle = Translate(dict.period, periods, "title");
 
   // specific function for pvar due to category nesting
   function createpvarTitle(variable, varlist, field = "label") {
@@ -36,29 +37,29 @@ export function makeTitle(plot) {
     }
   }
   let pvarTitle = createpvarTitle(dict.pvar, plotvars);
-  console.log(pvarTitle);
+  console.log(pvarTitle); // will delete once things have been figured out
 
   // for periods
   let ctype = "change in";
-  let pname = `(${seasonTitle} ${dict.period})`;
+  let pname = `(${seasonTitle} ${periodTitle} )`;
 
-  if (dict.period === "19890101-20081231") {
+  if (dict.period === "Evaluation period: 19890101-20081231") {
     ctype = "bias in";
   } else if (dict.period.includes("-")) {
     ctype = "change in";
   } else {
-    pname = `after GMST increase of ${dict.period}°C (${seasonTitle})`;
+    pname = `after GMST increase of ${periodTitle}°C (${seasonTitle})`;
   }
 
   // temporarily removing pvarTitle until we can figure out why it doesn't display properly
-  let titleString = `${regionTitle} ${ptypeTitle}: ${ctype} (${dict.pvar}) ${pname}`;
+  let titleString = `${regionTitle} ${ptypeTitle}: ${ctype} ${dict.pvar} ${pname}`;
   return titleString;
 }
 
-function Translate(variable, dictionary) {
+function Translate(variable, dictionary, field) {
   for (let key in dictionary) {
     if (variable === dictionary[key].value) {
-      return dictionary[key].label;
+      return dictionary[key][field];
     }
   }
 }
