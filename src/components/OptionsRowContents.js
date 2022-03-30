@@ -8,10 +8,10 @@ export const plotvarOptionsContents = [
     label: "Core variables",
     options: [
       { tag: "core", value: "clt", label: "cloud cover (%)" },
-      // { tag: "core", value: "hurs", label: "relative humidity at 1.5m" },
+      { tag: "core", value: "hurs", label: "relative humidity at 1.5m" },
       // { tag: "core", value: "huss", label: "specific humidity at 1.5m" },
       { tag: "core", value: "pr", label: "daily precipitation rate" },
-      // { tag: "core", value: "prsn", label: "daily snowfall rate" },
+      { tag: "core", value: "prsn", label: "daily snowfall rate" },
       // { tag: "core", value: "psl", label: "sea level pressure" },
       // { tag: "core", value: "rls", label: "net surface long wave flux" },
       // { tag: "core", value: "rss", label: "net surface short wave flux" },
@@ -30,7 +30,7 @@ export const plotvarOptionsContents = [
       { tag: "temp", value: "tas", label: "mean daily near-surface air temperature", },
       { tag: "temp", value: "tasmax", label: "maximum daily near-surface air temperature", },
       { tag: "temp", value: "tasmin", label: "minimum daily near-surface air temperature", },
-      // { tag: "temp", value: "csdi", label: "number of cold spell days" },
+      { tag: "temp", value: "csdi", label: "number of cold spell days" },
       // { tag: "temp", value: "hwdi", label: "number of heatwave days" },
       {
         tag: "temp",
