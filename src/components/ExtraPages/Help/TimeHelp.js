@@ -35,6 +35,16 @@ export default function TimeHelp() {
                 <li>
                   {" "}
                   <HashLink
+                    to="/time-help#baseline"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Baseline period
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink
                     to="/time-help#future"
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
@@ -76,12 +86,19 @@ export default function TimeHelp() {
               observations for the same period from the HadUK-Grid dataset.
             </p>
           </div>
+          <div id="baseline">
+            <h5>Baseline period</h5>
+            <p>
+              Plots of model climatology during the baseline period 
+              (December 1st 1980 - November 30th 2010) are provided for reference.
+            </p>
+          </div>
           <div id="future">
             <h5>Future periods</h5>
             <p>
               Plots of changes in model climatology with respect to the baseline
               period (December 1st 1980 - November 30th 2010) are provided for
-              the seven 30-year time periods described in Table 5.
+              the seven 30-year time periods defined in Table 5.
             </p>
             <p style={{ fontSize: "80%" }}>
               <b>Table 5:</b> Definitions of time slices for which plots are
@@ -97,37 +114,37 @@ export default function TimeHelp() {
               </thead>
               <tbody>
                 <tr>
-                  <td>1990-2020</td>
+                  <td>1990-2019</td>
                   <td>01-Dec-1989</td>
                   <td>30-Nov-2019</td>
                 </tr>
                 <tr>
-                  <td>2000-2030</td>
+                  <td>2000-2029</td>
                   <td>01-Dec-1999</td>
                   <td>30-Nov-2029</td>
                 </tr>
                 <tr>
-                  <td>2010-2040</td>
+                  <td>2010-2039</td>
                   <td>01-Dec-2009</td>
                   <td>30-Nov-2039</td>
                 </tr>
                 <tr>
-                  <td>2020-2050</td>
+                  <td>2020-2049</td>
                   <td>01-Dec-2019</td>
                   <td>30-Nov-2049</td>
                 </tr>
                 <tr>
-                  <td>2030-2060</td>
+                  <td>2030-2059</td>
                   <td>01-Dec-2029</td>
                   <td>30-Nov-2059</td>
                 </tr>
                 <tr>
-                  <td>2040-2070</td>
+                  <td>2040-2069</td>
                   <td>01-Dec-2039</td>
                   <td>30-Nov-2069</td>
                 </tr>
                 <tr>
-                  <td>2050-2080</td>
+                  <td>2050-2079</td>
                   <td>01-Dec-2049</td>
                   <td>30-Nov-2079</td>
                 </tr>
@@ -166,7 +183,7 @@ export default function TimeHelp() {
               was calculated from the HadGEM2-ES model output and added to the
               UKCP18 changes: an offset of 0.059°C. Each UKCP18 run therefore
               has the same mean change in GMST as HadGEM2-ES for the period
-              1899-1929, with the projections diverging from that point.
+              1900-1929, with the projections diverging from that point.
             </p>
             <p>
               Model climatologies for each run were computed by selecting a
