@@ -79,31 +79,32 @@ export default function MissingPlots() {
           {/* section about the missing plots */}
           <div>
             <h5 id="evalplots">Missing evaluation plots where suitable observations are unavailable</h5>
-            <p>Plots of biases during the evaluation period are provided where appropriate observations are available. 
-              At present, all biases are calculated with respect to the 
-              <HashLink to="/data-help#haduk">HadUK-Grid dataset</HashLink></p>,
-              which provides daily time series of rainfall and of daily maximum and minimum temperature, 
-              from which a daily mean temperature is derived; and monthly time series of relative humidity, sea level pressure, 
+            <p>
+              Plots of biases during the evaluation period are provided where appropriate observations are available.
+              At present, all biases are calculated with respect to the{" "}
+              <HashLink to="/data-help#haduk">HadUK-Grid dataset</HashLink>,
+              which provides daily time series of rainfall and of daily maximum and minimum temperature,
+              from which a daily mean temperature is derived; and monthly time series of relative humidity, sea level pressure,
               surface wind speeds and snow depth. Plots of other variables, or of indices requiring daily time series of variables
               other than temperature or precipitation, are therefore not available.
-          </div>
-          <div>
+            </p>
             <h5 id="Taylorbl">Taylor diagrams not produced for baseline period</h5>
-            <p><HashLink to="/plot-help#taylor">Taylor diagrams</HashLink></p>
-            compare the spatial patterns in the model output with a reference field. 
-            During the evaluation period, model output is compared to the observed climatology, and for future periods,
-            to the climatology during the baseline period: plots for the baseline period have no reference, so Taylor diagrams cannot be produced.
-          </div>
-          <div>
+            <p>
+              <HashLink to="/plot-help#taylor">Taylor diagrams</HashLink>
+              compare the spatial patterns in the model output with a reference field.
+              During the evaluation period, model output is compared to the observed climatology, and for future periods,
+              to the climatology during the baseline period: plots for the baseline period have no reference, so Taylor diagrams cannot be produced.
+            </p>
             <h5 id="annualonly">Degree-days and growing season length are only available at annual timescales</h5>
-            As noted in the <p><HashLink to="/indices-help#degree">indices reference</HashLink></p>, season lengths and degree-days are calculated
-            per calendar year, and seasonal plots are not available.
-          </div>
-          <div>
+            <p>
+              As noted in the <HashLink to="/indices-help#degree">indices reference</HashLink>, season lengths and degree-days are calculated
+              per calendar year, and seasonal plots are not available.
+            </p>
             <h5 id="missingruns">Model runs missing from particular plots</h5>
-            In some cases, plots are produced but individual model runs are missing. This is usually due to a particular variable being unavailable
-            in the model output. A table of missing variables is under construction and will be provided here when complete.
-          </div>
+            <p>
+              In some cases, plots are produced but individual model runs are missing. This is usually due to a particular variable being unavailable
+              in the model output. A table of missing variables is under construction and will be provided here when complete.
+            </p>
         </Col>
       </Row>
     </Container>
