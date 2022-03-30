@@ -41,7 +41,7 @@ export function makeTitle(plot) {
 
   // for periods
   let ctype = "change in";
-  let pname = `(${seasonTitle} ${periodTitle} )`;
+  // let pname = `(${seasonTitle} ${periodTitle} )`;
 
   if (dict.period === "19890101-20081231") {
     ctype = "bias in";
@@ -49,12 +49,12 @@ export function makeTitle(plot) {
     ctype = "";
   } else if (dict.period.includes("-")) {
     ctype = "change in";
-  } else {
-    pname = `after GMST increase of ${periodTitle}°C (${seasonTitle})`;
+  // } else {
+  //   pname = `after GMST increase of ${periodTitle}°C (${seasonTitle})`;
   }
 
   // temporarily removing pvarTitle until we can figure out why it doesn't display properly
-  let titleString = `${ptypeTitle} ${ctype} ${dict.pvar} ${pname}`;
+  let titleString = `${ptypeTitle} ${ctype} ${seasonTitle} ${dict.pvar} ${periodTitle}`;
   return titleString;
 }
 
