@@ -54,7 +54,7 @@ export function makeTitle(plot) {
   }
 
   // temporarily removing pvarTitle until we can figure out why it doesn't display properly
-  let titleString = `${regionTitle} ${ptypeTitle} ${ctype} ${dict.pvar} ${pname}`;
+  let titleString = `${ptypeTitle} ${ctype} ${seasonTitle} ${dict.pvar} ${periodTitle}`;
   return titleString;
 }
 
