@@ -14,7 +14,7 @@ export default function AboutExplorer() {
         </p>
         <p>
           Users can select climate indices, seasons and time periods of interest and can compare the various model outputs,
-          produce maps of projections and historical biases in these indices, and quantify the dominant sources of variation and uncertainty within the projections.
+          produce maps and boxplots of historical biases and projected changes in these indices, and quantify the dominant sources of variation and uncertainty within the projections.
           This enables users both to evaluate the outputs, and to choose
           appropriate subsets of model runs for use in their own applications. 
           A suggested order of analyses is given in the <Link to="/how-to-use">usage guide</Link>.
