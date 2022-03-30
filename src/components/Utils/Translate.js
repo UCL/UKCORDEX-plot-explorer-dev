@@ -21,7 +21,7 @@ export function makeHr(filename) {
 
 export function makeTitle(plot) {
   let dict = SplitToVars(plot);
-  let regionTitle = Translate(dict.region, regions, "label");
+  // let regionTitle = Translate(dict.region, regions, "label");
   let ptypeTitle = Translate(dict.ptype, plottypes, "title");
   let seasonTitle = Translate(dict.season, seasons, "label");
   let periodTitle = Translate(dict.period, periods, "title");
