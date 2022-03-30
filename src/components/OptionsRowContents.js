@@ -27,31 +27,31 @@ export const plotvarOptionsContents = [
   {
     label: "Temperature",
     options: [
-      { tag: "temp", value: "tas", label: "mean daily near-surface air temperature", },
-      { tag: "temp", value: "tasmax", label: "maximum daily near-surface air temperature", },
-      { tag: "temp", value: "tasmin", label: "minimum daily near-surface air temperature", },
+      { tag: "temp", value: "tas", label: "mean daily near-surface air temperature" },
+      { tag: "temp", value: "tasmax", label: "maximum daily near-surface air temperature" },
+      { tag: "temp", value: "tasmin", label: "minimum daily near-surface air temperature" },
       // { tag: "temp", value: "csdi", label: "number of cold spell days" },
       // { tag: "temp", value: "hwdi", label: "number of heatwave days" },
       {
         tag: "temp",
         value: "maxtmax",
-        label: "maximum near-surface air temperature on the hottest day",
+        label: "maximum near-surface air temperature on the hottest day"
       },
       {
         tag: "temp",
         value: "mintmin",
-        label: "minimum near-surface air temperature on the coldest day",
+        label: "minimum near-surface air temperature on the coldest day"
       },
 
       {
         tag: "temp",
         value: "tas01",
-        label: "1st percentile of daily mean near-surface air temperatures",
+        label: "1st percentile of daily mean near-surface air temperatures"
       },
       {
         tag: "temp",
         value: "tas99",
-        label: "99th percentile of daily mean near-surface air temperatures",
+        label: "99th percentile of daily mean near-surface air temperatures"
       },
       // { tag: "temp", value: "tmax10p", label: "number of cold days" },
       // { tag: "temp", value: "tmax90p", label: "number of hot days" },
@@ -65,15 +65,15 @@ export const plotvarOptionsContents = [
       { tag: "precip", value: "pr", label: "daily precipitation rate" },
       { tag: "precip", value: "prcptot", label: "accumulated precipitation" },
       { tag: "precip", value: "fwd", label: "proportion of wet days" },
-      // { tag: "precip", value: "prc", label: "daily rate of convective precipitation ", },
-      // { tag: "precip", value: "prcprop", label: "proportion of rainfall due to convection", },
-      // { tag: "precip", value: "pdd", label: "proportion of dry days followed by a dry day", },
-      // { tag: "precip", value: "pww", label: "proportion of wet days followed by a wet day", },
-      { tag: "precip", value: "r95ptot", label: "proportion of precipitation falling on days exceeding 95th percentile", },
-      { tag: "precip", value: "r99ptot", label: "proportion of precipitation falling on days exceeding 99th percentile", },
-      { tag: "precip", value: "rx1day", label: "maximum one-day precipitation", },
-      { tag: "precip", value: "rx5day", label: "maximum five-day precipitation", },
-      { tag: "precip", value: "r95ptot", label: "proportion of precipitation falling on days exceeding 95th percentile", },
+      // { tag: "precip", value: "prc", label: "daily rate of convective precipitation " },
+      // { tag: "precip", value: "prcprop", label: "proportion of rainfall due to convection" },
+      // { tag: "precip", value: "pdd", label: "proportion of dry days followed by a dry day" },
+      // { tag: "precip", value: "pww", label: "proportion of wet days followed by a wet day" },
+      { tag: "precip", value: "r95ptot", label: "proportion of precipitation falling on days exceeding 95th percentile" },
+      { tag: "precip", value: "r99ptot", label: "proportion of precipitation falling on days exceeding 99th percentile" },
+      { tag: "precip", value: "rx1day", label: "maximum one-day precipitation" },
+      { tag: "precip", value: "rx5day", label: "maximum five-day precipitation" },
+      { tag: "precip", value: "r95ptot", label: "proportion of precipitation falling on days exceeding 95th percentile" },
       { tag: "precip", value: "sdii", label: "wet-day precipitation rate" },
       // { tag: "precip", value: "dsmed", label: "median length of dry spell" },
       // { tag: "precip", value: "dsmax", label: "maximum length of dry spell" },
