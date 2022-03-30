@@ -179,17 +179,19 @@ export default function TimeHelp() {
               later than 2065 (highlighted in yellow in the table), the model
               climatology was computed using the longest available symmetric
               period centred on the crossing time: for CNRM-CM5, this was the
-              26-year period from 2054-2080, and for NorESM1-M, the 14-year
-              period from 2066-2080.
+              26-year period from 2054-2080; for MRI-CGCM3, the 10-year period from 2070-2080;
+              and for NorESM1-M, the 14-year period from 2066-2080. 
+              No model climatology was computed for warming of 3°C for GFDL-ESM2G,
+              because the run only reached this threshold in 2080.
             </p>
             <Row>
               <p style={{ fontSize: "80%" }}>
                 <b>Table 6:</b> Global warming levels for global models used to
-                drive the regional ensemble members. Where no year is given, the
-                threshold was not exceeded before 2100. Cells highlighted in
+                drive the regional ensemble members. Cells highlighted in
                 yellow indicate runs that reached the threshold later than 1965,
                 so that model climatologies were computed from a truncated
-                period.
+                period. Cells shaded in grey indicate runs that reached the threshold
+                later than 2080, for which model climatologies were not computed.
               </p>
               <Col>
                 <p>
@@ -206,7 +208,7 @@ export default function TimeHelp() {
                     </tr>
                   </thead>
                   <tbody>
-                  <tr>
+                    <tr>
                       <td>ACCESS1-3 r1i1p1</td>
                       <td>2030</td>
                       <td>2041</td>
