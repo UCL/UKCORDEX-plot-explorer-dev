@@ -17,7 +17,7 @@ export default function AboutExplorer() {
           produce maps of projections and historical biases in these indices, and quantify the dominant sources of variation and uncertainty within the projections.
           This enables users both to evaluate the outputs, and to choose
           appropriate subsets of model runs for use in their own applications. 
-          For a suggested order of analyses, see the <Link to="/how-to-use">usage guide</Link>.
+          A suggested order of analyses is given in the <Link to="/how-to-use">usage guide</Link>.
         </p>
         <p>
           The plots and underlying data are downloadable directly from the plot explorer.
