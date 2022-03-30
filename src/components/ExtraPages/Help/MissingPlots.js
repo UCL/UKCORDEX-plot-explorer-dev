@@ -81,22 +81,23 @@ export default function MissingPlots() {
             <h5 id="evalplots">Missing evaluation plots where suitable observations are unavailable</h5>
             <p>Plots of biases during the evaluation period are provided where appropriate observations are available. 
               At present, all biases are calculated with respect to the 
-              <HashLink to="/data-help#haduk">HadUK-Grid dataset</HashLink></p>,
+              <HashLink to="/data-help#haduk">HadUK-Grid dataset</HashLink>,
               which provides daily time series of rainfall and of daily maximum and minimum temperature, 
               from which a daily mean temperature is derived; and monthly time series of relative humidity, sea level pressure, 
               surface wind speeds and snow depth. Plots of other variables, or of indices requiring daily time series of variables
               other than temperature or precipitation, are therefore not available.
+              </p>
           </div>
           <div>
             <h5 id="Taylorbl">Taylor diagrams not produced for baseline period</h5>
-            <p><HashLink to="/plot-help#taylor">Taylor diagrams</HashLink></p>
+            <HashLink to="/plot-help#taylor">Taylor diagrams</HashLink>
             compare the spatial patterns in the model output with a reference field. 
             During the evaluation period, model output is compared to the observed climatology, and for future periods,
             to the climatology during the baseline period: plots for the baseline period have no reference, so Taylor diagrams cannot be produced.
           </div>
           <div>
             <h5 id="annualonly">Degree-days and growing season length are only available at annual timescales</h5>
-            As noted in the <p><HashLink to="/indices-help#degree">indices reference</HashLink></p>, season lengths and degree-days are calculated
+            As noted in the <HashLink to="/indices-help#degree">indices reference</HashLink>, season lengths and degree-days are calculated
             per calendar year, and seasonal plots are not available.
           </div>
           <div>
