@@ -10,10 +10,10 @@ import {
 export function makeHr(filename) {
   let dict = SplitToVars(filename);
   // pvar is not translated since it's kept as is
-  let regionhr = Translate(dict.region, regions);
-  let ptypehr = Translate(dict.ptype, plottypes);
-  let seasonhr = Translate(dict.season, seasons);
-  let periodhr = Translate(dict.period, periods);
+  let regionhr = Translate(dict.region, regions, "label");
+  let ptypehr = Translate(dict.ptype, plottypes, "label");
+  let seasonhr = Translate(dict.season, seasons, "label");
+  let periodhr = Translate(dict.period, periods, "label");
   let hrString = `${regionhr} ${ptypehr} for ${seasonhr} ${dict.pvar} during ${periodhr}`;
   // console.log(hrString);
   return hrString;
