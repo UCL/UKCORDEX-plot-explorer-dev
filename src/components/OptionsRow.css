@@ -61,25 +61,25 @@
 }
 
 /*********************** Section for Season Dropdown **********************/
-.Winter {
+.winter {
   background-color: #e8f7fb;
   border-color: #dff8f9;
   color: #65a4aa;
 }
 
-.Spring {
+.spring {
   background-color: #ccffe5;
   border-color: #b2ffd8;
   color: #23c071;
 }
 
-.Summer {
+.summer {
   background-color: #f0bbcd;
   border-color: #eb8291;
   color: #eb7777;
 }
 
-.Autumn {
+.autumn {
   background-color: #eb8b62;
   border-color: #bd4e33;
   color: #a94343;
