@@ -63,6 +63,9 @@ function PlotExplorerContainer() {
   return (
     <Container fluid>
       <Alert variant="info" className="intro">
+        <h5>
+          Welcome to the UKCORDEX plot explorer.<br></br>
+        </h5>
         <p>
           To start, select one of each of the following parameters (each dropdown also allows as-you-type filtering).
           Your plot(s) will be shown when at least one item has been selected in each dropdown.
