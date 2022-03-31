@@ -15,7 +15,7 @@ export const plotvarOptionsContents = [
       // { tag: "core", value: "psl", label: "sea level pressure" },
       // { tag: "core", value: "rls", label: "net surface long wave flux" },
       // { tag: "core", value: "rss", label: "net surface short wave flux" },
-      // { tag: "core", value: "sfcWind", label: "wind speed at 10m" },
+      { tag: "core", value: "sfcWind", label: "wind speed at 10m" },
       // { tag: "core", value: "snw", label: "lying snow" },
       { tag: "core", value: "tas", label: "mean daily air temperature at 1.5m" },
       { tag: "core", value: "tasmax", label: "maximum daily air temperature at 1.5m" },
@@ -83,14 +83,13 @@ export const plotvarOptionsContents = [
   {
     label: "Wind",
     options: [
-      { tag: "wind", value: "placeholder", label: "wind indices will appear here" },
-      // { tag: "wind", value: "sfcWind", label: "near-surface wind speed" },
+      { tag: "wind", value: "sfcWind", label: "near-surface wind speed" },
       // { tag: "wind", value: "uas", label: "eastward near-surface wind" },
       // { tag: "wind", value: "vas", label: "northward near-surface wind" },
-      // { tag: "wind", value: "maxsfcWindmax", label: "maximum sustained wind speed", },
-      // { tag: "wind", value: "maxwsgsmax", label: "maximum speed of wind gust" },
-      // { tag: "wind", value: "ncalm", label: "number of calm days" },
-      // { tag: "wind", value: "nwindy", label: "number of windy days" },
+      { tag: "wind", value: "maxsfcWindmax", label: "maximum sustained wind speed", },
+      { tag: "wind", value: "maxwsgsmax", label: "maximum speed of wind gust" },
+      { tag: "wind", value: "ncalm", label: "number of calm days" },
+      { tag: "wind", value: "nwindy", label: "number of windy days" },
     ],
   },
   {
