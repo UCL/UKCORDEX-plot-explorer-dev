@@ -9,6 +9,7 @@ import "./PlotExplorerContainer.css";
 import DownloadDataButton from "./DownloadDataButton";
 import FileCheck from "./Utils/FileCheck";
 import DisplayWarnings from "./DisplayWarnings";
+import { Link } from "react-router-dom";
 
 function PlotExplorerContainer() {
   /* This is the entry point to the main page. It handles state passing from
@@ -62,13 +63,19 @@ function PlotExplorerContainer() {
   return (
     <Container fluid>
       <Alert variant="info" className="intro">
+        <h5>
+          Welcome to the UKCORDEX plot explorer.<br></br>
+        </h5>
         <p>
-          To start, select one of each of the following parameters. Your
-          graph(s) will be shown when at least one of each parameter has been
-          selected. For information on the data, plots or indices, see our help
-          pages. To clear all of your selections, refresh the page. <br></br>
-          Each dropdown also allows as-you-type filtering.
+          To start, select one of each of the following parameters (each dropdown also allows as-you-type filtering).
+          Your plot(s) will be shown when at least one item has been selected in each dropdown.
+          To clear all selections, refresh the page. <br></br>
+          The reference guide gives more information on the available <Link to="/indices-help">indices</Link>, <Link to="/plot-help">plot types</Link>, and <Link to="/time-help">time periods</Link>, as well as details of the <Link to="/data-help">sources of climate data used</Link>.<br></br>
+          For a suggested order of analyses, see the <Link to="/how-to-use">usage guide</Link>.
         </p>
+        <h5>
+          This website is currently under development and only contains a subset of the <Link to="/indices-help">planned indices</Link>.<br></br>
+        </h5>
       </Alert>
       <OptionsRow
         setPlotvars={setPlotvars}

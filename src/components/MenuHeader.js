@@ -40,20 +40,20 @@ function MenuHeader() {
               <NavDropdown.Item>About the plot explorer</NavDropdown.Item>
             </LinkContainer>{" "}
             <LinkContainer to="/about">
-              <NavDropdown.Item>About UKCORDEX</NavDropdown.Item>
+              <NavDropdown.Item>About the UKCORDEX project</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/acknowledgements">
               <NavDropdown.Item>Acknowledgements</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
           <NavDropdown title="Usage Guide" id="basic-nav-dropdown">
+            <LinkContainer to="/how-to-use">
+              <NavDropdown.Item>How to use the plot explorer</NavDropdown.Item>
+            </LinkContainer>
             <LinkContainer to="/indices-calculation">
               <NavDropdown.Item>
                 How the indices are calculated
               </NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to="/how-to-use">
-              <NavDropdown.Item>How to use the plot explorer</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/download-help">
               <NavDropdown.Item>
@@ -66,16 +66,16 @@ function MenuHeader() {
           </NavDropdown>
           <NavDropdown title="Reference" id="basic-nav-dropdown">
             <LinkContainer to="/indices-help">
-              <NavDropdown.Item>Indices</NavDropdown.Item>
+              <NavDropdown.Item>Available indices</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/data-help">
-              <NavDropdown.Item>Data sources</NavDropdown.Item>
+              <NavDropdown.Item>Sources of climate data</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to="/plot-help">
+              <NavDropdown.Item>Types of plots</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/time-help">
               <NavDropdown.Item>Time periods</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to="/plot-help">
-              <NavDropdown.Item>Plots</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
         </Nav>

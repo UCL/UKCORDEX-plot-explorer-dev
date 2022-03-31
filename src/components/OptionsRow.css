@@ -2,6 +2,7 @@
 /*********************** For dropdown text  *******************************/
 .plotdropdown {
   font-size: 80%;
+  line-height: 0.9em;
 }
 
 /*********************** Section for PlotVar Dropdown **********************/
@@ -60,11 +61,13 @@
 }
 
 /*********************** Section for Season Dropdown **********************/
+
 .DJF {
   background-color: #e8f7fb;
   border-color: #dff8f9;
   color: #65a4aa;
 }
+
 
 .MAM {
   background-color: #ccffe5;
@@ -72,11 +75,13 @@
   color: #23c071;
 }
 
+
 .JJA {
   background-color: #f0bbcd;
   border-color: #eb8291;
   color: #eb7777;
 }
+
 
 .SON {
   background-color: #eb8b62;

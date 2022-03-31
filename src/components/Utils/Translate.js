@@ -10,10 +10,10 @@ import {
 export function makeHr(filename) {
   let dict = SplitToVars(filename);
   // pvar is not translated since it's kept as is
-  let regionhr = Translate(dict.region, regions);
-  let ptypehr = Translate(dict.ptype, plottypes);
-  let seasonhr = Translate(dict.season, seasons);
-  let periodhr = Translate(dict.period, periods);
+  let regionhr = Translate(dict.region, regions, "label");
+  let ptypehr = Translate(dict.ptype, plottypes, "label");
+  let seasonhr = Translate(dict.season, seasons, "label");
+  let periodhr = Translate(dict.period, periods, "label");
   let hrString = `${regionhr} ${ptypehr} for ${seasonhr} ${dict.pvar} during ${periodhr}`;
   // console.log(hrString);
   return hrString;
@@ -21,7 +21,7 @@ export function makeHr(filename) {
 
 export function makeTitle(plot) {
   let dict = SplitToVars(plot);
-  let regionTitle = Translate(dict.region, regions, "label");
+  // let regionTitle = Translate(dict.region, regions, "label");
   let ptypeTitle = Translate(dict.ptype, plottypes, "title");
   let seasonTitle = Translate(dict.season, seasons, "label");
   let periodTitle = Translate(dict.period, periods, "title");
@@ -41,17 +41,20 @@ export function makeTitle(plot) {
 
   // for periods
   let ctype = "change in";
-  let pname = `(${seasonTitle} ${periodTitle} )`;
+  // let pname = `(${seasonTitle} ${periodTitle} )`;
 
-  if (dict.period === "Evaluation period: 19890101-20081231") {
+  if (dict.period === "19890101-20081231") {
     ctype = "bias in";
+  } else if (dict.period === "19801201-20101130") {
+    ctype = "";
   } else if (dict.period.includes("-")) {
     ctype = "change in";
-  } else {
-    pname = `after GMST increase of ${periodTitle}°C (${seasonTitle})`;
+  // } else {
+  //   pname = `after GMST increase of ${periodTitle}°C (${seasonTitle})`;
   }
 
-  let titleString = `${regionTitle} ${ptypeTitle}: ${ctype} ${dict.pvar} ${pname}`;
+  // temporarily removing pvarTitle until we can figure out why it doesn't display properly
+  let titleString = `${ptypeTitle} ${ctype} ${seasonTitle} ${dict.pvar} ${periodTitle}`;
   return titleString;
 }
 

@@ -57,7 +57,7 @@ function OptionsRow({
           formatOptionLabel={formatPlotvarLabel}
           classNamePrefix={plotvarOptionsContents}
           onChange={setPlotvars}
-          placeholder="Variables"
+          placeholder="Indices"
           isClearable={false}
           isMulti
           className="plotdropdown"
@@ -103,7 +103,7 @@ function OptionsRow({
         <Select
           options={periodOptionsContents}
           onChange={setPeriods}
-          placeholder="Periods"
+          placeholder="Time periods"
           isClearable={false}
           isMulti
           className="plotdropdown"

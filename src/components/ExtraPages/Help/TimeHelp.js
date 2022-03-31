@@ -35,6 +35,16 @@ export default function TimeHelp() {
                 <li>
                   {" "}
                   <HashLink
+                    to="/time-help#baseline"
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "auto", block: "center" })
+                    }>
+                    Baseline period
+                  </HashLink>
+                </li>
+                <li>
+                  {" "}
+                  <HashLink
                     to="/time-help#future"
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
@@ -76,12 +86,19 @@ export default function TimeHelp() {
               observations for the same period from the HadUK-Grid dataset.
             </p>
           </div>
+          <div id="baseline">
+            <h5>Baseline period</h5>
+            <p>
+              Plots of model climatology during the baseline period 
+              (December 1st 1980 - November 30th 2010) are provided for reference.
+            </p>
+          </div>
           <div id="future">
             <h5>Future periods</h5>
             <p>
               Plots of changes in model climatology with respect to the baseline
               period (December 1st 1980 - November 30th 2010) are provided for
-              the seven 30-year time periods described in Table 5.
+              the seven 30-year time periods defined in Table 5.
             </p>
             <p style={{ fontSize: "80%" }}>
               <b>Table 5:</b> Definitions of time slices for which plots are
@@ -97,37 +114,37 @@ export default function TimeHelp() {
               </thead>
               <tbody>
                 <tr>
-                  <td>1990-2020</td>
+                  <td>1990-2019</td>
                   <td>01-Dec-1989</td>
                   <td>30-Nov-2019</td>
                 </tr>
                 <tr>
-                  <td>2000-2030</td>
+                  <td>2000-2029</td>
                   <td>01-Dec-1999</td>
                   <td>30-Nov-2029</td>
                 </tr>
                 <tr>
-                  <td>2010-2040</td>
+                  <td>2010-2039</td>
                   <td>01-Dec-2009</td>
                   <td>30-Nov-2039</td>
                 </tr>
                 <tr>
-                  <td>2020-2050</td>
+                  <td>2020-2049</td>
                   <td>01-Dec-2019</td>
                   <td>30-Nov-2049</td>
                 </tr>
                 <tr>
-                  <td>2030-2060</td>
+                  <td>2030-2059</td>
                   <td>01-Dec-2029</td>
                   <td>30-Nov-2059</td>
                 </tr>
                 <tr>
-                  <td>2040-2070</td>
+                  <td>2040-2069</td>
                   <td>01-Dec-2039</td>
                   <td>30-Nov-2069</td>
                 </tr>
                 <tr>
-                  <td>2050-2080</td>
+                  <td>2050-2079</td>
                   <td>01-Dec-2049</td>
                   <td>30-Nov-2079</td>
                 </tr>
@@ -166,7 +183,7 @@ export default function TimeHelp() {
               was calculated from the HadGEM2-ES model output and added to the
               UKCP18 changes: an offset of 0.059°C. Each UKCP18 run therefore
               has the same mean change in GMST as HadGEM2-ES for the period
-              1899-1929, with the projections diverging from that point.
+              1900-1929, with the projections diverging from that point.
             </p>
             <p>
               Model climatologies for each run were computed by selecting a
@@ -179,23 +196,24 @@ export default function TimeHelp() {
               later than 2065 (highlighted in yellow in the table), the model
               climatology was computed using the longest available symmetric
               period centred on the crossing time: for CNRM-CM5, this was the
-              26-year period from 2054-2080, and for NorESM1-M, the 14-year
-              period from 2066-2080.
+              26-year period from 2054-2080; for MRI-CGCM3, the 10-year period from 2070-2080;
+              and for NorESM1-M, the 14-year period from 2066-2080. 
+              No model climatology was computed for warming of 3°C for GFDL-ESM2G,
+              because the run only reached this threshold in 2080.
             </p>
             <Row>
               <p style={{ fontSize: "80%" }}>
                 <b>Table 6:</b> Global warming levels for global models used to
-                drive the regional ensemble members. Where no year is given, the
-                threshold was not exceeded before 2100. Cells highlighted in
+                drive the regional ensemble members. Cells highlighted in
                 yellow indicate runs that reached the threshold later than 1965,
                 so that model climatologies were computed from a truncated
-                period. Plots are not provided for global warming of 4°C, shaded
-                in grey.
+                period. Cells shaded in grey indicate runs that reached the threshold
+                later than 2080, for which model climatologies were not computed.
               </p>
               <Col>
                 <p>
                   {" "}
-                  <b>(a)</b> CMIP5-EC ensemble
+                  <b>(a)</b> CMIP5 runs
                 </p>
                 <Table striped size="sm">
                   <thead>
@@ -208,10 +226,46 @@ export default function TimeHelp() {
                   </thead>
                   <tbody>
                     <tr>
+                      <td>ACCESS1-3 r1i1p1</td>
+                      <td>2030</td>
+                      <td>2041</td>
+                      <td>2060</td>
+                    </tr>
+                    <tr>
+                      <td>bcc-csm1-1 r1i1p1</td>
+                      <td>2019</td>
+                      <td>2036</td>
+                      <td>2060</td>
+                    </tr>
+                    <tr>
+                      <td>CCSM4 r1i1p1</td>
+                      <td>2013</td>
+                      <td>2030</td>
+                      <td>2057</td>
+                    </tr>
+                    <tr>
+                      <td>CESM1-BGC r1i1p1</td>
+                      <td>2016</td>
+                      <td>2033</td>
+                      <td>2059</td>
+                    </tr>
+                    <tr>
+                      <td>CMCC-CM r1i1p1</td>
+                      <td>2029</td>
+                      <td>2041</td>
+                      <td>2061</td>
+                    </tr>
+                    <tr>
                       <td>CNRM-CM5 r1i1p1</td>
                       <td>2031</td>
                       <td>2044</td>
                       <td style={{ backgroundColor: "yellow" }}>2067</td>
+                    </tr>
+                    <tr>
+                      <td>CanESM2 r1i1p1</td>
+                      <td>2013</td>
+                      <td>2027</td>
+                      <td>2049</td>
                     </tr>
                     <tr>
                       <td>EC-EARTH r12i1p1</td>
@@ -230,6 +284,12 @@ export default function TimeHelp() {
                       <td>2019</td>
                       <td>2036</td>
                       <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>GFDL-ESM2G r1i1p1</td>
+                      <td>2037</td>
+                      <td>2054</td>
+                      <td style={{ backgroundColor: "grey" }}>2080</td>
                     </tr>
                     <tr>
                       <td>HadGEM2-ES r1i1p1</td>
@@ -260,6 +320,18 @@ export default function TimeHelp() {
                       <td>2019</td>
                       <td>2036</td>
                       <td>2061</td>
+                    </tr>
+                    <tr>
+                      <td>MPI-ESM-MR r1i1p1</td>
+                      <td>2021</td>
+                      <td>2038</td>
+                      <td>2060</td>
+                    </tr>
+                    <tr>
+                      <td>MRI-CGCM3 r1i1p1</td>
+                      <td>2040</td>
+                      <td>2052</td>
+                      <td style={{ backgroundColor: "yellow" }}>2075</td>
                     </tr>
                     <tr>
                       <td>NorESM1-M r1i1p1</td>
