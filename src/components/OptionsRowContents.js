@@ -360,7 +360,7 @@ export const plottypeOptionsContents = [
     value: "boxplots",
     label: "Box plots of spread within each ensemble",
     icon: "/icons/boxplots_of_spread.png",
-    title: "Boxplots of ",
+    title: "Boxplots of average UK ",
   },
   {
     value: "ens-mean-maps",
@@ -378,7 +378,7 @@ export const plottypeOptionsContents = [
     value: "eurocordex-anova",
     label: "EuroCORDEX ANOVA",
     icon: "/icons/eurocordex-anova.png",
-    title: "Decomposition of sources of variance in EuroCORDEX ensemble of ",
+    title: "Decomposition of sources of variance in EuroCORDEX ensemble: ",
   },
   {
     value: "epp-gcm",
