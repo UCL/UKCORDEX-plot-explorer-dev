@@ -63,6 +63,9 @@ function PlotExplorerContainer() {
   return (
     <Container fluid>
       <Alert variant="info" className="intro">
+        <h5>
+          Welcome to the UKCORDEX plot explorer.<br></br>
+        </h5>
         <p>
           To start, select one of each of the following parameters (each dropdown also allows as-you-type filtering).
           Your plot(s) will be shown when at least one item has been selected in each dropdown.
@@ -70,6 +73,9 @@ function PlotExplorerContainer() {
           The reference guide gives more information on the available <Link to="/indices-help">indices</Link>, <Link to="/plot-help">plot types</Link>, and <Link to="/time-help">time periods</Link>, as well as details of the <Link to="/data-help">sources of climate data used</Link>.<br></br>
           For a suggested order of analyses, see the <Link to="/how-to-use">usage guide</Link>.
         </p>
+        <h5>
+          This website is currently under development and only contains a subset of the <Link to="/indices-help">planned indices</Link>.<br></br>
+        </h5>
       </Alert>
       <OptionsRow
         setPlotvars={setPlotvars}

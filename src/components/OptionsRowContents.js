@@ -8,10 +8,10 @@ export const plotvarOptionsContents = [
     label: "Core variables",
     options: [
       { tag: "core", value: "clt", label: "cloud cover (%)" },
-      // { tag: "core", value: "hurs", label: "relative humidity at 1.5m" },
+      { tag: "core", value: "hurs", label: "relative humidity at 1.5m" },
       // { tag: "core", value: "huss", label: "specific humidity at 1.5m" },
       { tag: "core", value: "pr", label: "daily precipitation rate" },
-      // { tag: "core", value: "prsn", label: "daily snowfall rate" },
+      { tag: "core", value: "prsn", label: "daily snowfall rate" },
       // { tag: "core", value: "psl", label: "sea level pressure" },
       // { tag: "core", value: "rls", label: "net surface long wave flux" },
       // { tag: "core", value: "rss", label: "net surface short wave flux" },
@@ -30,7 +30,7 @@ export const plotvarOptionsContents = [
       { tag: "temp", value: "tas", label: "mean daily near-surface air temperature", },
       { tag: "temp", value: "tasmax", label: "maximum daily near-surface air temperature", },
       { tag: "temp", value: "tasmin", label: "minimum daily near-surface air temperature", },
-      // { tag: "temp", value: "csdi", label: "number of cold spell days" },
+      { tag: "temp", value: "csdi", label: "number of cold spell days" },
       // { tag: "temp", value: "hwdi", label: "number of heatwave days" },
       {
         tag: "temp",
@@ -286,42 +286,47 @@ export const periodOptionsContents = [
   {
     value: "19890101-20081231",
     label: "Evaluation period: 1989-2008",
-    title: "19890101-20081231",
+    title: "(1989-2008)",
+  },
+  {
+    value: "19801201-20101130",
+    label: "Baseline period: 1981-2010",
+    title: "(1981-2010)",
   },
   {
     value: "19891201-20191130",
-    label: "1989-2019",
-    title: "19891201-20191130",
+    label: "1990-2019",
+    title: "(1990-2019 vs 1981-2010)",
   },
   {
     value: "19991201-20291130",
-    label: "1999-2029",
-    title: "19991201-20291130",
+    label: "2000-2029",
+    title: "(2000-2029 vs 1981-2010)",
   },
   {
     value: "20091201-20391130",
-    label: "2009-2039",
-    title: "20091201-20391130",
+    label: "2010-2039",
+    title: "(2010-2039 vs 1981-2010)",
   },
   {
     value: "20191201-20491130",
-    label: "2019-2049",
-    title: "20191201-20491130",
+    label: "2020-2049",
+    title: "(2020-2049 vs 1981-2010)",
   },
   {
     value: "20291201-20591130",
-    label: "2029-2059",
-    title: "20291201-20591130",
+    label: "2030-2059",
+    title: "(2030-2059 vs 1981-2010)",
   },
   {
     value: "20391201-20691130",
-    label: "2039-2069",
-    title: "20391201-20691130",
+    label: "2040-2069",
+    title: "(2040-2069 vs 1981-2010)",
   },
   {
     value: "20491201-20791130",
-    label: "2049-2079",
-    title: "20491201-20791130",
+    label: "2050-2079",
+    title: "(2050-2079 vs 1981-2010)",
   },
   {
     value: "1.5",
@@ -342,10 +347,10 @@ export const periodOptionsContents = [
 
 // Seasons
 export const seasonOptionsContents = [
-  { value: "DJF", label: "Winter" },
-  { value: "MAM", label: "Spring" },
-  { value: "JJA", label: "Summer" },
-  { value: "SON", label: "Autumn" },
+  { value: "DJF", label: "winter" },
+  { value: "MAM", label: "spring" },
+  { value: "JJA", label: "summer" },
+  { value: "SON", label: "autumn" },
   { value: "annual", label: "annual" },
 ];
 
@@ -373,7 +378,7 @@ export const plottypeOptionsContents = [
     value: "eurocordex-anova",
     label: "EuroCORDEX ANOVA",
     icon: "/icons/eurocordex-anova.png",
-    title: "Decomposition of sources of variance in EuroCORDEX ensemble of ",
+    title: "Decomposition of sources of variance in EuroCORDEX ensemble: ",
   },
   {
     value: "epp-gcm",
