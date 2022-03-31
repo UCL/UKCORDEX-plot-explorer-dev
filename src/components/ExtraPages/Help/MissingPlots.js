@@ -60,7 +60,7 @@ export default function MissingPlots() {
                     scroll={(el) =>
                       el.scrollIntoView({ behavior: "auto", block: "center" })
                     }>
-                    Missing model output
+                    <b>Missing model output</b>
                   </HashLink>
                 </li>
               </ul>
