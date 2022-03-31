@@ -25,6 +25,7 @@ export default function IndicesCalculation() {
           </p>
           <p>
           No bias correction has been carried out.
+          </p>
           <p>
           To facilitate comparison between models that use different calendars,
           any indices that depend on the number of days in the season or year
