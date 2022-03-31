@@ -347,10 +347,10 @@ export const periodOptionsContents = [
 
 // Seasons
 export const seasonOptionsContents = [
-  { value: "DJF", label: "Winter" },
-  { value: "MAM", label: "Spring" },
-  { value: "JJA", label: "Summer" },
-  { value: "SON", label: "Autumn" },
+  { value: "DJF", label: "winter" },
+  { value: "MAM", label: "spring" },
+  { value: "JJA", label: "summer" },
+  { value: "SON", label: "autumn" },
   { value: "annual", label: "annual" },
 ];
 
