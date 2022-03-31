@@ -360,7 +360,7 @@ export const plottypeOptionsContents = [
     value: "boxplots",
     label: "Box plots of spread within each ensemble",
     icon: "/icons/boxplots_of_spread.png",
-    title: "Boxplots of average UK ",
+    title: "Boxplots of ",
   },
   {
     value: "ens-mean-maps",
