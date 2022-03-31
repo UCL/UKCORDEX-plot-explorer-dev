@@ -61,25 +61,29 @@
 }
 
 /*********************** Section for Season Dropdown **********************/
-.winter {
+
+.DJF {
   background-color: #e8f7fb;
   border-color: #dff8f9;
   color: #65a4aa;
 }
 
-.spring {
+
+.MAM {
   background-color: #ccffe5;
   border-color: #b2ffd8;
   color: #23c071;
 }
 
-.summer {
+
+.JJA {
   background-color: #f0bbcd;
   border-color: #eb8291;
   color: #eb7777;
 }
 
-.autumn {
+
+.SON {
   background-color: #eb8b62;
   border-color: #bd4e33;
   color: #a94343;
