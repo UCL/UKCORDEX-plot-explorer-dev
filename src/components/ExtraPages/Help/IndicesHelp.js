@@ -627,13 +627,13 @@ function IndicesHelp() {
               <InlineMath math={"q_{95}(\\texttt{pr}_{rj})"} /> be the 95th
               percentile of daily wet-day precipitation during all seasons{" "}
               <InlineMath math={"j"} /> (eg. during all winters) in the
-              reference period <InlineMath math={"r"} /> (1980-2010). The total
-              precipitation exceeding the 95th percentile in season{" "}
+              reference period <InlineMath math={"r"} /> (1980-2010). The proportion of the total
+              precipitation falling on days exceeding the 95th percentile in season{" "}
               <InlineMath math={"j"} /> is the sum of{" "}
               <InlineMath
                 math={"\\texttt{pr}_{ij} \\geq q_{95}(\\texttt{pr}_{r})"}
               />
-              .
+              divided by <InlineMath math={"\\texttt{prcptot}"} /> for the same period.
             </p>
             <p className="contents">
               <b>
@@ -644,13 +644,13 @@ function IndicesHelp() {
               <InlineMath math={"q_{99}(\\texttt{pr}_{rj})"} /> be the 99th
               percentile of daily wet-day precipitation during all seasons{" "}
               <InlineMath math={"j"} /> (eg. during all winters) in the
-              reference period <InlineMath math={"r"} /> (1980-2010). The total
+              reference period <InlineMath math={"r"} /> (1980-2010). The proportion of the total
               precipitation exceeding the 99th percentile in season{" "}
               <InlineMath math={"j"} /> is the sum of{" "}
               <InlineMath
                 math={"\\texttt{pr}_{ij} \\geq q_{99}(\\texttt{pr}_{r})"}
               />
-              .
+              divided by <InlineMath math={"\\texttt{prcptot}"} /> for the same period.
             </p>
             <p className="contents">
               <b>Simple daily precipitation intensity index </b>,{" "}
