@@ -18,8 +18,8 @@ export default function DisplayWarnings({ warnings }) {
           <p>
             Find more information on why these plots are not available{" "}
             <LinkContainer to="/missing-plots">
-              <Alert.Link>here</Alert.Link>.
-            </LinkContainer>
+              <Alert.Link>here</Alert.Link>
+            </LinkContainer>.
           </p>
         </Alert>
       </Container>
