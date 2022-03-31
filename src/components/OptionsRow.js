@@ -22,7 +22,7 @@ const formatPlotvarLabel = ({ value, label, tag }) => (
 // Styling Season Dropdown
 const formatSeasonLabel = ({ label, value }) => (
   <div style={{ display: "flex" }}>
-    <div className={`tag  ${label}`}>{value}</div>
+    <div className={`tag  ${value}`}>{value}</div>
     <div className="description">{label}</div>
   </div>
 );
