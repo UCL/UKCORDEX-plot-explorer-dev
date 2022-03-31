@@ -632,7 +632,7 @@ function IndicesHelp() {
               <InlineMath math={"j"} /> is the sum of{" "}
               <InlineMath
                 math={"\\texttt{pr}_{ij} \\geq q_{95}(\\texttt{pr}_{r})"}
-              />
+              />{" "}
               divided by <InlineMath math={"\\texttt{prcptot}"} /> for the same period.
             </p>
             <p className="contents">
@@ -649,7 +649,7 @@ function IndicesHelp() {
               <InlineMath math={"j"} /> is the sum of{" "}
               <InlineMath
                 math={"\\texttt{pr}_{ij} \\geq q_{99}(\\texttt{pr}_{r})"}
-              />
+              />{" "}
               divided by <InlineMath math={"\\texttt{prcptot}"} /> for the same period.
             </p>
             <p className="contents">
