@@ -71,7 +71,12 @@ export default function TimeHelp() {
           <div>
             <h1>Information on time periods</h1>
           </div>
-          <br></br>
+          <p>
+              All climate model output prior to 2006 is driven by historical forcings;
+              projections thereafter use the{" "}
+              <a href='https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---representative-concentration-pathways.pdf'>
+                RCP 8.5 scenario</a>.
+            </p>
           {/* section about the data */}
           <div id="evaluation">
             <h5>Evaluation period</h5>
