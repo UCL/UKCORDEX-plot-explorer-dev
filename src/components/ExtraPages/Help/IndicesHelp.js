@@ -884,8 +884,8 @@ function IndicesHelp() {
               the latent heat of vaporisation and{" "}
               <InlineMath math={"S_0^{(i)}"} /> is the extraterrestrial
               radiation on calendar day <InlineMath math={"i"} />, estimated
-              from the time of year and latitude. Seasonal time series of PET
-              are computed by averaging the daily values within season{" "}
+              from the time of year and latitude. Seasonal time series of accumulated PET
+              are computed by summing the daily values within season{" "}
               <InlineMath math={"j"} />.
             </p>
             <p className="contents">
