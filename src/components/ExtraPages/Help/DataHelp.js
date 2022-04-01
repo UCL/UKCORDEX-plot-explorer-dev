@@ -122,7 +122,7 @@ export default function DataHelp() {
             </p>
             <p>
               All climate model output prior to 2006 was driven by historical forcings;
-              all projections of the climate thereafter use the
+              all projections thereafter use the{" "}
               <a href='https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---representative-concentration-pathways.pdf'>
                 RCP 8.5 scenario</a>.
             </p>
