@@ -363,7 +363,7 @@ export const plottypeOptionsContents = [
     value: "ens-mean-maps",
     label: "Maps of ensemble mean",
     icon: "/icons/obs_and_bias.png",
-    title: "Ensemble mean",
+    title: "Ensemble mean of ",
   },
   {
     value: "ens-sd-maps",
