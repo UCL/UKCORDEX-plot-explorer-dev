@@ -12,9 +12,9 @@ export const plotvarOptionsContents = [
       // { tag: "core", value: "huss", label: "specific humidity at 1.5m" },
       { tag: "core", value: "pr", label: "daily precipitation rate" },
       { tag: "core", value: "prsn", label: "daily snowfall rate" },
-      // { tag: "core", value: "psl", label: "sea level pressure" },
-      // { tag: "core", value: "rls", label: "net surface long wave flux" },
-      // { tag: "core", value: "rss", label: "net surface short wave flux" },
+      { tag: "core", value: "psl", label: "sea level pressure" },
+      { tag: "core", value: "rls", label: "net surface long wave flux" },
+      { tag: "core", value: "rss", label: "net surface short wave flux" },
       { tag: "core", value: "sfcWind", label: "wind speed at 10m" },
       // { tag: "core", value: "snw", label: "lying snow" },
       { tag: "core", value: "tas", label: "mean daily air temperature at 1.5m" },
@@ -65,8 +65,8 @@ export const plotvarOptionsContents = [
       { tag: "precip", value: "pr", label: "daily precipitation rate" },
       { tag: "precip", value: "prcptot", label: "accumulated precipitation" },
       { tag: "precip", value: "fwd", label: "proportion of wet days" },
-      // { tag: "precip", value: "prc", label: "daily rate of convective precipitation ", },
-      // { tag: "precip", value: "prcprop", label: "proportion of rainfall due to convection", },
+      { tag: "precip", value: "prc", label: "daily rate of convective precipitation ", },
+      { tag: "precip", value: "prcprop", label: "proportion of rainfall due to convection", },
       // { tag: "precip", value: "pdd", label: "proportion of dry days followed by a dry day", },
       // { tag: "precip", value: "pww", label: "proportion of wet days followed by a wet day", },
       { tag: "precip", value: "rx1day", label: "maximum one-day precipitation", },
@@ -95,7 +95,6 @@ export const plotvarOptionsContents = [
   {
     label: "Extreme Precipitation",
     options: [
-      { tag: "extreme_pr", value: "placeholder", label: "indices of extreme precipitation will appear here" },
       // {
       //   tag: "extreme_pr",
       //   value: "rx1dayrl20",
@@ -118,21 +117,9 @@ export const plotvarOptionsContents = [
       //   label:
       //     "50-year return period of current 50-year return level of 1-day precipitation ",
       // },
-      // {
-      //   tag: "extreme_pr",
-      //   value: "rx1dayloc",
-      //   label: "location parameter for extreme 1-day precipitation",
-      // },
-      // {
-      //   tag: "extreme_pr",
-      //   value: "rx1dayshape",
-      //   label: "shape parameter for extreme 1-day precipitation",
-      // },
-      // {
-      //   tag: "extreme_pr",
-      //   value: "rx1dayscale",
-      //   label: "scale parameter for extreme 1-day precipitation",
-      // },
+      { tag: "extreme_pr", value: "rx1dayloc", label: "location parameter for extreme 1-day precipitation" },
+      { tag: "extreme_pr", value: "rx1dayshape", label: "shape parameter for extreme 1-day precipitation" },
+      { tag: "extreme_pr", value: "rx1dayscale", label: "scale parameter for extreme 1-day precipitation" },
       // {
       //   tag: "extreme_pr",
       //   value: "rx5dayrl20",
