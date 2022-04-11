@@ -87,7 +87,7 @@ export const plotvarOptionsContents = [
       // { tag: "wind", value: "uas", label: "eastward near-surface wind" },
       // { tag: "wind", value: "vas", label: "northward near-surface wind" },
       { tag: "wind", value: "maxsfcWindmax", label: "maximum sustained wind speed", },
-      // { tag: "wind", value: "maxwsgsmax", label: "maximum speed of wind gust" },
+      { tag: "wind", value: "maxwsgsmax", label: "maximum speed of wind gust" },
       { tag: "wind", value: "ncalm", label: "number of calm days" },
       { tag: "wind", value: "nwindy", label: "number of windy days" },
     ],
