@@ -32,7 +32,7 @@ export const plotvarOptionsContents = [
       { tag: "temp", value: "tasmin", label: "minimum daily near-surface air temperature", },
       { tag: "temp", value: "dtr", label: "diurnal temperature range" },
       { tag: "temp", value: "csdi", label: "number of cold spell days" },
-      // { tag: "temp", value: "hwdi", label: "number of heatwave days" },
+      { tag: "temp", value: "hwdi", label: "number of heatwave days" },
       { tag: "temp", value: "maxtmax", label: "maximum near-surface air temperature on the hottest day" },
       { tag: "temp", value: "mintmin", label: "minimum near-surface air temperature on the coldest day" },
       { tag: "temp", value: "tas01", label: "1st percentile of daily mean near-surface air temperatures" },
