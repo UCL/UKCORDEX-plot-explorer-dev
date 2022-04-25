@@ -7,19 +7,29 @@ import {
   regionOptionsContents as regions,
 } from "../OptionsRowContents";
 
-export function makeHr(filename) {
-  let dict = SplitToVars(filename);
+export function makeHr(filename, ext) {
+  // used for warnings
+
+  function TranslateWarnings(variable, dictionary) {
+    for (let key in dictionary) {
+      if (variable === dictionary[key].value) {
+        return dictionary[key].label;
+      }
+    }
+  }
+  let dict = SplitToVars(filename, ext);
   // pvar is not translated since it's kept as is
-  let regionhr = Translate(dict.region, regions, "label");
-  let ptypehr = Translate(dict.ptype, plottypes, "label");
-  let seasonhr = Translate(dict.season, seasons, "label");
-  let periodhr = Translate(dict.period, periods, "label");
+  let regionhr = TranslateWarnings(dict.region, regions);
+  let ptypehr = TranslateWarnings(dict.ptype, plottypes);
+  let seasonhr = TranslateWarnings(dict.season, seasons);
+  let periodhr = TranslateWarnings(dict.period, periods);
   let hrString = `${regionhr} ${ptypehr} for ${seasonhr} ${dict.pvar} during ${periodhr}`;
-  // console.log(hrString);
+  console.log(hrString);
   return hrString;
 }
 
 export function makeTitle(plot) {
+  // used for plot title
   let dict = SplitToVars(plot);
   // let regionTitle = Translate(dict.region, regions, "label");
   let ptypeTitle = Translate(dict.ptype, plottypes, "title");
@@ -49,8 +59,8 @@ export function makeTitle(plot) {
     ctype = "";
   } else if (dict.period.includes("-")) {
     ctype = "change in";
-  // } else {
-  //   pname = `after GMST increase of ${periodTitle}°C (${seasonTitle})`;
+    // } else {
+    //   pname = `after GMST increase of ${periodTitle}°C (${seasonTitle})`;
   }
 
   // temporarily removing pvarTitle until we can figure out why it doesn't display properly
