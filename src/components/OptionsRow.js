@@ -80,7 +80,7 @@ function OptionsRow({
         <Select
           options={regionOptionsContents}
           onChange={setRegion}
-          placeholder="Spatial aggregations"
+          placeholder="Resolution"
           isClearable={false}
           isMulti
           className="plotdropdown"
