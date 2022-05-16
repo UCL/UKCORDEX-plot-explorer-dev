@@ -9,7 +9,7 @@ To submit new feature requests or issue, please do so [in the production reposit
 ## Deploy website locally
 ```
 npm install [--force]
-npm run
+npm start
 ```
 
 Note `--force` might be needed when dependencies prevent the project from building, but it's preferable to investigate the dependency issues and resolve them avoiding force instal.
