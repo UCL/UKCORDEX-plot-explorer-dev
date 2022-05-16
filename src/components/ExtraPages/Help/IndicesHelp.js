@@ -520,6 +520,17 @@ function IndicesHelp() {
               />{" "}
               for the season of interest <InlineMath math={"j"} />.
             </p>
+            <p className="contents">
+              <b>Diurnal temperature range</b>,{" "}
+              <InlineMath math={"\\texttt{dtr}"} />: The average diurnal temperature range in period <InlineMath math={"j"} />{" "}
+               is the difference between the average of <InlineMath math={"\\texttt{tasmax}"} /> {" "}
+               and the average of <InlineMath math={"\\texttt{tasmin}"} /> in period <InlineMath math={"j"} />.
+            </p>
+            <p className="contents">
+              <b>Seasonal temperature range</b>,{" "}
+              <InlineMath math={"\\texttt{str}"} />: The seasonal temperature range in a given period is the difference between{" "} 
+              <InlineMath math={"\\texttt{tas99}"} />  and <InlineMath math={"\\texttt{tas01}"} /> in that period.
+            </p>
           </Row>
           {/* precipitation */}
           <Row className="indices">
