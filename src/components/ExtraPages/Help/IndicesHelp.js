@@ -261,6 +261,10 @@ function IndicesHelp() {
                 <sup>*</sup>mm of liquid water equivalent
               </span>
             </Col>
+           <p classname="contents">
+            Note: the wind vector components <InlineMath math={"\\texttt{uas}"} /> and <InlineMath math={"\\texttt{vas}"} />{" "}
+                     use the OSGB grid as their reference frame.
+            </p> 
           </Row>
           {/* temperature */}
           <Row className="indices">
