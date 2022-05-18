@@ -4,7 +4,7 @@ name: Deploy React Application in the production repository
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ development ]
+    branches: [ development, feature/add_deployment_to_prod_action ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,11 +30,11 @@ jobs:
           npm run build --if-present
       - name: replace homepage URL
         run: |
-          sed -i 's?UKCORDEX-plot-explorer-dev?UKCORDEX-plot-explorer?g' package.json package-lock.json
+          sed -i 's?UCL/UKCORDEX-plot-explorer-dev?raquel-ucl/UKCORDEX-plot-explorer?g' package.json package-lock.json
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
-          repository-name: UCL/UKCORDEX-plot-explorer
+          repository-name: raquel-ucl/UKCORDEX-plot-explorer
           token: ${{secrets.DEPLOYMENT_TO_PROD}}
