@@ -4,7 +4,7 @@ name: Deploy React Application in the production repository
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ development, feature/add_deployment_to_prod_action ]
+    branches: [ development ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -26,10 +26,9 @@ jobs:
           node-version: ${{ matrix.node-version }}  
       - name: replace homepage URL
         run: |
-          sed -i 's?UCL/UKCORDEX-plot-explorer-dev?raquel-ucl/UKCORDEX-plot-explorer?g' package.json package-lock.json
-          grep "raquel-ucl/UKCORDEX-plot-explorer" package.json package-lock.json
-          sed -i 's?github-pages.ucl.ac.uk/UKCORDEX-plot-explorer-dev?raquel-ucl.github.io/UKCORDEX-plot-explorer?g' package.json package-lock.json
-          grep "raquel-ucl.github.io/UKCORDEX-plot-explorer" package.json package-lock.json
+          sed -i 's?UKCORDEX-plot-explorer-dev?UKCORDEX-plot-explorer?g' package.json
+          grep "UKCORDEX-plot-explorer.git" package.json
+          grep "UKCORDEX-plot-explorer/" package.json
       - name: npm ci and build
         run: |
           npm ci
@@ -39,5 +38,5 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
-          repository-name: raquel-ucl/UKCORDEX-plot-explorer
+          repository-name: UCL/UKCORDEX-plot-explorer
           token: ${{secrets.DEPLOYMENT_TO_PROD}}
