@@ -31,7 +31,9 @@ jobs:
       - name: replace homepage URL
         run: |
           sed -i 's?UCL/UKCORDEX-plot-explorer-dev?raquel-ucl/UKCORDEX-plot-explorer?g' package.json package-lock.json
-          grep "raquel-ucl/UKCORDEX-plot-explorer.git" package.json package-lock.json
+          grep "raquel-ucl/UKCORDEX-plot-explorer" package.json package-lock.json
+          sed -i 's?github-pages.ucl.ac.uk/UKCORDEX-plot-explorer-dev?raquel-ucl.github.io/UKCORDEX-plot-explorer?g' package.json package-lock.json
+          grep "raquel-ucl.github.io/UKCORDEX-plot-explorer" package.json package-lock.json
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
