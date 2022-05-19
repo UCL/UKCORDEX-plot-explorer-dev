@@ -1,4 +1,4 @@
-name: Deploy React Application in the production repository
+name: Build and deploy to production repository
 
 # Controls when the action will run. 
 on:
