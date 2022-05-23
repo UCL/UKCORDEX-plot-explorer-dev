@@ -56,7 +56,7 @@ npm start
 You should see now a message in your console indicating your web is being
 deployed in localhost:3000 (or different port if 3000 is busy). Note that you don't need to kill this process and deploy it again if you want to work on changes to the code - they will update in the locally deployed app immediately after saving.
 
-Also note `--force` might be needed when dependencies prevent the project from building, but it's preferable to investigate the dependency issues with `npm audit` and resolve them avoiding force instal.
+Also note `--force` might be needed when dependencies prevent the project from building, but it's preferable to investigate the dependency issues with `npm audit` and resolve them avoiding force install.
 
 To run tests:
 ```
