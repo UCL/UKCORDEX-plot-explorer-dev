@@ -9,18 +9,9 @@ To submit new feature requests or issues, please do so [in the production reposi
 ## Development guide
 
 ### Dependencies
-This website is built using React. You will need:
+This website is built using React, so you will need a local installation of `npm`.
 
-* npm (Last tested with npm 8.0.0)
-
-This project has the following dependencies:
-* create-react-app
-* react-select
-* react-bootstrap
-* gh-pages
-* file-saver
-* react-katex
-* react-router
+Other dependencies can be seen in [package.json](./package.json#L6)
 
 ### Continuous Integration and Deployment
 
@@ -29,13 +20,11 @@ There are [3 GH Actions workflows](https://github.com/UCL/UKCORDEX-plot-explorer
 * Deploy to development: Builds the app and deploys to the development URL (https://github-pages.ucl.ac.uk/UKCORDEX-plot-explorer-dev)
 * Deploy to production: Builds the app and deploys to the production URL (https://github-pages.ucl.ac.uk/UKCORDEX-plot-explorer)
 
-For CD we are using [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action).
-
-We are using [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) to deploy automatically using GH Actions, and [the npm gh-pages module](https://github.com/tschaub/gh-pages) to deploy
+We are using [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) and [the npm gh-pages module](https://github.com/tschaub/gh-pages) to deploy automatically using GH Actions.
 
 ### Workflow guidelines
 To work on a new feature or bug fix, please do as follows:
-1. Create a new branch, e.g. `feature/about_us_section`.
+1. Create a new branch following this pattern: `<fix|feature|docs>/<description>`, e.g. `feature/add_new_drowpdown`.
 2. Create a new draft pull request to the `development` branch. For every new push to the branch, the pull request will trigger the build, test and deploy GH actions, showing the deployed website in the development URL.
 3. Once you are happy with your changes, mark your draft pull request as "ready to review" and assign at least one reviewer.
 4. Reviewers will give comments or approve the request, which might require new changes to be done, pushed and, in turn, get tested and deployed.
