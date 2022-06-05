@@ -1,4 +1,4 @@
-name: Deploy React Application in the production repository
+name: Build and deploy to production repository
 
 # Controls when the action will run. 
 on:
@@ -33,7 +33,7 @@ jobs:
         run: |
           npm ci
           npm run build --if-present
-      - name: Deploy 🚀
+      - name: Deploy to production 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           branch: gh-pages # The branch the action should deploy to.
