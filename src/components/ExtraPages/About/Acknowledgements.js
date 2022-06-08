@@ -8,12 +8,23 @@ export default function Acknowledgements() {
       <div>
         <h1>Acknowledgements</h1>
         <h6>
-          The development of this plot explorer has been made possible thanks to
-          the following:
+          This plot explorer was developed by UCL's <a href='https://www.ucl.ac.uk/research-it-services/research-software-development'>
+                Research Software Development Group</a> and funded by the 
+                <a href='https://www.ukclimateresilience.org/'>
+                UK Climate Resilience programme</a>.
+                The programme is supported by the UKRI Strategic Priorities Fund and co-delivered by the Met Office and NERC on behalf of UKRI partners AHRC, EPSRC, ESRC.
+        </h6>
+        <br></br>
+        <h6>
+          The project team would also like to acknowledge the contributions of the following:
         </h6>
         <ul>
-          <li>Met Office & UKRI</li>
-          <li>CEDA / Jasmin</li>
+          <li>The Centre for Environmental Data Analysis, 
+            for providing access to UKCP18 data and for making the EuroCORDEX core variables
+            freely available to users alongside the UKCP18 data through the <a href='https://ukclimateprojections-ui.metoffice.gov.uk/ui/home'>
+            UK Climate Projections User Interface. 
+            </a>
+          </li>
           <li>
             The World Climate Research Programme's Working Group on Coupled
             Modelling, which is responsible for CMIP, and we thank the climate
@@ -34,6 +45,10 @@ export default function Acknowledgements() {
             and Intercomparison, the European Network for Earth System Modelling
             and other partners in the Global Organisation for Earth System
             Science Portals (GO-ESSP).
+          </li>
+          <li>
+            <a href='https://jasmin.ac.uk'>JASMIN</a>, the UK's collaborative data analysis environment,
+            which was used to carry out data preprocessing.
           </li>
         </ul>
       </div>
