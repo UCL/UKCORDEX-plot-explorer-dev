@@ -8,7 +8,7 @@ export default function Acknowledgements() {
       <div>
         <h1>Acknowledgements</h1>
         <h6>
-          This plot explorer was developed by UCL's <a href='https://www.ucl.ac.uk/research-it-services/research-software-development'>
+          This plot explorer was developed by UCL's <a href='https://www.ucl.ac.uk/advanced-research-computing/expertise/research-software-development'>
                 Research Software Development Group</a> and funded by the 
                 <a href='https://www.ukclimateresilience.org/'>
                 UK Climate Resilience programme</a>.
