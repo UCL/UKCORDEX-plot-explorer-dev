@@ -35,7 +35,7 @@ jobs:
           grep "UKCORDEX-plot-explorer/" package.json
       - name: npm ci and build
         run: |
-          npm ci --force
+          npm ci --force # The force flag is temporary until the dependencies tree is fixed
           npm run build --if-present
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
