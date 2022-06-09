@@ -9,7 +9,7 @@ export default function Acknowledgements() {
         <h1>Acknowledgements</h1>
         <p>
           This plot explorer was developed by UCL's <a href='https://www.ucl.ac.uk/advanced-research-computing/expertise/research-software-development'>
-                Research Software Development Group</a> and funded by the
+                Research Software Development Group</a> and funded by the 
                 <a href='https://www.ukclimateresilience.org/'>
                 UK Climate Resilience programme</a>.
                 The programme is supported by the UKRI Strategic Priorities Fund and co-delivered by the Met Office and NERC on behalf of UKRI partners AHRC, EPSRC, ESRC.
