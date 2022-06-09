@@ -1,20 +1,24 @@
 name: Build and deploy to production repository
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ development ]
 
+# Continue build and deployment even if there are warnings
+env:
+  CI: false
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  deploy_to_prod:        
+  deploy_to_prod:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [16.x] # We will deploy with only one version of node  
+        node-version: [16.x] # We will deploy with only one version of node
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -23,7 +27,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}  
+          node-version: ${{ matrix.node-version }}
       - name: replace homepage URL
         run: |
           sed -i 's?UKCORDEX-plot-explorer-dev?UKCORDEX-plot-explorer?g' package.json
@@ -31,7 +35,7 @@ jobs:
           grep "UKCORDEX-plot-explorer/" package.json
       - name: npm ci and build
         run: |
-          npm ci
+          npm ci --force # The force flag is temporary until the dependencies tree is fixed
           npm run build --if-present
       - name: Deploy to production 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2

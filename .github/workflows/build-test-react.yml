@@ -8,6 +8,10 @@ on:
   pull_request:
     branches: [ development ]
 
+# Continue build and deployment even if there are warnings
+env:
+  CI: false
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build_test:
@@ -28,6 +32,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         run: |
-          npm ci
+          npm ci --force # The force flag is temporary until the dependencies tree is fixed
           npm run build --if-present
           npm test
