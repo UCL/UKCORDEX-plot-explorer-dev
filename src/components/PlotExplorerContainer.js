@@ -55,7 +55,6 @@ function PlotExplorerContainer() {
         return;
       }
       setImages(images);
-      console.log(images);
       setDataFiles(datafiles);
     }
   }, [plotvars, seasons, periods, plottypes, regions]);
