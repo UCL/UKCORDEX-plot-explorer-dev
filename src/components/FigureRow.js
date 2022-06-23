@@ -44,19 +44,15 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
                   }}>
                   {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
                 </Figure.Caption>
+                <center>
                 <Image
-                  style={{
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    // width: "100%",
-                  }}
                   fluid="true"
                   alt={`plot ${makeTitle(
                     plot.slice(plot.lastIndexOf("/") + 1)
                   )} not found`}
                   src={plot}
                 />
+                </center>
               </Figure>
             </Card>
           </Container>
