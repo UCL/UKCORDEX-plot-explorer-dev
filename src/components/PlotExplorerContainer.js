@@ -73,7 +73,10 @@ function PlotExplorerContainer() {
           For a suggested order of analyses, see the <Link to="/how-to-use">usage guide</Link>.
         </p>
         <p>
-        This work is licensed under a <Link to="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</Link>.
+        <img
+          alt="cc_license"
+          src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"
+        /> This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
         </p>
 
         <h5>
