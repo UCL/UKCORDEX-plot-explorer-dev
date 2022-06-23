@@ -45,6 +45,12 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
                   {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
                 </Figure.Caption>
                 <Image
+                  style={{
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    // width: "100%",
+                  }}
                   fluid="true"
                   alt={`plot ${makeTitle(
                     plot.slice(plot.lastIndexOf("/") + 1)
