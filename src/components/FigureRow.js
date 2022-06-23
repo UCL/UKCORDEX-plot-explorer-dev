@@ -34,9 +34,13 @@ function FigureRow({ plotvars, seasons, periods, plottypes, images, regions }) {
               <Figure>
                 <Figure.Caption
                   style={{
-                    marginLeft: "-20%",
+                    marginLeft: "+2%",
                     textAlign: "center",
-                    width: "150%",
+                    width: "100%",
+                    fontSize: "110%",
+                    backgroundColor: "#d0f4fc",
+                    borderRadius: "5px",
+                    padding: "5px",
                   }}>
                   {makeTitle(plot.slice(plot.lastIndexOf("/") + 1))}
                 </Figure.Caption>
