@@ -20,8 +20,8 @@ export const plotvarOptionsContents = [
       { tag: "core", value: "tas", label: "mean daily air temperature at 1.5m" },
       { tag: "core", value: "tasmax", label: "maximum daily air temperature at 1.5m" },
       { tag: "core", value: "tasmin", label: "minimum daily air temperature at 1.5m" },
-      //     { tag: "core", value: "uas", label: "eastward wind at 10m" },
-      //     { tag: "core", value: "vas", label: "northward wind at 10m" },
+      { tag: "core", value: "uas", label: "eastward wind at 10m" },
+      { tag: "core", value: "vas", label: "northward wind at 10m" },
     ],
   },
   {
@@ -73,8 +73,8 @@ export const plotvarOptionsContents = [
       { tag: "wind", value: "ncalm", label: "number of calm days" },
       { tag: "wind", value: "nwindy", label: "number of windy days" },
       { tag: "wind", value: "sfcWind", label: "near-surface wind speed" },
-      // { tag: "wind", value: "uas", label: "eastward near-surface wind" },
-      // { tag: "wind", value: "vas", label: "northward near-surface wind" },
+      { tag: "wind", value: "uas", label: "eastward near-surface wind" },
+      { tag: "wind", value: "vas", label: "northward near-surface wind" },
     ],
   },
   {
