@@ -72,6 +72,10 @@ function PlotExplorerContainer() {
           The reference guide gives more information on the available <Link to="/indices-help">indices</Link>, <Link to="/plot-help">plot types</Link>, and <Link to="/time-help">time periods</Link>, as well as details of the <Link to="/data-help">sources of climate data used</Link>.<br></br>
           For a suggested order of analyses, see the <Link to="/how-to-use">usage guide</Link>.
         </p>
+        <p>
+        This work is licensed under a <Link to="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</Link>.
+        </p>
+
         <h5>
           This website is currently under development and only contains a subset of the <Link to="/indices-help">planned indices</Link>.<br></br>
         </h5>
