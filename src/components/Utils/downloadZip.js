@@ -8,6 +8,11 @@ export default function downloadZip(filelist, zipname) {
   var zipFilename = "UKCORDEX_" + zipname + ".zip";
   var urls = filelist;
 
+  // Add license file to zip
+  zip.file("LICENSE.txt",
+          "This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.\n\nUKCP18 data are available under the Open Government Licence, see http://www.nationalarchives.gov.uk/doc/open-government-licence/"
+  );
+
   urls.map((url) => {
     // get the right basename for each image
     var filename = url.slice(url.lastIndexOf("/") + 1);
