@@ -12,10 +12,11 @@ import Usage from "./components/ExtraPages/Help/Usage";
 import AboutExplorer from "./components/ExtraPages/About/AboutExplorer";
 import IndicesCalculation from "./components/ExtraPages/About/IndicesCalculation";
 import DownloadHelp from "./components/ExtraPages/Help/DownloadHelp";
-import usePageTracking from "./components/Utils/usePageTracking";
+import ReactGA from "react-ga";
 
 function App() {
-  usePageTracking();
+  ReactGA.initialize("UA-228675619-1");
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
     // rendering just the menu header means it'll display on every page, each route is different
