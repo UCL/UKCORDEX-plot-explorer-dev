@@ -15,8 +15,7 @@ import DownloadHelp from "./components/ExtraPages/Help/DownloadHelp";
 import ReactGA from "react-ga";
 
 function App() {
-  // ReactGA.initialize("UA-228675619-1", { testMode: true });
-  ReactGA.initialize("UA-228675619-1");
+  ReactGA.initialize("UA-228675619-1", { testMode: true });
   ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
