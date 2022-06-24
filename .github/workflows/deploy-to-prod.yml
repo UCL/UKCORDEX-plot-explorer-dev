@@ -31,6 +31,7 @@ jobs:
       - name: replace homepage URL
         run: |
           sed -i 's?UKCORDEX-plot-explorer-dev?UKCORDEX-plot-explorer?g' package.json
+          sed -i 's?UA-228675619-1?UA-228675619-2?g' src/App.js
           grep "UKCORDEX-plot-explorer.git" package.json
           grep "UKCORDEX-plot-explorer/" package.json
       - name: npm ci and build
