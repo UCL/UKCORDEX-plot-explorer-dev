@@ -261,6 +261,10 @@ function IndicesHelp() {
                 <sup>*</sup>mm of liquid water equivalent
               </span>
             </Col>
+           <p classname="contents">
+            Note: the wind vector components <InlineMath math={"\\texttt{uas}"} /> and <InlineMath math={"\\texttt{vas}"} />{" "}
+                     use the OSGB grid as their reference frame.
+            </p> 
           </Row>
           {/* temperature */}
           <Row className="indices">
@@ -520,6 +524,17 @@ function IndicesHelp() {
               />{" "}
               for the season of interest <InlineMath math={"j"} />.
             </p>
+            <p className="contents">
+              <b>Diurnal temperature range</b>,{" "}
+              <InlineMath math={"\\texttt{dtr}"} />: The average diurnal temperature range in period <InlineMath math={"j"} />{" "}
+               is the difference between the average of <InlineMath math={"\\texttt{tasmax}"} /> {" "}
+               and the average of <InlineMath math={"\\texttt{tasmin}"} /> in period <InlineMath math={"j"} />.
+            </p>
+            <p className="contents">
+              <b>Seasonal temperature range</b>,{" "}
+              <InlineMath math={"\\texttt{str}"} />: The seasonal temperature range in a given period is the difference between{" "} 
+              <InlineMath math={"\\texttt{tas99}"} />  and <InlineMath math={"\\texttt{tas01}"} /> in that period.
+            </p>
           </Row>
           {/* precipitation */}
           <Row className="indices">
@@ -624,16 +639,15 @@ function IndicesHelp() {
                 percentile
               </b>
               , <InlineMath math={"\\texttt{r95ptot}"} />: Let{" "}
-              <InlineMath math={"q_{95}(\\texttt{pr}_{rj})"} /> be the 95th
-              percentile of daily wet-day precipitation during all seasons{" "}
-              <InlineMath math={"j"} /> (eg. during all winters) in the
-              reference period <InlineMath math={"r"} /> (1980-2010). The proportion of the total
-              precipitation falling on days exceeding the 95th percentile in season{" "}
+              <InlineMath math={"q_{95}(\\texttt{pr}_{j})"} /> be the 95th
+              percentile of daily wet-day precipitation during all seasons of interest (eg. during all winters)
+              in the period <InlineMath math={"j"} />. The proportion of the total
+              precipitation falling on days exceeding the 95th percentile in the season of interest for period{" "}
               <InlineMath math={"j"} /> is the sum of{" "}
               <InlineMath
-                math={"\\texttt{pr}_{ij} \\geq q_{95}(\\texttt{pr}_{r})"}
+                math={"\\texttt{pr}_{ij} \\geq q_{95}(\\texttt{pr}_{j})"}
               />{" "}
-              divided by <InlineMath math={"\\texttt{prcptot}"} /> for the same period.
+              divided by <InlineMath math={"\\texttt{prcptot}"} /> for the same period and season.
             </p>
             <p className="contents">
               <b>
@@ -642,15 +656,14 @@ function IndicesHelp() {
               </b>
               , <InlineMath math={"\\texttt{r99ptot}"} />: Let{" "}
               <InlineMath math={"q_{99}(\\texttt{pr}_{rj})"} /> be the 99th
-              percentile of daily wet-day precipitation during all seasons{" "}
-              <InlineMath math={"j"} /> (eg. during all winters) in the
-              reference period <InlineMath math={"r"} /> (1980-2010). The proportion of the total
-              precipitation exceeding the 99th percentile in season{" "}
+              percentile of daily wet-day precipitation during all seasons of interest (eg. during all winters)
+              in the period <InlineMath math={"j"} />. The proportion of the total
+              precipitation falling on days exceeding the 99th percentile in season{" "}
               <InlineMath math={"j"} /> is the sum of{" "}
               <InlineMath
-                math={"\\texttt{pr}_{ij} \\geq q_{99}(\\texttt{pr}_{r})"}
+                math={"\\texttt{pr}_{ij} \\geq q_{99}(\\texttt{pr}_{j})"}
               />{" "}
-              divided by <InlineMath math={"\\texttt{prcptot}"} /> for the same period.
+              divided by <InlineMath math={"\\texttt{prcptot}"} /> for the same period and season.
             </p>
             <p className="contents">
               <b>Simple daily precipitation intensity index </b>,{" "}

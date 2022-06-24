@@ -39,7 +39,7 @@ export function makeTitle(plot) {
   // specific function for pvar due to category nesting
   function createpvarTitle(variable, varlist, field = "label") {
     for (let varname in varlist) {
-      for (let abbr in varname) {
+      for (let abbr in varlist[varname]["options"]) {
         if (variable === varlist[varname]["options"][abbr].value) {
           return varlist[varname]["options"][abbr][field];
         }
@@ -47,7 +47,6 @@ export function makeTitle(plot) {
     }
   }
   let pvarTitle = createpvarTitle(dict.pvar, plotvars);
-  console.log(pvarTitle); // will delete once things have been figured out
 
   // for periods
   let ctype = "change in";
@@ -63,8 +62,7 @@ export function makeTitle(plot) {
     //   pname = `after GMST increase of ${periodTitle}°C (${seasonTitle})`;
   }
 
-  // temporarily removing pvarTitle until we can figure out why it doesn't display properly
-  let titleString = `${ptypeTitle} ${ctype} ${seasonTitle} ${dict.pvar} ${periodTitle}`;
+  let titleString = `${ptypeTitle} ${ctype} ${seasonTitle} ${pvarTitle} ${periodTitle}`;
   return titleString;
 }
 

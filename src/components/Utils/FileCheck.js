@@ -49,20 +49,15 @@ export default async function FileCheck(
   const warnings = [];
   const fetchImage = async (path) => {
     const response = await fetch(path);
-    // console.log(response);
 
     let url = response.url;
     if (response.ok) {
       outputArray.push(url);
     } else if (response.status === 404) {
-      console.log(response.status);
-
       let warningMessage = makeHr(url.slice(url.lastIndexOf("/") + 1), ext);
-
       warnings.push(warningMessage);
     }
     setWarnings(warnings);
-    console.log("warnings: ", warnings);
   };
 
   const paths = [];

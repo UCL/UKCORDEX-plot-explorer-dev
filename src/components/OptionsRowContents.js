@@ -20,8 +20,8 @@ export const plotvarOptionsContents = [
       { tag: "core", value: "tas", label: "mean daily air temperature at 1.5m" },
       { tag: "core", value: "tasmax", label: "maximum daily air temperature at 1.5m" },
       { tag: "core", value: "tasmin", label: "minimum daily air temperature at 1.5m" },
-      //     { tag: "core", value: "uas", label: "eastward wind at 10m" },
-      //     { tag: "core", value: "vas", label: "northward wind at 10m" },
+      { tag: "core", value: "uas", label: "eastward wind at 10m" },
+      { tag: "core", value: "vas", label: "northward wind at 10m" },
     ],
   },
   {
@@ -73,8 +73,8 @@ export const plotvarOptionsContents = [
       { tag: "wind", value: "ncalm", label: "number of calm days" },
       { tag: "wind", value: "nwindy", label: "number of windy days" },
       { tag: "wind", value: "sfcWind", label: "near-surface wind speed" },
-      // { tag: "wind", value: "uas", label: "eastward near-surface wind" },
-      // { tag: "wind", value: "vas", label: "northward near-surface wind" },
+      { tag: "wind", value: "uas", label: "eastward wind at 10m" },
+      { tag: "wind", value: "vas", label: "northward wind at 10m" },
     ],
   },
   {
@@ -82,15 +82,15 @@ export const plotvarOptionsContents = [
     options: [
       { tag: "extreme_pr", value: "rx1dayrl20", label: "20-year return level of 1-day precipitation" },
       { tag: "extreme_pr", value: "rx1dayrl50", label: "50-year return level of 1-day precipitation" },
-//       { tag: "extreme_pr", value: "rx1dayrp20", label: "20-year return period of current 20-year return level of 1-day precipitation " },
-//       { tag: "extreme_pr", value: "rx1dayrp50",  label: "50-year return period of current 50-year return level of 1-day precipitation" },
+//       { tag: "extreme_pr", value: "rx1dayrp20", label: "return period of current 20-year return level of 1-day precipitation " },
+//       { tag: "extreme_pr", value: "rx1dayrp50",  label: "return period of current 50-year return level of 1-day precipitation" },
       { tag: "extreme_pr", value: "rx1dayloc", label: "location parameter for extreme 1-day precipitation" },
       { tag: "extreme_pr", value: "rx1dayshape", label: "shape parameter for extreme 1-day precipitation" },
       { tag: "extreme_pr", value: "rx1dayscale", label: "scale parameter for extreme 1-day precipitation" },
       { tag: "extreme_pr", value: "rx5dayrl20", label: "20-year return level of 5-day accumulated precipitation" },
       { tag: "extreme_pr", value: "rx5dayrl50", label: "50-year return level of 5-day accumulated precipitation" },
-//       { tag: "extreme_pr", value: "rx5dayrp20", label: "20-year return period of current 20-year return level of 5-day accumulated precipitation" },
-//       { tag: "extreme_pr", value: "rx5dayrp50", label: "50-year return period of current 50-year return level of 5-day accumulated precipitation" },
+//       { tag: "extreme_pr", value: "rx5dayrp20", label: "return period of current 20-year return level of 5-day accumulated precipitation" },
+//       { tag: "extreme_pr", value: "rx5dayrp50", label: "return period of current 50-year return level of 5-day accumulated precipitation" },
       { tag: "extreme_pr", value: "rx5dayloc", label: "location parameter for extreme 5-day accumulated precipitation" },
       { tag: "extreme_pr", value: "rx5dayshape", label: "shape parameter for extreme 5-day accumulated precipitation" },
       { tag: "extreme_pr", value: "rx5dayscale", label: "scale parameter for extreme 5-day accumulated precipitation" },
@@ -114,13 +114,13 @@ export const plotvarOptionsContents = [
       //   tag: "extreme_wind",
       //   value: "maxwsgsmaxrp20",
       //   label:
-      //     "20-year return period of current 20-year return level of gust speeds ",
+      //     "return period of current 20-year return level of gust speeds ",
       // },
       // {
       //   tag: "extreme_wind",
       //   value: "maxwsgsmaxrp50",
       //   label:
-      //     "50-year return period of current 50-year return level of gust speeds ",
+      //     "return period of current 50-year return level of gust speeds ",
       // },
       // {
       //   tag: "extreme_wind",
@@ -151,13 +151,13 @@ export const plotvarOptionsContents = [
       //   tag: "extreme_wind",
       //   value: "maxsfcWindmaxrp20",
       //   label:
-      //     "20-year return period of current 20-year return level of extreme sustained wind speeds",
+      //     "return period of current 20-year return level of extreme sustained wind speeds",
       // },
       // {
       //   tag: "extreme_wind",
       //   value: "maxsfcWindmaxrp50",
       //   label:
-      //     "50-year return period of current 50-year return level of extreme sustained wind speeds",
+      //     "return period of current 50-year return level of extreme sustained wind speeds",
       // },
       // {
       //   tag: "extreme_wind",

@@ -1,11 +1,9 @@
-name: Build and deploy to development
+name: Build and deploy to production repository
 
 # Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ development ]
-  pull_request:
     branches: [ development ]
 
 # Continue build and deployment even if there are warnings
@@ -14,7 +12,7 @@ env:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build_test:
+  deploy_to_prod:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -30,12 +28,19 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+      - name: replace homepage URL
+        run: |
+          sed -i 's?UKCORDEX-plot-explorer-dev?UKCORDEX-plot-explorer?g' package.json
+          grep "UKCORDEX-plot-explorer.git" package.json
+          grep "UKCORDEX-plot-explorer/" package.json
       - name: npm ci and build
         run: |
           npm ci --force # The force flag is temporary until the dependencies tree is fixed
           npm run build --if-present
-      - name: Deploy to development 🚀
+      - name: Deploy to production 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
+          repository-name: UCL/UKCORDEX-plot-explorer
+          token: ${{secrets.DEPLOYMENT_TO_PROD}}
