@@ -187,7 +187,7 @@ export const plotvarOptionsContents = [
       { tag: "other", value: "ndhi", label: "number of dangerously hot days" },
       // { tag: "other", value: "ndrought", label: "number of occurrences of drought", },
       { tag: "other", value: "pet", label: "potential evapotranspiration" },
-      // { tag: "other", value: "spei6", label: "6-month standardised precipitation-evapotranspiration index", },
+      { tag: "other", value: "spei6", label: "6-month standardised precipitation-evapotranspiration index", },
       { tag: "other", value: "spi6", label: "6-month standardised precipitation index", },
       { tag: "other", value: "tr", label: "number of tropical nights (> 20°C)" },
     ],
