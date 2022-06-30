@@ -13,10 +13,10 @@ import AboutExplorer from "./components/ExtraPages/About/AboutExplorer";
 import IndicesCalculation from "./components/ExtraPages/About/IndicesCalculation";
 import DownloadHelp from "./components/ExtraPages/Help/DownloadHelp";
 import ReactGA from "react-ga";
-ReactGA.initialize("UA-228675619-1");
 
 function App() {
   // ReactGA.initialize("UA-228675619-1", { testMode: true });
+  ReactGA.initialize("UA-228675619-1");
   ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
