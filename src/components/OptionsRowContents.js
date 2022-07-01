@@ -183,7 +183,7 @@ export const plotvarOptionsContents = [
       { tag: "other", value: "gdd", label: "growing degree-days" },
       { tag: "other", value: "gsl", label: "growing season length" },
       { tag: "other", value: "hdd", label: "heating degree-days" },
-      // { tag: "other", value: "mrso", label: "soil moisture at depths of up to 1m", },
+      { tag: "other", value: "mrso", label: "soil moisture at depths of up to 1m", },
       { tag: "other", value: "ndhi", label: "number of dangerously hot days" },
       // { tag: "other", value: "ndrought", label: "number of occurrences of drought", },
       { tag: "other", value: "pet", label: "potential evapotranspiration" },
