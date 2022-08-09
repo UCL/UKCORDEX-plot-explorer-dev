@@ -211,7 +211,7 @@ export const periodOptionsContents = [
   },
   {
     value: "19801201-20101130",
-    label: "Baseline period: 1981-2010",
+    label: "Reference period: 1981-2010",
     title: "(1981-2010)",
   },
   {
