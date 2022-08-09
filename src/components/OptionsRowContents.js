@@ -265,7 +265,7 @@ export const periodOptionsContents = [
     title: "after GMST increase of 3°C ",
   },
   {
-    value: 1-23",
+    value: "1-2",
     label: "from 1°C to 2°C above pre-industrial",
     title: "after GMST increase from 1°C to 2°C ",
   },
