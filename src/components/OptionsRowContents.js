@@ -264,6 +264,11 @@ export const periodOptionsContents = [
     label: "3°C above pre-industrial",
     title: "after GMST increase of 3°C ",
   },
+  {
+    value: 1-23",
+    label: "from 1°C to 2°C above pre-industrial",
+    title: "after GMST increase from 1°C to 2°C ",
+  },
 ];
 
 // Seasons
