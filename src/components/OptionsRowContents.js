@@ -183,12 +183,13 @@ export const plotvarOptionsContents = [
       { tag: "other", value: "gdd", label: "growing degree-days" },
       { tag: "other", value: "gsl", label: "growing season length" },
       { tag: "other", value: "hdd", label: "heating degree-days" },
-      // { tag: "other", value: "mrso", label: "soil moisture at depths of up to 1m", },
+      { tag: "other", value: "mrso", label: "soil moisture at depths of up to 1m" },
       { tag: "other", value: "ndhi", label: "number of dangerously hot days" },
-      // { tag: "other", value: "ndrought", label: "number of occurrences of drought", },
       { tag: "other", value: "pet", label: "potential evapotranspiration" },
       { tag: "other", value: "spei6", label: "6-month standardised precipitation-evapotranspiration index", },
+      { tag: "other", value: "spei6dd", label: "drought duration (based on spei6)" },
       { tag: "other", value: "spi6", label: "6-month standardised precipitation index", },
+      { tag: "other", value: "spi6dd", label: "drought duration (based on spi6)", },
       { tag: "other", value: "tr", label: "number of tropical nights (> 20°C)" },
     ],
   },
@@ -211,7 +212,7 @@ export const periodOptionsContents = [
   },
   {
     value: "19801201-20101130",
-    label: "Baseline period: 1981-2010",
+    label: "Reference period: 1981-2010",
     title: "(1981-2010)",
   },
   {
@@ -263,6 +264,11 @@ export const periodOptionsContents = [
     value: "3",
     label: "3°C above pre-industrial",
     title: "after GMST increase of 3°C ",
+  },
+  {
+    value: "1-2",
+    label: "from 1°C to 2°C above pre-industrial",
+    title: "after GMST increase from 1°C to 2°C ",
   },
 ];
 
