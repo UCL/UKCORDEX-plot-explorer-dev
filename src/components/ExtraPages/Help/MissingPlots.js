@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
+import { InlineMath } from "react-katex";
 import "../ExtraPages.css";
 import "../HelpNav.css";
 
@@ -39,6 +40,13 @@ export default function MissingPlots() {
         <h5 id="annualonly">Degree-days and growing season length are only available at annual timescales</h5>
         <p>As noted in the <HashLink to="/indices-help#degree">indices reference</HashLink>, season lengths and degree-days are calculated
           per calendar year, and seasonal plots are not available.
+        </p>
+      </div>
+      <div>
+        <h5 id="heatwaves">Indices of occurrences of extreme heat are not computed for the winter months</h5>
+        <p>Heatwaves (<InlineMath math={"\\texttt{hwdi}"}/>), tropical nights (<InlineMath math={"\\texttt{tr}"}/>) and
+        days with dangerously high heat index (<InlineMath math={"\\texttt{ndhi}"}/>) do not occur in the UK during the winter months. 
+        Plots of these indices are therefore not available for winter.
         </p>
       </div>
       <div>
