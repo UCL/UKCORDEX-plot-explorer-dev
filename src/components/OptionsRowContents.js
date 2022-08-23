@@ -146,48 +146,24 @@ export const regionOptionsContents = [
 
 // Time Periods
 export const periodOptionsContents = [
-  {
-    value: "19890101-20081231",
-    label: "Evaluation period: 1989-2008",
-    title: "(1989-2008)",
-  },
-  {
-    value: "19801201-20101130",
-    label: "Reference period: 1981-2010",
-    title: "(1981-2010)",
-  },
-  { 
+//  { value: "19890101-20081231", label: "Evaluation period: 1989-2008", title: "(1989-2008)" },
+//  { value: "19801201-20101130", label: "Reference period: 1981-2010", title: "(1981-2010)" },
+//  { 
     label: "Changes from 1980-2010 to future time periods",
     options: [
-      { value: "19891201-20191130", label: "1990-2019", title: "(1990-2019 vs 1981-2010)" },
-      { value: "19991201-20291130", label: "2000-2029", title: "(2000-2029 vs 1981-2010)" },
-      { value: "20091201-20391130", label: "2010-2039", title: "(2010-2039 vs 1981-2010)" }, 
-      { value: "20191201-20491130", label: "2020-2049", title: "(2020-2049 vs 1981-2010)" },
-      { value: "20291201-20591130", label: "2030-2059", title: "(2030-2059 vs 1981-2010)" },
-      { value: "20391201-20691130", label: "2040-2069", title: "(2040-2069 vs 1981-2010)" },
-      { value: "20491201-20791130", label: "2050-2079", title: "(2050-2079 vs 1981-2010)" }
+      { tag : "vs-ref", value: "19891201-20191130", label: "1990-2019", title: "(1990-2019 vs 1981-2010)" },
+      { tag : "vs-ref", value: "19991201-20291130", label: "2000-2029", title: "(2000-2029 vs 1981-2010)" },
+      { tag : "vs-ref", value: "20091201-20391130", label: "2010-2039", title: "(2010-2039 vs 1981-2010)" }, 
+      { tag : "vs-ref", value: "20191201-20491130", label: "2020-2049", title: "(2020-2049 vs 1981-2010)" },
+      { tag : "vs-ref", value: "20291201-20591130", label: "2030-2059", title: "(2030-2059 vs 1981-2010)" },
+      { tag : "vs-ref", value: "20391201-20691130", label: "2040-2069", title: "(2040-2069 vs 1981-2010)" },
+      { tag : "vs-ref", value: "20491201-20791130", label: "2050-2079", title: "(2050-2079 vs 1981-2010)" }
     ]
   }
-  {
-    value: "1.5",
-    label: "1.5°C above pre-industrial",
-    title: "after GMST increase of 1.5°C ",
-  },
-  {
-    value: "2",
-    label: "2°C above pre-industrial",
-    title: "after GMST increase of 2°C ",
-  },
-  {
-    value: "3",
-    label: "3°C above pre-industrial",
-    title: "after GMST increase of 3°C ",
-  },
-  {
-    value: "1-2",
-    label: "from 1°C to 2°C above pre-industrial",
-    title: "after GMST increase from 1°C to 2°C ",
-  },
+//  { value: "1.5", label: "1.5°C above pre-industrial", title: "after GMST increase of 1.5°C" },
+//  { value: "2", label: "2°C above pre-industrial", title: "after GMST increase of 2°C" },
+//  { value: "3", label: "3°C above pre-industrial", title: "after GMST increase of 3°C" }, 
+//  { value: "1-2", label: "from 1°C to 2°C above pre-industrial", title: "after GMST increase from 1°C to 2°C " },
 ];
 
 // Seasons
