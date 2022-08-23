@@ -103,6 +103,7 @@ function OptionsRow({
         <Select
           options={periodOptionsContents}
           onChange={setPeriods}
+          classNamePrefix={periodOptionsContents}
           placeholder="Time periods"
           isClearable={false}
           isMulti
