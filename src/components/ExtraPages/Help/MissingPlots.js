@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
+import { InlineMath } from "react-katex";
 import "../ExtraPages.css";
 import "../HelpNav.css";
 
