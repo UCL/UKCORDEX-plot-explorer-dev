@@ -781,12 +781,12 @@ function IndicesHelp() {
               used to calculate selected return levels (the magnitude of a
               once-in-
               <InlineMath math={"x"} />
-              -years event) and return periods (the expected number of years
-              between occurrences of events of a given magnitude).
+              -years event). Parameters are estimated using probability-weighted moments,
+              which were found to produce more robust return levels than those estimated using maximum likelihood.
               <br></br>
               <br></br>
-              Fitted parameters, return levels and return periods have been
-              calculated for seasonal precipitation maxima{" "}
+              Fitted parameters and return levels periods have been
+              estimated for seasonal precipitation maxima{" "}
               <InlineMath math={"\\texttt{rx1day}"} /> and{" "}
               <InlineMath math={"\\texttt{rx5day}"} />, and for seasonal
               windspeed maxima <InlineMath math={"\\texttt{maxsfcWindmax}"} />{" "}
@@ -805,20 +805,20 @@ function IndicesHelp() {
               (magnitude of a once-in-20-years event) of{" "}
               <InlineMath math={"\\texttt{idx}"} />.
             </p>{" "}
-            <p className="contents">
+            {/* <p className="contents">
               <InlineMath math={"\\texttt{idxrp20:}"} /> The 20-year return
               period of the 20-year return level{" "}
               <InlineMath math={"\\texttt{idxrl20}"} /> computed over the the
               baseline period (1980-2010). This index is only available for
               future time periods.
-            </p>{" "}
-            <p className="contents">
+            </p>{" "} */}
+            {/* <p className="contents">
               <InlineMath math={"\\texttt{idxrp50:}"} /> The 50-year return
               period of the 50-year return level{" "}
               <InlineMath math={"\\texttt{idxrl50}"} /> computed over the the
               baseline period (1980-2010). This index is only available for
               future time periods.
-            </p>{" "}
+            </p>{" "} */}
             <p className="contents">
               <InlineMath math={"\\texttt{idxloc:}"} /> Location parameter of
               fitted GEV distribution.
