@@ -42,6 +42,13 @@ export default function MissingPlots() {
         </p>
       </div>
       <div>
+        <h5 id="heatwaves">Indices of occurrences of extreme heat are not computed for the winter months</h5>
+        <p>Heatwaves (<InlineMath math={"\\texttt{hwdi}"}/>), tropical nights (<InlineMath math={"\\texttt{tr}"}/>) and
+        days with dangerously high heat index (<InlineMath math={"\\texttt{ndhi}"}/>) do not occur in the UK during the winter months. 
+        Plots of these indices are therefore not available for winter.
+        </p>
+      </div>
+      <div>
         <h1 id="missingruns">Model runs missing from particular plots</h1>
         <p>
           In some cases, plots are produced but individual model runs are missing. This is usually due to a particular variable being unavailable
