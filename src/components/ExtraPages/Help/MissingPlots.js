@@ -44,9 +44,9 @@ export default function MissingPlots() {
       </div>
       <div>
         <h5 id="heatwaves">Indices of occurrences of extreme heat are not computed for the winter months</h5>
-        <p>Heatwaves (<InlineMath math={"\\texttt{hwdi}"}/>), tropical nights (<InlineMath math={"\\texttt{tr}"}/>) and
-        days with dangerously high heat index (<InlineMath math={"\\texttt{ndhi}"}/>) do not occur in the UK during the winter months. 
-        Plots of these indices are therefore not available for winter.
+        <p>Heatwaves (<InlineMath math={"\\texttt{hwdi}"} />), tropical nights (<InlineMath math={"\\texttt{tr}"} />) and
+          days with dangerously high heat index (<InlineMath math={"\\texttt{ndhi}"} />) do not occur in the UK during the winter months.
+          Plots of these indices are therefore not available for winter.
         </p>
       </div>
       <div>
@@ -55,6 +55,57 @@ export default function MissingPlots() {
           In some cases, plots are produced but individual model runs are missing. This is usually due to a particular variable being unavailable
           in the model output. A table of missing variables is under construction and will be provided here when complete.
         </p>
+      </div>
+      <div>
+        <h5 id="eurocordex">Variables missing from EuroCORDEX regional models</h5>
+        <Table striped size="sm">
+          <thead>
+            <tr>
+              <th>Variable</th>
+              <th>Missing from</th>
+              <th>Other indices affected</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><InlineMath math={"\\texttt{clt}"} /></td>
+              <td>WRF381P</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{hurs}"} /></td>
+              <td>CCLM4-8-17, some REMO2015</td>
+              <td><InlineMath math={"\\texttt{ndhi}"} /></td>
+              <td>Affected REMO2015 runs are those driven by EC-EARTH r12 and HadGEM2-ES</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{prsn}"} /></td>
+              <td>CCLM4-8-17, RegCM4-6</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{snw}"} /></td>
+              <td>CCLM4-8-17, some RCA4</td>
+              <td></td>
+              <td>Affected RCA4 runs are those driven by EC-EARTH r1 and r2; MPI-ESM-LR r2 and r3; and NorESM1-M</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{wsgsmax}"} /></td>
+              <td>ALADIN63, HIRHAM5, RegCM4-6, WRF381P</td>
+              <td><InlineMath math={"\\texttt{maxwsgsmax}"} /> and GEV</td>
+              <td>Affected RCA4 runs are those driven by EC-EARTH r1 and r2; MPI-ESM-LR r2 and r3; and NorESM1-M</td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{mrso}"} /></td>
+              <td>WRF381P</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </Table>
       </div>
     </Container>
   );
