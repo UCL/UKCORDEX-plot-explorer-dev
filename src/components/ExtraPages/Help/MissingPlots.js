@@ -57,45 +57,45 @@ export default function MissingPlots() {
         </p>
       </div>
       <div>
-        <h5 id="eurocordex">Variables missing from EuroCORDEX regional models</h5>
+        <h5 id="eurocordex">Variables missing from EuroCORDEX regional simulations</h5>
         <Table striped size="sm">
           <thead>
             <tr>
               <th>Variable</th>
-              <th>Related indices</th>
               <th>Missing from</th>
+              <th>Related indices</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><InlineMath math={"\\texttt{clt}"} /></td>
-              <td></td>
               <td>WRF381P</td>
+              <td></td>
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{hurs}"} /></td>
-              <td><InlineMath math={"\\texttt{ndhi}"} /></td>
               <td>CCLM4-8-17; EC-EARTH_r12i1p1_REMO2015, HadGEM2-ES_r1i1p1_REMO2015</td>
-            </tr>
-            <tr>
-              <td><InlineMath math={"\\texttt{prsn}"} /></td>
-              <td></td>
-              <td>CCLM4-8-17, RegCM4-6</td>
-            </tr>
-            <tr>
-              <td><InlineMath math={"\\texttt{snw}"} /></td>
-              <td></td>
-              <td>CCLM4-8-17; EC-EARTH_r1i1p1_RCA4, EC-EARTH_r2i1p1_RCA4, MPI-ESM-LR_r2i1p1_RCA4, MPI-ESM-LR_r3i1p1_RCA4, NorESM1-M_r1i1p1_RCA4</td>
-            </tr>
-            <tr>
-              <td><InlineMath math={"\\texttt{wsgsmax}"} /></td>
-              <td><InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes</td>
-              <td>ALADIN63, HIRHAM5, RegCM4-6, WRF381P</td>
+              <td><InlineMath math={"\\texttt{ndhi}"} /></td>
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{mrso}"} /></td>
-              <td></td>
               <td>WRF381P</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{prsn}"} /></td>
+              <td>CCLM4-8-17, RegCM4-6</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{snw}"} /></td>
+              <td>CCLM4-8-17; EC-EARTH_r1i1p1_RCA4, EC-EARTH_r2i1p1_RCA4, MPI-ESM-LR_r2i1p1_RCA4, MPI-ESM-LR_r3i1p1_RCA4, NorESM1-M_r1i1p1_RCA4</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><InlineMath math={"\\texttt{wsgsmax}"} /></td>
+              <td>ALADIN63, HIRHAM5, RegCM4-6, WRF381P</td>
+              <td><InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes</td>
             </tr>
           </tbody>
         </Table>
