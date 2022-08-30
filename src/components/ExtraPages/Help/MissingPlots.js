@@ -53,7 +53,19 @@ export default function MissingPlots() {
         <h1 id="missingruns">Model runs missing from particular plots</h1>
         <p>
           In some cases, plots are produced but individual model runs are missing. This is usually due to a particular variable being unavailable
-          in the model output. A table of missing variables is under construction and will be provided here when complete.
+          in the model output. Tables of indices missing from individual EuroCORDEX and CMIP5 runs are provided below.
+        </p>
+        <p>
+          Plots of all UKCP18 12km ensemble members are available for all indices. 
+        </p>
+        <p>
+          The following indices are not available for the UKCP18 60km runs: 
+            <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and extreme indices thereof,
+            <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extreme indices thereof,
+            <InlineMath math={"\\texttt{mrso}"} />, 
+            <InlineMath math={"\\texttt{prcprop}"} />,
+            <InlineMath math={"\\texttt{prsn}"} />,
+             <InlineMath math={"\\texttt{snw}"} />.
         </p>
       </div>
       <div>
@@ -99,6 +111,9 @@ export default function MissingPlots() {
             </tr>
           </tbody>
         </Table>
+      </div>
+      <div>
+        <h5 id="global">Variables missing from CMIP5 runs</h5>
       </div>
     </Container>
   );
