@@ -62,47 +62,40 @@ export default function MissingPlots() {
           <thead>
             <tr>
               <th>Variable</th>
+              <th>Related indices</th>
               <th>Missing from</th>
-              <th>Other indices affected</th>
-              <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><InlineMath math={"\\texttt{clt}"} /></td>
+              <td></td>
               <td>WRF381P</td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{hurs}"} /></td>
-              <td>CCLM4-8-17, some REMO2015</td>
               <td><InlineMath math={"\\texttt{ndhi}"} /></td>
-              <td>Affected REMO2015 runs are those driven by EC-EARTH r12 and HadGEM2-ES</td>
+              <td>CCLM4-8-17; EC-EARTH_r12i1p1_REMO2015, HadGEM2-ES_r1i1p1_REMO2015</td>
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{prsn}"} /></td>
+              <td></td>
               <td>CCLM4-8-17, RegCM4-6</td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{snw}"} /></td>
-              <td>CCLM4-8-17, some RCA4</td>
               <td></td>
-              <td>Affected RCA4 runs are those driven by EC-EARTH r1 and r2; MPI-ESM-LR r2 and r3; and NorESM1-M</td>
+              <td>CCLM4-8-17; EC-EARTH_r1i1p1_RCA4, EC-EARTH_r2i1p1_RCA4, MPI-ESM-LR_r2i1p1_RCA4, MPI-ESM-LR_r3i1p1_RCA4, NorESM1-M_r1i1p1_RCA4</td>
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{wsgsmax}"} /></td>
+              <td><InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes</td>
               <td>ALADIN63, HIRHAM5, RegCM4-6, WRF381P</td>
-              <td><InlineMath math={"\\texttt{maxwsgsmax}"} /> and GEV</td>
-              <td>Affected RCA4 runs are those driven by EC-EARTH r1 and r2; MPI-ESM-LR r2 and r3; and NorESM1-M</td>
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{mrso}"} /></td>
+              <td></td>
               <td>WRF381P</td>
-              <td></td>
-              <td></td>
             </tr>
           </tbody>
         </Table>
