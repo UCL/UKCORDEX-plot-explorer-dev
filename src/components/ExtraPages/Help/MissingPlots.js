@@ -56,16 +56,16 @@ export default function MissingPlots() {
           in the model output. Tables of indices missing from individual EuroCORDEX and CMIP5 runs are provided below.
         </p>
         <p>
-          Plots of all UKCP18 12km ensemble members are available for all indices. 
+          Plots of all UKCP18 12km ensemble members are available for all indices.
         </p>
         <p>
-          The following indices are not available for the UKCP18 60km runs: 
-            <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and extreme indices thereof,
-            <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extreme indices thereof,
-            <InlineMath math={"\\texttt{mrso}"} />, 
-            <InlineMath math={"\\texttt{prcprop}"} />,
-            <InlineMath math={"\\texttt{prsn}"} />,
-             <InlineMath math={"\\texttt{snw}"} />.
+          The following indices are not available for the UKCP18 60km runs:
+          <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and extreme indices thereof,
+          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extreme indices thereof,
+          <InlineMath math={"\\texttt{mrso}"} />,
+          <InlineMath math={"\\texttt{prcprop}"} />,
+          <InlineMath math={"\\texttt{prsn}"} />,
+          <InlineMath math={"\\texttt{snw}"} />.
         </p>
       </div>
       <div>
@@ -114,6 +114,34 @@ export default function MissingPlots() {
       </div>
       <div>
         <h5 id="global">Variables missing from CMIP5 runs</h5>
+        <p>
+          Plots are not provided for EC-EARTH realisation r3i1p1 due to unavailability of the model output.
+        </p>
+        <p>
+          The following indices are unavailable for all CMIP5 ensemble members:
+          <InlineMath math={"\\texttt{hurs}"} />,
+          <InlineMath math={"\\texttt{huss}"} />,
+          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes thereof,
+          <InlineMath math={"\\texttt{mrso}"} />,
+          <InlineMath math={"\\texttt{ndhi}"} />,
+          <InlineMath math={"\\texttt{snw}"} />. Any indices not appearing in this list or the table below are provided for all CMIP ensemble members.
+        </p>
+        <p>
+          Cells marked with <InlineMath math={"\\checkmark"} /> in the following table denote indices that are missing from particular runs.
+        </p>
+        <Table striped size="sm">
+          <thead>
+            <tr>
+              <th>CMIP5 member</th>
+              <th>clt</th><th>prc</th><th>prsn</th><th>psl</th><th>rls</th><th>rss</th><th>sfcWind</th><th>sfcWindmax</th><th>uas</th><th>vas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>ACCESS1-3_r1i1p1</td><td></td><td></td><td></td><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+          </tbody>
+        </Table>
       </div>
     </Container>
   );
