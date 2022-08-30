@@ -139,22 +139,56 @@ export default function MissingPlots() {
           <tbody>
             <tr>
               <td>ACCESS1-3_r1i1p1</td><td></td><td></td><td></td><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>BCC-CSM1-1_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td>x</td><td>x</td><td></td><td></td>
+            </tr>
+            <tr>
               <td>CCSM4_r1i1p1</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td>
+            </tr>
+            <tr>
               <td>CESM1-BGC_r1i1p1</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td>
+            </tr>
+            <tr>
               <td>CMCC-CM_r1i1p1</td><td></td><td></td><td></td><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>CNRM-CM5_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>CanESM2_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>EC-EARTH_r12i1p1</td><td>x</td><td></td><td>x</td><td></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td>
+            </tr>
+            <tr>
               <td>EC-EARTH_r1i1p1</td><td>x</td><td></td><td>x</td><td></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td>
+            </tr>
+            <tr>
               <td>GFDL-ESM2G_r1i1p1</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td></td><td>x</td><td>x</td><td>x</td>
+            </tr>
+            <tr>
               <td>HadGEM2-ES_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>IPSL-CM5A-MR_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>MPI-ESM-LR_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>x</td><td>x</td>
+            </tr>
+            <tr>
               <td>MPI-ESM-LR_r2i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>MPI-ESM-LR_r3i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>MPI-ESM-MR_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
               <td>MRI-CGCM3_r1i1p1</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td></td><td>x</td><td>x</td><td>x</td>
+            </tr>
+            <tr>
               <td>NorESM1-M_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td>x</td><td>x</td><td>x</td><td>x</td>
             </tr>
           </tbody>
