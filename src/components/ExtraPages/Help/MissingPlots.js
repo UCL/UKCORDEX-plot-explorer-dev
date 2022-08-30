@@ -59,12 +59,12 @@ export default function MissingPlots() {
           Plots of all UKCP18 12km ensemble members are available for all indices.
         </p>
         <p>
-          The following indices are not available for the UKCP18 60km runs:
-          <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and extreme indices thereof,
-          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extreme indices thereof,
-          <InlineMath math={"\\texttt{mrso}"} />,
-          <InlineMath math={"\\texttt{prcprop}"} />,
-          <InlineMath math={"\\texttt{prsn}"} />,
+          The following indices are not available for the UKCP18 60km runs:{ }
+          <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and extreme indices thereof;{ }
+          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extreme indices thereof;{ }
+          <InlineMath math={"\\texttt{mrso}"} />;{ }
+          <InlineMath math={"\\texttt{prcprop}"} />;{ }
+          <InlineMath math={"\\texttt{prsn}"} />;{ }
           <InlineMath math={"\\texttt{snw}"} />.
         </p>
       </div>
@@ -119,15 +119,15 @@ export default function MissingPlots() {
         </p>
         <p>
           The following indices are unavailable for all CMIP5 ensemble members:
-          <InlineMath math={"\\texttt{hurs}"} />,
-          <InlineMath math={"\\texttt{huss}"} />,
-          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes thereof,
-          <InlineMath math={"\\texttt{mrso}"} />,
-          <InlineMath math={"\\texttt{ndhi}"} />,
+          <InlineMath math={"\\texttt{hurs}"} />;{ }
+          <InlineMath math={"\\texttt{huss}"} />;{ }
+          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes thereof;{ }
+          <InlineMath math={"\\texttt{mrso}"} />;{ }
+          <InlineMath math={"\\texttt{ndhi}"} />;{ }
           <InlineMath math={"\\texttt{snw}"} />. Any indices not appearing in this list or the table below are provided for all CMIP ensemble members.
         </p>
         <p>
-          Cells marked with <InlineMath math={"\\checkmark"} /> in the following table denote indices that are missing from particular runs.
+          Cells marked with <InlineMath math={"x"} /> in the following table denote indices that are missing from particular runs.
         </p>
         <Table striped size="sm">
           <thead>
@@ -138,7 +138,24 @@ export default function MissingPlots() {
           </thead>
           <tbody>
             <tr>
-            <td>ACCESS1-3_r1i1p1</td><td></td><td></td><td></td><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>ACCESS1-3_r1i1p1</td><td></td><td></td><td></td><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>BCC-CSM1-1_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td>x</td><td>x</td><td></td><td></td>
+              <td>CCSM4_r1i1p1</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td>
+              <td>CESM1-BGC_r1i1p1</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td>
+              <td>CMCC-CM_r1i1p1</td><td></td><td></td><td></td><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>CNRM-CM5_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>CanESM2_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>EC-EARTH_r12i1p1</td><td>x</td><td></td><td>x</td><td></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td>
+              <td>EC-EARTH_r1i1p1</td><td>x</td><td></td><td>x</td><td></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td>
+              <td>GFDL-ESM2G_r1i1p1</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td></td><td>x</td><td>x</td><td>x</td>
+              <td>HadGEM2-ES_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>IPSL-CM5A-MR_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>MPI-ESM-LR_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>x</td><td>x</td>
+              <td>MPI-ESM-LR_r2i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>MPI-ESM-LR_r3i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>MPI-ESM-MR_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>MRI-CGCM3_r1i1p1</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td></td><td>x</td><td>x</td><td>x</td>
+              <td>NorESM1-M_r1i1p1</td><td></td><td></td><td></td><td></td><td></td><td></td><td>x</td><td>x</td><td>x</td><td>x</td>
             </tr>
           </tbody>
         </Table>
