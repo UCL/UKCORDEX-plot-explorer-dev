@@ -127,7 +127,7 @@ export default function MissingPlots() {
           <InlineMath math={"\\texttt{snw}"} />. Any indices not appearing in this list or the table below are provided for all CMIP ensemble members.
         </p>
         <p>
-          Cells marked with <InlineMath math={"x"} /> in the following table denote indices that are missing from particular runs.
+          Cells marked with <InlineMath math={"\\texttt{x}"} /> in the following table denote indices that are missing from particular runs.
         </p>
         <Table striped size="sm">
           <thead>
