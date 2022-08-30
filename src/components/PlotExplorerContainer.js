@@ -79,9 +79,6 @@ function PlotExplorerContainer() {
         /> This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
         </p>
 
-        <h5>
-          This website is currently under development and only contains a subset of the <Link to="/indices-help">planned indices</Link>.<br></br>
-        </h5>
       </Alert>
       <OptionsRow
         setPlotvars={setPlotvars}
