@@ -59,12 +59,12 @@ export default function MissingPlots() {
           Plots of all UKCP18 12km ensemble members are available for all indices.
         </p>
         <p>
-          The following indices are not available for the UKCP18 60km runs:{ }
-          <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and extreme indices thereof;{ }
-          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extreme indices thereof;{ }
-          <InlineMath math={"\\texttt{mrso}"} />;{ }
-          <InlineMath math={"\\texttt{prcprop}"} />;{ }
-          <InlineMath math={"\\texttt{prsn}"} />;{ }
+          The following indices are not available for the UKCP18 60km runs:{" "}
+          <InlineMath math={"\\texttt{maxsfcWindmax}"} /> and extreme indices thereof;{" "}
+          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extreme indices thereof;{" "}
+          <InlineMath math={"\\texttt{mrso}"} />;{" "}
+          <InlineMath math={"\\texttt{prcprop}"} />;{" "}
+          <InlineMath math={"\\texttt{prsn}"} />;{" "}
           <InlineMath math={"\\texttt{snw}"} />.
         </p>
       </div>
@@ -119,11 +119,11 @@ export default function MissingPlots() {
         </p>
         <p>
           The following indices are unavailable for all CMIP5 ensemble members:
-          <InlineMath math={"\\texttt{hurs}"} />;{ }
-          <InlineMath math={"\\texttt{huss}"} />;{ }
-          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes thereof;{ }
-          <InlineMath math={"\\texttt{mrso}"} />;{ }
-          <InlineMath math={"\\texttt{ndhi}"} />;{ }
+          <InlineMath math={"\\texttt{hurs}"} />;{" "}
+          <InlineMath math={"\\texttt{huss}"} />;{" "}
+          <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes thereof;{" "}
+          <InlineMath math={"\\texttt{mrso}"} />;{" "}
+          <InlineMath math={"\\texttt{ndhi}"} />;{" "}
           <InlineMath math={"\\texttt{snw}"} />. Any indices not appearing in this list or the table below are provided for all CMIP ensemble members.
         </p>
         <p>
