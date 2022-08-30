@@ -29,7 +29,7 @@ export default function MissingPlots() {
         </p>
       </div>
       <div>
-        <h5 id="Taylorbl">Taylor diagrams not produced for baseline period</h5>
+        <h5 id="Taylorbl">Taylor diagrams are not produced for baseline period</h5>
         <p><HashLink to="/plot-help#taylor">Taylor diagrams</HashLink> compare
           the spatial patterns in the model output with a reference field.
           During the evaluation period, model output is compared to the observed climatology, and for future periods,
@@ -118,7 +118,7 @@ export default function MissingPlots() {
           Plots are not provided for EC-EARTH realisation r3i1p1 due to unavailability of the model output.
         </p>
         <p>
-          The following indices are unavailable for all CMIP5 ensemble members:
+          The following indices are unavailable for all CMIP5 ensemble members:{" "}
           <InlineMath math={"\\texttt{hurs}"} />;{" "}
           <InlineMath math={"\\texttt{huss}"} />;{" "}
           <InlineMath math={"\\texttt{maxwsgsmax}"} /> and extremes thereof;{" "}
