@@ -74,7 +74,7 @@ export default function MissingPlots() {
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{hurs}"} /></td>
-              <td>CCLM4-8-17; EC-EARTH_r12i1p1_REMO2015, HadGEM2-ES_r1i1p1_REMO2015</td>
+              <td>CCLM4-8-17; EC-EARTH_r12i1p1_REMO2015, HadGEM2-ES_r1i1p1_REMO2015, ERAINT_r1i1p1_REMO2015</td>
               <td><InlineMath math={"\\texttt{ndhi}"} /></td>
             </tr>
             <tr>
@@ -89,7 +89,7 @@ export default function MissingPlots() {
             </tr>
             <tr>
               <td><InlineMath math={"\\texttt{snw}"} /></td>
-              <td>CCLM4-8-17; EC-EARTH_r1i1p1_RCA4, EC-EARTH_r2i1p1_RCA4, MPI-ESM-LR_r2i1p1_RCA4, MPI-ESM-LR_r3i1p1_RCA4, NorESM1-M_r1i1p1_RCA4</td>
+              <td>CCLM4-8-17; EC-EARTH_r1i1p1_RCA4, EC-EARTH_r2i1p1_RCA4, MPI-ESM-LR_r2i1p1_RCA4, MPI-ESM-LR_r3i1p1_RCA4, NorESM1-M_r1i1p1_RCA4, ERAINT_r1i1p1_RCA4</td>
               <td></td>
             </tr>
             <tr>
