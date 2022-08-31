@@ -212,7 +212,7 @@ export default function TimeHelp() {
               <p style={{ fontSize: "80%" }}>
                 <b>Table 6:</b> Global warming levels for global models used to
                 drive the regional ensemble members. Cells highlighted in
-                yellow indicate runs that reached the threshold later than 1965,
+                yellow indicate runs that reached the threshold later than 2065,
                 so that model climatologies were computed from a truncated
                 period. Cells shaded in grey indicate runs that reached the threshold
                 later than 2080, for which model climatologies were not computed.
