@@ -162,7 +162,7 @@ export default function DataHelp() {
           <div id="eurocordex">
             <h5>EuroCORDEX regional (12km) ensemble</h5>
             <p>
-              This consists of 65 climate simulations produced by multiple
+              This consists of 64 climate simulations produced by multiple
               dynamical downscaling models forced by multiple global climate
               models from the CMIP5 experiment. These simulations are derived
               from the{" "}
@@ -172,7 +172,7 @@ export default function DataHelp() {
               independent realisations each) and thirteen RCMs. However, runs
               have only been produced for a subset of the possible GCM-RCM
               pairs. Table 2 shows the available combinations of GCMs and RCMs:
-              each marked GCM-RCM pair contributes a single run to the 65-member
+              each marked GCM-RCM pair contributes a single run to the 64-member
               ensemble.
             </p>
             <Image
