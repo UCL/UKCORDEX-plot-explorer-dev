@@ -72,11 +72,11 @@ export default function TimeHelp() {
             <h1>Information on time periods</h1>
           </div>
           <p>
-              All climate model output prior to 2006 is driven by historical forcings;
-              projections thereafter use the{" "}
-              <a href='https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---representative-concentration-pathways.pdf'>
-                RCP 8.5 scenario</a>.
-            </p>
+            All climate model output prior to 2006 is driven by historical forcings;
+            projections thereafter use the{" "}
+            <a href='https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---representative-concentration-pathways.pdf'>
+              RCP 8.5 scenario</a>.
+          </p>
           {/* section about the data */}
           <div id="evaluation">
             <h5>Evaluation period</h5>
@@ -94,7 +94,7 @@ export default function TimeHelp() {
           <div id="baseline">
             <h5>Baseline period</h5>
             <p>
-              Plots of model climatology during the baseline period 
+              Plots of model climatology during the baseline period
               (December 1st 1980 - November 30th 2010) are provided for reference.
             </p>
           </div>
@@ -163,8 +163,10 @@ export default function TimeHelp() {
               period (December 1st 1980 - November 30th 2010) are also provided
               for 30-year periods centred on the years in which global mean
               surface temperature (GMST) reaches 1.5°C, 2°C and 3°C above
-              pre-industrial levels in the driving GCM run. Area-weighted annual
-              GMST was computed for each global model in the CMIP5-EC and UKCP18
+              pre-industrial levels in the driving GCM run; and for local changes between
+              the 30-year periods centred on the years in which GMST first exceeds 1°C and 2°C,
+              removing the effect of the different rates of warming exhibited by the driving models.
+              Area-weighted annual GMST was computed for each global model in the CMIP5-EC and UKCP18
               60km ensembles on the native grid, then a 30-year rolling average
               calculated: the warming level is the first year in which each
               temperature threshold was exceeded by this rolling average. This
@@ -202,7 +204,7 @@ export default function TimeHelp() {
               climatology was computed using the longest available symmetric
               period centred on the crossing time: for CNRM-CM5, this was the
               26-year period from 2054-2080; for MRI-CGCM3, the 10-year period from 2070-2080;
-              and for NorESM1-M, the 14-year period from 2066-2080. 
+              and for NorESM1-M, the 14-year period from 2066-2080.
               No model climatology was computed for warming of 3°C for GFDL-ESM2G,
               because the run only reached this threshold in 2080.
             </p>
