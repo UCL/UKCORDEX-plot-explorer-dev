@@ -78,6 +78,10 @@ function PlotExplorerContainer() {
           src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"
         /> This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
         </p>
+  
+        <h5>
+          This website is currently an experimental version and still under development.<br></br>
+        </h5>
 
       </Alert>
       <OptionsRow
