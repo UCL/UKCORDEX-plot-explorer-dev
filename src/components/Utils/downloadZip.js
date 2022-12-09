@@ -5,7 +5,7 @@ import JSZipUtils from "jszip-utils";
 export default function downloadZip(filelist, zipname) {
   var zip = new JSZip();
   var count = 0;
-  var zipFilename = "UKCORDEX_" + zipname + ".zip";
+  var zipFilename = "EuroCORDEX-UK_" + zipname + ".zip";
   var urls = filelist;
 
   // Add license file to zip

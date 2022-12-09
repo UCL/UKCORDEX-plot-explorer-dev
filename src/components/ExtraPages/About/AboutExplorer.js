@@ -5,7 +5,7 @@ export default function AboutExplorer() {
   return (
     <Container className="about">
       <div>
-        <h1>About the UKCORDEX Plot Explorer</h1>
+        <h1>About the EuroCORDEX-UK Plot Explorer</h1>
         <p>
           This analysis and visualisation tool is designed to allow rapid exploration of the
           key structures of the model outputs in the UKCP18 projections and the

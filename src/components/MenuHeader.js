@@ -25,7 +25,7 @@ function MenuHeader() {
               className="d-inline-block align-top"
             />
             {"    "}
-            UKCORDEX Plot Explorer
+            EuroCORDEX-UK Plot Explorer
           </Navbar.Brand>
         </LinkContainer>
         {/* This allows the links to show when they're active */}
@@ -40,7 +40,7 @@ function MenuHeader() {
               <NavDropdown.Item>About the plot explorer</NavDropdown.Item>
             </LinkContainer>{" "}
             <LinkContainer to="/about">
-              <NavDropdown.Item>About the UKCORDEX project</NavDropdown.Item>
+              <NavDropdown.Item>About the EuroCORDEX-UK project</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/acknowledgements">
               <NavDropdown.Item>Acknowledgements</NavDropdown.Item>

@@ -10,7 +10,7 @@ export default function MissingPlots() {
     <Container className="help">
       {/* page contents */}
       <div>
-        <h1>Plots not available from UKCORDEX Plot Explorer</h1>
+        <h1>Plots not available from EuroCORDEX-UK Plot Explorer</h1>
         <p>
           Some combinations of the available options will result in an error message that the selected plots do not exist.
           Common reasons for this are given below.
