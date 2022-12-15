@@ -8,6 +8,6 @@ test("Renders Title", () => {
       <App />
     </HashRouter>
   );
-  const linkElement = screen.getByText("UKCORDEX Plot Explorer");
+  const linkElement = screen.getByText("EuroCORDEX-UK Plot Explorer");
   expect(linkElement).toBeInTheDocument();
 });
