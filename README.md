@@ -1,6 +1,6 @@
-# UKCORDEX plot explorer - development version
+# EuroCORDEX-UK plot explorer - development version
 
-This repo contains the development version of [the UKCORDEX Plot Explorer](https://github.com/UCL/UKCORDEX-plot-explorer). We use it to test new changes and make non-production releases to share at the end of each sprint with the research team for feedback.
+This repo contains the development version of [the EuroCORDEX-UK Plot Explorer](https://github.com/UCL/UKCORDEX-plot-explorer). We use it to test new changes and make non-production releases to share at the end of each sprint with the research team for feedback.
 
 You can see the latest deployed live version of this repository [here](https://github-pages.ucl.ac.uk/UKCORDEX-plot-explorer-dev/). Please note the latest version of this repo can be unstable as we might be carrying out work in progress.
 
