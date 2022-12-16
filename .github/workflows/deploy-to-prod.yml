@@ -43,4 +43,4 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
           repository-name: UCL/UKCORDEX-plot-explorer
-          token: ${{secrets.DEPLOYMENT_TO_PROD}}
+          ssh-key: ${{secrets.DEPLOY_KEY}}
