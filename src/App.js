@@ -12,7 +12,7 @@ import Usage from "./components/ExtraPages/Help/Usage";
 import AboutExplorer from "./components/ExtraPages/About/AboutExplorer";
 import IndicesCalculation from "./components/ExtraPages/About/IndicesCalculation";
 import DownloadHelp from "./components/ExtraPages/Help/DownloadHelp";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 function App() {
   // ReactGA.initialize("UA-228675619-1", { testMode: true });
