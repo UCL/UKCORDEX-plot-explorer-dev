@@ -3,7 +3,7 @@ import About from "./components/ExtraPages/About/About";
 import PlotHelp from "./components/ExtraPages/Help/PlotHelp";
 import DataHelp from "./components/ExtraPages/Help/DataHelp";
 import IndicesHelp from "./components/ExtraPages/Help/IndicesHelp";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import PlotExplorerContainer from "./components/PlotExplorerContainer";
 import MissingPlots from "./components/ExtraPages/Help/MissingPlots";
 import TimeHelp from "./components/ExtraPages/Help/TimeHelp";
@@ -12,8 +12,24 @@ import Usage from "./components/ExtraPages/Help/Usage";
 import AboutExplorer from "./components/ExtraPages/About/AboutExplorer";
 import IndicesCalculation from "./components/ExtraPages/About/IndicesCalculation";
 import DownloadHelp from "./components/ExtraPages/Help/DownloadHelp";
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
 
 function App() {
+  // // ReactGA.initialize("G-Z3CPW8C13P"); // might need to change to this but the UA seems ok
+  // prod g tag is G-9Z94K0H3DM
+  ReactGA.initialize("UA-228675619-1");
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.gtag("event", "page_view", {
+      page_path: location.pathname + location.search + location.hash,
+      page_search: location.search,
+      page_hash: location.hash,
+    });
+  }, [location]);
+
   return (
     // rendering just the menu header means it'll display on every page, each route is different
     // Everything should be wrapped in a div
