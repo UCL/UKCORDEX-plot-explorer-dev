@@ -8,9 +8,10 @@ export default function AboutExplorer() {
         <h1>About the EuroCORDEX-UK Plot Explorer</h1>
         <p>
           This analysis and visualisation tool is designed to allow rapid exploration of the
-          key structures of the model outputs in the <a href='https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/about'>UKCP18 projections</a>
-          and the EuroCORDEX ensembles, along with their driving models, for a large
-          number of weather variables and derived indices of climate over the UK.
+          key structures of the model outputs in the <a href='https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/about'>UKCP18 projections</a>{" "}
+          and the <a href='https://www.euro-cordex.net/'>EuroCORDEX ensembles</a>{" "},
+          along with their driving models, for a large number of weather variables and derived indices of climate over the UK.
+          The plot explorer was developed under the <a href='https://github-pages.ucl.ac.uk/EuroCORDEX-UK-plot-explorer/#/about'>EuroCORDEX-UK project</a>.
         </p>
         <p>
           Users can select climate indices, seasons and time periods of interest and can compare the various model outputs,
