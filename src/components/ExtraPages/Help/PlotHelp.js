@@ -291,14 +291,14 @@ export default function PlotHelp() {
             </p>
             <p>
               For full details of the methodology used to accommodate the
-              unbalanced structure of the EuroCORDEX ensemble, see 
-              <div className="indented-block">
+              unbalanced structure of the EuroCORDEX ensemble, see
+            </p>
+            <div className="indented-block">
               Barnes, C.R., R.E. Chandler and C.M. Brierley: <a href='https://www.ucl.ac.uk/statistics/sites/statistics/files/evaluation_of_ukcordex_vs_ukcp18_v2.pdf'>Comparison of EuroCORDEX output with UKCP18 regional ensemble</a>. 
-              Technical report, UK Climate Resilience Programme project CR20-3 
+              Technical report, UK Climate Resilience Programme project CR20-3{" "}
               <em>Enabling the use and producing improved understanding of EuroCORDEX data over the UK</em>, January 2022 (revised July 2022). 
               Available from <a href='https://www.ucl.ac.uk/statistics/research/eurocordex-uk'></a>. 
-              </div>
-            </p>
+            </div>
           </div>
           <br></br>
           {/* epp */}
