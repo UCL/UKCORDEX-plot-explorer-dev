@@ -291,11 +291,11 @@ export default function PlotHelp() {
             </p>
             <p>
               For full details of the methodology used to accommodate the
-              unbalanced structure of the EuroCORDEX ensemble, see{" "}
-              <Link to="link-to-tech-report-or-later-paper">
-                link-to-tech-report-or-later-paper
-              </Link>
-              .
+              unbalanced structure of the EuroCORDEX ensemble, see 
+              Barnes, C.R., R.E. Chandler and C.M. Brierley: <a href='https://www.ucl.ac.uk/statistics/sites/statistics/files/evaluation_of_ukcordex_vs_ukcp18_v2.pdf'>Comparison of EuroCORDEX output with UKCP18 regional ensemble</a>. 
+              Technical report, UK Climate Resilience Programme project CR20-3 
+              Enabling the use and producing improved understanding of EuroCORDEX data over the UK, January 2022 (revised July 2022). 
+              Available from <a href='https://www.ucl.ac.uk/statistics/research/eurocordex-uk'></a>. 
             </p>
           </div>
           <br></br>
@@ -324,7 +324,7 @@ export default function PlotHelp() {
               To distinguish these patterns from PCs and EOFs, and to highlight
               the fact that these patterns are computed across the members of an
               ensemble rather than across time, we refer to the patterns as
-              ensemble principal patterns (EPPs).
+              ensemble principal patterns (EPPs). For further details, see Barnes et al. 2022 (reference given above).
             </p>
             <p>
               The numbers in brackets indicate the proportion of the attributed
@@ -343,7 +343,7 @@ export default function PlotHelp() {
               span the range of variation in an ensemble, or to identify members
               of the UKCP18 12km ensemble that display unusual patterns of
               behaviour in a particular index. A suggested sequence of analyses is given{" "}
-              <Link to="/how-to-use">here</Link>.
+              <Link to="/how-to-use">here</Link>. 
             </p>
           </div>
           <br></br>
