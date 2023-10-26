@@ -38,7 +38,8 @@ export default function About() {
           modern statistics and uncertainty quantification, and software engineering.
         </p>
         <p>
-        The project runs from October 2019 until October 2022, and is funded under the <a href="https://www.ukclimateresilience.org/">UK Climate Resilience Programme</a>.
+          The project ran from October 2019 to January 2023, and was funded under the <a href="https://www.ukclimateresilience.org/">UK Climate Resilience Programme</a>. 
+          Further information including software, project reports and links to data repositories, can be found on the <a href='https://www.ucl.ac.uk/statistics/research/eurocordex-uk'>project home page</a>.
         </p>
       </div>
     </Container>
