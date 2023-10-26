@@ -8,8 +8,8 @@ export default function AboutExplorer() {
         <h1>About the EuroCORDEX-UK Plot Explorer</h1>
         <p>
           This analysis and visualisation tool is designed to allow rapid exploration of the
-          key structures of the model outputs in the UKCP18 projections and the
-          EuroCORDEX ensembles, along with their driving models, for a large
+          key structures of the model outputs in the <a href='https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/about'>UKCP18 projections</a>
+          and the EuroCORDEX ensembles, along with their driving models, for a large
           number of weather variables and derived indices of climate over the UK.
         </p>
         <p>
