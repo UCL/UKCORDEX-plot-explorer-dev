@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/UKCORDEX-plot-explorer-dev/static/css/main.831adc9c.css",
+    "main.css": "/UKCORDEX-plot-explorer-dev/static/css/main.6120f284.css",
     "main.js": "/UKCORDEX-plot-explorer-dev/static/js/main.a7ca55e0.js",
     "static/js/787.d7b3ca26.chunk.js": "/UKCORDEX-plot-explorer-dev/static/js/787.d7b3ca26.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/UKCORDEX-plot-explorer-dev/static/media/KaTeX_AMS-Regular.797708391f0380251e6c.ttf",
@@ -61,12 +61,12 @@
     "static/media/KaTeX_Size3-Regular.woff": "/UKCORDEX-plot-explorer-dev/static/media/KaTeX_Size3-Regular.d27d182ea833ec6cc72e.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/UKCORDEX-plot-explorer-dev/static/media/KaTeX_Size3-Regular.943a01ec6dae1a54fa8b.woff2",
     "index.html": "/UKCORDEX-plot-explorer-dev/index.html",
-    "main.831adc9c.css.map": "/UKCORDEX-plot-explorer-dev/static/css/main.831adc9c.css.map",
+    "main.6120f284.css.map": "/UKCORDEX-plot-explorer-dev/static/css/main.6120f284.css.map",
     "main.a7ca55e0.js.map": "/UKCORDEX-plot-explorer-dev/static/js/main.a7ca55e0.js.map",
     "787.d7b3ca26.chunk.js.map": "/UKCORDEX-plot-explorer-dev/static/js/787.d7b3ca26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.831adc9c.css",
+    "static/css/main.6120f284.css",
     "static/js/main.a7ca55e0.js"
   ]
 }
