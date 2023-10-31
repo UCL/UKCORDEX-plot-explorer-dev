@@ -21,3 +21,6 @@
 .contents {
   margin: 1em;
 }
+.indented-block {
+  margin-left: 2vw;
+}
